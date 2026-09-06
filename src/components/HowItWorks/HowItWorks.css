@@ -1,0 +1,71 @@
+.howitworks {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.howitworks_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.howitworks_header h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+
+.howitworks_header p {
+  font-size: 17px;
+  color: #999999;
+  margin: 0;
+}
+
+.howitworks_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.howitworks_step {
+  text-align: center;
+}
+
+.howitworks_number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 auto 24px;
+}
+
+.howitworks_step h3 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.howitworks_step p {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .howitworks_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

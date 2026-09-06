@@ -1,0 +1,49 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-dark: #1a1a1a;
+  --primary-yelow: #c7973d;
+  --secondary-dark: #191919;
+  --hero-white: #ffffffcc;
+
+  --primary-strong: #87520d; /* тёмный золотой — для hover/акцентов посильнее */
+
+  --muted: #f5f3f0; /* светлый бежевый — фон секций */
+  --muted-foreground: #666666; /* серый — второстепенный текст */
+
+  --destructive: #ef4444; /* красный — для ошибок */
+
+  --border: #dedbd3; /* светло-бежевый — рамки */
+  --input: #dedbd3; /* рамки полей ввода */
+
+  --gold-start: #d4b054; /* градиент: начало */
+
+  --radius: 8px; /* базовое скругление углов */
+}
+
+body {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', system-ui, sans-serif;
+}

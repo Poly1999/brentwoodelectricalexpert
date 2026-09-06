@@ -1,0 +1,140 @@
+.testimonials {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.testimonials_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonials_stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonials_stars svg {
+  width: 24px;
+  height: 24px;
+}
+
+.testimonials_header h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+
+.testimonials_header p {
+  font-size: 17px;
+  color: #666666;
+  margin: 0;
+}
+
+.testimonials_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.testimonial_card {
+  border: 1px solid #dedbd3;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial_stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.testimonial_stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonial_text {
+  font-size: 15px;
+  font-style: italic;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0 0 24px;
+  flex: 1;
+}
+
+.testimonial_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 16px;
+  border-top: 1px solid #f0eee9;
+}
+
+.testimonial_name {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.testimonial_location {
+  display: block;
+  font-size: 13px;
+  color: #999999;
+}
+
+.testimonial_source {
+  font-size: 12px;
+  font-weight: 700;
+  color: #c7973d;
+  background-color: rgba(199, 151, 61, 0.1);
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.testimonials_viewall {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials_viewall_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.testimonials_viewall_button:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.testimonials_viewall_button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 900px) {
+  .testimonials_grid {
+    grid-template-columns: 1fr;
+  }
+}

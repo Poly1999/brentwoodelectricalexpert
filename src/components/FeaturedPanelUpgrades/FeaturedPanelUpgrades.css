@@ -1,0 +1,122 @@
+.featuredpanel {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f5f3f0;
+}
+
+.featuredpanel_inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.featuredpanel_image {
+  flex: 0 0 45%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.featuredpanel_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featuredpanel_content {
+  flex: 1;
+}
+
+.featuredpanel_label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c7973d;
+  margin-bottom: 12px;
+}
+
+.featuredpanel_content h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 20px;
+}
+
+.featuredpanel_text {
+  font-size: 17px;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.featuredpanel_text a {
+  color: #c7973d;
+  text-decoration: underline;
+}
+
+.featuredpanel_features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.featuredpanel_feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featuredpanel_feature svg {
+  width: 20px;
+  height: 20px;
+  color: #c7973d;
+  flex-shrink: 0;
+}
+
+.featuredpanel_feature span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.featuredpanel_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.featuredpanel_button:hover {
+  box-shadow: 0 10px 25px rgba(199, 151, 61, 0.4);
+  transform: translateY(-2px);
+}
+
+.featuredpanel_button svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 900px) {
+  .featuredpanel_inner {
+    flex-direction: column;
+  }
+
+  .featuredpanel_image {
+    flex: none;
+    width: 100%;
+    height: 300px;
+  }
+}
