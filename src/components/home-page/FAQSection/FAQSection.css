@@ -1,0 +1,153 @@
+.faqsection {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f5f3f0;
+}
+
+.faqsection_inner {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.faqsection_left {
+  flex: 0 0 50%;
+}
+
+.faqsection_image {
+  flex: 0 0 50%;
+}
+
+.faqsection_left h2 {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+
+@media (min-width: 768px) {
+  .faqsection_left h2 {
+    font-size: 36px;
+  }
+}
+
+.faqsection_subtitle {
+  font-size: 14px;
+  color: #666666;
+  margin: 0 0 24px;
+}
+
+.faqsection_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.faqitem {
+  background-color: #ffffff;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.faqitem_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  cursor: pointer;
+}
+
+.faqitem_question span {
+  text-decoration: none;
+}
+
+.faqitem_question:hover span {
+  text-decoration: underline;
+}
+
+.faqitem_question svg {
+  width: 18px;
+  height: 18px;
+  color: #666666;
+  flex-shrink: 0;
+}
+
+.faqitem_answer_wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.faqitem_answer_wrapper.faqitem_answer_open {
+  grid-template-rows: 1fr;
+}
+
+.faqitem_answer {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.faqitem_answer p {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 14px 0 0;
+}
+
+.faqsection_viewall {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c7973d;
+  text-decoration: none;
+}
+
+.faqsection_viewall svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.faqsection_viewall:hover svg {
+  transform: translateX(4px);
+}
+
+.faqsection_image {
+  flex: 0 0 50%;
+  border-radius: 16px;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.faqsection_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .faqsection_inner {
+    flex-direction: column;
+  }
+
+  .faqsection_left {
+    flex: none;
+    width: 100%;
+  }
+
+  .faqsection_image {
+    flex: none;
+    width: 100%;
+    height: 450px;
+  }
+}

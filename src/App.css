@@ -4,20 +4,13 @@
   --primary-yelow: #c7973d;
   --secondary-dark: #191919;
   --hero-white: #ffffffcc;
-
-  --primary-strong: #87520d; /* тёмный золотой — для hover/акцентов посильнее */
-
-  --muted: #f5f3f0; /* светлый бежевый — фон секций */
-  --muted-foreground: #666666; /* серый — второстепенный текст */
-
-  --destructive: #ef4444; /* красный — для ошибок */
-
-  --border: #dedbd3; /* светло-бежевый — рамки */
-  --input: #dedbd3; /* рамки полей ввода */
-
-  --gold-start: #d4b054; /* градиент: начало */
-
-  --radius: 8px; /* базовое скругление углов */
+  --primary-strong: #87520d;
+  --muted: #f5f3f0;
+  --muted-foreground: #666666;
+  --destructive: #ef4444;
+  --border: #dedbd3;
+  --input: #dedbd3;
+  --gold-start: #d4b054;
 }
 
 body {
