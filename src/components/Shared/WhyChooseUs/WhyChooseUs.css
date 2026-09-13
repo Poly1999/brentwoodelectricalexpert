@@ -1,25 +1,23 @@
 .whychooseus {
   width: 100%;
   padding: 80px 0;
-  background-color: #1a1a1a;
+  background-color: var(--primary-dark);
 }
 
 .whychooseus_header {
   text-align: center;
-  max-width: 700px;
   margin: 0 auto 60px;
 }
 
 .whychooseus_header h2 {
-  font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 38px;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--primary-white);
   margin: 0 0 20px;
 }
 
 .whychooseus_header h2 span {
-  color: #c7973d;
+  color: var(--primary-yelow);
 }
 
 .whychooseus_header p {
@@ -55,14 +53,14 @@
 .whychooseus_icon svg {
   width: 24px;
   height: 24px;
-  color: #ffffff;
+  color: var(--primary-white);
 }
 
 .whychooseus_text h3 {
   font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--primary-white);
   margin: 0 0 8px;
 }
 

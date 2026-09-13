@@ -1,0 +1,119 @@
+.abouthero {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #1a1a1a;
+}
+
+.abouthero_container {
+  display: flex;
+}
+
+.abouthero_label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--secondary-yellow);
+  margin-bottom: 16px;
+}
+
+.abouthero_title {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--primary-white);
+  margin: 0 0 24px;
+  line-height: 1.1;
+}
+
+.abouthero_title span {
+  color: var(--primary-yelow);
+}
+
+.abouthero_text {
+  font-size: 18px;
+  color: var(--hero-white);
+  line-height: 1.6;
+  margin: 0 0 32px;
+  max-width: 700px;
+}
+
+.abouthero_buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.abouthero_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-white);
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.abouthero_button:hover {
+  box-shadow: 0 10px 25px rgba(199, 151, 61, 0.4);
+  transform: translateY(-2px);
+}
+
+.abouthero_button_secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.abouthero_button_secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.abouthero_button svg,
+.abouthero_button_secondary svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 600px) {
+  .abouthero {
+    padding: 60px 0;
+  }
+
+  .abouthero_title {
+    font-size: 32px;
+  }
+
+  .abouthero_text {
+    font-size: 15px;
+  }
+
+  .abouthero_buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .abouthero_button,
+  .abouthero_button_secondary {
+    justify-content: center;
+  }
+}

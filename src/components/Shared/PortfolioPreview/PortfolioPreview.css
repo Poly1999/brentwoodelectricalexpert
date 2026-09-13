@@ -96,6 +96,10 @@
   height: 16px;
 }
 
+.portfolio_dark {
+  background-color: var(--muted);
+}
+
 @media (max-width: 900px) {
   .portfolio_grid {
     grid-template-columns: repeat(2, 1fr);

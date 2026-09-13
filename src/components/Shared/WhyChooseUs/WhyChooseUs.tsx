@@ -1,7 +1,11 @@
 import './WhyChooseUs.css';
 import { Shield, Award, Clock, ThumbsUp, Users, Zap } from 'lucide-react';
 
-function WhyChooseUs() {
+interface ChooseUsProps {
+  subtitle: string;
+}
+
+function WhyChooseUs({ subtitle }: ChooseUsProps) {
   return (
     <div className='whychooseus'>
       <div className='container'>
@@ -9,10 +13,7 @@ function WhyChooseUs() {
           <h2>
             Why Homeowners Choose <span>Brentwood Electrical</span>
           </h2>
-          <p>
-            We've built our reputation on quality work, honest pricing, and
-            exceptional service across West Los Angeles.
-          </p>
+          <p>{subtitle}</p>
         </div>
 
         <div className='whychooseus_grid'>
