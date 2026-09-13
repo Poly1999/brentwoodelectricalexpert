@@ -58,6 +58,45 @@ function AboutPage() {
     { image: ActiveElectricalProject, title: 'Active Electrical Project' },
   ];
 
+  const reviews = [
+    {
+      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+      name: 'Michael R.',
+      location: 'Brentwood, CA',
+      source: 'Google',
+    },
+    {
+      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+      name: 'Sarah L.',
+      location: 'Santa Monica, CA',
+      source: 'Yelp',
+    },
+    {
+      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+      name: 'David K.',
+      location: 'Pacific Palisades, CA',
+      source: 'Google',
+    },
+    {
+      text: 'We hired them for a full lighting redesign in our renovated kitchen and living room. The result is stunning — recessed lights, under-cabinet LEDs, and dimmers throughout. True professionals.',
+      name: 'Jennifer M.',
+      location: 'Beverly Hills, CA',
+      source: 'Birdeye',
+    },
+    {
+      text: 'Had a persistent problem with tripping breakers. They diagnosed it quickly, found a faulty connection, and fixed it same day. Fair pricing and honest service — rare to find.',
+      name: 'Robert T.',
+      location: 'West Hollywood, CA',
+      source: 'Google',
+    },
+    {
+      text: 'Brentwood Electrical installed a Tesla Wall Connector at our home. They handled the panel assessment, got the permit, and had us charging within a week. Seamless experience.',
+      name: 'Amanda C.',
+      location: 'Mar Vista, CA',
+      source: 'Yelp',
+    },
+  ];
+
   return (
     <div>
       <AboutHero />
@@ -78,7 +117,7 @@ function AboutPage() {
         projects={projectsInProgress}
         isButtonVisible={false}
       />
-      <Testimonials />
+      <Testimonials reviews={reviews} />
       <Footer />
     </div>
   );

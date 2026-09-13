@@ -132,6 +132,28 @@
   height: 16px;
 }
 
+.testimonials_dark {
+  background-color: var(--muted);
+}
+
+.testimonials_dark .testimonial_card {
+  background-color: var(--primary-white);
+}
+
+.testimonials_dark .testimonials_viewall_button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--primary-yelow);
+  padding: 0;
+}
+
+.testimonials_dark .testimonials_viewall_button:hover {
+  box-shadow: none;
+  transform: none;
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .testimonials_grid {
     grid-template-columns: 1fr;
