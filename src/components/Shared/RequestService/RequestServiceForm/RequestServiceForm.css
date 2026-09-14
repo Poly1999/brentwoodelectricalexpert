@@ -1,0 +1,104 @@
+.requestform_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.requestform_row {
+  display: flex;
+  gap: 16px;
+}
+
+.requestform_form input,
+.requestform_form select,
+.requestform_form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: 'Open Sans', system-ui, sans-serif;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.requestform_form input::placeholder,
+.requestform_form textarea::placeholder {
+  color: #999999;
+}
+
+.requestform_form input:focus,
+.requestform_form select:focus,
+.requestform_form textarea:focus {
+  outline: none;
+  border-color: #c7973d;
+}
+
+.requestform_form textarea {
+  resize: vertical;
+}
+
+.requestform_buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.requestform_submit {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.requestform_submit:hover {
+  box-shadow: 0 10px 25px rgba(199, 151, 61, 0.4);
+  transform: translateY(-2px);
+}
+
+.requestform_call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.requestform_call:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.requestform_call svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 900px) {
+  .requestform_row {
+    flex-direction: column;
+  }
+
+  .requestform_buttons {
+    flex-direction: column;
+  }
+}

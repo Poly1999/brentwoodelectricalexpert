@@ -1,0 +1,141 @@
+.servicedetails {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.servicedetails_wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.servicedetails_container {
+  max-width: 870px;
+}
+
+.servicedetails_block {
+  margin-bottom: 40px;
+}
+
+.servicedetails_block h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 20px;
+}
+
+.servicedetails_block p {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+.servicedetails_block p a {
+  color: #c7973d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.servicedetails_block p a:hover {
+  text-decoration: underline;
+}
+
+.servicedetails_buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.servicedetails_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.servicedetails_button:hover {
+  box-shadow: 0 10px 25px rgba(199, 151, 61, 0.4);
+  transform: translateY(-2px);
+}
+
+.servicedetails_button_secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background-color: #ffffff;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.servicedetails_button_secondary:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.servicedetails_button svg,
+.servicedetails_button_secondary svg {
+  width: 18px;
+  height: 18px;
+}
+
+.servicedetails_process {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.servicedetails_process_item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.servicedetails_process_number {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.servicedetails_process_item h3 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 6px;
+}
+
+.servicedetails_process_item p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}

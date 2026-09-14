@@ -16,12 +16,16 @@ function ServicesDropdown() {
       onMouseEnter={() => setIsOpenDown(true)}
       onMouseLeave={() => setIsOpenDown(false)}
     >
-      <button className='servicesdropdown_button' onClick={handleOpenDown}>
+      <NavLink
+        to='/all-services'
+        className='servicesdropdown_button'
+        onClick={handleOpenDown}
+      >
         Services
         <ChevronDown
           className={isOpenDown ? 'servicesdropdown_chevron_open' : ''}
         />
-      </button>
+      </NavLink>
       {isOpenDown === true ? (
         <div className='servicesdropdown_panel'>
           <NavLink
