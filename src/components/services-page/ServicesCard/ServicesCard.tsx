@@ -7,7 +7,6 @@ import {
   ArrowRight,
   BatteryCharging,
   Building2,
-  PanelsTopLeft,
   Camera,
   Lightbulb,
   Plug,
@@ -19,6 +18,7 @@ import {
   Search,
   Wrench,
   TreePine,
+  GitGraph,
 } from 'lucide-react';
 
 import ElectricalPanel from '../../../assets/panel-framing.webp';
@@ -83,7 +83,7 @@ function ServicesCard() {
     },
     {
       image: Subpanels,
-      iconTitle: <PanelsTopLeft />,
+      iconTitle: <GitGraph />,
       subtitle: 'Subpanels',
       title: 'Subpanel Installation',
       text: 'Need additional circuits for a garage, ADU, workshop, or home addition? Brentwood Electrical Experts installs electrical subpanels to extend your electrical system safely and efficiently. We serve homeowners and businesses across Brentwood, Santa Monica, Pacific Palisades, and all of West Los Angeles.',

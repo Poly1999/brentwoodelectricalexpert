@@ -5,6 +5,7 @@ import AboutPage from './pages/About/AboutPage';
 import HeaderComponent from './components/Header/HeaderComponent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ServicesPage from './pages/Services/ServicesPage';
+import PanelUpgrades from './pages/Services/PanelUpgrades/PanelUpgrades';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/all-services' element={<ServicesPage />} />
+        <Route path='/panel-upgrades-service' element={<PanelUpgrades />} />
       </Routes>
     </BrowserRouter>
   );
