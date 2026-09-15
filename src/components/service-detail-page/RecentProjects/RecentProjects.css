@@ -1,6 +1,6 @@
 .recentprojects {
   width: 100%;
-  padding: 80px 0;
+  padding: 30px 0;
   background-color: var(--muted);
 }
 
@@ -27,7 +27,8 @@
 
 .recentprojects_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(0, 280px));
+  justify-content: center;
   gap: 24px;
 }
 

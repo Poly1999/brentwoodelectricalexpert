@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ServicesPage from './pages/Services/ServicesPage';
 import PanelUpgrades from './pages/Services/PanelUpgrades/PanelUpgrades';
 import ElectricalConstruction from './pages/Services/ElectricalConstruction/ElectricalConstruction';
+import SecurityCameraSystems from './pages/Services/SecurityCameraSystems/SecurityCameraSystems';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route
           path='/construction-service'
           element={<ElectricalConstruction />}
+        />
+        <Route
+          path='/security-cameras-service'
+          element={<SecurityCameraSystems />}
         />
       </Routes>
     </BrowserRouter>
