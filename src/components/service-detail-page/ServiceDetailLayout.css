@@ -16,6 +16,7 @@
 @media (max-width: 1100px) {
   .servicedetail_layout {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .servicedetail_sidebar {

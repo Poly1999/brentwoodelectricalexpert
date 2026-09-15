@@ -7,61 +7,88 @@ import {
   GitGraph,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 
-import ElectricalPanel from '../../../assets/panel-framing.webp';
+import { NavLink } from 'react-router-dom';
+
+import ConsrtactionPanels from '../../../assets/construction-panels.jpg';
+
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
-import { NavLink } from 'react-router-dom';
 import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
-import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
-import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
-import Footer from '../../../components/Footer/Footer';
 import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
+import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
+
+import CommercialWiring from '../../../assets/commercial-1.webp';
+import NewConstruction from '../../../assets/commercial-2.webp';
+import Installation from '../../../assets/commercial-3.webp';
+import ElectricalService from '../../../assets/commercial-4.webp';
+import BuildOutWiring from '../../../assets/commercial-5.webp';
+import PanelWork from '../../../assets/commercial-6.webp';
+import TenantImprovement from '../../../assets/commercial-7.webp';
+import LightingInstallation from '../../../assets/commercial-8.webp';
+import RetailWiring from '../../../assets/commercial-9.jpg';
+import OfficeBuildOut from '../../../assets/commercial-10.jpg';
+
+import NewBuildElectrical from '../../../assets/electrical-1.webp';
+import WiringCommercial from '../../../assets/electrical-2.webp';
+import PanelInstallation from '../../../assets/electrical-3.webp';
+import ConstructionWiring from '../../../assets/electrical-4.webp';
+import CommercialElectrical from '../../../assets/electrical-5.webp';
+import ConstructionNew from '../../../assets/electrical-6.jpg';
+import ElectricalProject from '../../../assets/electrical-7.jpg';
+
+import KitchenRemodel from '../../../assets/remodeling-3017.webp';
+import BathroomWiring from '../../../assets/remodeling-3242.webp';
+import FullHomeRemodel from '../../../assets/remodeling-7498.webp';
+import RoomAddition from '../../../assets/remodeling-8152.webp';
+import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
+import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
 import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
 import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import Footer from '../../../components/Footer/Footer';
 
-function PanelUpgrades() {
+function ElectricalConstruction() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <BuildingComplex />,
+    title: 'Electrical Construction',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'From new construction wiring to tenant improvements and full-scale electrical buildouts, Brentwood Electrical Experts delivers comprehensive electrical construction services across West Los Angeles. We work with general contractors, property developers, and homeowners to deliver safe, code-compliant electrical systems on schedule and on budget.',
+    backgroundImage: ConsrtactionPanels,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Complete electrical system design and installation',
+      'Code-compliant rough-in and finish work',
+      'Coordination with GCs and other trades',
+      'Commercial and residential construction',
+      'Permit acquisition and inspection management',
+      'On-time, on-budget delivery',
     ],
-    image: ElectricalPanel,
+    image: ConsrtactionPanels,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Electrical Construction in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
+        At Brentwood Electrical Experts, we understand that electrical
+        construction is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every construction project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
+        constraction service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,7 +109,7 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
+        and businesses have trusted us with their construction needs — and why
         they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
@@ -91,10 +118,10 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Construction Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
+        When you choose Brentwood Electrical Experts for your construction
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -122,31 +149,31 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our Construction Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
+        title: 'Plan Review',
         subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
-      },
-      {
-        title: 'Recommendation',
-        subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
+          'We review architectural plans and develop the electrical layout.',
       },
       {
         title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        subtitle: 'We obtain all required electrical permits.',
       },
       {
-        title: 'Installation',
+        title: 'Rough-In',
         subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+          'We install all wiring, boxes, and conduit before walls are closed.',
       },
       {
-        title: 'Testing & Verification',
+        title: 'Finish Work',
         subtitle:
-          'We test every circuit and verify code compliance before completion.',
+          'We install fixtures, devices, panels, and all finish electrical.',
+      },
+      {
+        title: 'Final Inspection',
+        subtitle:
+          'We coordinate city inspections and ensure full code compliance.',
       },
     ],
   };
@@ -155,9 +182,9 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
+        Safety is the foundation of everything we do. Every construction project
+        we complete meets or exceeds the latest National Electrical Code (NEC)
+        standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
         We pull all necessary permits, coordinate inspections, and ensure your
         system is fully compliant — giving you peace of mind and protecting your
@@ -184,10 +211,10 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Construction Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
+        We proudly provide construction services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -195,7 +222,7 @@ function PanelUpgrades() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your construction project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +230,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your
+        constraction project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -213,6 +240,119 @@ function PanelUpgrades() {
         to earning your trust and delivering the quality electrical work your
         property deserves.
       </>,
+    ],
+  };
+
+  const recents = {
+    title: 'Recent Commercial & Remodeling Projects',
+    subtitle:
+      'See our completed commercial and remodeling electrical work across West Los Angeles.',
+    features: [
+      {
+        image: CommercialWiring,
+        name: 'Commercial Wiring',
+        location: 'West LA',
+      },
+      {
+        image: NewConstruction,
+        name: 'New Construction',
+        location: 'Santa Monica',
+      },
+      {
+        image: Installation,
+        name: 'Installation',
+        location: 'Century City',
+      },
+      {
+        image: ElectricalService,
+        name: 'Electrical Service',
+        location: 'Beverly Hills',
+      },
+      {
+        image: BuildOutWiring,
+        name: 'Build-Out Wiring',
+        location: 'Brentwood',
+      },
+      {
+        image: PanelWork,
+        name: 'Panel Work',
+        location: 'Mar Vista',
+      },
+      {
+        image: TenantImprovement,
+        name: 'Tenant Improvement',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: LightingInstallation,
+        name: 'Lighting Installation',
+        location: 'West Hollywood',
+      },
+      {
+        image: RetailWiring,
+        name: 'Retail Wiring',
+        location: 'Bel Air',
+      },
+      {
+        image: OfficeBuildOut,
+        name: 'Office Build-Out',
+        location: 'Westwood',
+      },
+      {
+        image: NewBuildElectrical,
+        name: 'New Build Electrical',
+        location: 'West LA',
+      },
+      {
+        image: WiringCommercial,
+        name: 'Commercial Wiring',
+        location: 'Santa Monica',
+      },
+      {
+        image: PanelInstallation,
+        name: 'Panel Installation',
+        location: 'Century City',
+      },
+      {
+        image: ConstructionWiring,
+        name: 'Construction Wiring',
+        location: 'Beverly Hills',
+      },
+      {
+        image: CommercialElectrical,
+        name: 'Commercial Electrical',
+        location: 'Brentwood',
+      },
+      {
+        image: ConstructionNew,
+        name: 'New Construction',
+        location: 'Mar Vista',
+      },
+      {
+        image: ElectricalProject,
+        name: 'Electrical Project',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: KitchenRemodel,
+        name: 'Kitchen Remodel',
+        location: 'West LA',
+      },
+      {
+        image: BathroomWiring,
+        name: 'Bathroom Wiring',
+        location: 'Santa Monica',
+      },
+      {
+        image: FullHomeRemodel,
+        name: 'Full Home Remodel',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: RoomAddition,
+        name: 'Room Addition',
+        location: 'Brentwood',
+      },
     ],
   };
 
@@ -239,40 +379,40 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: 'Do you work with general contractors?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        'Yes — we regularly partner with GCs on residential and commercial construction projects throughout West LA.',
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Can you handle large commercial projects?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
+        'Absolutely. We have the team, licensing, and experience to handle projects of all sizes.',
     },
     {
-      question: 'Do I need a permit for a panel upgrade?',
+      question: 'Do you handle permits?',
       answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'Yes, we manage all permitting and inspections as part of every construction project.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Construction Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide electrical construction services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
+    {
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
+    },
     {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
       subtitle: 'View EV Chargers details',
       slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
     },
     {
       icon: <GitGraph />,
@@ -287,7 +427,6 @@ function PanelUpgrades() {
       slug: 'security-cameras-service',
     },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,8 +446,8 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
       <ServiceProcess featuresDescription={featuresDescription} />
+      <RecentProjects recents={recents} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
@@ -318,4 +457,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default ElectricalConstruction;

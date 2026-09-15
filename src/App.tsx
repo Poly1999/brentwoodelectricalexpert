@@ -6,6 +6,7 @@ import HeaderComponent from './components/Header/HeaderComponent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ServicesPage from './pages/Services/ServicesPage';
 import PanelUpgrades from './pages/Services/PanelUpgrades/PanelUpgrades';
+import ElectricalConstruction from './pages/Services/ElectricalConstruction/ElectricalConstruction';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/all-services' element={<ServicesPage />} />
         <Route path='/panel-upgrades-service' element={<PanelUpgrades />} />
+        <Route
+          path='/construction-service'
+          element={<ElectricalConstruction />}
+        />
       </Routes>
     </BrowserRouter>
   );

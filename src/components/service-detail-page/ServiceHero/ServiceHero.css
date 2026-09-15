@@ -129,12 +129,16 @@
 }
 
 @media (max-width: 600px) {
+  .servicedetailhero {
+    max-height: none;
+  }
+
   .servicedetailhero_content h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .servicedetailhero_content p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .servicedetailhero_buttons {
@@ -145,5 +149,9 @@
   .servicedetailhero_button,
   .servicedetailhero_button_secondary {
     justify-content: center;
+  }
+
+  .servicedetailhero_content_wrapper {
+    padding: 0 25px;
   }
 }

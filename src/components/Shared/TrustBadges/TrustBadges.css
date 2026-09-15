@@ -41,3 +41,16 @@
   font-weight: 700;
   color: var(--primary-dark);
 }
+
+@media (max-width: 600px) {
+  .trustbadges_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: normal;
+  }
+
+  .trustbadges_item p {
+    font-size: 14px;
+  }
+}
