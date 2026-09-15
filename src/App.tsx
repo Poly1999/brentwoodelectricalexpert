@@ -30,6 +30,7 @@ function App() {
           element={<SecurityCameraSystems />}
         />
         <Route path='/outlets&GFCI-service' element={<OutletsService />} />
+        <Route path='/residential-service' element={<ResidentialProjects />} />
       </Routes>
     </BrowserRouter>
   );
