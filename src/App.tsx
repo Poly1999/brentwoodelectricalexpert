@@ -8,6 +8,8 @@ import ServicesPage from './pages/Services/ServicesPage';
 import PanelUpgrades from './pages/Services/PanelUpgrades/PanelUpgrades';
 import ElectricalConstruction from './pages/Services/ElectricalConstruction/ElectricalConstruction';
 import SecurityCameraSystems from './pages/Services/SecurityCameraSystems/SecurityCameraSystems';
+import OutletsService from './pages/Services/OutletsService/OutletsService';
+import ResidentialProjects from './pages/Services/ResidentialProjects/ResidentialProjects';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           path='/security-cameras-service'
           element={<SecurityCameraSystems />}
         />
+        <Route path='/outlets&GFCI-service' element={<OutletsService />} />
       </Routes>
     </BrowserRouter>
   );
