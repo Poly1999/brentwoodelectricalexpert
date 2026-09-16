@@ -12,6 +12,7 @@ import OutletsService from './pages/Services/OutletsService/OutletsService';
 import ResidentialProjects from './pages/Services/ResidentialProjects/ResidentialProjects';
 import LightingDesign from './pages/Services/LightingDesign/LightingDesign';
 import Troubleshooting from './pages/Services/Troubleshooting/Troubleshooting';
+import LandscapeLighting from './pages/Services/OutletsService/LandscapeLighting';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
         <Route path='/residential-service' element={<ResidentialProjects />} />
         <Route path='/lighting-design-service' element={<LightingDesign />} />
         <Route path='/troubleshooting-service' element={<Troubleshooting />} />
+        <Route
+          path='/landscape-lighting-service'
+          element={<LandscapeLighting />}
+        />
       </Routes>
     </BrowserRouter>
   );
