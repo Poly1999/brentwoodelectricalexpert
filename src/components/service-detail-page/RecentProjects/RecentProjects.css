@@ -32,6 +32,10 @@
   gap: 24px;
 }
 
+.recentprojects_grid_3 {
+  grid-template-columns: repeat(auto-fit, minmax(0, 340px));
+}
+
 .recentprojects_card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -79,13 +83,15 @@
   .recentprojects {
     padding: 0;
   }
-  .recentprojects_grid {
+  .recentprojects_grid,
+  .recentprojects_grid_3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .recentprojects_grid {
+  .recentprojects_grid,
+  .recentprojects_grid_3 {
     grid-template-columns: 1fr;
   }
 }

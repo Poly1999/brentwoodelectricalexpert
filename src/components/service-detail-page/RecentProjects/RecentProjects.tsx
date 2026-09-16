@@ -8,9 +8,10 @@ interface RecentProjects {
 
 interface RecentProjectsProps {
   recents: RecentProjects;
+  columns?: 3 | 4;
 }
 
-function RecentProjects({ recents }: RecentProjectsProps) {
+function RecentProjects({ recents, columns = 4 }: RecentProjectsProps) {
   return (
     <div className='recentprojects'>
       <div className='container'>
@@ -18,7 +19,11 @@ function RecentProjects({ recents }: RecentProjectsProps) {
           <h2>{recents.title}</h2>
           <p>{recents.subtitle}</p>
         </div>
-        <div className='recentprojects_grid'>
+        <div
+          className={`recentprojects_grid ${
+            columns === 3 ? 'recentprojects_grid_3' : ''
+          }`}
+        >
           {recents.features.map((recent, index) => (
             <div className='recentprojects_card' key={index}>
               <div className='recentprojects_image'>
