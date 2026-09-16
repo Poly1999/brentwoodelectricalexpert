@@ -10,6 +10,7 @@ import ElectricalConstruction from './pages/Services/ElectricalConstruction/Elec
 import SecurityCameraSystems from './pages/Services/SecurityCameraSystems/SecurityCameraSystems';
 import OutletsService from './pages/Services/OutletsService/OutletsService';
 import ResidentialProjects from './pages/Services/ResidentialProjects/ResidentialProjects';
+import LightingDesign from './pages/Services/LightingDesign/LightingDesign';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         />
         <Route path='/outlets&GFCI-service' element={<OutletsService />} />
         <Route path='/residential-service' element={<ResidentialProjects />} />
+        <Route path='/lighting-design-service' element={<LightingDesign />} />
       </Routes>
     </BrowserRouter>
   );
