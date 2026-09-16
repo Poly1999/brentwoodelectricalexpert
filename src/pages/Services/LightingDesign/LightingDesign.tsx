@@ -14,7 +14,6 @@ import ServiceBenefits from '../../../components/service-detail-page/ServiceBene
 import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
 import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
 import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
-import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
 import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
 import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
