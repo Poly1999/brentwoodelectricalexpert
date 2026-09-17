@@ -19,6 +19,7 @@ import SecurityLighting from './pages/Services/SecurityLighting/SecurityLighting
 import LightFixture from './pages/Services/LightFixture/LightFixture';
 import CommercialElectrical from './pages/Services/CommercialElectrical/CommercialElectrical';
 import SmartHome from './pages/Services/SmartHome/SmartHome';
+import ElectricalRemodeling from './pages/Services/ElectricalRemodeling/ElectricalRemodeling';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route path='/light-fixtures-service' element={<LightFixture />} />
         <Route path='/Commercial-service' element={<CommercialElectrical />} />
         <Route path='/smart-home-service' element={<SmartHome />} />
+        <Route path='/remodeling-service' element={<ElectricalRemodeling />} />
       </Routes>
     </BrowserRouter>
   );
