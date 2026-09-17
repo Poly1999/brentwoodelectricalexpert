@@ -2,11 +2,12 @@ import {
   BatteryCharging,
   BuildingComplex,
   GitGraph,
-  Lightbulb,
+  Lamp,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
+import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
 import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
 import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
 import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
@@ -19,34 +20,48 @@ import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import Footer from '../../../components/Footer/Footer';
 
-import SecurityLightingInstallation from '../../../assets/security-lighting-floodlight.jpg';
+import LightFixtureInstallation from '../../../assets/lightfixture-2611.webp';
 
-function SecurityLighting() {
+import PendantLightInstallation from '../../../assets/lightdesign-1981.webp';
+import ChandelierInstallation from '../../../assets/lightfixture-2611.webp';
+import RecessedLightingUpgrade from '../../../assets/lightfixture-5593.webp';
+import ModernCeilingFixture from '../../../assets/lightfixture-6151.webp';
+import KitchenLightingDesign from '../../../assets/lightfixture-7697.webp';
+import LivingRoomLightFixture from '../../../assets/lightdesign-8582.webp';
+import DesignerLighting from '../../../assets/lightdesign-1981.webp';
+import CustomInteriorDesign from '../../../assets/lightdesign-8582.webp';
+import ModernLayout from '../../../assets/lightdesign-6625.webp';
+import ResidentialDesign from '../../../assets/lightdesign-4023.webp';
+import ArchitecturalLighting from '../../../assets/lightdesign-4161.webp';
+import LuxuryHomeLighting from '../../../assets/lightdesign-6266.webp';
+import PremiumInstallation from '../../../assets/lightdesign-9014.webp';
+
+function LightFixture() {
   const hero = {
-    icon: <Lightbulb />,
-    title: 'Security Lighting Installation',
+    icon: <Lamp />,
+    title: 'Light Fixture Installation',
     subtitle:
-      'Illuminate and protect your property with professionally installed security lighting. Brentwood Electrical Experts designs and installs motion-sensor lights, floodlights, and landscape security lighting across Brentwood, Santa Monica, Pacific Palisades, and all of West Los Angeles.',
-    backgroundImage: SecurityLightingInstallation,
+      'Transform your space with professionally installed light fixtures. From chandeliers and recessed lighting to pendant lights and under-cabinet LEDs, Brentwood Electrical Experts handles all light fixture installations across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
+    backgroundImage: LightFixtureInstallation,
   };
 
   const benefits = {
     features: [
-      'Deter intruders with motion-activated lighting',
-      'Illuminate driveways, pathways, and entry points',
-      'Energy-efficient LED options',
-      'Smart lighting with timer and sensor controls',
-      'Enhanced curb appeal and safety',
-      'Professional wiring and placement',
+      'Expert installation of all fixture types',
+      'Recessed lighting, chandeliers, pendants, and more',
+      'Dimmer switch installation available',
+      'LED upgrades for energy savings',
+      'Clean, damage-free installation',
+      'Enhanced ambiance and property value',
     ],
-    image: SecurityLightingInstallation,
+    image: LightFixtureInstallation,
   };
 
   const fullDescription = {
-    title: 'Security Lighting Installation in West Los Angeles',
+    title: 'Light Fixture Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that security lighting
+        At Brentwood Electrical Experts, we understand that light fixture
         installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
@@ -54,13 +69,13 @@ function SecurityLighting() {
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every security lighting project we take on.
+        every light fixtures project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        security lighting service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine light
+        fixtures service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -81,8 +96,8 @@ function SecurityLighting() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their security lighting needs — and
-        why they keep coming back. See our{' '}
+        and businesses have trusted us with their light fixtures needs — and why
+        they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -90,10 +105,10 @@ function SecurityLighting() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Security Lighting Service',
+    title: 'What to Expect From Our Light Fixtures Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your security lighting
+        When you choose Brentwood Electrical Experts for your light fixtures
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -121,25 +136,24 @@ function SecurityLighting() {
   };
 
   const featuresDescription = {
-    title: 'Our Security Lighting Process — Step by Step',
+    title: 'Our Light Fixtures Process — Step by Step',
     features: [
       {
-        title: 'Consultation',
+        title: 'Selection Support',
         subtitle:
-          "We assess your property's security lighting needs and dark zones.",
+          'We help you choose the right fixtures for your space and style.',
       },
       {
-        title: 'Design',
-        subtitle: 'We create a lighting plan covering all vulnerable areas.',
+        title: 'Wiring Assessment',
+        subtitle: 'We verify existing wiring supports the new fixtures.',
       },
       {
         title: 'Installation',
-        subtitle: 'We install fixtures, wiring, sensors, and controls.',
+        subtitle: 'We professionally mount and wire each fixture.',
       },
       {
         title: 'Testing',
-        subtitle:
-          'We test all lights, sensors, and timers for proper operation.',
+        subtitle: 'We test all fixtures and dimmers for proper operation.',
       },
     ],
   };
@@ -148,7 +162,7 @@ function SecurityLighting() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every security lighting
+        Safety is the foundation of everything we do. Every light fixtures
         project we complete meets or exceeds the latest National Electrical Code
         (NEC) standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -177,18 +191,18 @@ function SecurityLighting() {
   };
 
   const coverageDescription = {
-    title: 'Security Lighting Across West Los Angeles',
+    title: 'Light Fixtures Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide security lighting services to homeowners and
-        businesses throughout West Los Angeles and the surrounding communities.
-        Whether you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        We proudly provide light fixtures services to homeowners and businesses
+        throughout West Los Angeles and the surrounding communities. Whether
+        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your security lighting project.
+        ready to help with your light fixtures project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -196,8 +210,8 @@ function SecurityLighting() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your security
-        lighting project requires.
+        across diverse property types means we can handle whatever your light
+        fixtures project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -206,6 +220,79 @@ function SecurityLighting() {
         to earning your trust and delivering the quality electrical work your
         property deserves.
       </>,
+    ],
+  };
+
+  const recents = {
+    title: 'Recent Light Fixture & Lighting Design Projects',
+    subtitle:
+      'See our completed light fixture installations and lighting design work across West Los Angeles.',
+    features: [
+      {
+        image: PendantLightInstallation,
+        name: 'Pendant Light Installation',
+        location: 'Santa Monica',
+      },
+      {
+        image: ChandelierInstallation,
+        name: 'Chandelier Installation',
+        location: 'Beverly Hills',
+      },
+      {
+        image: RecessedLightingUpgrade,
+        name: 'Recessed Lighting Upgrade',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: ModernCeilingFixture,
+        name: 'Modern Ceiling Fixture',
+        location: 'Westwood',
+      },
+      {
+        image: KitchenLightingDesign,
+        name: 'Kitchen Lighting Design',
+        location: 'Brentwood',
+      },
+      {
+        image: LivingRoomLightFixture,
+        name: 'Living Room Light Fixture',
+        location: 'Century City',
+      },
+      {
+        image: DesignerLighting,
+        name: 'Designer Lighting',
+        location: 'West LA',
+      },
+      {
+        image: CustomInteriorDesign,
+        name: 'Custom Interior Design',
+        location: 'Santa Monica',
+      },
+      {
+        image: ModernLayout,
+        name: 'Modern Layout',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: ResidentialDesign,
+        name: 'Residential Design',
+        location: 'Brentwood',
+      },
+      {
+        image: ArchitecturalLighting,
+        name: 'Architectural Lighting',
+        location: 'Beverly Hills',
+      },
+      {
+        image: LuxuryHomeLighting,
+        name: 'Luxury Home Lighting',
+        location: 'Bel Air',
+      },
+      {
+        image: PremiumInstallation,
+        name: 'Premium Installation',
+        location: 'Mar Vista',
+      },
     ],
   };
 
@@ -232,21 +319,21 @@ function SecurityLighting() {
 
   const faqs = [
     {
-      question: 'What type of security lights do you recommend?',
+      question: "Can you install fixtures I've already purchased?",
       answer:
-        'We typically recommend LED motion-sensor floodlights for perimeter security, and dusk-to-dawn fixtures for pathways and entries.',
+        'Absolutely. We install customer-supplied fixtures as well as fixtures we source for you.',
     },
     {
-      question: 'Can security lighting be added to existing circuits?',
+      question: 'Do you install recessed lighting?',
       answer:
-        "In many cases, yes. We'll assess your current wiring and add circuits if needed.",
+        'Yes — recessed (can) lighting installation is one of our most popular services.',
     },
   ];
 
   const areas = {
-    title: 'Security Lighting Across West LA',
+    title: 'Light Fixtures Across West LA',
     subtitle:
-      'We provide security lighting installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide light fixture installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
@@ -294,6 +381,7 @@ function SecurityLighting() {
           <ServicesSidebar />
         </div>
       </div>
+      <RecentProjects recents={recents} />
       <ServiceProcess featuresDescription={featuresDescription} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
@@ -304,4 +392,4 @@ function SecurityLighting() {
   );
 }
 
-export default SecurityLighting;
+export default LightFixture;
