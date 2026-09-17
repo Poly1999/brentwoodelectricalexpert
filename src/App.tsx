@@ -12,7 +12,8 @@ import OutletsService from './pages/Services/OutletsService/OutletsService';
 import ResidentialProjects from './pages/Services/ResidentialProjects/ResidentialProjects';
 import LightingDesign from './pages/Services/LightingDesign/LightingDesign';
 import Troubleshooting from './pages/Services/Troubleshooting/Troubleshooting';
-import LandscapeLighting from './pages/Services/OutletsService/LandscapeLighting';
+import LandscapeLighting from './pages/Services/LandscapeLighting/LandscapeLighting';
+import EVCharger from './pages/Services/EVCharger/EVCharger';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           path='/landscape-lighting-service'
           element={<LandscapeLighting />}
         />
+        <Route path='/ev-chargers-service' element={<EVCharger />} />
       </Routes>
     </BrowserRouter>
   );
