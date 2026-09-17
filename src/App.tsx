@@ -14,6 +14,7 @@ import LightingDesign from './pages/Services/LightingDesign/LightingDesign';
 import Troubleshooting from './pages/Services/Troubleshooting/Troubleshooting';
 import LandscapeLighting from './pages/Services/LandscapeLighting/LandscapeLighting';
 import EVCharger from './pages/Services/EVCharger/EVCharger';
+import Subpanel from './pages/Services/Subpanel/Subpanel';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           element={<LandscapeLighting />}
         />
         <Route path='/ev-chargers-service' element={<EVCharger />} />
+        <Route path='/subpanels-service' element={<Subpanel />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,6 +5,7 @@ import {
   GitGraph,
   Zap,
 } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
 import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
@@ -19,39 +20,39 @@ import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import Footer from '../../../components/Footer/Footer';
 
-import EVChargerInstallation from '../../../assets/ev-charger-1.webp';
-import { NavLink } from 'react-router-dom';
+import SubpanelInstallation from '../../../assets/subpanel-6398.webp';
 
-import TeslaWallConnector from '../../../assets/ev-charger-1.webp';
-import Level2Charger from '../../../assets/ev-charger-2.webp';
-import ResidentialEV from '../../../assets/ev-charger-3.webp';
+import GarageSubpanel from '../../../assets/subpanel-7219.webp';
+import ADUSubpanel from '../../../assets/subpanel-9347.webp';
+import WorkshopSubpanel from '../../../assets/subpanel-6398.webp';
+import HomeAddition from '../../../assets/subpanel-9286.webp';
 
-function EVCharger() {
+function Subpanel() {
   const hero = {
-    icon: <BatteryCharging />,
-    title: 'EV Charger Installation',
+    icon: <GitGraph />,
+    title: 'Subpanel Installation',
     subtitle:
-      'Charge your electric vehicle at home with a professionally installed Level 2 EV charger. Brentwood Electrical Experts installs Tesla Wall Connectors, ChargePoint, JuiceBox, and all major EV charger brands across West LA, Santa Monica, Beverly Hills, and surrounding areas. We handle everything from panel capacity assessment to final installation.',
-    backgroundImage: EVChargerInstallation,
+      'Need additional circuits for a garage, ADU, workshop, or home addition? Brentwood Electrical Experts installs electrical subpanels to extend your electrical system safely and efficiently. We serve homeowners and businesses across Brentwood, Santa Monica, Pacific Palisades, and all of West LA.',
+    backgroundImage: SubpanelInstallation,
   };
 
   const benefits = {
     features: [
-      'Fast Level 2 charging at home',
-      'Compatible with Tesla, BMW, Rivian, and all EVs',
-      'Panel upgrade included if needed',
-      'Clean, code-compliant installation',
-      'Increase home value',
-      'Eliminate gas station trips',
+      'Extend electrical capacity to garages, ADUs, and additions',
+      'Avoid overloading your main panel',
+      'Code-compliant installation with proper grounding',
+      'Support for EV chargers, workshops, and more',
+      'Clean, professional installation',
+      'Permit and inspection management included',
     ],
-    image: EVChargerInstallation,
+    image: SubpanelInstallation,
   };
 
   const fullDescription = {
-    title: 'EV Charger Installation in West Los Angeles',
+    title: 'Subpanel Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that ev charger
+        At Brentwood Electrical Experts, we understand that subpanel
         installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
@@ -59,13 +60,13 @@ function EVCharger() {
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every ev chargers project we take on.
+        every subpanels project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine ev
-        chargers service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
+        subpanels service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -86,8 +87,8 @@ function EVCharger() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their ev chargers needs — and why
-        they keep coming back. See our{' '}
+        and businesses have trusted us with their subpanels needs — and why they
+        keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -95,10 +96,10 @@ function EVCharger() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our EV Chargers Service',
+    title: 'What to Expect From Our Subpanels Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your ev chargers needs,
+        When you choose Brentwood Electrical Experts for your subpanels needs,
         you're choosing a team that treats every job — big or small — with the
         same level of professionalism, care, and attention to detail. We don't
         cut corners, we don't rush through projects, and we never leave a job
@@ -126,32 +127,24 @@ function EVCharger() {
   };
 
   const featuresDescription = {
-    title: 'Our EV Chargers Process — Step by Step',
+    title: 'Our Subpanels Process — Step by Step',
     features: [
       {
-        title: 'Consultation',
+        title: 'Assessment',
         subtitle:
-          'We assess your electrical system and charger location preferences.',
+          'We evaluate your main panel capacity and subpanel requirements.',
       },
       {
-        title: 'Charger Selection',
-        subtitle:
-          'We help you choose the right charger for your vehicle and driving habits.',
-      },
-      {
-        title: 'Panel Assessment',
-        subtitle:
-          'We verify your panel can support the charger — and upgrade it if needed.',
+        title: 'Planning',
+        subtitle: 'We design the subpanel layout and circuit allocation.',
       },
       {
         title: 'Installation',
-        subtitle:
-          'Professional installation with clean conduit runs and proper mounting.',
+        subtitle: 'We install the subpanel, run feeders, and connect circuits.',
       },
       {
-        title: 'Activation & Testing',
-        subtitle:
-          'We test the charger, verify amperage, and walk you through operation.',
+        title: 'Inspection',
+        subtitle: 'We schedule and pass all required city inspections.',
       },
     ],
   };
@@ -160,8 +153,8 @@ function EVCharger() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every ev chargers project
-        we complete meets or exceeds the latest National Electrical Code (NEC)
+        Safety is the foundation of everything we do. Every subpanels project we
+        complete meets or exceeds the latest National Electrical Code (NEC)
         standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
         We pull all necessary permits, coordinate inspections, and ensure your
@@ -189,10 +182,10 @@ function EVCharger() {
   };
 
   const coverageDescription = {
-    title: 'EV Chargers Across West Los Angeles',
+    title: 'Subpanels Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide ev chargers services to homeowners and businesses
+        We proudly provide subpanels services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -200,7 +193,7 @@ function EVCharger() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your ev chargers project.
+        ready to help with your subpanels project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -208,8 +201,8 @@ function EVCharger() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your ev
-        chargers project requires.
+        across diverse property types means we can handle whatever your
+        subpanels project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -222,24 +215,29 @@ function EVCharger() {
   };
 
   const recents = {
-    title: 'Recent EV Charger Installations',
+    title: 'Recent Subpanel Installation Projects',
     subtitle:
-      'See our completed EV charger installations across West Los Angeles. We install Tesla Wall Connectors, ChargePoint, and all major EV brands.',
+      'See our completed subpanel installations across West Los Angeles.',
     features: [
       {
-        image: TeslaWallConnector,
-        name: 'Tesla Wall Connector Install',
-        location: 'Santa Monica, CA',
+        image: GarageSubpanel,
+        name: 'Garage Subpanel',
+        location: 'West LA',
       },
       {
-        image: Level2Charger,
-        name: 'Level 2 Charger Installation',
-        location: 'Pacific Palisades, CA',
+        image: ADUSubpanel,
+        name: 'ADU Subpanel',
+        location: 'Santa Monica',
       },
       {
-        image: ResidentialEV,
-        name: 'Residential EV Station',
-        location: 'Brentwood, CA',
+        image: WorkshopSubpanel,
+        name: 'Workshop Subpanel',
+        location: 'Brentwood',
+      },
+      {
+        image: HomeAddition,
+        name: 'Home Addition',
+        location: 'Pacific Palisades',
       },
     ],
   };
@@ -267,26 +265,21 @@ function EVCharger() {
 
   const faqs = [
     {
-      question: 'Do I need a panel upgrade for an EV charger?',
+      question: "What's the difference between a panel upgrade and a subpanel?",
       answer:
-        "It depends on your current panel capacity. Most Level 2 chargers require a 40-60 amp dedicated circuit. We'll assess your panel during the consultation.",
+        'A panel upgrade replaces your main panel with a higher-capacity one. A subpanel is an additional panel fed from your main panel, used to add circuits in a specific area.',
     },
     {
-      question: 'Which EV chargers do you install?',
+      question: 'Do I need a subpanel for my ADU?',
       answer:
-        'We install all major brands including Tesla Wall Connector, ChargePoint, JuiceBox, Grizzl-E, Emporia, and more.',
-    },
-    {
-      question: 'How long does installation take?',
-      answer:
-        'Most EV charger installations are completed in 2-4 hours. If a panel upgrade is needed, it may take a full day.',
+        'In most cases, yes. ADUs typically require a dedicated subpanel to meet code requirements and safely power the unit.',
     },
   ];
 
   const areas = {
-    title: 'EV Chargers Across West LA',
+    title: 'Subpanels Across West LA',
     subtitle:
-      'We provide ev charger installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide subpanel installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
@@ -297,16 +290,16 @@ function EVCharger() {
       slug: 'panel-upgrades-service',
     },
     {
+      icon: <BatteryCharging />,
+      title: 'EV Chargers',
+      subtitle: 'View EV Chargers details',
+      slug: 'ev-charger-installation',
+    },
+    {
       icon: <BuildingComplex />,
       title: 'Construction',
       subtitle: 'View Construction details',
       slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
     },
     {
       icon: <Camera />,
@@ -334,8 +327,8 @@ function EVCharger() {
           <ServicesSidebar />
         </div>
       </div>
-      <RecentProjects recents={recents} />
       <ServiceProcess featuresDescription={featuresDescription} />
+      <RecentProjects recents={recents} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
@@ -345,4 +338,4 @@ function EVCharger() {
   );
 }
 
-export default EVCharger;
+export default Subpanel;
