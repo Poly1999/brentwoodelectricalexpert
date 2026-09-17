@@ -1,5 +1,3 @@
-import '../../../components/service-detail-page/ServiceDetailLayout.css';
-
 import {
   BatteryCharging,
   BuildingComplex,
@@ -7,61 +5,67 @@ import {
   GitGraph,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 
-import ElectricalPanel from '../../../assets/panel-framing.webp';
-import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
-import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
-import { NavLink } from 'react-router-dom';
-import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
-import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
-import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
-import Footer from '../../../components/Footer/Footer';
-import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
-import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
-import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
+import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
 import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
+import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
+import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
+import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
+import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
+import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
+import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
+import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
+import Footer from '../../../components/Footer/Footer';
 
-function PanelUpgrades() {
+import EVChargerInstallation from '../../../assets/ev-charger-1.webp';
+import { NavLink } from 'react-router-dom';
+
+import TeslaWallConnector from '../../../assets/ev-charger-1.webp';
+import Level2Charger from '../../../assets/ev-charger-2.webp';
+import ResidentialEV from '../../../assets/ev-charger-3.webp';
+
+function EVCharger() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <BatteryCharging />,
+    title: 'EV Charger Installation',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'Charge your electric vehicle at home with a professionally installed Level 2 EV charger. Brentwood Electrical Experts installs Tesla Wall Connectors, ChargePoint, JuiceBox, and all major EV charger brands across West LA, Santa Monica, Beverly Hills, and surrounding areas. We handle everything from panel capacity assessment to final installation.',
+    backgroundImage: EVChargerInstallation,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Fast Level 2 charging at home',
+      'Compatible with Tesla, BMW, Rivian, and all EVs',
+      'Panel upgrade included if needed',
+      'Clean, code-compliant installation',
+      'Increase home value',
+      'Eliminate gas station trips',
     ],
-    image: ElectricalPanel,
+    image: EVChargerInstallation,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'EV Charger Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
+        At Brentwood Electrical Experts, we understand that ev charger
+        installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every ev chargers project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine ev
+        chargers service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,7 +86,7 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
+        and businesses have trusted us with their ev chargers needs — and why
         they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
@@ -91,14 +95,14 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our EV Chargers Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you choose Brentwood Electrical Experts for your ev chargers needs,
+        you're choosing a team that treats every job — big or small — with the
+        same level of professionalism, care, and attention to detail. We don't
+        cut corners, we don't rush through projects, and we never leave a job
+        until it's done right.
       </>,
 
       <>
@@ -122,31 +126,32 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our EV Chargers Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
+        title: 'Consultation',
         subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+          'We assess your electrical system and charger location preferences.',
       },
       {
-        title: 'Recommendation',
+        title: 'Charger Selection',
         subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
+          'We help you choose the right charger for your vehicle and driving habits.',
       },
       {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        title: 'Panel Assessment',
+        subtitle:
+          'We verify your panel can support the charger — and upgrade it if needed.',
       },
       {
         title: 'Installation',
         subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+          'Professional installation with clean conduit runs and proper mounting.',
       },
       {
-        title: 'Testing & Verification',
+        title: 'Activation & Testing',
         subtitle:
-          'We test every circuit and verify code compliance before completion.',
+          'We test the charger, verify amperage, and walk you through operation.',
       },
     ],
   };
@@ -155,9 +160,9 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
+        Safety is the foundation of everything we do. Every ev chargers project
+        we complete meets or exceeds the latest National Electrical Code (NEC)
+        standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
         We pull all necessary permits, coordinate inspections, and ensure your
         system is fully compliant — giving you peace of mind and protecting your
@@ -184,10 +189,10 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'EV Chargers Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
+        We proudly provide ev chargers services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -195,7 +200,7 @@ function PanelUpgrades() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your ev chargers project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +208,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your ev
+        chargers project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -213,6 +218,29 @@ function PanelUpgrades() {
         to earning your trust and delivering the quality electrical work your
         property deserves.
       </>,
+    ],
+  };
+
+  const recents = {
+    title: 'Recent EV Charger Installations',
+    subtitle:
+      'See our completed EV charger installations across West Los Angeles. We install Tesla Wall Connectors, ChargePoint, and all major EV brands.',
+    features: [
+      {
+        image: TeslaWallConnector,
+        name: 'Tesla Wall Connector Install',
+        location: 'Santa Monica, CA',
+      },
+      {
+        image: Level2Charger,
+        name: 'Level 2 Charger Installation',
+        location: 'Pacific Palisades, CA',
+      },
+      {
+        image: ResidentialEV,
+        name: 'Residential EV Station',
+        location: 'Brentwood, CA',
+      },
     ],
   };
 
@@ -239,34 +267,34 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: 'Do I need a panel upgrade for an EV charger?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        "It depends on your current panel capacity. Most Level 2 chargers require a 40-60 amp dedicated circuit. We'll assess your panel during the consultation.",
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Which EV chargers do you install?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
+        'We install all major brands including Tesla Wall Connector, ChargePoint, JuiceBox, Grizzl-E, Emporia, and more.',
     },
     {
-      question: 'Do I need a permit for a panel upgrade?',
+      question: 'How long does installation take?',
       answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'Most EV charger installations are completed in 2-4 hours. If a panel upgrade is needed, it may take a full day.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'EV Chargers Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide ev charger installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
     {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
     },
     {
       icon: <BuildingComplex />,
@@ -287,7 +315,6 @@ function PanelUpgrades() {
       slug: 'security-cameras-service',
     },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,7 +334,7 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
+      <RecentProjects recents={recents} />
       <ServiceProcess featuresDescription={featuresDescription} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
@@ -318,4 +345,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default EVCharger;

@@ -6,6 +6,17 @@ import HeaderComponent from './components/Header/HeaderComponent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ServicesPage from './pages/Services/ServicesPage';
 import PanelUpgrades from './pages/Services/PanelUpgrades/PanelUpgrades';
+import ElectricalConstruction from './pages/Services/ElectricalConstruction/ElectricalConstruction';
+import SecurityCameraSystems from './pages/Services/SecurityCameraSystems/SecurityCameraSystems';
+import OutletsService from './pages/Services/OutletsService/OutletsService';
+import ResidentialProjects from './pages/Services/ResidentialProjects/ResidentialProjects';
+import LightingDesign from './pages/Services/LightingDesign/LightingDesign';
+import Troubleshooting from './pages/Services/Troubleshooting/Troubleshooting';
+import LandscapeLighting from './pages/Services/LandscapeLighting/LandscapeLighting';
+import EVCharger from './pages/Services/EVCharger/EVCharger';
+import Subpanel from './pages/Services/Subpanel/Subpanel';
+import SecurityLighting from './pages/Services/SecurityLighting/SecurityLighting';
+import LightFixture from './pages/Services/LightFixture/LightFixture';
 
 function App() {
   return (
@@ -17,6 +28,29 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/all-services' element={<ServicesPage />} />
         <Route path='/panel-upgrades-service' element={<PanelUpgrades />} />
+        <Route
+          path='/construction-service'
+          element={<ElectricalConstruction />}
+        />
+        <Route
+          path='/security-cameras-service'
+          element={<SecurityCameraSystems />}
+        />
+        <Route path='/outlets&GFCI-service' element={<OutletsService />} />
+        <Route path='/residential-service' element={<ResidentialProjects />} />
+        <Route path='/lighting-design-service' element={<LightingDesign />} />
+        <Route path='/troubleshooting-service' element={<Troubleshooting />} />
+        <Route
+          path='/landscape-lighting-service'
+          element={<LandscapeLighting />}
+        />
+        <Route path='/ev-chargers-service' element={<EVCharger />} />
+        <Route path='/subpanels-service' element={<Subpanel />} />
+        <Route
+          path='/security-lighting-service'
+          element={<SecurityLighting />}
+        />
+        <Route path='/light-fixtures-service' element={<LightFixture />} />
       </Routes>
     </BrowserRouter>
   );

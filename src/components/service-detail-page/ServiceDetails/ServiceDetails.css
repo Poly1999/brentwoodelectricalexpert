@@ -139,3 +139,9 @@
   color: #666666;
   margin: 0;
 }
+
+@media (max-width: 900px) {
+  .servicedetails {
+    padding: 0;
+  }
+}

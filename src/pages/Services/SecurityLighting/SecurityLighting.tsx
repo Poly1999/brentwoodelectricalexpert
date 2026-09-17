@@ -1,67 +1,66 @@
-import '../../../components/service-detail-page/ServiceDetailLayout.css';
-
 import {
   BatteryCharging,
   BuildingComplex,
-  Camera,
   GitGraph,
+  Lightbulb,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
-
-import ElectricalPanel from '../../../assets/panel-framing.webp';
-import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
-import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
 import { NavLink } from 'react-router-dom';
-import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
-import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
-import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
-import Footer from '../../../components/Footer/Footer';
-import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
-import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
-import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
-import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
 
-function PanelUpgrades() {
+import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
+import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
+import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
+import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
+import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
+import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
+import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
+import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
+import Footer from '../../../components/Footer/Footer';
+
+import SecurityLightingInstallation from '../../../assets/security-lighting-floodlight.jpg';
+
+function SecurityLighting() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <Lightbulb />,
+    title: 'Security Lighting Installation',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'Illuminate and protect your property with professionally installed security lighting. Brentwood Electrical Experts designs and installs motion-sensor lights, floodlights, and landscape security lighting across Brentwood, Santa Monica, Pacific Palisades, and all of West Los Angeles.',
+    backgroundImage: SecurityLightingInstallation,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Deter intruders with motion-activated lighting',
+      'Illuminate driveways, pathways, and entry points',
+      'Energy-efficient LED options',
+      'Smart lighting with timer and sensor controls',
+      'Enhanced curb appeal and safety',
+      'Professional wiring and placement',
     ],
-    image: ElectricalPanel,
+    image: SecurityLightingInstallation,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Security Lighting Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
+        At Brentwood Electrical Experts, we understand that security lighting
+        installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every security lighting project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
+        security lighting service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,8 +81,8 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
-        they keep coming back. See our{' '}
+        and businesses have trusted us with their security lighting needs — and
+        why they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -91,10 +90,10 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Security Lighting Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
+        When you choose Brentwood Electrical Experts for your security lighting
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -122,31 +121,25 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our Security Lighting Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
+        title: 'Consultation',
         subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+          "We assess your property's security lighting needs and dark zones.",
       },
       {
-        title: 'Recommendation',
-        subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
-      },
-      {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        title: 'Design',
+        subtitle: 'We create a lighting plan covering all vulnerable areas.',
       },
       {
         title: 'Installation',
-        subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+        subtitle: 'We install fixtures, wiring, sensors, and controls.',
       },
       {
-        title: 'Testing & Verification',
+        title: 'Testing',
         subtitle:
-          'We test every circuit and verify code compliance before completion.',
+          'We test all lights, sensors, and timers for proper operation.',
       },
     ],
   };
@@ -155,7 +148,7 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
+        Safety is the foundation of everything we do. Every security lighting
         project we complete meets or exceeds the latest National Electrical Code
         (NEC) standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -184,18 +177,18 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Security Lighting Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        We proudly provide security lighting services to homeowners and
+        businesses throughout West Los Angeles and the surrounding communities.
+        Whether you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your security lighting project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +196,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your security
+        lighting project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -239,34 +232,35 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: 'What type of security lights do you recommend?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        'We typically recommend LED motion-sensor floodlights for perimeter security, and dusk-to-dawn fixtures for pathways and entries.',
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Can security lighting be added to existing circuits?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
-    },
-    {
-      question: 'Do I need a permit for a panel upgrade?',
-      answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        "In many cases, yes. We'll assess your current wiring and add circuits if needed.",
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Security Lighting Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide security lighting installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
     {
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
+    },
+    {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
       subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
+      slug: 'ev-charger-installation',
     },
     {
       icon: <BuildingComplex />,
@@ -280,14 +274,7 @@ function PanelUpgrades() {
       subtitle: 'View Subpanels details',
       slug: 'subpanels-service',
     },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,7 +294,6 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
       <ServiceProcess featuresDescription={featuresDescription} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
@@ -318,4 +304,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default SecurityLighting;

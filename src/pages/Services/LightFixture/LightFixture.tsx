@@ -1,67 +1,81 @@
-import '../../../components/service-detail-page/ServiceDetailLayout.css';
-
 import {
   BatteryCharging,
   BuildingComplex,
-  Camera,
   GitGraph,
+  Lamp,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
-
-import ElectricalPanel from '../../../assets/panel-framing.webp';
-import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
-import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
 import { NavLink } from 'react-router-dom';
-import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
-import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
-import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
-import Footer from '../../../components/Footer/Footer';
-import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
-import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
-import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
-import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
 
-function PanelUpgrades() {
+import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
+import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
+import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
+import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
+import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
+import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
+import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
+import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
+import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
+import Footer from '../../../components/Footer/Footer';
+
+import LightFixtureInstallation from '../../../assets/lightfixture-2611.webp';
+
+import PendantLightInstallation from '../../../assets/lightdesign-1981.webp';
+import ChandelierInstallation from '../../../assets/lightfixture-2611.webp';
+import RecessedLightingUpgrade from '../../../assets/lightfixture-5593.webp';
+import ModernCeilingFixture from '../../../assets/lightfixture-6151.webp';
+import KitchenLightingDesign from '../../../assets/lightfixture-7697.webp';
+import LivingRoomLightFixture from '../../../assets/lightdesign-8582.webp';
+import DesignerLighting from '../../../assets/lightdesign-1981.webp';
+import CustomInteriorDesign from '../../../assets/lightdesign-8582.webp';
+import ModernLayout from '../../../assets/lightdesign-6625.webp';
+import ResidentialDesign from '../../../assets/lightdesign-4023.webp';
+import ArchitecturalLighting from '../../../assets/lightdesign-4161.webp';
+import LuxuryHomeLighting from '../../../assets/lightdesign-6266.webp';
+import PremiumInstallation from '../../../assets/lightdesign-9014.webp';
+
+function LightFixture() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <Lamp />,
+    title: 'Light Fixture Installation',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'Transform your space with professionally installed light fixtures. From chandeliers and recessed lighting to pendant lights and under-cabinet LEDs, Brentwood Electrical Experts handles all light fixture installations across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
+    backgroundImage: LightFixtureInstallation,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Expert installation of all fixture types',
+      'Recessed lighting, chandeliers, pendants, and more',
+      'Dimmer switch installation available',
+      'LED upgrades for energy savings',
+      'Clean, damage-free installation',
+      'Enhanced ambiance and property value',
     ],
-    image: ElectricalPanel,
+    image: LightFixtureInstallation,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Light Fixture Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
+        At Brentwood Electrical Experts, we understand that light fixture
+        installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every light fixtures project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine light
+        fixtures service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,7 +96,7 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
+        and businesses have trusted us with their light fixtures needs — and why
         they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
@@ -91,10 +105,10 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Light Fixtures Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
+        When you choose Brentwood Electrical Experts for your light fixtures
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -122,31 +136,24 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our Light Fixtures Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
+        title: 'Selection Support',
         subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+          'We help you choose the right fixtures for your space and style.',
       },
       {
-        title: 'Recommendation',
-        subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
-      },
-      {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        title: 'Wiring Assessment',
+        subtitle: 'We verify existing wiring supports the new fixtures.',
       },
       {
         title: 'Installation',
-        subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+        subtitle: 'We professionally mount and wire each fixture.',
       },
       {
-        title: 'Testing & Verification',
-        subtitle:
-          'We test every circuit and verify code compliance before completion.',
+        title: 'Testing',
+        subtitle: 'We test all fixtures and dimmers for proper operation.',
       },
     ],
   };
@@ -155,7 +162,7 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
+        Safety is the foundation of everything we do. Every light fixtures
         project we complete meets or exceeds the latest National Electrical Code
         (NEC) standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -184,10 +191,10 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Light Fixtures Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
+        We proudly provide light fixtures services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -195,7 +202,7 @@ function PanelUpgrades() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your light fixtures project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +210,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your light
+        fixtures project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -213,6 +220,79 @@ function PanelUpgrades() {
         to earning your trust and delivering the quality electrical work your
         property deserves.
       </>,
+    ],
+  };
+
+  const recents = {
+    title: 'Recent Light Fixture & Lighting Design Projects',
+    subtitle:
+      'See our completed light fixture installations and lighting design work across West Los Angeles.',
+    features: [
+      {
+        image: PendantLightInstallation,
+        name: 'Pendant Light Installation',
+        location: 'Santa Monica',
+      },
+      {
+        image: ChandelierInstallation,
+        name: 'Chandelier Installation',
+        location: 'Beverly Hills',
+      },
+      {
+        image: RecessedLightingUpgrade,
+        name: 'Recessed Lighting Upgrade',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: ModernCeilingFixture,
+        name: 'Modern Ceiling Fixture',
+        location: 'Westwood',
+      },
+      {
+        image: KitchenLightingDesign,
+        name: 'Kitchen Lighting Design',
+        location: 'Brentwood',
+      },
+      {
+        image: LivingRoomLightFixture,
+        name: 'Living Room Light Fixture',
+        location: 'Century City',
+      },
+      {
+        image: DesignerLighting,
+        name: 'Designer Lighting',
+        location: 'West LA',
+      },
+      {
+        image: CustomInteriorDesign,
+        name: 'Custom Interior Design',
+        location: 'Santa Monica',
+      },
+      {
+        image: ModernLayout,
+        name: 'Modern Layout',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: ResidentialDesign,
+        name: 'Residential Design',
+        location: 'Brentwood',
+      },
+      {
+        image: ArchitecturalLighting,
+        name: 'Architectural Lighting',
+        location: 'Beverly Hills',
+      },
+      {
+        image: LuxuryHomeLighting,
+        name: 'Luxury Home Lighting',
+        location: 'Bel Air',
+      },
+      {
+        image: PremiumInstallation,
+        name: 'Premium Installation',
+        location: 'Mar Vista',
+      },
     ],
   };
 
@@ -239,34 +319,35 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: "Can you install fixtures I've already purchased?",
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        'Absolutely. We install customer-supplied fixtures as well as fixtures we source for you.',
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Do you install recessed lighting?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
-    },
-    {
-      question: 'Do I need a permit for a panel upgrade?',
-      answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'Yes — recessed (can) lighting installation is one of our most popular services.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Light Fixtures Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide light fixture installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
     {
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
+    },
+    {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
       subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
+      slug: 'ev-charger-installation',
     },
     {
       icon: <BuildingComplex />,
@@ -280,14 +361,7 @@ function PanelUpgrades() {
       subtitle: 'View Subpanels details',
       slug: 'subpanels-service',
     },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,7 +381,7 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
+      <RecentProjects recents={recents} />
       <ServiceProcess featuresDescription={featuresDescription} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
@@ -318,4 +392,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default LightFixture;

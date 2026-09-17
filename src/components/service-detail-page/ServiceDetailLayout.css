@@ -10,12 +10,14 @@
 .servicedetail_sidebar {
   position: sticky;
   top: 100px;
-  padding: 90px 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 1100px) {
   .servicedetail_layout {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .servicedetail_sidebar {

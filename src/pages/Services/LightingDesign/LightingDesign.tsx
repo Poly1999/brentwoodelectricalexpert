@@ -1,67 +1,67 @@
 import '../../../components/service-detail-page/ServiceDetailLayout.css';
-
 import {
   BatteryCharging,
   BuildingComplex,
-  Camera,
   GitGraph,
+  SunMedium,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
+import { NavLink } from 'react-router-dom';
 
-import ElectricalPanel from '../../../assets/panel-framing.webp';
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
-import { NavLink } from 'react-router-dom';
 import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
+import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
 import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
 import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
-import Footer from '../../../components/Footer/Footer';
-import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
 import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
 import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
 import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import Footer from '../../../components/Footer/Footer';
 
-function PanelUpgrades() {
+import LightingDesignInstallation from '../../../assets/lightdesign-4023.webp';
+
+function LightingDesign() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <SunMedium />,
+    title: 'Lighting Design & Installation',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'Elevate your home or business with custom lighting design and professional installation. Brentwood Electrical Experts creates beautiful, functional lighting plans that enhance ambiance, improve energy efficiency, and add value to your property across West LA and surrounding communities.',
+    backgroundImage: LightingDesignInstallation,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Custom lighting design for any space',
+      'Layered lighting for ambiance and function',
+      'Energy-efficient LED solutions',
+      'Dimmer and smart control integration',
+      'Indoor and outdoor lighting design',
+      'Increase property value and curb appeal',
     ],
-    image: ElectricalPanel,
+    image: LightingDesignInstallation,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Lighting Design & Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
+        At Brentwood Electrical Experts, we understand that lighting design &
+        installation is more than just technical work — it's about ensuring the
         safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every lighting design project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
+        lighting design service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,8 +82,8 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
-        they keep coming back. See our{' '}
+        and businesses have trusted us with their lighting design needs — and
+        why they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -91,10 +91,10 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Lighting Design Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
+        When you choose Brentwood Electrical Experts for your lighting design
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -122,31 +122,26 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our Lighting Design Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
-        subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+        title: 'Design Consultation',
+        subtitle: 'We discuss your vision, preferences, and functional needs.',
       },
       {
-        title: 'Recommendation',
+        title: 'Lighting Plan',
         subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
-      },
-      {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+          'We create a detailed lighting layout with fixture recommendations.',
       },
       {
         title: 'Installation',
         subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+          'We professionally install all fixtures, wiring, and controls.',
       },
       {
-        title: 'Testing & Verification',
+        title: 'Final Walkthrough',
         subtitle:
-          'We test every circuit and verify code compliance before completion.',
+          'We demonstrate all controls and ensure your complete satisfaction.',
       },
     ],
   };
@@ -155,7 +150,7 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
+        Safety is the foundation of everything we do. Every lighting design
         project we complete meets or exceeds the latest National Electrical Code
         (NEC) standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -184,10 +179,10 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Lighting Design Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
+        We proudly provide lighting design services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -195,7 +190,7 @@ function PanelUpgrades() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your lighting design project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +198,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your lighting
+        design project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -239,29 +234,30 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: 'Do you design landscape lighting too?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        'Yes — we design and install both interior and exterior lighting, including landscape, pathway, and architectural lighting.',
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Can you integrate lighting with smart home systems?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
-    },
-    {
-      question: 'Do I need a permit for a panel upgrade?',
-      answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'Absolutely. We can integrate your lighting with smart home platforms for voice and app control.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Lighting Design Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide lighting design & installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
+    {
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
+    },
     {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
@@ -280,14 +276,7 @@ function PanelUpgrades() {
       subtitle: 'View Subpanels details',
       slug: 'subpanels-service',
     },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,7 +296,6 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
       <ServiceProcess featuresDescription={featuresDescription} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
@@ -318,4 +306,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default LightingDesign;

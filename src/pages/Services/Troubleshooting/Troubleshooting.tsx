@@ -1,67 +1,75 @@
 import '../../../components/service-detail-page/ServiceDetailLayout.css';
-
+import { NavLink } from 'react-router-dom';
 import {
   BatteryCharging,
   BuildingComplex,
-  Camera,
   GitGraph,
+  Search,
   Zap,
 } from 'lucide-react';
-import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 
-import ElectricalPanel from '../../../assets/panel-framing.webp';
+import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import ServiceBenefits from '../../../components/service-detail-page/ServiceBenefits/ServiceBenefits';
-import { NavLink } from 'react-router-dom';
 import ServiceDetails from '../../../components/service-detail-page/ServiceDetails/ServiceDetails';
+import RecentProjects from '../../../components/service-detail-page/RecentProjects/RecentProjects';
+import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
+import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
+import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
 import ServiceProcess from '../../../components/service-detail-page/ServiceProcess/ServiceProcess';
+import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
 import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import Footer from '../../../components/Footer/Footer';
-import ServicesSidebar from '../../../components/Shared/ServicesSidebar/ServicesSidebar';
-import ServiceFAQ from '../../../components/service-detail-page/ServiceFAQ/ServiceFAQ';
-import ServiceAreasGrid from '../../../components/service-detail-page/ServiceAreasGrid/ServiceAreasGrid';
-import RelatedServices from '../../../components/service-detail-page/RelatedServices/RelatedServices';
 
-function PanelUpgrades() {
+import ElectricalTroubleshooting from '../../../assets/troubleshoot-1650.webp';
+
+import CircuitDiagnosis from '../../../assets/troubleshoot-5660.webp';
+import WiringInspection from '../../../assets/troubleshoot-1650.webp';
+import ElectricalRepair from '../../../assets/troubleshoot-9661.webp';
+import PanelTroubleshooting from '../../../assets/troubleshoot-9272.webp';
+import FaultDetection from '../../../assets/troubleshoot-2028.webp';
+import ElectricalTesting from '../../../assets/troubleshoot-6923.webp';
+
+function Troubleshooting() {
   const hero = {
-    icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    icon: <Search />,
+    title: 'Electrical Troubleshooting',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
-    backgroundImage: ElectricalPanel,
+      'Experiencing flickering lights, tripping breakers, dead outlets, or mysterious electrical issues? Brentwood Electrical Experts provides expert electrical troubleshooting and diagnostics across West LA, Santa Monica, and surrounding areas. We find and fix the root cause — not just the symptoms.',
+    backgroundImage: ElectricalTroubleshooting,
   };
 
   const benefits = {
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Expert diagnosis of electrical problems',
+      'Fix the root cause, not just symptoms',
+      'Fast response and same-day service',
+      'Prevent fire hazards and safety risks',
+      'Upfront pricing before any work begins',
+      'Licensed and experienced electricians',
     ],
-    image: ElectricalPanel,
+    image: ElectricalTroubleshooting,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Electrical Troubleshooting in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        At Brentwood Electrical Experts, we understand that electrical
+        troubleshooting is more than just technical work — it's about ensuring
+        the safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        every troubleshooting project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
+        troubleshooting service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -82,8 +90,8 @@ function PanelUpgrades() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
-        they keep coming back. See our{' '}
+        and businesses have trusted us with their troubleshooting needs — and
+        why they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -91,10 +99,10 @@ function PanelUpgrades() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Troubleshooting Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
+        When you choose Brentwood Electrical Experts for your troubleshooting
         needs, you're choosing a team that treats every job — big or small —
         with the same level of professionalism, care, and attention to detail.
         We don't cut corners, we don't rush through projects, and we never leave
@@ -122,31 +130,25 @@ function PanelUpgrades() {
   };
 
   const featuresDescription = {
-    title: 'Our Panel Upgrades Process — Step by Step',
+    title: 'Our Troubleshooting Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
-        subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+        title: 'Describe the Issue',
+        subtitle: "Tell us what's happening — we'll ask the right questions.",
       },
       {
-        title: 'Recommendation',
+        title: 'Diagnosis',
         subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
+          'We use professional testing equipment to identify the root cause.',
       },
       {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        title: 'Solution & Pricing',
+        subtitle:
+          'We explain the issue and provide upfront pricing for the repair.',
       },
       {
-        title: 'Installation',
-        subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
-      },
-      {
-        title: 'Testing & Verification',
-        subtitle:
-          'We test every circuit and verify code compliance before completion.',
+        title: 'Repair',
+        subtitle: 'We fix the problem and verify proper operation.',
       },
     ],
   };
@@ -155,7 +157,7 @@ function PanelUpgrades() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
+        Safety is the foundation of everything we do. Every troubleshooting
         project we complete meets or exceeds the latest National Electrical Code
         (NEC) standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -184,10 +186,10 @@ function PanelUpgrades() {
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Troubleshooting Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
+        We proudly provide troubleshooting services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -195,7 +197,7 @@ function PanelUpgrades() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        ready to help with your troubleshooting project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -203,8 +205,8 @@ function PanelUpgrades() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        across diverse property types means we can handle whatever your
+        troubleshooting project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -213,6 +215,44 @@ function PanelUpgrades() {
         to earning your trust and delivering the quality electrical work your
         property deserves.
       </>,
+    ],
+  };
+
+  const recents = {
+    title: 'Recent Electrical Troubleshooting Projects',
+    subtitle:
+      'Diagnosing and resolving electrical issues across West Los Angeles homes and businesses.',
+    features: [
+      {
+        image: CircuitDiagnosis,
+        name: 'Circuit Diagnosis',
+        location: 'Brentwood',
+      },
+      {
+        image: WiringInspection,
+        name: 'Wiring Inspection',
+        location: 'Santa Monica',
+      },
+      {
+        image: ElectricalRepair,
+        name: 'Electrical Repair',
+        location: 'Pacific Palisades',
+      },
+      {
+        image: PanelTroubleshooting,
+        name: 'Panel Troubleshooting',
+        location: 'West LA',
+      },
+      {
+        image: FaultDetection,
+        name: 'Fault Detection',
+        location: 'Beverly Hills',
+      },
+      {
+        image: ElectricalTesting,
+        name: 'Electrical Testing',
+        location: 'Bel Air',
+      },
     ],
   };
 
@@ -239,29 +279,30 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question: 'Why do my breakers keep tripping?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        "Common causes include overloaded circuits, short circuits, ground faults, or a failing breaker. We'll diagnose the exact cause and fix it.",
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question: 'Is a flickering light dangerous?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
-    },
-    {
-      question: 'Do I need a permit for a panel upgrade?',
-      answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'It can be. Flickering may indicate loose wiring, an overloaded circuit, or a failing connection — all of which can be fire hazards. We recommend having it inspected promptly.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Troubleshooting Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide electrical troubleshooting services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
+    {
+      icon: <Zap />,
+      title: 'Panel Upgrades',
+      subtitle: 'View Panel Upgrades details',
+      slug: 'panel-upgrades-service',
+    },
     {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
@@ -280,14 +321,7 @@ function PanelUpgrades() {
       subtitle: 'View Subpanels details',
       slug: 'subpanels-service',
     },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
   ];
-
   return (
     <div>
       <ServiceHero hero={hero} />
@@ -307,8 +341,8 @@ function PanelUpgrades() {
           <ServicesSidebar />
         </div>
       </div>
-
       <ServiceProcess featuresDescription={featuresDescription} />
+      <RecentProjects recents={recents} columns={3} />
       <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
@@ -318,4 +352,4 @@ function PanelUpgrades() {
   );
 }
 
-export default PanelUpgrades;
+export default Troubleshooting;

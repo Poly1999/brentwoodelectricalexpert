@@ -100,11 +100,8 @@
   }
 
   .serviceshero_title {
-    font-size: 32px;
-  }
-
-  .serviceshero_text {
-    font-size: 15px;
+    font-size: 36px;
+    font-weight: 700;
   }
 
   .serviceshero_buttons {
@@ -112,8 +109,14 @@
     align-items: stretch;
   }
 
-  .serviceshero_button,
+  .serviceshero_button {
+    justify-content: center;
+    font-size: 18px;
+    max-width: 250px;
+  }
+
   .serviceshero_button_secondary {
     justify-content: center;
+    max-width: 220px;
   }
 }

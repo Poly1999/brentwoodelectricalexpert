@@ -134,10 +134,12 @@
 @media (max-width: 900px) {
   .servicescard_card {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .servicescard_image {
     flex: none;
+    width: 100%;
     height: 250px;
   }
 }
