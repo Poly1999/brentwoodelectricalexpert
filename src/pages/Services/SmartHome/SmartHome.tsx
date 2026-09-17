@@ -2,7 +2,7 @@ import {
   BatteryCharging,
   BuildingComplex,
   GitGraph,
-  Store,
+  Smartphone,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -20,61 +20,52 @@ import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 import Footer from '../../../components/Footer/Footer';
 
-import CommercialElectricalServices from '../../../assets/commercial-framing.webp';
+import SmartHomeElectrical from '../../../assets/smarthome-1-rotated.webp';
 
-import CommercialWiring from '../../../assets/commercial-1.webp';
-import TenantImprovement from '../../../assets/commercial-2.webp';
-import OfficeElectrical from '../../../assets/commercial-3.webp';
-import RetailBuildOut from '../../../assets/commercial-4.webp';
-import CommercialPanelWork from '../../../assets/commercial-5.webp';
-import ElectricalService from '../../../assets/commercial-6.webp';
-import RestaurantWiring from '../../../assets/commercial-7.webp';
-import LightingRetrofit from '../../../assets/commercial-8.webp';
-import CommercialFraming from '../../../assets/commercial-framing.webp';
-import CommercialLighting from '../../../assets/commercial-lighting.jpg';
-import RetailElectrical from '../../../assets/commercial-9.jpg';
-import OfficeBuildOut from '../../../assets/commercial-10.jpg';
+import SmartSwitchInstallation from '../../../assets/smarthome-1-rotated.webp';
+import SmartLightingControls from '../../../assets/smarthome-2.webp';
+import HomeAutomation from '../../../assets/smarthome-3.webp';
 
-function CommercialElectrical() {
+function SmartHome() {
   const hero = {
-    icon: <Store />,
-    title: 'Commercial Electrical Services',
+    icon: <Smartphone />,
+    title: 'Smart Home Electrical Systems',
     subtitle:
-      'Brentwood Electrical Experts delivers professional commercial electrical services for offices, retail spaces, restaurants, and commercial properties across West Los Angeles. We handle tenant improvements, electrical buildouts, lighting retrofits, and ongoing maintenance for businesses of all sizes.',
-    backgroundImage: CommercialElectricalServices,
+      'Make your home smarter with professionally installed smart electrical systems. Brentwood Electrical Experts installs smart switches, outlets, lighting controls, and whole-home automation wiring across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
+    backgroundImage: SmartHomeElectrical,
   };
 
   const benefits = {
     features: [
-      'Tenant improvement electrical work',
-      'Commercial lighting installation and retrofit',
-      'Electrical system maintenance and repair',
-      'Code compliance and safety inspections',
-      'Minimal disruption to business operations',
-      'Licensed and insured commercial electricians',
+      'Smart switch and dimmer installation',
+      'Voice-controlled lighting (Alexa, Google, Siri)',
+      'Whole-home automation wiring',
+      'Smart outlet installation',
+      'Network and data wiring',
+      'Professional integration and setup',
     ],
-    image: CommercialElectricalServices,
+    image: SmartHomeElectrical,
   };
 
   const fullDescription = {
-    title: 'Commercial Electrical Services in West Los Angeles',
+    title: 'Smart Home Electrical Systems in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that commercial
-        electrical services is more than just technical work — it's about
+        At Brentwood Electrical Experts, we understand that smart home
+        electrical systems is more than just technical work — it's about
         ensuring the safety, comfort, and value of your property. As a fully{' '}
         <NavLink to='/about'>
           licensed and insured electrical contractor
         </NavLink>{' '}
         serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
         bring years of hands-on experience and a commitment to excellence to
-        every commercial project we take on.
+        every smart home project we take on.
       </>,
 
       <>
         Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        commercial service, a business owner in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine smart
+        home service, a business owner in{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
         complex solution, or a property manager in{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
@@ -95,7 +86,7 @@ function CommercialElectrical() {
         From initial consultation through final testing and cleanup, you'll
         experience the difference that comes from working with a team that
         genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their commercial needs — and why
+        and businesses have trusted us with their smart home needs — and why
         they keep coming back. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
@@ -104,10 +95,10 @@ function CommercialElectrical() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Commercial Service',
+    title: 'What to Expect From Our Smart Home Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your commercial needs,
+        When you choose Brentwood Electrical Experts for your smart home needs,
         you're choosing a team that treats every job — big or small — with the
         same level of professionalism, care, and attention to detail. We don't
         cut corners, we don't rush through projects, and we never leave a job
@@ -135,26 +126,24 @@ function CommercialElectrical() {
   };
 
   const featuresDescription = {
-    title: 'Our Commercial Process — Step by Step',
+    title: 'Our Smart Home Process — Step by Step',
     features: [
       {
         title: 'Consultation',
         subtitle:
-          'We review your commercial electrical needs and project scope.',
+          'We discuss your smart home goals and existing infrastructure.',
       },
       {
-        title: 'Proposal',
-        subtitle: 'We provide a detailed proposal with transparent pricing.',
+        title: 'System Design',
+        subtitle: 'We recommend the right devices and wiring for your needs.',
       },
       {
-        title: 'Execution',
-        subtitle:
-          'We complete the work on schedule with minimal business disruption.',
+        title: 'Installation',
+        subtitle: 'We install and wire all smart devices and controls.',
       },
       {
-        title: 'Inspection',
-        subtitle:
-          'We ensure full code compliance and coordinate required inspections.',
+        title: 'Programming',
+        subtitle: 'We set up apps, scenes, schedules, and voice control.',
       },
     ],
   };
@@ -163,7 +152,7 @@ function CommercialElectrical() {
     title: 'Safety, Code Compliance & Quality Materials',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every commercial project
+        Safety is the foundation of everything we do. Every smart home project
         we complete meets or exceeds the latest National Electrical Code (NEC)
         standards as well as all local building codes for the{' '}
         <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
@@ -192,10 +181,10 @@ function CommercialElectrical() {
   };
 
   const coverageDescription = {
-    title: 'Commercial Across West Los Angeles',
+    title: 'Smart Home Across West Los Angeles',
     paragraphs: [
       <>
-        We proudly provide commercial services to homeowners and businesses
+        We proudly provide smart home services to homeowners and businesses
         throughout West Los Angeles and the surrounding communities. Whether
         you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
@@ -203,7 +192,7 @@ function CommercialElectrical() {
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
         <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your commercial project.
+        ready to help with your smart home project.
       </>,
       <>
         We understand the unique characteristics of homes and businesses in each
@@ -211,8 +200,8 @@ function CommercialElectrical() {
         <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
         <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        commercial project requires.
+        across diverse property types means we can handle whatever your smart
+        home project requires.
       </>,
       <>
         Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
@@ -225,69 +214,24 @@ function CommercialElectrical() {
   };
 
   const recents = {
-    title: 'Recent Commercial Electrical Projects',
+    title: 'Recent Smart Home Installation Projects',
     subtitle:
-      'See our completed commercial electrical work across West Los Angeles — from tenant improvements and lighting retrofits to full electrical buildouts.',
+      'See our completed smart home electrical installations across West Los Angeles.',
     features: [
       {
-        image: CommercialWiring,
-        name: 'Commercial Wiring',
+        image: SmartSwitchInstallation,
+        name: 'Smart Switch Installation',
         location: 'West LA',
       },
       {
-        image: TenantImprovement,
-        name: 'Tenant Improvement',
+        image: SmartLightingControls,
+        name: 'Smart Lighting Controls',
         location: 'Santa Monica',
       },
       {
-        image: OfficeElectrical,
-        name: 'Office Electrical',
-        location: 'Century City',
-      },
-      {
-        image: RetailBuildOut,
-        name: 'Retail Build-Out',
-        location: 'Beverly Hills',
-      },
-      {
-        image: CommercialPanelWork,
-        name: 'Commercial Panel Work',
+        image: HomeAutomation,
+        name: 'Home Automation',
         location: 'Brentwood',
-      },
-      {
-        image: ElectricalService,
-        name: 'Electrical Service',
-        location: 'Mar Vista',
-      },
-      {
-        image: RestaurantWiring,
-        name: 'Restaurant Wiring',
-        location: 'Pacific Palisades',
-      },
-      {
-        image: LightingRetrofit,
-        name: 'Lighting Retrofit',
-        location: 'West Hollywood',
-      },
-      {
-        image: CommercialFraming,
-        name: 'Commercial Framing',
-        location: 'Westwood',
-      },
-      {
-        image: CommercialLighting,
-        name: 'Commercial Lighting',
-        location: 'Culver City',
-      },
-      {
-        image: RetailElectrical,
-        name: 'Retail Electrical',
-        location: 'Bel Air',
-      },
-      {
-        image: OfficeBuildOut,
-        name: 'Office Build-Out',
-        location: 'Venice',
       },
     ],
   };
@@ -315,21 +259,21 @@ function CommercialElectrical() {
 
   const faqs = [
     {
-      question: 'Do you work after business hours?',
+      question: 'Do I need special wiring for smart home devices?',
       answer:
-        'Yes — we offer after-hours and weekend scheduling to minimize disruption to your business.',
+        'Some smart switches require a neutral wire. We can assess your existing wiring and add neutral wires where needed.',
     },
     {
-      question: 'Can you handle tenant improvement projects?',
+      question: 'Which smart home platforms do you support?',
       answer:
-        'Absolutely. Tenant improvements are a core part of our commercial electrical services.',
+        'We work with all major platforms including Apple HomeKit, Google Home, Amazon Alexa, Lutron, and Control4.',
     },
   ];
 
   const areas = {
-    title: 'Commercial Across West LA',
+    title: 'Smart Home Across West LA',
     subtitle:
-      'We provide commercial electrical services services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We provide smart home electrical systems services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
   const related = [
@@ -388,4 +332,4 @@ function CommercialElectrical() {
   );
 }
 
-export default CommercialElectrical;
+export default SmartHome;
