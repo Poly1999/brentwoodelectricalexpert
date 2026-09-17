@@ -119,10 +119,15 @@
   .relatedservices_grid {
     grid-template-columns: 1fr;
   }
-
   .relatedservices_bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+  }
+
+  .relatedservices_bottom_link:nth-child(3) {
+    width: 100%;
+    justify-content: center;
   }
 }

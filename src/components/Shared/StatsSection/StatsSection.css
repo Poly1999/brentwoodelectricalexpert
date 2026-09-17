@@ -80,6 +80,11 @@
     padding: 50px 30px;
   }
 
+  .statssection_light .statssection_item p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
   .statssection_inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,32 +95,35 @@
 
   .statssection_item {
     min-width: 0;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .statssection_top {
-    gap: 14px;
-  }
-
-  .statssection_icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  .statssection_icon svg {
-    width: 18px;
-    height: 18px;
+    align-items: center;
+    text-align: center;
   }
 
   .statssection_number {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .statssection_light .statssection_number {
+    font-size: 30px;
     font-weight: 700;
+  }
+
+  .statssection_icon {
+    display: none;
+  }
+
+  .statssection_number {
+    font-size: 30px;
+    font-weight: 900;
   }
 
   .statssection_item p {
     font-size: 13px;
-    text-align: center;
+    color: var(--muted-foreground);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
     max-width: 130px;
   }
 }

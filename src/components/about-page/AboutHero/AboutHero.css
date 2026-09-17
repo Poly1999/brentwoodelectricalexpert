@@ -100,11 +100,12 @@
   }
 
   .abouthero_title {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: 700;
   }
 
   .abouthero_text {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .abouthero_buttons {
@@ -112,8 +113,13 @@
     align-items: stretch;
   }
 
-  .abouthero_button,
+  .abouthero_button {
+    justify-content: center;
+    font-size: 18px;
+    max-width: 250px;
+  }
   .abouthero_button_secondary {
     justify-content: center;
+    max-width: 220px;
   }
 }

@@ -1,4 +1,4 @@
-import './PanelUpgrades.css';
+import '../../../components/service-detail-page/ServiceDetailLayout.css';
 
 import {
   BatteryCharging,

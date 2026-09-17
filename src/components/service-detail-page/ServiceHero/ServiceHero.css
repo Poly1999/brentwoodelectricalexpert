@@ -60,7 +60,7 @@
 
 .servicedetailhero_content h1 {
   font-family: 'Montserrat', system-ui, sans-serif;
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 900;
   color: #ffffff;
   margin: 0 0 24px;
@@ -129,12 +129,16 @@
 }
 
 @media (max-width: 600px) {
+  .servicedetailhero {
+    max-height: none;
+  }
+
   .servicedetailhero_content h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .servicedetailhero_content p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .servicedetailhero_buttons {
@@ -145,5 +149,9 @@
   .servicedetailhero_button,
   .servicedetailhero_button_secondary {
     justify-content: center;
+  }
+
+  .servicedetailhero_content_wrapper {
+    padding: 0 25px;
   }
 }

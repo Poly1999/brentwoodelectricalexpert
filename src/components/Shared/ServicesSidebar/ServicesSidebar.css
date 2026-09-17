@@ -211,3 +211,9 @@
 .servicessidebar_area_tag:hover {
   background-color: rgba(199, 151, 61, 0.15);
 }
+
+@media (max-width: 900px) {
+  .servicessidebar {
+    padding: 0 20px;
+  }
+}

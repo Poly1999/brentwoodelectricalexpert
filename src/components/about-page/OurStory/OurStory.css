@@ -96,7 +96,6 @@
   .ourstory_image {
     flex: none;
     width: 100%;
-    height: 300px;
-    order: -1;
+    height: 220px;
   }
 }
