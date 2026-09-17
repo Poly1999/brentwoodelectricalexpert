@@ -17,6 +17,7 @@ import EVCharger from './pages/Services/EVCharger/EVCharger';
 import Subpanel from './pages/Services/Subpanel/Subpanel';
 import SecurityLighting from './pages/Services/SecurityLighting/SecurityLighting';
 import LightFixture from './pages/Services/LightFixture/LightFixture';
+import CommercialElectrical from './pages/Services/CommercialElectrical/CommercialElectrical';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           element={<SecurityLighting />}
         />
         <Route path='/light-fixtures-service' element={<LightFixture />} />
+        <Route path='/Commercial-service' element={<CommercialElectrical />} />
       </Routes>
     </BrowserRouter>
   );
