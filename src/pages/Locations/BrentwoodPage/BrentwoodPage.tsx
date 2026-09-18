@@ -1,8 +1,16 @@
+import { Clock, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
+import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
 import LocationPopularServices from '../../../components/location-detail-page/LocationPopularServices/LocationPopularServices';
+import LocationWhyChooseUs from '../../../components/location-detail-page/LocationWhyChooseUs/LocationWhyChooseUs';
 import LocationHero from '../../../components/locations-page/LocationHero';
+import StatsSection from '../../../components/Shared/StatsSection/StatsSection';
 import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
+import Testimonials from '../../../components/Shared/Testimonials/Testimonials';
+import LocationFAQ from '../../../components/location-detail-page/LocationFAQ/LocationFAQ';
+import NearbyAreas from '../../../components/location-detail-page/NearbyAreas/NearbyAreas';
+import Footer from '../../../components/Footer/Footer';
 
 function BrentwoodPage() {
   const hero = {
@@ -83,6 +91,84 @@ function BrentwoodPage() {
       { item: 'Archer School' },
     ],
   };
+
+  const servicesStats = [
+    { icon: <Star />, raiting: '5.0', title: 'Google Rating' },
+    { icon: <Zap />, raiting: '1000+', title: 'Projects Completed' },
+    { icon: <Clock />, raiting: '24/7', title: 'Emergency Service' },
+    { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
+  ];
+
+  const reviews = [
+    {
+      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+      name: 'Michael R.',
+      location: 'Brentwood, CA',
+      source: 'Google',
+    },
+    {
+      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+      name: 'Sarah L.',
+      location: 'Santa Monica, CA',
+      source: 'Yelp',
+    },
+    {
+      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+      name: 'David K.',
+      location: 'Pacific Palisades, CA',
+      source: 'Google',
+    },
+  ];
+
+  const faqs = {
+    city: 'Brentwood',
+    features: [
+      {
+        question: 'What permits do I need for a panel upgrade in Brentwood?',
+        answer:
+          'Panel upgrades in Brentwood require a City of Los Angeles electrical permit. We handle the entire permit process — application, installation, and final inspection coordination with LADBS (Los Angeles Department of Building and Safety). Most panel upgrade permits are approved within 1-2 business days.',
+      },
+      {
+        question:
+          'Can you install an EV charger in a Brentwood home with an older panel?',
+        answer:
+          'Yes — many Brentwood homes have 100-amp panels that need upgrading to 200 amps before an EV charger can be safely installed. We typically bundle the panel upgrade and EV charger installation into a single appointment, saving you time and money. The combined project usually takes one full day.',
+      },
+      {
+        question: 'Do you work on hillside homes in upper Brentwood?',
+        answer:
+          "Absolutely. We regularly work on hillside properties in Mandeville Canyon, Tigertail, and upper Brentwood. We're experienced with the unique challenges these homes present — steep driveways, limited access, underground conduit runs, and outdoor panel installations exposed to the elements.",
+      },
+      {
+        question: 'How much does a typical panel upgrade cost in Brentwood?',
+        answer:
+          'Panel upgrade costs in Brentwood typically range from $2,500 to $4,500 for a standard 100-to-200-amp upgrade, depending on the complexity of the installation and the condition of existing wiring. We provide free, transparent estimates with no hidden fees — call (310) 666-4752 for your quote.',
+      },
+      {
+        question:
+          'Can you add recessed lighting to a Brentwood home with plaster ceilings?',
+        answer:
+          "Yes — many Brentwood homes feature original plaster-and-lath ceilings. Our electricians use specialized techniques to cut clean openings, run new wiring through the ceiling cavity, and install low-profile LED recessed fixtures without damaging the surrounding plaster. We've completed hundreds of recessed lighting jobs in older Brentwood homes.",
+      },
+      {
+        question: 'Do you install whole-home generators in Brentwood?',
+        answer:
+          'Yes. With increasing PSPS (Public Safety Power Shutoff) events affecting hillside Brentwood neighborhoods, we install Generac and Kohler whole-home standby generators with automatic transfer switches. These systems detect a power outage and restore electricity to your home within seconds — no manual intervention required.',
+      },
+    ],
+  };
+
+  const areas = {
+    city: 'Brentwood',
+    features: [
+      { item: 'Santa Monica', slug: 'santa-monica' },
+      { item: 'Pacific Palisades', slug: 'pacific-palisades' },
+      { item: 'Bel Air', slug: 'bel-air' },
+      { item: 'Westwood', slug: 'westwood' },
+      { item: 'Beverly Glen', slug: 'beverly-glen' },
+    ],
+  };
+
   return (
     <div>
       <LocationHero hero={hero} />
@@ -90,6 +176,13 @@ function BrentwoodPage() {
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
+      <LocationWhyChooseUs city='Brentwood' />
+      <LocationAllServices city='Brentwood' />
+      <StatsSection items={servicesStats} variant='dark' />
+      <Testimonials reviews={reviews} />
+      <LocationFAQ faqs={faqs} />
+      <NearbyAreas areas={areas} />
+      <Footer />
     </div>
   );
 }
