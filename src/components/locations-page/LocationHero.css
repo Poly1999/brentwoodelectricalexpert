@@ -27,7 +27,7 @@
 
 .locationhero_title {
   font-family: 'Montserrat', system-ui, sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   color: var(--primary-white);
   margin: 0 0 24px;
@@ -43,7 +43,7 @@
   color: var(--hero-white);
   line-height: 1.6;
   margin: 0 0 32px;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .locationhero_buttons {
