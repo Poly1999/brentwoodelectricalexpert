@@ -16,12 +16,16 @@ function LocationsDropdown() {
       onMouseEnter={() => setIsOpenDown(true)}
       onMouseLeave={() => setIsOpenDown(false)}
     >
-      <button className='locationdropdown_button' onClick={handleClickDown}>
+      <NavLink
+        to='/all-locations'
+        className='locationdropdown_button'
+        onClick={handleClickDown}
+      >
         Locations
         <ChevronDown
           className={isOpenDown ? 'locationdropdown_chevron_open' : ''}
         />
-      </button>
+      </NavLink>
       {isOpenDown === true ? (
         <div className='locationdropdown_panel'>
           <NavLink

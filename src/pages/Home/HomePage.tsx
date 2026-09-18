@@ -100,7 +100,14 @@ function HomePage() {
       <ServicesSection />
       <FeaturedPanelUpgrades />
       <FeaturedEVCharger />
-      <WhyChooseUs subtitle='We have built our reputation on quality work,honest pricing, and exceptional service across West Los Angeles.' />
+      <WhyChooseUs
+        title={
+          <>
+            Why Homeowners Choose <span>Brentwood Electrical</span>
+          </>
+        }
+        subtitle='We have built our reputation on quality work,honest pricing, and exceptional service across West Los Angeles.'
+      />
 
       <PortfolioPreview
         title='Our Work'
