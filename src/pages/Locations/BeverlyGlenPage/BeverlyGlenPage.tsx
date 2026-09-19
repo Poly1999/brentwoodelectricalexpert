@@ -148,8 +148,8 @@ function BeverlyGlenPage() {
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
-      <LocationWhyChooseUs city='Brentwood' />
-      <LocationAllServices city='Brentwood' />
+      <LocationWhyChooseUs city='Beverly Glen' />
+      <LocationAllServices city='Beverly Glen' />
       <StatsSection items={servicesStats} variant='dark' />
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
