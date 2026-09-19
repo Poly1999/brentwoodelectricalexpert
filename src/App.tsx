@@ -33,6 +33,7 @@ import HermosaBeachPage from './pages/Locations/HermosaBeachPage/HermosaBeachPag
 import SantaMonicaPage from './pages/Locations/SantaMonicaPage/SantaMonicaPage';
 import HuntingtonBeachPage from './pages/Locations/HuntingtonBeachPage/HuntingtonBeachPage';
 import BeverlyHillsPage from './pages/Locations/BeverlyHillsPage/BeverlyHillsPage';
+import BeverlyGrovePage from './pages/Locations/BeverlyGrovePage/BeverlyGrovePage';
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
         <Route path='/huntington-beach' element={<HuntingtonBeachPage />} />
         <Route path='/santa-monica' element={<SantaMonicaPage />} />
         <Route path='/beverly-hills' element={<BeverlyHillsPage />} />
+        <Route path='/beverly-grove' element={<BeverlyGrovePage />} />
       </Routes>
     </BrowserRouter>
   );
