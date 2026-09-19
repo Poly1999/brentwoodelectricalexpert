@@ -37,6 +37,7 @@ import BeverlyGrovePage from './pages/Locations/BeverlyGrovePage/BeverlyGrovePag
 import WestHollywoodPage from './pages/Locations/WestHollywoodPage/WestHollywoodPage';
 import SawtellePage from './pages/Locations/SawtellePage/SawtellePage';
 import CenturyCityPage from './pages/Locations/CenturyCityPage/CenturyCityPage';
+import MarinaDelReyPage from './pages/Locations/MarinaDelReyPage/MarinaDelReyPage';
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
         <Route path='/west-hollywood' element={<WestHollywoodPage />} />
         <Route path='/sawtelle' element={<SawtellePage />} />
         <Route path='/century-city' element={<CenturyCityPage />} />
+        <Route path='/marina-del-rey' element={<MarinaDelReyPage />} />
       </Routes>
     </BrowserRouter>
   );
