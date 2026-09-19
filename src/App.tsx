@@ -29,6 +29,7 @@ import WestwoodPage from './pages/Locations/WestwoodPage/WestwoodPage';
 import CulverCityPage from './pages/Locations/CulverCityPage/CulverCityPage';
 import CheviotHillsPage from './pages/Locations/CheviotHillsPage/CheviotHillsPage';
 import ShermanOaksPage from './pages/Locations/ShermanOaksPage/ShermanOaksPage';
+import HermosaBeachPage from './pages/Locations/HermosaBeachPage/HermosaBeachPage';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path='/culver-city' element={<CulverCityPage />} />
         <Route path='/cheviot-hills' element={<CheviotHillsPage />} />
         <Route path='/sherman-oaks' element={<ShermanOaksPage />} />
+        <Route path='/hermosa-beach' element={<HermosaBeachPage />} />
       </Routes>
     </BrowserRouter>
   );
