@@ -23,6 +23,7 @@ import ElectricalRemodeling from './pages/Services/ElectricalRemodeling/Electric
 import LocationPage from './pages/Locations/LocationPage';
 import BrentwoodPage from './pages/Locations/BrentwoodPage/BrentwoodPage';
 import BelAirPage from './pages/Locations/BelAirPage/BelAirPage';
+import BeverlyGlenPage from './pages/Locations/BeverlyGlenPage/BeverlyGlenPage';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
         <Route path='/all-locations' element={<LocationPage />} />
         <Route path='/brentwood' element={<BrentwoodPage />} />
         <Route path='/bel-air' element={<BelAirPage />} />
+        <Route path='/beverly-glen' element={<BeverlyGlenPage />} />
       </Routes>
     </BrowserRouter>
   );
