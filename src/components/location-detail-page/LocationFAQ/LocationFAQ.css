@@ -1,0 +1,75 @@
+.locationfaq {
+  width: 100%;
+  padding: 90px 0;
+  background-color: var(--muted);
+}
+
+.locationfaq_inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.locationfaq_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.locationfaq_header h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 16px;
+}
+
+.locationfaq_header p {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}
+
+.locationfaqitem {
+  border-bottom: 1px solid #dedbd3;
+}
+
+.locationfaqitem_question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.locationfaqitem_question svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-dark);
+  flex-shrink: 0;
+}
+
+.locationfaqitem_answer_wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.locationfaqitem_answer_open {
+  grid-template-rows: 1fr;
+}
+
+.locationfaqitem_answer {
+  overflow: hidden;
+}
+
+.locationfaqitem_answer p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}

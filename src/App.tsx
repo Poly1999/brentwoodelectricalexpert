@@ -17,6 +17,30 @@ import EVCharger from './pages/Services/EVCharger/EVCharger';
 import Subpanel from './pages/Services/Subpanel/Subpanel';
 import SecurityLighting from './pages/Services/SecurityLighting/SecurityLighting';
 import LightFixture from './pages/Services/LightFixture/LightFixture';
+import CommercialElectrical from './pages/Services/CommercialElectrical/CommercialElectrical';
+import SmartHome from './pages/Services/SmartHome/SmartHome';
+import ElectricalRemodeling from './pages/Services/ElectricalRemodeling/ElectricalRemodeling';
+import LocationPage from './pages/Locations/LocationPage';
+import BrentwoodPage from './pages/Locations/BrentwoodPage/BrentwoodPage';
+import BelAirPage from './pages/Locations/BelAirPage/BelAirPage';
+import BeverlyGlenPage from './pages/Locations/BeverlyGlenPage/BeverlyGlenPage';
+import MarVistaPage from './pages/Locations/MarVistaPage/MarVistaPage';
+import WestwoodPage from './pages/Locations/WestwoodPage/WestwoodPage';
+import CulverCityPage from './pages/Locations/CulverCityPage/CulverCityPage';
+import CheviotHillsPage from './pages/Locations/CheviotHillsPage/CheviotHillsPage';
+import ShermanOaksPage from './pages/Locations/ShermanOaksPage/ShermanOaksPage';
+import HermosaBeachPage from './pages/Locations/HermosaBeachPage/HermosaBeachPage';
+import SantaMonicaPage from './pages/Locations/SantaMonicaPage/SantaMonicaPage';
+import HuntingtonBeachPage from './pages/Locations/HuntingtonBeachPage/HuntingtonBeachPage';
+import BeverlyHillsPage from './pages/Locations/BeverlyHillsPage/BeverlyHillsPage';
+import BeverlyGrovePage from './pages/Locations/BeverlyGrovePage/BeverlyGrovePage';
+import WestHollywoodPage from './pages/Locations/WestHollywoodPage/WestHollywoodPage';
+import SawtellePage from './pages/Locations/SawtellePage/SawtellePage';
+import CenturyCityPage from './pages/Locations/CenturyCityPage/CenturyCityPage';
+import MarinaDelReyPage from './pages/Locations/MarinaDelReyPage/MarinaDelReyPage';
+import SimiValleyPage from './pages/Locations/SimiValleyPage/SimiValleyPage';
+import ManhattanBeachPage from './pages/Locations/ManhattanBeachPage/ManhattanBeachPage';
+import PacificPalisadesPage from './pages/Locations/PacificPalisadesPage/PacificPalisadesPage';
 
 function App() {
   return (
@@ -51,6 +75,30 @@ function App() {
           element={<SecurityLighting />}
         />
         <Route path='/light-fixtures-service' element={<LightFixture />} />
+        <Route path='/Commercial-service' element={<CommercialElectrical />} />
+        <Route path='/smart-home-service' element={<SmartHome />} />
+        <Route path='/remodeling-service' element={<ElectricalRemodeling />} />
+        <Route path='/all-locations' element={<LocationPage />} />
+        <Route path='/brentwood' element={<BrentwoodPage />} />
+        <Route path='/bel-air' element={<BelAirPage />} />
+        <Route path='/beverly-glen' element={<BeverlyGlenPage />} />
+        <Route path='/mar-vista' element={<MarVistaPage />} />
+        <Route path='/westwood' element={<WestwoodPage />} />
+        <Route path='/culver-city' element={<CulverCityPage />} />
+        <Route path='/cheviot-hills' element={<CheviotHillsPage />} />
+        <Route path='/sherman-oaks' element={<ShermanOaksPage />} />
+        <Route path='/hermosa-beach' element={<HermosaBeachPage />} />
+        <Route path='/huntington-beach' element={<HuntingtonBeachPage />} />
+        <Route path='/santa-monica' element={<SantaMonicaPage />} />
+        <Route path='/beverly-hills' element={<BeverlyHillsPage />} />
+        <Route path='/beverly-grove' element={<BeverlyGrovePage />} />
+        <Route path='/west-hollywood' element={<WestHollywoodPage />} />
+        <Route path='/sawtelle' element={<SawtellePage />} />
+        <Route path='/century-city' element={<CenturyCityPage />} />
+        <Route path='/marina-del-rey' element={<MarinaDelReyPage />} />
+        <Route path='/simi-valley' element={<SimiValleyPage />} />
+        <Route path='/manhattan-beach' element={<ManhattanBeachPage />} />
+        <Route path='/pacific-palisades' element={<PacificPalisadesPage />} />
       </Routes>
     </BrowserRouter>
   );
