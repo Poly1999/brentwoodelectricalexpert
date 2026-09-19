@@ -119,6 +119,15 @@ function LocationsDropdown() {
             </li>
             <li>
               <NavLink
+                to='/huntington-beach'
+                className='locationdropdown_link'
+                onClick={() => setIsOpenDown(false)}
+              >
+                Huntington Beach
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to='/santa-monica'
                 className='locationdropdown_link'
                 onClick={() => setIsOpenDown(false)}
