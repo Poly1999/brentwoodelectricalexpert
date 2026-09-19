@@ -22,6 +22,7 @@ import SmartHome from './pages/Services/SmartHome/SmartHome';
 import ElectricalRemodeling from './pages/Services/ElectricalRemodeling/ElectricalRemodeling';
 import LocationPage from './pages/Locations/LocationPage';
 import BrentwoodPage from './pages/Locations/BrentwoodPage/BrentwoodPage';
+import BelAirPage from './pages/Locations/BelAirPage/BelAirPage';
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
         <Route path='/remodeling-service' element={<ElectricalRemodeling />} />
         <Route path='/all-locations' element={<LocationPage />} />
         <Route path='/brentwood' element={<BrentwoodPage />} />
+        <Route path='/bel-air' element={<BelAirPage />} />
       </Routes>
     </BrowserRouter>
   );

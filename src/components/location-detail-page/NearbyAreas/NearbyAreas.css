@@ -87,7 +87,14 @@
 
 @media (max-width: 600px) {
   .nearbyareas_links {
-    flex-direction: column;
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+  }
+
+  .nearbyareas_links a:nth-child(3) {
+    width: 100%;
+    justify-content: center;
   }
 }
