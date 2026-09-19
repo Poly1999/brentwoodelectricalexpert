@@ -41,6 +41,7 @@ import MarinaDelReyPage from './pages/Locations/MarinaDelReyPage/MarinaDelReyPag
 import SimiValleyPage from './pages/Locations/SimiValleyPage/SimiValleyPage';
 import ManhattanBeachPage from './pages/Locations/ManhattanBeachPage/ManhattanBeachPage';
 import PacificPalisadesPage from './pages/Locations/PacificPalisadesPage/PacificPalisadesPage';
+import BeverlyCrestPage from './pages/Locations/BeverlyCrestPage/BeverlyCrestPage';
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
         <Route path='/simi-valley' element={<SimiValleyPage />} />
         <Route path='/manhattan-beach' element={<ManhattanBeachPage />} />
         <Route path='/pacific-palisades' element={<PacificPalisadesPage />} />
+        <Route path='/beverly-crest' element={<BeverlyCrestPage />} />
       </Routes>
     </BrowserRouter>
   );
