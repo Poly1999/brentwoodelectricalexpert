@@ -40,6 +40,7 @@ import CenturyCityPage from './pages/Locations/CenturyCityPage/CenturyCityPage';
 import MarinaDelReyPage from './pages/Locations/MarinaDelReyPage/MarinaDelReyPage';
 import SimiValleyPage from './pages/Locations/SimiValleyPage/SimiValleyPage';
 import ManhattanBeachPage from './pages/Locations/ManhattanBeachPage/ManhattanBeachPage';
+import PacificPalisadesPage from './pages/Locations/PacificPalisadesPage/PacificPalisadesPage';
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
         <Route path='/marina-del-rey' element={<MarinaDelReyPage />} />
         <Route path='/simi-valley' element={<SimiValleyPage />} />
         <Route path='/manhattan-beach' element={<ManhattanBeachPage />} />
+        <Route path='/pacific-palisades' element={<PacificPalisadesPage />} />
       </Routes>
     </BrowserRouter>
   );
