@@ -26,6 +26,7 @@ import BelAirPage from './pages/Locations/BelAirPage/BelAirPage';
 import BeverlyGlenPage from './pages/Locations/BeverlyGlenPage/BeverlyGlenPage';
 import MarVistaPage from './pages/Locations/MarVistaPage/MarVistaPage';
 import WestwoodPage from './pages/Locations/WestwoodPage/WestwoodPage';
+import CulverCityPage from './pages/Locations/CulverCityPage/CulverCityPage';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path='/beverly-glen' element={<BeverlyGlenPage />} />
         <Route path='/mar-vista' element={<MarVistaPage />} />
         <Route path='/westwood' element={<WestwoodPage />} />
+        <Route path='/culver-city' element={<CulverCityPage />} />
       </Routes>
     </BrowserRouter>
   );
