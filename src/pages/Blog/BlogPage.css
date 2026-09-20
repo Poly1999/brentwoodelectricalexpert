@@ -1,0 +1,124 @@
+.blogpage_hero {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.blogpage_hero h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.blogpage_hero h2 span {
+  color: var(--primary-yelow);
+}
+
+.blogpage_hero p {
+  font-size: 18px;
+  color: #cccccc;
+  margin: 0;
+}
+
+.blogpage_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.blogpage_card {
+  display: block;
+  border: 1px solid #dedbd3;
+  border-radius: 16px;
+  padding: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.blogpage_card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.blogpage_category {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: var(--muted);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c7973d;
+  margin-bottom: 20px;
+}
+
+.blogpage_card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.4;
+  margin: 0 0 14px;
+  transition: color 0.2s;
+}
+
+.blogpage_card:hover h3 {
+  color: #c7973d;
+}
+
+.blogpage_excerpt {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.blogpage_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogpage_date {
+  font-size: 14px;
+  color: #999999;
+}
+
+.blogpage_read {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c7973d;
+}
+
+.blogpage_read svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.blogpage_card:hover .blogpage_read svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1100px) {
+  .blogpage_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blogpage_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blogpage_hero h2 {
+    font-size: 32px;
+  }
+}
