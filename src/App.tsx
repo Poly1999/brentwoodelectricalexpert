@@ -49,6 +49,7 @@ import PlayaVistaPage from './pages/Locations/PlayaVistaPage/PlayaVistaPage';
 import CalabasasPage from './pages/Locations/CalabasasPage/CalabasasPage';
 import PasadenaPage from './pages/Locations/PasadenaPage/PasadenaPage';
 import RedondoBeachPage from './pages/Locations/RedondoBeachPage/RedondoBeachPage';
+import ProjectsPage from './pages/Projects/ProjectsPage';
 
 function App() {
   return (
@@ -115,6 +116,7 @@ function App() {
         <Route path='/calabasas' element={<CalabasasPage />} />
         <Route path='/pasadena' element={<PasadenaPage />} />
         <Route path='/redondo-beach' element={<RedondoBeachPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
       </Routes>
     </BrowserRouter>
   );
