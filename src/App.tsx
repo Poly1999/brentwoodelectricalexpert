@@ -46,6 +46,7 @@ import BeverlywoodPage from './pages/Locations/BeverlywoodPage/BeverlywoodPage';
 import WestLosAngelesPage from './pages/Locations/BrentwoodPage/BrentwoodPage';
 import VenicePage from './pages/Locations/VenicePage/VenicePage';
 import PlayaVistaPage from './pages/Locations/PlayaVistaPage/PlayaVistaPage';
+import CalabasasPage from './pages/Locations/CalabasasPage/CalabasasPage';
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
         <Route path='/beverlywood' element={<BeverlywoodPage />} />
         <Route path='/west-los-angeles' element={<WestLosAngelesPage />} />
         <Route path='/playa-vista' element={<PlayaVistaPage />} />
+        <Route path='/calabasas' element={<CalabasasPage />} />
       </Routes>
     </BrowserRouter>
   );
