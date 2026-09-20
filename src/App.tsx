@@ -50,6 +50,7 @@ import CalabasasPage from './pages/Locations/CalabasasPage/CalabasasPage';
 import PasadenaPage from './pages/Locations/PasadenaPage/PasadenaPage';
 import RedondoBeachPage from './pages/Locations/RedondoBeachPage/RedondoBeachPage';
 import ProjectsPage from './pages/Projects/ProjectsPage';
+import ReviewsPage from './pages/Reviews/ReviewsPage';
 
 function App() {
   return (
@@ -117,6 +118,7 @@ function App() {
         <Route path='/pasadena' element={<PasadenaPage />} />
         <Route path='/redondo-beach' element={<RedondoBeachPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/reviews' element={<ReviewsPage />} />
       </Routes>
     </BrowserRouter>
   );
