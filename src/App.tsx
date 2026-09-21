@@ -53,6 +53,7 @@ import ProjectsPage from './pages/Projects/ProjectsPage';
 import ReviewsPage from './pages/Reviews/ReviewsPage';
 import FAQPage from './pages/FAQPage/FAQPage';
 import BlogPage from './pages/Blog/BlogPage';
+import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
 
 function App() {
   return (
@@ -123,6 +124,10 @@ function App() {
         <Route path='/reviews' element={<ReviewsPage />} />
         <Route path='/faq' element={<FAQPage />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route
+          path='/blog/energy-planning-blog'
+          element={<EnergyPlanningBlog />}
+        />
       </Routes>
     </BrowserRouter>
   );
