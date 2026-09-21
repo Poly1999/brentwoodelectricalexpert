@@ -1,8 +1,8 @@
-import './EnergyPlanningBlog.css';
+import '../../../components/blog-details-page/BlogContentSection.css';
 import BlogHero from '../../../components/blog-details-page/BlogHero/BlogHero';
 import Footer from '../../../components/Footer/Footer';
-import BlogCTA from '../BlogCTA/BlogCTA';
-import BlogIntro from '../BlogIntro/BlogIntro';
+import BlogCTA from '../../../components/blog-details-page/BlogCTA/BlogCTA';
+import BlogIntro from '../../../components/blog-details-page/BlogIntro/BlogIntro';
 
 import {
   House,

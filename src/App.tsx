@@ -54,6 +54,7 @@ import ReviewsPage from './pages/Reviews/ReviewsPage';
 import FAQPage from './pages/FAQPage/FAQPage';
 import BlogPage from './pages/Blog/BlogPage';
 import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
+import SurgeProtectionBlog from './pages/Blog/SurgeProtectionBlog/SurgeProtectionBlog';
 
 function App() {
   return (
@@ -127,6 +128,10 @@ function App() {
         <Route
           path='/blog/energy-planning-blog'
           element={<EnergyPlanningBlog />}
+        />
+        <Route
+          path='/blog/surge-protection-blog'
+          element={<SurgeProtectionBlog />}
         />
       </Routes>
     </BrowserRouter>
