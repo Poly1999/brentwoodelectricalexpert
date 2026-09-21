@@ -57,6 +57,7 @@ import BlogPage from './pages/Blog/BlogPage';
 import SurgeProtectionBlog from './pages/Blog/SurgeProtectionBlog/SurgeProtectionBlog';
 import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
 import ZinscoPanelBlog from './pages/Blog/ZinscoPanelBlog/ZinscoPanelBlog';
+import DustFreeUpgradeBlog from './pages/Blog/DustFreeUpgradeBlog/DustFreeUpgradeBlog';
 
 function App() {
   return (
@@ -136,6 +137,10 @@ function App() {
           element={<SurgeProtectionBlog />}
         />
         <Route path='/blog/zinsco-panel-blog' element={<ZinscoPanelBlog />} />
+        <Route
+          path='/blog/dust-free-upgrade-blog'
+          element={<DustFreeUpgradeBlog />}
+        />
       </Routes>
     </BrowserRouter>
   );
