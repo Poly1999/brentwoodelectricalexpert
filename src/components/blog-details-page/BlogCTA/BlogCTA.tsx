@@ -9,9 +9,10 @@ interface BlogCTA {
 
 interface BlogCTAProps {
   cta: BlogCTA;
+  showFooter?: boolean;
 }
 
-function BlogCTA({ cta }: BlogCTAProps) {
+function BlogCTA({ cta, showFooter = true }: BlogCTAProps) {
   return (
     <div className='blogcta'>
       <div className='container blogcta_inner'>
@@ -29,10 +30,12 @@ function BlogCTA({ cta }: BlogCTAProps) {
             </NavLink>
           </div>
         </div>
-        <div className='blogcta_footer'>
-          <p className='blogcta_footer_name'>Brentwood Electrical Experts</p>
-          <p className='blogcta_footer_license'>C-10 license #1102731</p>
-        </div>
+        {showFooter ? (
+          <div className='blogcta_footer'>
+            <p className='blogcta_footer_name'>Brentwood Electrical Experts</p>
+            <p className='blogcta_footer_license'>C-10 license #1102731</p>
+          </div>
+        ) : null}
       </div>
     </div>
   );

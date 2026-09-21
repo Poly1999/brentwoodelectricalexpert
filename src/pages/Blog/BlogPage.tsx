@@ -73,7 +73,7 @@ function BlogPage() {
       excerpt:
         'Learn the warning signs that your electrical panel is outdated and why upgrading to 200 amps is essential for modern homes.',
       date: 'March 15, 2026',
-      slug: 'panel-timing-blog',
+      slug: 'blog',
     },
     {
       category: 'EV Chargers',
@@ -81,7 +81,7 @@ function BlogPage() {
       excerpt:
         'Everything you need to know about installing a Level 2 EV charger at home — from charger selection to panel requirements.',
       date: 'March 8, 2026',
-      slug: 'ev-guide-blog',
+      slug: 'blog',
     },
     {
       category: 'Safety',
@@ -89,7 +89,7 @@ function BlogPage() {
       excerpt:
         "Understanding GFCI protection, where it's required by code, and why it's critical for safety in kitchens, bathrooms, and outdoor areas.",
       date: 'February 28, 2026',
-      slug: 'gfci-outlets-blog',
+      slug: 'blog',
     },
     {
       category: 'Smart Home',
@@ -97,7 +97,7 @@ function BlogPage() {
       excerpt:
         'Discover the top smart home electrical upgrades that add convenience, security, and value to your West LA home.',
       date: 'February 20, 2026',
-      slug: 'smart-upgrades-blog',
+      slug: 'blog',
     },
     {
       category: 'Security',
@@ -105,7 +105,7 @@ function BlogPage() {
       excerpt:
         'Professional tips for planning and installing security lighting that deters intruders and enhances curb appeal.',
       date: 'February 12, 2026',
-      slug: 'security-lighting-blog',
+      slug: 'blog',
     },
     {
       category: 'Safety',
@@ -113,7 +113,7 @@ function BlogPage() {
       excerpt:
         'A simple checklist to help you identify potential electrical hazards and keep your home safe year-round.',
       date: 'February 5, 2026',
-      slug: 'safety-checklist-blog',
+      slug: 'blog',
     },
   ];
 
@@ -135,9 +135,14 @@ function BlogPage() {
         <div className='blogpage_grid'>
           {articles.map((article, index) => (
             <NavLink
-              to={`/blog/${article.slug}`}
+              to={`/${article.slug}`}
               className='blogpage_card'
               key={index}
+              onClick={() => {
+                if (article.slug === 'blog') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
             >
               <span className='blogpage_category'>{article.category}</span>
               <h3>{article.title}</h3>

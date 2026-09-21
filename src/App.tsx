@@ -60,6 +60,7 @@ import ZinscoPanelBlog from './pages/Blog/ZinscoPanelBlog/ZinscoPanelBlog';
 import DustFreeUpgradeBlog from './pages/Blog/DustFreeUpgradeBlog/DustFreeUpgradeBlog';
 import LayeredLightingBlog from './pages/Blog/LayeredLightingBlog/LayeredLightingBlog';
 import ModernHomesBlog from './pages/Blog/ModernHomesBlog/ModernHomesBlog';
+import WarningSignsBlog from './pages/Blog/WarningSignsBlog/WarningSignsBlog';
 
 function App() {
   return (
@@ -130,24 +131,16 @@ function App() {
         <Route path='/reviews' element={<ReviewsPage />} />
         <Route path='/faq' element={<FAQPage />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='energy-planning-blog' element={<EnergyPlanningBlog />} />
+        <Route path='surge-protection-blog' element={<SurgeProtectionBlog />} />
+        <Route path='zinsco-panel-blog' element={<ZinscoPanelBlog />} />
         <Route
-          path='/blog/energy-planning-blog'
-          element={<EnergyPlanningBlog />}
-        />
-        <Route
-          path='/blog/surge-protection-blog'
-          element={<SurgeProtectionBlog />}
-        />
-        <Route path='/blog/zinsco-panel-blog' element={<ZinscoPanelBlog />} />
-        <Route
-          path='/blog/dust-free-upgrade-blog'
+          path='dust-free-upgrade-blog'
           element={<DustFreeUpgradeBlog />}
         />
-        <Route
-          path='/blog/layered-lighting-blog'
-          element={<LayeredLightingBlog />}
-        />
-        <Route path='/blog/modern-homes-blog' element={<ModernHomesBlog />} />
+        <Route path='layered-lighting-blog' element={<LayeredLightingBlog />} />
+        <Route path='modern-homes-blog' element={<ModernHomesBlog />} />
+        <Route path='warning-signs-blog' element={<WarningSignsBlog />} />
       </Routes>
     </BrowserRouter>
   );
