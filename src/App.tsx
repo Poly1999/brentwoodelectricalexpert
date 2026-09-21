@@ -59,6 +59,7 @@ import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBl
 import ZinscoPanelBlog from './pages/Blog/ZinscoPanelBlog/ZinscoPanelBlog';
 import DustFreeUpgradeBlog from './pages/Blog/DustFreeUpgradeBlog/DustFreeUpgradeBlog';
 import LayeredLightingBlog from './pages/Blog/LayeredLightingBlog/LayeredLightingBlog';
+import ModernHomesBlog from './pages/Blog/ModernHomesBlog/ModernHomesBlog';
 
 function App() {
   return (
@@ -146,6 +147,7 @@ function App() {
           path='/blog/layered-lighting-blog'
           element={<LayeredLightingBlog />}
         />
+        <Route path='/blog/modern-homes-blog' element={<ModernHomesBlog />} />
       </Routes>
     </BrowserRouter>
   );
