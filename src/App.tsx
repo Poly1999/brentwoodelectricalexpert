@@ -58,6 +58,7 @@ import SurgeProtectionBlog from './pages/Blog/SurgeProtectionBlog/SurgeProtectio
 import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
 import ZinscoPanelBlog from './pages/Blog/ZinscoPanelBlog/ZinscoPanelBlog';
 import DustFreeUpgradeBlog from './pages/Blog/DustFreeUpgradeBlog/DustFreeUpgradeBlog';
+import LayeredLightingBlog from './pages/Blog/LayeredLightingBlog/LayeredLightingBlog';
 
 function App() {
   return (
@@ -140,6 +141,10 @@ function App() {
         <Route
           path='/blog/dust-free-upgrade-blog'
           element={<DustFreeUpgradeBlog />}
+        />
+        <Route
+          path='/blog/layered-lighting-blog'
+          element={<LayeredLightingBlog />}
         />
       </Routes>
     </BrowserRouter>
