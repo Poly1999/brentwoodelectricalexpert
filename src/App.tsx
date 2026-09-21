@@ -61,6 +61,7 @@ import DustFreeUpgradeBlog from './pages/Blog/DustFreeUpgradeBlog/DustFreeUpgrad
 import LayeredLightingBlog from './pages/Blog/LayeredLightingBlog/LayeredLightingBlog';
 import ModernHomesBlog from './pages/Blog/ModernHomesBlog/ModernHomesBlog';
 import WarningSignsBlog from './pages/Blog/WarningSignsBlog/WarningSignsBlog';
+import ContactPage from './pages/Contact/ContactPage';
 
 function App() {
   return (
@@ -141,6 +142,7 @@ function App() {
         <Route path='layered-lighting-blog' element={<LayeredLightingBlog />} />
         <Route path='modern-homes-blog' element={<ModernHomesBlog />} />
         <Route path='warning-signs-blog' element={<WarningSignsBlog />} />
+        <Route path='contact' element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );
