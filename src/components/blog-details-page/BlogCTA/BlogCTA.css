@@ -16,6 +16,7 @@
 }
 
 .blogcta_box h3 {
+  font-family: 'Open Sans', system-ui, sans-serif;
   font-size: 26px;
   font-weight: 800;
   color: var(--primary-dark);

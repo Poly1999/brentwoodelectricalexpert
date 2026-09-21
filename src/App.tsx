@@ -53,8 +53,10 @@ import ProjectsPage from './pages/Projects/ProjectsPage';
 import ReviewsPage from './pages/Reviews/ReviewsPage';
 import FAQPage from './pages/FAQPage/FAQPage';
 import BlogPage from './pages/Blog/BlogPage';
-import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
+
 import SurgeProtectionBlog from './pages/Blog/SurgeProtectionBlog/SurgeProtectionBlog';
+import EnergyPlanningBlog from './pages/Blog/EnergyPlanningBlog/EnergyPlanningBlog';
+import ZinscoPanelBlog from './pages/Blog/ZinscoPanelBlog/ZinscoPanelBlog';
 
 function App() {
   return (
@@ -133,6 +135,7 @@ function App() {
           path='/blog/surge-protection-blog'
           element={<SurgeProtectionBlog />}
         />
+        <Route path='/blog/zinsco-panel-blog' element={<ZinscoPanelBlog />} />
       </Routes>
     </BrowserRouter>
   );
