@@ -1,5 +1,6 @@
 import { FileText, MapPin, Phone } from 'lucide-react';
 import './LocationHero.css';
+import { NavLink } from 'react-router-dom';
 
 interface LocationHero {
   area: string;
@@ -28,10 +29,10 @@ function LocationHero({ hero }: LocationHeroProps) {
               <Phone />
               Call (310) 666-4752
             </a>
-            <a href='/contact' className='locationhero_button_secondary'>
+            <NavLink to='/contact' className='locationhero_button_secondary'>
               <FileText />
               Get FREE Quote
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

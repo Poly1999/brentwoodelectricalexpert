@@ -8,6 +8,7 @@ import {
   Shield,
   Star,
 } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 function HeroComponent() {
   return (
@@ -35,10 +36,10 @@ function HeroComponent() {
               Call (310) 666-4752
             </a>
 
-            <a href='/contact' className='hero_button_secondary'>
+            <NavLink to='/contact' className='hero_button_secondary'>
               <FileText className='herobox_button_icon' />
               Get FREE Quote
-            </a>
+            </NavLink>
           </div>
           <div className='herobox_bottom'>
             <div className='herobox_ourtop'>
