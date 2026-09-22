@@ -23,21 +23,15 @@ function ResidentialCommercial() {
             <div className='rescom_content'>
               <h3>Residential</h3>
               <p>
-                <NavLink to='/services/panel-upgrades'>
-                  Panel upgrades
-                </NavLink>
-                , <NavLink to='/services/light-fixtures'>lighting</NavLink>,{' '}
-                <NavLink to='/services/outlets-gfci'>outlets</NavLink>,{' '}
-                <NavLink to='/services/ev-charger-installation'>
-                  EV chargers
-                </NavLink>
-                , <NavLink to='/services/smart-home'>smart home</NavLink>,{' '}
-                <NavLink to='/services/troubleshooting'>
-                  troubleshooting
-                </NavLink>
+                <NavLink to='/panel-upgrades-service'>Panel upgrades</NavLink>,{' '}
+                <NavLink to='/light-fixtures-service'>lighting</NavLink>,{' '}
+                <NavLink to='/outlets&GFCI-service'>outlets</NavLink>,{' '}
+                <NavLink to='/ev-chargers-service'>EV chargers</NavLink>,{' '}
+                <NavLink to='/smart-home-service'>smart home</NavLink>,{' '}
+                <NavLink to='/troubleshooting-service'>troubleshooting</NavLink>
                 , and more for homeowners across West LA.
               </p>
-              <NavLink to='/services/residential' className='rescom_button'>
+              <NavLink to='/residential-service' className='rescom_button'>
                 Residential Services
                 <ArrowRight />
               </NavLink>
@@ -51,17 +45,16 @@ function ResidentialCommercial() {
               <h3>Commercial</h3>
               <p>
                 Tenant improvements,
-                <NavLink to='/services/lighting-retrofits'>
+                <NavLink to='/lighting-design-service'>
                   lighting retrofits
                 </NavLink>
                 ,{' '}
-                <NavLink to='/services/construction'>
+                <NavLink to='/construction-service'>
                   electrical buildouts
                 </NavLink>
-                , and ongoing maintenance for offices, retail, and
-                restaurants.
+                , and ongoing maintenance for offices, retail, and restaurants.
               </p>
-              <NavLink to='/services/commercial' className='rescom_button'>
+              <NavLink to='/Commercial-service' className='rescom_button'>
                 Commercial Services
                 <ArrowRight />
               </NavLink>

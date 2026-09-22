@@ -189,7 +189,7 @@ function LightingDesign() {
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
+        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
         ready to help with your lighting design project.
       </>,
       <>

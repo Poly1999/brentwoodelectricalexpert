@@ -201,7 +201,7 @@ function LightFixture() {
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
+        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
         ready to help with your light fixtures project.
       </>,
       <>
@@ -347,7 +347,7 @@ function LightFixture() {
       icon: <BatteryCharging />,
       title: 'EV Chargers',
       subtitle: 'View EV Chargers details',
-      slug: 'ev-charger-installation',
+      slug: 'ev-chargers-service',
     },
     {
       icon: <BuildingComplex />,

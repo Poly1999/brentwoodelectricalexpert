@@ -16,10 +16,10 @@ function FeaturedPanelUpgrades() {
           <p className='featuredpanel_text'>
             Is your home still running on a 100-amp panel? Upgrade to 200 amps
             and safely power{' '}
-            <NavLink to='/services/ev-chargers'>EV chargers</NavLink>, HVAC
+            <NavLink to='/ev-chargers-service'>EV chargers</NavLink>, HVAC
             systems,{' '}
-            <NavLink to='/services/smart-home'>smart home devices</NavLink>,
-            and modern appliances. We handle everything from permits to final
+            <NavLink to='/smart-home-service'>smart home devices</NavLink>, and
+            modern appliances. We handle everything from permits to final
             inspection.
           </p>
 
@@ -43,7 +43,7 @@ function FeaturedPanelUpgrades() {
           </div>
 
           <NavLink
-            to='/services/panel-upgrades'
+            to='/panel-upgrades-service'
             className='featuredpanel_button'
           >
             Learn More About Panel Upgrades

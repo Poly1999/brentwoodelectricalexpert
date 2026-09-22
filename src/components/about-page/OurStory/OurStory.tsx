@@ -14,7 +14,7 @@ function OurStory() {
           <p>
             Brentwood Electrical Experts was founded with a simple mission: to
             provide the highest quality{' '}
-            <NavLink to='/services'>electrical services</NavLink> with
+            <NavLink to='/all-services'>electrical services</NavLink> with
             complete
             transparency, professionalism, and respect for every client's home
             and business.

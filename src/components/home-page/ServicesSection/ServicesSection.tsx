@@ -86,11 +86,10 @@ function ServicesSection() {
                 <h3>Electrical Construction</h3>
                 <p className='servicecard_text'>
                   From new construction wiring to tenant improvements and
-                  full-scale electrical buildouts, Brentwood Electrical
-                  Experts delivers comprehensive electrical construction
-                  services across West Los Angeles. We work with general
-                  contractors, property developers, and homeowners to
-                  deliver...
+                  full-scale electrical buildouts, Brentwood Electrical Experts
+                  delivers comprehensive electrical construction services across
+                  West Los Angeles. We work with general contractors, property
+                  developers, and homeowners to deliver...
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
@@ -133,19 +132,17 @@ function ServicesSection() {
                 </div>
                 <h3>Subpanel Installation</h3>
                 <p className='servicecard_text'>
-                  Need additional circuits for a garage, ADU, workshop, or
-                  home addition? Brentwood Electrical Experts installs
-                  electrical subpanels to extend your electrical system safely
-                  and efficiently. We serve homeowners and businesses across
-                  Brentwood, Santa Monica, Pacific Palisades, and all of
-                  West...
+                  Need additional circuits for a garage, ADU, workshop, or home
+                  addition? Brentwood Electrical Experts installs electrical
+                  subpanels to extend your electrical system safely and
+                  efficiently. We serve homeowners and businesses across
+                  Brentwood, Santa Monica, Pacific Palisades, and all of West...
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
                     <span>
-                      Extend electrical capacity to garages, ADUs, and
-                      additions
+                      Extend electrical capacity to garages, ADUs, and additions
                     </span>
                   </div>
                   <div className='servicecard_feature'>
@@ -179,10 +176,10 @@ function ServicesSection() {
                 <h3>Security Camera Systems</h3>
                 <p className='servicecard_text'>
                   Protect your home or business with professionally installed
-                  security camera systems. Brentwood Electrical Experts
-                  installs wired and wireless CCTV, IP camera systems, and
-                  smart security solutions across West LA, Brentwood, Santa
-                  Monica, Beverly Hills, and surrounding areas.
+                  security camera systems. Brentwood Electrical Experts installs
+                  wired and wireless CCTV, IP camera systems, and smart security
+                  solutions across West LA, Brentwood, Santa Monica, Beverly
+                  Hills, and surrounding areas.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
@@ -204,10 +201,7 @@ function ServicesSection() {
                 </span>
               </div>
               <div className='servicecard_image'>
-                <img
-                  src={SecurityCamerasImage}
-                  alt='Security Camera Systems'
-                />
+                <img src={SecurityCamerasImage} alt='Security Camera Systems' />
               </div>
             </div>
           </NavLink>
@@ -352,7 +346,10 @@ function ServicesSection() {
         </div>
 
         <div className='servicessection_viewall'>
-          <NavLink to='/services' className='servicessection_viewall_button'>
+          <NavLink
+            to='/all-services'
+            className='servicessection_viewall_button'
+          >
             View All Services
             <ArrowRight />
           </NavLink>
