@@ -110,7 +110,14 @@ function AboutPage() {
         variant='dark'
       />
       <CoreValues />
-      <WhyChooseUs subtitle='' />
+      <WhyChooseUs
+        title={
+          <>
+            Why Homeowners Choose <span>Brentwood Electrical</span>
+          </>
+        }
+        subtitle=''
+      />
       <PortfolioPreview
         title='Our Work In Progress'
         subtitle='Behind the scenes of our meticulous electrical work. Every wire, connection, and panel installed with precision and care.'

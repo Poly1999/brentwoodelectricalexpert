@@ -7,7 +7,7 @@
 .servicebenefits_layout {
   display: flex;
   gap: 60px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .servicebenefits_content {

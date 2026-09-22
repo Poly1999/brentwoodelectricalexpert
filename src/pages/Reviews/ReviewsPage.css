@@ -1,0 +1,158 @@
+.reviewspage_hero {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.reviewspage_hero h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 24px;
+}
+
+.reviewspage_hero h2 span {
+  color: var(--primary-yelow);
+}
+
+.reviewspage_rating {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.reviewspage_stars {
+  display: flex;
+  gap: 4px;
+}
+
+.reviewspage_stars svg {
+  width: 24px;
+  height: 24px;
+  fill: #c7973d;
+  color: #c7973d;
+}
+
+.reviewspage_rating p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.reviewspage_subtitle {
+  font-size: 18px;
+  color: #cccccc;
+  margin: 0;
+}
+
+.reviewspage_subtitle a {
+  color: #c7973d;
+  text-decoration: none;
+}
+
+.reviewspage_subtitle a:hover {
+  text-decoration: underline;
+}
+
+.reviewspage_list_section {
+  padding: 80px 0;
+}
+
+.reviewspage_list_section h3 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--primary-dark);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.reviewspage_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.reviewspage_card {
+  border: 1px solid #dedbd3;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.reviewspage_card_stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 16px;
+}
+
+.reviewspage_card_stars svg {
+  width: 18px;
+  height: 18px;
+}
+
+.reviewspage_card_text {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--primary-dark);
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.reviewspage_card_footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.reviewspage_card_author {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewspage_card_name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.reviewspage_card_location {
+  font-size: 14px;
+  color: #666666;
+}
+
+.reviewspage_card_source {
+  padding: 6px 14px;
+  background-color: var(--muted);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c7973d;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .reviewspage_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reviewspage_hero h2 {
+    font-size: 32px;
+  }
+
+  .reviewspage_list_section h3 {
+    font-size: 28px;
+  }
+
+  .reviewspage_list_section {
+    padding: 50px 30px;
+  }
+
+  .reviewspage_grid {
+    grid-template-columns: 1fr;
+  }
+}

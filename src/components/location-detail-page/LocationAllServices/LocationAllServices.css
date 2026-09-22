@@ -1,0 +1,140 @@
+.locationallservices {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.locationallservices_inner {
+  text-align: center;
+}
+
+.locationallservices_inner h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--primary-dark);
+  margin: 0 0 16px;
+}
+
+.locationallservices_subtitle {
+  font-size: 17px;
+  color: #666666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.locationallservices_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.locationallservices_card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #dedbd3;
+  border-radius: 16px;
+  padding: 30px;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.locationallservices_card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.locationallservices_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  margin-bottom: 20px;
+}
+
+.locationallservices_icon svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.locationallservices_card h3 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 12px;
+  transition: color 0.2s;
+}
+
+.locationallservices_card:hover h3 {
+  color: #c7973d;
+}
+
+.locationallservices_card p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.locationallservices_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c7973d;
+}
+
+.locationallservices_link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.locationallservices_card:hover .locationallservices_link svg {
+  transform: translateX(4px);
+}
+
+.locationallservices_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.locationallservices_button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.locationallservices_button:hover {
+  background-color: var(--muted);
+}
+
+@media (max-width: 1100px) {
+  .locationallservices_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .locationallservices_grid {
+    grid-template-columns: 1fr;
+  }
+}

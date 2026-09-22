@@ -1,0 +1,172 @@
+.contactpage_hero {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.contactpage_hero h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.contactpage_hero h2 span {
+  color: var(--primary-yelow);
+}
+
+.contactpage_hero p {
+  font-size: 18px;
+  color: #cccccc;
+  margin: 0;
+}
+
+.contactpage_grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 60px;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.contactpage_form h3,
+.contactpage_info h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 30px;
+}
+
+.contactpage_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactpage_card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background-color: var(--muted);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.contactpage_card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.contactpage_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(to right, hsl(43, 60%, 58%), #c7973d);
+  flex-shrink: 0;
+}
+
+.contactpage_icon svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.contactpage_label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 4px;
+}
+
+.contactpage_value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c7973d;
+  text-decoration: none;
+}
+
+.contactpage_value:hover {
+  text-decoration: underline;
+}
+
+.contactpage_text {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contactpage_text a {
+  color: #c7973d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contactpage_text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .contactpage_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactpage_hero {
+    padding: 50px 0;
+  }
+
+  .contactpage_hero h2 {
+    font-size: 32px;
+  }
+
+  .contactpage_grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+  }
+
+  .contactpage_form h3,
+  .contactpage_info h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .contactpage_card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .contactpage_icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contactpage_icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contactpage_label {
+    font-size: 14px;
+  }
+
+  .contactpage_value {
+    font-size: 15px;
+  }
+
+  .contactpage_text {
+    font-size: 14px;
+  }
+}

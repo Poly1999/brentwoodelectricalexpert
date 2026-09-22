@@ -1,0 +1,92 @@
+.termspage_hero {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.termspage_hero h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+
+.termspage_hero p {
+  font-size: 16px;
+  color: #cccccc;
+  margin: 0;
+}
+
+.termspage_content {
+  width: 100%;
+  padding: 60px 0 80px;
+  background-color: #ffffff;
+}
+
+.termspage_inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.termspage_updated {
+  font-size: 14px;
+  color: #999999;
+  margin: 0 0 24px;
+}
+
+.termspage_inner > p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.termspage_inner h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 32px 0 12px;
+}
+
+.termspage_inner h3:first-of-type {
+  margin-top: 0;
+}
+
+.termspage_inner p a {
+  color: #c7973d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.termspage_inner p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .termspage_hero {
+    padding: 50px 0;
+  }
+
+  .termspage_hero h2 {
+    font-size: 32px;
+  }
+
+  .termspage_hero p {
+    font-size: 16px;
+  }
+
+  .termspage_content {
+    padding: 40px 0 50px;
+  }
+
+  .termspage_inner h3 {
+    font-size: 18px;
+  }
+
+  .termspage_inner > p,
+  .termspage_inner p {
+    font-size: 15px;
+  }
+}
