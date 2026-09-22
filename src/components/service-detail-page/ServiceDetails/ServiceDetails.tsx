@@ -1,5 +1,6 @@
 import { Phone, FileText } from 'lucide-react';
 import './ServiceDetails.css';
+import { NavLink } from 'react-router-dom';
 
 interface FullDescription {
   title: string;
@@ -55,10 +56,10 @@ function ServiceDetails({
               <Phone />
               Call for a Free Estimate
             </a>
-            <a href='/contact' className='servicedetails_button_secondary'>
+            <NavLink to='/contact' className='servicedetails_button_secondary'>
               <FileText />
               Request a Quote Online
-            </a>
+            </NavLink>
           </div>
 
           {expectationsDescription ? (

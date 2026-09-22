@@ -1,5 +1,6 @@
 import './BlogPreview.css';
 import { ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 const posts = [
   {
@@ -38,10 +39,10 @@ function BlogPreview() {
               electricians.
             </p>
           </div>
-          <a href='/blog' className='blogpreview_viewall'>
+          <NavLink to='/blog' className='blogpreview_viewall'>
             View All Posts
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='blogpreview_grid'>
@@ -52,10 +53,10 @@ function BlogPreview() {
               <p className='blogcard_text'>{post.text}</p>
               <div className='blogcard_footer'>
                 <span className='blogcard_date'>{post.date}</span>
-                <a href='/blog/post' className='blogcard_read'>
+                <NavLink to='/blog/post' className='blogcard_read'>
                   Read
                   <ArrowRight />
-                </a>
+                </NavLink>
               </div>
             </div>
           ))}

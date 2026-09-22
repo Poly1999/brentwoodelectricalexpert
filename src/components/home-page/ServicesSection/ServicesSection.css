@@ -31,30 +31,28 @@
   gap: 40px;
 }
 
+.servicecard_wrap {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 16px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.servicecard_wrap:hover {
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3px);
+}
+
 .servicecard {
   display: flex;
   border: 1px solid #dedbd3;
   border-radius: 16px;
   overflow: hidden;
-  transition:
-    box-shadow 0.3s,
-    transform 0.3s;
-}
-
-@media (max-width: 900px) {
-  .servicecard,
-  .servicecard_reverse {
-    flex-direction: column;
-  }
-
-  .servicecard_image {
-    order: -1;
-  }
-}
-
-.servicecard:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
+  max-height: 380px;
 }
 
 .servicecard_image {
@@ -70,13 +68,13 @@
   transition: transform 0.3s;
 }
 
-.servicecard:hover .servicecard_image img {
+.servicecard_wrap:hover .servicecard_image img {
   transform: scale(1.05);
 }
 
 .servicecard_content {
   flex: 1;
-  padding: 50px;
+  padding: 32px 46px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +84,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .servicecard_icon {
@@ -115,25 +113,24 @@
 }
 
 .servicecard_content h3 {
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   color: #1a1a1a;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 
 .servicecard_text {
   font-size: 15px;
   color: #666666;
-  line-height: 1.6;
-  margin: 0 0 20px;
+  line-height: 1.5;
+  margin: 0 0 16px;
 }
 
 .servicecard_features {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 24px;
-  margin-bottom: 24px;
+  gap: 8px 24px;
+  margin-bottom: 18px;
 }
 
 .servicecard_feature {
@@ -175,18 +172,6 @@
   transform: translateX(4px);
 }
 
-@media (max-width: 900px) {
-  .servicecard,
-  .servicecard_reverse {
-    flex-direction: column;
-  }
-
-  .servicecard_image {
-    flex: none;
-    height: 250px;
-  }
-}
-
 .servicessection_viewall {
   display: flex;
   justify-content: center;
@@ -218,4 +203,21 @@
 .servicessection_viewall_button svg {
   width: 16px;
   height: 16px;
+}
+
+@media (max-width: 900px) {
+  .servicecard,
+  .servicecard_reverse {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .servicecard_image {
+    order: -1;
+  }
+
+  .servicecard_image {
+    flex: none;
+    height: 250px;
+  }
 }

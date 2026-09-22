@@ -1,6 +1,7 @@
 import './FeaturedPanelUpgrades.css';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import PanelImage from '../../../assets/panel-framing.webp';
+import { NavLink } from 'react-router-dom';
 
 function FeaturedPanelUpgrades() {
   return (
@@ -14,8 +15,10 @@ function FeaturedPanelUpgrades() {
           <h2>Electrical Panel Upgrades</h2>
           <p className='featuredpanel_text'>
             Is your home still running on a 100-amp panel? Upgrade to 200 amps
-            and safely power <a href='/services/ev-chargers'>EV chargers</a>,
-            HVAC systems, <a href='/services/smart-home'>smart home devices</a>,
+            and safely power{' '}
+            <NavLink to='/services/ev-chargers'>EV chargers</NavLink>, HVAC
+            systems,{' '}
+            <NavLink to='/services/smart-home'>smart home devices</NavLink>,
             and modern appliances. We handle everything from permits to final
             inspection.
           </p>
@@ -39,10 +42,13 @@ function FeaturedPanelUpgrades() {
             </div>
           </div>
 
-          <a href='/services/panel-upgrades' className='featuredpanel_button'>
+          <NavLink
+            to='/services/panel-upgrades'
+            className='featuredpanel_button'
+          >
             Learn More About Panel Upgrades
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

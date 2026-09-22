@@ -2,6 +2,7 @@ import './ResidentialCommercial.css';
 import { ArrowRight } from 'lucide-react';
 import ResidentialImage from '../../../assets/lightfixture-2611.webp';
 import CommercialImage from '../../../assets/kitchen-rewire.webp';
+import { NavLink } from 'react-router-dom';
 
 function ResidentialCommercial() {
   return (
@@ -22,18 +23,24 @@ function ResidentialCommercial() {
             <div className='rescom_content'>
               <h3>Residential</h3>
               <p>
-                <a href='/services/panel-upgrades'>Panel upgrades</a>,
-                <a href='/services/light-fixtures'>lighting</a>,
-                <a href='/services/outlets-gfci'>outlets</a>,
-                <a href='/services/ev-charger-installation'>EV chargers</a>,
-                <a href='/services/smart-home'>smart home</a>,
-                <a href='/services/troubleshooting'>troubleshooting</a>, and
-                more for homeowners across West LA.
+                <NavLink to='/services/panel-upgrades'>
+                  Panel upgrades
+                </NavLink>
+                , <NavLink to='/services/light-fixtures'>lighting</NavLink>,{' '}
+                <NavLink to='/services/outlets-gfci'>outlets</NavLink>,{' '}
+                <NavLink to='/services/ev-charger-installation'>
+                  EV chargers
+                </NavLink>
+                , <NavLink to='/services/smart-home'>smart home</NavLink>,{' '}
+                <NavLink to='/services/troubleshooting'>
+                  troubleshooting
+                </NavLink>
+                , and more for homeowners across West LA.
               </p>
-              <a href='/services/residential' className='rescom_button'>
+              <NavLink to='/services/residential' className='rescom_button'>
                 Residential Services
                 <ArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
 
@@ -44,14 +51,20 @@ function ResidentialCommercial() {
               <h3>Commercial</h3>
               <p>
                 Tenant improvements,
-                <a href='/services/lighting-retrofits'>lighting retrofits</a>,
-                <a href='/services/construction'>electrical buildouts</a>, and
-                ongoing maintenance for offices, retail, and restaurants.
+                <NavLink to='/services/lighting-retrofits'>
+                  lighting retrofits
+                </NavLink>
+                ,{' '}
+                <NavLink to='/services/construction'>
+                  electrical buildouts
+                </NavLink>
+                , and ongoing maintenance for offices, retail, and
+                restaurants.
               </p>
-              <a href='/services/commercial' className='rescom_button'>
+              <NavLink to='/services/commercial' className='rescom_button'>
                 Commercial Services
                 <ArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

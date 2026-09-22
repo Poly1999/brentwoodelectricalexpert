@@ -89,10 +89,10 @@ function ServicesSidebar() {
           <Phone />
           (310) 666-4752
         </a>
-        <a href='/contact' className='servicessidebar_quote'>
+        <NavLink to='/contact' className='servicessidebar_quote'>
           <FileText />
           Get FREE Quote
-        </a>
+        </NavLink>
       </div>
 
       <div className='servicessidebar_nav'>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import './FAQSection.css';
 import FAQImage from '../../../assets/ev-charger-3.webp';
+import { NavLink } from 'react-router-dom';
 
 function FAQSection() {
   const [isOpen, setIsOpen] = useState<number | null>(null);
@@ -66,10 +67,10 @@ function FAQSection() {
             ))}
           </div>
 
-          <a href='/faq' className='faqsection_viewall'>
+          <NavLink to='/faq' className='faqsection_viewall'>
             View All FAQs
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='faqsection_image'>

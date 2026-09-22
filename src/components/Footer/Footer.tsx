@@ -1,6 +1,7 @@
 import './Footer.css';
 import { Phone, FileText } from 'lucide-react';
 import FooterMain from './FooterMain/FooterMain';
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -18,10 +19,10 @@ function Footer() {
               <Phone />
               Call (310) 666-4752
             </a>
-            <a href='/contact' className='footer_cta_quote'>
+            <NavLink to='/contact' className='footer_cta_quote'>
               <FileText />
               Get FREE Quote
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

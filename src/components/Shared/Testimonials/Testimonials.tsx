@@ -1,5 +1,6 @@
 import './Testimonials.css';
 import { Star, ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 interface ReviewHomePage {
   text: string;
@@ -56,10 +57,10 @@ function Testimonials({ reviews, variant }: ReviewHomeProps) {
         </div>
 
         <div className='testimonials_viewall'>
-          <a href='/reviews' className='testimonials_viewall_button'>
+          <NavLink to='/reviews' className='testimonials_viewall_button'>
             Read All Reviews
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
