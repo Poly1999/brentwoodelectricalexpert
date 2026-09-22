@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './AboutHero.css';
 import { Phone, FileText } from 'lucide-react';
 
@@ -21,10 +22,10 @@ function AboutHero() {
               <Phone />
               Call (310) 666-4752
             </a>
-            <a href='/contact' className='abouthero_button_secondary'>
+            <NavLink to='/contact' className='abouthero_button_secondary'>
               <FileText />
               Get FREE Quote
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
