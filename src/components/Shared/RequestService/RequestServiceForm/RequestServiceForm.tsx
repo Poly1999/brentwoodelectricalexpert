@@ -1,4 +1,4 @@
-import { Phone } from 'lucide-react';
+import { CheckCircle, Phone } from 'lucide-react';
 import { useState } from 'react';
 import './RequestServiceForm.css';
 
@@ -7,16 +7,22 @@ interface Contacts {
   phone: string;
   email: string;
   services: string;
-  about: string;
+  message: string;
+  honeypot: string;
 }
 
 function RequestServiceForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
+
   const [contacts, setContacts] = useState<Contacts>({
     name: '',
     phone: '',
     email: '',
     services: '',
-    about: '',
+    message: '',
+    honeypot: '',
   });
 
   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,19 +38,82 @@ function RequestServiceForm() {
   const handleChangeServices = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setContacts({ ...contacts, services: e.target.value });
   };
-  const handleChangeAbout = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setContacts({ ...contacts, about: e.target.value });
+  const handleChangeMessage = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setContacts({ ...contacts, message: e.target.value });
+  };
+  const handleChangeHoneypot = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setContacts({ ...contacts, honeypot: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(contacts);
-    setContacts({ name: '', phone: '', email: '', services: '', about: '' });
+    setError('');
+    setIsSubmitting(true);
+
+    fetch('http://localhost:5001/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: contacts.name,
+        phone: contacts.phone,
+        email: contacts.email,
+        services: contacts.services,
+        message: contacts.message,
+      }),
+    })
+      .then(res => res.json())
+      .then(() => {
+        setIsSuccess(true);
+        setContacts({
+          name: '',
+          phone: '',
+          email: '',
+          services: '',
+          message: '',
+          honeypot: '',
+        });
+      })
+      .catch(() => {
+        setError('Something went wrong. Please try again or call us directly.');
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
+
+  if (isSuccess) {
+    return (
+      <div className='requestform_left'>
+        <div className='requestform_success'>
+          <CheckCircle />
+          <h3>Thank You!</h3>
+          <p>
+            Your request has been sent successfully. Our team will get back to
+            you shortly.
+          </p>
+          <button
+            onClick={() => setIsSuccess(false)}
+            className='requestform_submit'
+          >
+            Send Another Request
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className='requestform_left'>
       <form onSubmit={handleSubmit} className='requestform_form'>
+        <input
+          type='text'
+          name='website'
+          value={contacts.honeypot}
+          onChange={handleChangeHoneypot}
+          className='requestform_honeypot'
+          tabIndex={-1}
+          autoComplete='off'
+        />
         <div className='requestform_row'>
           <input
             placeholder='Your Name *'
@@ -85,14 +154,20 @@ function RequestServiceForm() {
 
         <textarea
           placeholder='Tell us about your project or issue...'
-          value={contacts.about}
-          onChange={handleChangeAbout}
+          value={contacts.message}
+          onChange={handleChangeMessage}
           rows={5}
         ></textarea>
 
+        {error ? <p className='requestform_error'>{error}</p> : null}
+
         <div className='requestform_buttons'>
-          <button type='submit' className='requestform_submit'>
-            Request Service
+          <button
+            type='submit'
+            className='requestform_submit'
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Request Service'}
           </button>
           <a href='tel:+13106664752' className='requestform_call'>
             <Phone />
