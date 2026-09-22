@@ -144,6 +144,14 @@
     font-size: 32px;
   }
 
+  .reviewspage_list_section h3 {
+    font-size: 28px;
+  }
+
+  .reviewspage_list_section {
+    padding: 50px 30px;
+  }
+
   .reviewspage_grid {
     grid-template-columns: 1fr;
   }
