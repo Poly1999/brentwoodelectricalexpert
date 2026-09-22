@@ -50,7 +50,7 @@ function RequestServiceForm() {
     setError('');
     setIsSubmitting(true);
 
-    fetch('http://localhost:5001/api/contact', {
+    fetch('https://brentwoodelectricalexpert.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
