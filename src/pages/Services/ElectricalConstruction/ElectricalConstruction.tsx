@@ -52,98 +52,100 @@ import Footer from '../../../components/Footer/Footer';
 function ElectricalConstruction() {
   const hero = {
     icon: <BuildingComplex />,
-    title: 'Electrical Construction',
+    title: 'New Construction Electrical & Commercial Tenant Buildouts',
     subtitle:
-      'From new construction wiring to tenant improvements and full-scale electrical buildouts, Brentwood Electrical Experts delivers comprehensive electrical construction services across West Los Angeles. We work with general contractors, property developers, and homeowners to deliver safe, code-compliant electrical systems on schedule and on budget.',
+      'From ground-up custom residences and luxury ADUs to commercial tenant improvements (TI) and full-scale electrical buildouts, Brentwood Electrical Experts engineers and installs turn-key power systems across West Los Angeles. We partner directly with general contractors, architects, developers, and property owners to execute code-compliant rough-in and finish phases on schedule and on budget.',
     backgroundImage: ConsrtactionPanels,
   };
 
   const benefits = {
+    title: 'Full-Scope Electrical Construction Capabilities',
     features: [
-      'Complete electrical system design and installation',
-      'Code-compliant rough-in and finish work',
-      'Coordination with GCs and other trades',
-      'Commercial and residential construction',
-      'Permit acquisition and inspection management',
-      'On-time, on-budget delivery',
+      'Single-Line Diagrams & Load Engineering: Complete electrical system design, panel schedules, and load calculations.',
+      'Precision Rough-In & Finish Trim: Clean conduit routing, box placement, switchgear setup, and architectural fixture trim.',
+      'Seamless GC & Trade Coordination: Proactive scheduling alongside framers, HVAC, plumbers, and drywall crews.',
+      'Residential Estates, ADUs & Commercial TI: Custom homes, multi-unit developments, retail storefronts, and offices.',
+      'Title 24 & Municipal Permitting: Full handling of energy compliance controls, city permits, and LADWP/SCE spotting.',
+      'Milestone-Driven Execution: Reliable crew staffing to ensure your build passes rough and final inspections without delay.',
     ],
     image: ConsrtactionPanels,
   };
 
   const fullDescription = {
-    title: 'Electrical Construction in West Los Angeles',
+    title: 'Ground-Up Electrical Construction & Buildouts in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical
-        construction is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Successful construction projects depend on an electrical contractor who
+        reads blueprints accurately, anticipates structural bottlenecks, and
+        hits every inspection milestone on time. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every construction project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts brings field-tested engineering and
+        disciplined project management to every residential and commercial
+        buildout.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        constraction service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you are a homeowner or general contractor building a custom
+        hillside estate in <NavLink to='/brentwood'>Brentwood</NavLink>, a
+        commercial tenant fitting out a retail or medical suite in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, or a developer
+        constructing multi-family units or backyard ADUs in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and West LA, our
+        crew has the manpower and technical depth to execute the job right the
+        first time.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every construction bid begins with a thorough architectural plan review,
+        accurate load calculations, and an itemized, transparent
+        proposal—eliminating scope gaps and mid-project surprises. We install
+        commercial-grade switchgear, EMT/rigid conduit, and Title 24-compliant
+        lighting controls, coordinating directly with LADWP, Southern California
+        Edison (SCE), and local building inspectors from temporary power setup
+        to final Certificate of Occupancy.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their construction needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From initial trenching and rough-in wiring to final Lutron keypad
+        programming and fixture trim, you will see the difference of working
+        with a dedicated construction electrical team. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>submit your project plans</NavLink> for a
+        complimentary bid today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Construction Service',
+    title: 'What to Expect From Our Electrical Construction Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your construction
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you partner with Brentwood Electrical Experts, you work directly
+        with licensed electrical professionals who treat your jobsite and
+        construction timeline with meticulous care. We never cut corners on wire
+        gauge, box bracing, or conduit support, and we never hold up other
+        trades waiting on electrical rough-in.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your project starts the moment you share your architectural drawings or{' '}
+        <NavLink to='/contact'>schedule an on-site walk-through</NavLink>. A
+        licensed C-10 electrician evaluates your mechanical schedules, lighting
+        layouts, panel locations, and utility service requirements. We flag any
+        potential code conflicts early, value-engineer practical solutions, and
+        provide a clear, itemized written proposal before mobilization begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Construction sites move fast, which is why we prioritize proactive
+        communication with homeowners, site superintendents, and project
+        managers. Our crew arrives on schedule, maintains an organized,
+        hazard-free workspace, labels every home-run wire clearly, and keeps
+        your build moving smoothly from underground trenching to final
+        inspection sign-off.
       </>,
     ],
   };
@@ -152,101 +154,106 @@ function ElectricalConstruction() {
     title: 'Our Construction Process — Step by Step',
     features: [
       {
-        title: 'Plan Review',
+        title: 'Blueprint Review & Load Engineering',
         subtitle:
-          'We review architectural plans and develop the electrical layout.',
+          'We analyze architectural, MEP, and lighting plans to engineer circuit layouts and NEC load schedules.',
       },
       {
-        title: 'Permitting',
-        subtitle: 'We obtain all required electrical permits.',
+        title: 'Permits & Temporary Power',
+        subtitle:
+          'We pull municipal electrical permits, set up temporary construction power, and coordinate LADWP/SCE utility spots.',
       },
       {
-        title: 'Rough-In',
+        title: 'Underground & Rough-In Wiring',
         subtitle:
-          'We install all wiring, boxes, and conduit before walls are closed.',
+          'We trench feeder conduits, mount panel enclosures, and pull all power, lighting, and low-voltage rough-in wiring prior to drywall.',
       },
       {
-        title: 'Finish Work',
+        title: 'Switchgear & Finish Trim',
         subtitle:
-          'We install fixtures, devices, panels, and all finish electrical.',
+          'Once walls are painted, we land breakers, mount architectural light fixtures, install smart dimmers, and trim all receptacles.',
       },
       {
-        title: 'Final Inspection',
+        title: 'Title 24 Testing & Final Sign-Off',
         subtitle:
-          'We coordinate city inspections and ensure full code compliance.',
+          'We test every circuit under load, certify Title 24 lighting controls, and pass final municipal building inspection.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title:
+      'NEC Code Compliance, Title 24 Standards & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every construction project
-        we complete meets or exceeds the latest National Electrical Code (NEC)
-        standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and code compliance are the foundation of every
+        structure we wire. Every construction project we complete strictly
+        adheres to the latest National Electrical Code (NEC), California Title
+        24 Building Energy Efficiency Standards, and local municipal amendments
+        across Los Angeles (LADBS), Santa Monica, Beverly Hills, and Culver
+        City. We manage all rough and final inspections and ensure your
+        electrical installation passes city sign-off without delays.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed switchgear,
+        conduit, and wiring components from trusted manufacturers including
+        Siemens, Square D, Eaton, and Lutron. From heavy-duty copper conductors
+        and fire-rated junction boxes to occupancy sensors, dimming modules, and
+        whole-home surge protection, every part is specified for decades of
+        trouble-free performance.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because California energy mandates and smart building technologies
+        advance every code cycle, our technicians stay fully certified in
+        solar-ready main panels, battery storage pre-wiring, EV charging
+        readiness, and centralized lighting automation—delivering future-proof
+        electrical infrastructure for your property.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Construction Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide construction services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly provides residential and commercial
+        electrical construction across West Los Angeles and surrounding
+        communities. Whether your jobsite is in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your construction project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA neighborhoods we serve
+        </NavLink>
+        , our licensed crew is ready to mobilize.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        constraction project requires.
+        We understand the distinct construction requirements across the
+        Westside—from coastal rebuilds and hillside retaining-wall trenching in{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink> and{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink>, to garage ADU conversions in{' '}
+        <NavLink to='/mar-vista'>Mar Vista</NavLink> and high-spec commercial
+        office and retail buildouts in{' '}
+        <NavLink to='/century-city'>Century City</NavLink>,{' '}
+        <NavLink to='/westwood'>Westwood</NavLink>, and{' '}
+        <NavLink to='/west-hollywood'>West Hollywood</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Have upcoming plans ready to bid?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>submit your request online</NavLink> today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Commercial & Remodeling Projects',
+    title: 'Featured Construction, TI & Remodel Projects Across West LA',
     subtitle:
-      'See our completed commercial and remodeling electrical work across West Los Angeles.',
+      'Browse our permitted ground-up residential, ADU, and commercial electrical buildouts.',
     features: [
       {
         image: CommercialWiring,
@@ -379,26 +386,29 @@ function ElectricalConstruction() {
 
   const faqs = [
     {
-      question: 'Do you work with general contractors?',
+      question:
+        'Do you partner directly with general contractors, architects, and interior designers?',
       answer:
-        'Yes — we regularly partner with GCs on residential and commercial construction projects throughout West LA.',
+        'Yes. We work closely with general contractors, architects, developers, and designers across West Los Angeles. We read full MEP and architectural blueprints, provide itemized plan-based bids, coordinate our rough-in schedule seamlessly with other trades, and ensure every fixture, switch, and panel placement matches the design intent.',
     },
     {
-      question: 'Can you handle large commercial projects?',
+      question:
+        'Can you handle commercial tenant improvements (TI) and multi-unit construction projects?',
       answer:
-        'Absolutely. We have the team, licensing, and experience to handle projects of all sizes.',
+        'Absolutely. As a licensed C-10 electrical contractor (#1102731), we execute commercial tenant buildouts for retail storefronts, offices, restaurants, and medical suites, as well as multi-family apartment meter stacks, three-phase power distribution, and Title 24 commercial lighting control systems.',
     },
     {
-      question: 'Do you handle permits?',
+      question:
+        'Do you handle electrical permits, Title 24 sign-offs, and utility coordination for new builds?',
       answer:
-        'Yes, we manage all permitting and inspections as part of every construction project.',
+        'Yes. We manage the complete permitting and inspection lifecycle—including temporary construction power poles, municipal electrical permits (LADBS, Santa Monica, Beverly Hills, Culver City), California Title 24 lighting acceptance testing, and permanent utility service hookups with LADWP and Southern California Edison (SCE).',
     },
   ];
 
   const areas = {
-    title: 'Construction Across West LA',
+    title: 'Electrical Construction & Tenant Buildouts Across West LA',
     subtitle:
-      'We provide electrical construction services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We partner with homeowners and contractors across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
   const related = [
@@ -429,8 +439,23 @@ function ElectricalConstruction() {
   ];
   return (
     <div>
+      <title>
+        New Construction & Commercial Electrical Contractor West LA | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrical contractor (#1102731) specializing in ground-up custom home wiring, ADUs, commercial tenant improvements & Title 24 buildouts in West LA, Brentwood & Santa Monica. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges
+        items={[
+          'C-10 Licensed & Insured (#1102731)',
+          'On-Schedule Rough & Trim',
+          'Itemized Plan-Based Bids',
+          'Title 24 & NEC Compliant',
+        ]}
+      />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
@@ -448,7 +473,11 @@ function ElectricalConstruction() {
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
       <RecentProjects recents={recents} />
-      <Testimonials reviews={reviews} />
+      <Testimonials
+        reviews={reviews}
+        title='Verified Client Reviews: Construction & Remodel Electrical'
+        subtitle='Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye'
+      />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />

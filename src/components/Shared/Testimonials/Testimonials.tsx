@@ -12,9 +12,16 @@ interface ReviewHomePage {
 interface ReviewHomeProps {
   variant?: 'light' | 'dark';
   reviews: ReviewHomePage[];
+  title?: string;
+  subtitle?: string;
 }
 
-function Testimonials({ reviews, variant }: ReviewHomeProps) {
+function Testimonials({
+  reviews,
+  variant,
+  title = 'What Our Clients Say',
+  subtitle = '5-star rated across Google, Yelp, and Birdeye',
+}: ReviewHomeProps) {
   return (
     <div
       className={`testimonials ${variant === 'dark' ? 'testimonials_dark' : ''}`}
@@ -28,8 +35,8 @@ function Testimonials({ reviews, variant }: ReviewHomeProps) {
             <Star fill='#C7973D' color='#C7973D' />
             <Star fill='#C7973D' color='#C7973D' />
           </div>
-          <h2>What Our Clients Say</h2>
-          <p>5-star rated across Google, Yelp, and Birdeye</p>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
         </div>
 
         <div className='testimonials_grid'>

@@ -49,7 +49,7 @@
 .hero_box {
   display: flex;
   flex-direction: column;
-  max-width: 675px;
+  max-width: 760px;
 }
 
 .hero_toptext {
@@ -61,7 +61,8 @@
   backdrop-filter: blur(4px);
   border: 1px solid hsl(39, 55%, 51%, 0.3);
   border-radius: 999px;
-  padding: 6px 16px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
   width: fit-content;
 }
 
@@ -71,6 +72,7 @@
   font-family: 'Montserrat', system-ui, sans-serif;
   font-weight: 700;
   font-size: 12px;
+  line-height: 1.3;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -79,10 +81,13 @@
   width: 16px;
   height: 16px;
   color: var(--primary-yelow);
+  flex-shrink: 0;
+  fill: none;
 }
 
 .hero_title {
-  font-size: 72px;
+  font-size: 56px;
+  line-height: 1.1;
   color: var(--primary-white);
   margin: 15px 0;
 }
@@ -100,8 +105,8 @@
 
 .herobox_bottom {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 16px 36px;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -163,20 +168,23 @@
 
 .herobox_ourtop {
   display: flex;
-  gap: 6px;
-  align-items: center;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .herobox_ourtop svg {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+  margin-top: 2px;
+  fill: none;
 }
 
 .herobox_ourtop p {
   margin: 0;
   color: var(--primary-white);
   font-size: 14px;
+  line-height: 1.4;
 }
 
 @media (max-width: 600px) {
@@ -207,7 +215,7 @@
   }
 
   .hero_title {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.1;
     margin: 0 0 24px;
   }
@@ -216,7 +224,7 @@
     font-size: 18px;
     line-height: 1.625;
     max-width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .herobox_button {
@@ -234,8 +242,8 @@
   }
 
   .herobox_bottom {
-    gap: 24px;
-    row-gap: 12px;
+    flex-direction: column;
+    gap: 14px;
   }
 
   .herobox_ourtop svg {

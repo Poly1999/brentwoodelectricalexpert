@@ -24,10 +24,12 @@ function ServicesSection() {
     <div className='servicessection'>
       <div className='container'>
         <div className='servicessection_header'>
-          <h2>Our Electrical Services</h2>
+          <h2>
+            Complete Electrical Solutions Built to NEC & Title 24 Standards
+          </h2>
           <p>
-            From panel upgrades to smart home installations — we handle it all
-            with licensed, insured professionals.
+            From heavy-duty main service replacements to precision smart-home
+            automation—every project is executed by licensed professionals.
           </p>
         </div>
 
@@ -44,26 +46,33 @@ function ServicesSection() {
                   </div>
                   <span>Panel Upgrades</span>
                 </div>
-                <h3>Electrical Panel Upgrades</h3>
+                <h3>Main Electrical Panel Upgrades</h3>
                 <p className='servicecard_text'>
-                  Is your electrical panel outdated, overloaded, or unable to
-                  keep up with modern demands? Brentwood Electrical Experts
-                  provides professional electrical panel upgrades across West
-                  LA, Santa Monica, Brentwood, and surrounding communities. We
-                  upgrade 100-amp panels to 200-amp or...
+                  Is an aging 100-amp box, Zinsco panel, or Federal Pacific
+                  breaker limiting your property’s capacity? Brentwood
+                  Electrical Experts upgrades residential and commercial power
+                  systems to 200-amp and 400-amp service across West LA, Santa
+                  Monica, and Brentwood—giving your home the headroom for modern
+                  heat pumps, EV chargers, and luxury kitchen appliances.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Safely handle increased electrical loads</span>
+                    <span>
+                      Safely power high-demand appliances & dual EV setups
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Prevent circuit overloads and tripped breakers</span>
+                    <span>
+                      Eliminate nuisance breaker trips and voltage drops
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Meet current electrical code requirements</span>
+                    <span>
+                      Full LADWP/SCE utility coordination & city permitting
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>
@@ -83,28 +92,34 @@ function ServicesSection() {
                   </div>
                   <span>Construction</span>
                 </div>
-                <h3>Electrical Construction</h3>
+                <h3>Electrical Construction & Tenant Improvements</h3>
                 <p className='servicecard_text'>
-                  From new construction wiring to tenant improvements and
-                  full-scale electrical buildouts, Brentwood Electrical Experts
-                  delivers comprehensive electrical construction services across
-                  West Los Angeles. We work with general contractors, property
-                  developers, and homeowners to deliver...
+                  From ground-up custom residences and ADUs to commercial retail
+                  buildouts, Brentwood Electrical Experts executes full-scope
+                  electrical construction across West Los Angeles. We partner
+                  directly with general contractors, architects, and developers
+                  to deliver clean rough-in and finish phases on schedule.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
                     <span>
-                      Complete electrical system design and installation
+                      Turnkey single-line diagrams, load schedules & system
+                      design
                     </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Code-compliant rough-in and finish work</span>
+                    <span>
+                      Title 24 compliant lighting controls & energy submetering
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Coordination with GCs and other trades</span>
+                    <span>
+                      Seamless trade coordination and municipal inspection
+                      sign-offs
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>
@@ -130,29 +145,32 @@ function ServicesSection() {
                   </div>
                   <span>Subpanels</span>
                 </div>
-                <h3>Subpanel Installation</h3>
+                <h3>Dedicated Subpanel Installation</h3>
                 <p className='servicecard_text'>
-                  Need additional circuits for a garage, ADU, workshop, or home
-                  addition? Brentwood Electrical Experts installs electrical
-                  subpanels to extend your electrical system safely and
-                  efficiently. We serve homeowners and businesses across
-                  Brentwood, Santa Monica, Pacific Palisades, and all of West...
+                  Adding a backyard ADU, detached garage workshop, pool
+                  equipment pad, or primary suite addition? We install properly
+                  grounded feeder subpanels across Brentwood, Santa Monica, and
+                  Pacific Palisades to distribute power cleanly without
+                  overcrowding your main breaker enclosure.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
                     <span>
-                      Extend electrical capacity to garages, ADUs, and additions
+                      Expand circuit capacity to ADUs, garages, and additions
                     </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Avoid overloading your main panel</span>
+                    <span>
+                      Relieve busbar congestion in your primary service panel
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
                     <span>
-                      Code-compliant installation with proper grounding
+                      Underground PVC trenching and weatherproof NEMA 3R
+                      enclosures
                     </span>
                   </div>
                 </div>
@@ -173,26 +191,33 @@ function ServicesSection() {
                   </div>
                   <span>Security Cameras</span>
                 </div>
-                <h3>Security Camera Systems</h3>
+                <h3>Hardwired Security Camera Systems</h3>
                 <p className='servicecard_text'>
-                  Protect your home or business with professionally installed
-                  security camera systems. Brentwood Electrical Experts installs
-                  wired and wireless CCTV, IP camera systems, and smart security
-                  solutions across West LA, Brentwood, Santa Monica, Beverly
-                  Hills, and surrounding areas.
+                  Safeguard your estate or commercial facility with
+                  commercial-grade surveillance infrastructure. We run dedicated
+                  Cat6 PoE cabling and mount high-definition IP cameras, NVR
+                  storage systems, and smart perimeter alerts throughout
+                  Brentwood, Beverly Hills, and Santa Monica.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>24/7 property surveillance and monitoring</span>
+                    <span>
+                      Continuous 24/7 perimeter recording with zero Wi-Fi
+                      dropouts
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>HD and 4K camera options</span>
+                    <span>
+                      Ultra-clear 4K day/night optics with color night vision
+                    </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Remote viewing from your phone</span>
+                    <span>
+                      Encrypted mobile app viewing from anywhere in the world
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>
@@ -221,28 +246,35 @@ function ServicesSection() {
                   </div>
                   <span>Security Lighting</span>
                 </div>
-                <h3>Security Lighting Installation</h3>
+                <h3>Exterior & Perimeter Security Lighting</h3>
                 <p className='servicecard_text'>
-                  Illuminate and protect your property with professionally
-                  installed security lighting. Brentwood Electrical Experts
-                  designs and installs motion-sensor lights, floodlights, and
-                  landscape security lighting across Brentwood, Santa Monica,
-                  Pacific Palisades, and all of West Los Angeles.
+                  Eliminate dark blind spots around your property with
+                  architectural floodlights, motion-sensing perimeter fixtures,
+                  and low-voltage pathway illumination. We design
+                  weather-resistant coastal and hillside lighting systems across
+                  West Los Angeles.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Deter intruders with motion-activated lighting</span>
-                  </div>
-                  <div className='servicecard_feature'>
-                    <CheckCircle2 />
                     <span>
-                      Illuminate driveways, pathways, and entry points
+                      Instant motion-activated deterrence for driveways and side
+                      yards
                     </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Energy-efficient LED options</span>
+                    <span>
+                      Photocell dusk-to-dawn automation and smart astronomic
+                      timers
+                    </span>
+                  </div>
+                  <div className='servicecard_feature'>
+                    <CheckCircle2 />
+                    <span>
+                      High-output, low-wattage LED fixtures built for coastal
+                      air
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>
@@ -262,28 +294,35 @@ function ServicesSection() {
                   </div>
                   <span>Outlets & GFCI</span>
                 </div>
-                <h3>Outlets & GFCI Installation</h3>
+                <h3>Outlets, USB-C & GFCI Protection</h3>
                 <p className='servicecard_text'>
-                  Need additional outlets, USB outlets, or GFCI protection in
-                  kitchens, bathrooms, and outdoor areas? Brentwood Electrical
-                  Experts installs and upgrades electrical outlets throughout
-                  West LA. We ensure every installation meets current NEC code
-                  requirements for safety and convenience.
+                  Modernize aging two-prong receptacles and protect wet zones
+                  with NEC-mandated GFCI and AFCI protection. We install
+                  tamper-resistant outlets, high-speed USB-C charging
+                  receptacles, and dedicated 20-amp kitchen/bath circuits across
+                  West LA.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Add outlets where you need them most</span>
-                  </div>
-                  <div className='servicecard_feature'>
-                    <CheckCircle2 />
                     <span>
-                      GFCI protection for kitchens, bathrooms, and outdoors
+                      Dedicated circuits for microwaves, bidets, and home
+                      offices
                     </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>USB outlet upgrades for modern convenience</span>
+                    <span>
+                      Instant shock-prevention GFCI upgrades for kitchens, baths
+                      & patios
+                    </span>
+                  </div>
+                  <div className='servicecard_feature'>
+                    <CheckCircle2 />
+                    <span>
+                      Flush decorator-style outlets and fast-charging USB-C
+                      ports
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>
@@ -312,28 +351,35 @@ function ServicesSection() {
                   </div>
                   <span>Light Fixtures</span>
                 </div>
-                <h3>Light Fixture Installation</h3>
+                <h3>Custom Light Fixture & Chandelier Installation</h3>
                 <p className='servicecard_text'>
-                  Transform your space with professionally installed light
-                  fixtures. From chandeliers and recessed lighting to pendant
-                  lights and under-cabinet LEDs, Brentwood Electrical Experts
-                  handles all light fixture installations across Brentwood,
-                  Santa Monica, Beverly Hills, and West Los Angeles.
+                  Elevate your interior architecture with precision lighting
+                  installation. From high-ceiling foyer chandeliers and
+                  ultra-thin wafer LED recessed lights to under-cabinet task
+                  strips and Lutron dimming controls, we wire and balance every
+                  fixture to perfection.
                 </p>
                 <div className='servicecard_features'>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Expert installation of all fixture types</span>
-                  </div>
-                  <div className='servicecard_feature'>
-                    <CheckCircle2 />
                     <span>
-                      Recessed lighting, chandeliers, pendants, and more
+                      Structural bracing and rigging for heavy designer
+                      chandeliers
                     </span>
                   </div>
                   <div className='servicecard_feature'>
                     <CheckCircle2 />
-                    <span>Dimmer switch installation available</span>
+                    <span>
+                      Warm-dim LED recessed lighting layouts with zero drywall
+                      damage
+                    </span>
+                  </div>
+                  <div className='servicecard_feature'>
+                    <CheckCircle2 />
+                    <span>
+                      Smart dimmer integration (Lutron Caséta, RadioRA 3 &
+                      Control4)
+                    </span>
                   </div>
                 </div>
                 <span className='servicecard_link'>

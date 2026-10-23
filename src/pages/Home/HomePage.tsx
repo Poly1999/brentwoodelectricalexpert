@@ -94,6 +94,14 @@ function HomePage() {
 
   return (
     <div>
+      <title>
+        Brentwood Electrical Experts | C-10 Electrician West LA & Santa Monica |
+        (310) 666-4752
+      </title>
+      <meta
+        name='description'
+        content='California Licensed C-10 Electrical Contractor (#1102731) serving Brentwood, Santa Monica, Beverly Hills & 28+ West LA neighborhoods. 200A panel upgrades, EV chargers & lighting.'
+      />
       <HeroComponent />
       <TrustBadges />
       <StatsSection items={homeStats} />

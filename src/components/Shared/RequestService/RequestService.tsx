@@ -27,23 +27,25 @@ function RequestService() {
             <h3>Why Contact Us?</h3>
             <div className='requestform_why_item'>
               <CheckCircle2 />
-              <span>Free estimates on all projects</span>
+              <span>Complimentary, no-obligation project evaluations</span>
             </div>
             <div className='requestform_why_item'>
               <CheckCircle2 />
-              <span>Same-day service available</span>
+              <span>Same-day dispatch across West Los Angeles</span>
             </div>
             <div className='requestform_why_item'>
               <CheckCircle2 />
-              <span>Licensed & insured professionals</span>
+              <span>
+                State-certified C-10 electrical professionals (#1102731)
+              </span>
             </div>
             <div className='requestform_why_item'>
               <CheckCircle2 />
-              <span>Transparent, upfront pricing</span>
+              <span>Itemized, flat-rate pricing with zero hidden fees</span>
             </div>
             <div className='requestform_why_item'>
               <CheckCircle2 />
-              <span>Serving 28+ West LA communities</span>
+              <span>Proudly serving 28+ Greater LA & Westside communities</span>
             </div>
           </div>
         </div>

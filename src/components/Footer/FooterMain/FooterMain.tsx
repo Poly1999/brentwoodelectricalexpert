@@ -50,8 +50,9 @@ function FooterMain() {
             className='footer_logo'
           />
           <p>
-            Licensed & insured electrical contractor serving West Los Angeles,
-            Santa Monica, Brentwood, and surrounding communities since day one.
+            California Licensed & Insured C-10 Electrical Contractor (#1102731)
+            proudly serving Brentwood, Santa Monica, Beverly Hills, and Greater
+            West Los Angeles.
           </p>
           <div className='footer_contact'>
             <a href='tel:+13106664752'>

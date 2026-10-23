@@ -12,8 +12,8 @@
 
 .servicessection_header h2 {
   font-family: 'Montserrat', system-ui, sans-serif;
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 38px;
+  font-weight: 800;
   color: #1a1a1a;
   margin: 0 0 20px;
 }
@@ -52,7 +52,6 @@
   border: 1px solid #dedbd3;
   border-radius: 16px;
   overflow: hidden;
-  max-height: 380px;
 }
 
 .servicecard_image {
@@ -74,7 +73,7 @@
 
 .servicecard_content {
   flex: 1;
-  padding: 32px 46px;
+  padding: 40px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +83,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .servicecard_icon {

@@ -12,33 +12,28 @@ function FeaturedPanelUpgrades() {
         </div>
         <div className='featuredpanel_content'>
           <span className='featuredpanel_label'>Featured Service</span>
-          <h2>Electrical Panel Upgrades</h2>
+          <h2>Ready for a 200-Amp Panel Upgrade?</h2>
           <p className='featuredpanel_text'>
-            Is your home still running on a 100-amp panel? Upgrade to 200 amps
-            and safely power{' '}
-            <NavLink to='/ev-chargers-service'>EV chargers</NavLink>, HVAC
-            systems,{' '}
-            <NavLink to='/smart-home-service'>smart home devices</NavLink>, and
-            modern appliances. We handle everything from permits to final
-            inspection.
+            Future-proof your property for{' '}
+            <NavLink to='/ev-chargers-service'>electric vehicles</NavLink>,
+            central heat pumps, induction ranges, and{' '}
+            <NavLink to='/smart-home-service'>whole-home automation</NavLink>.
+            We manage your entire service upgrade from LADWP/SCE engineering
+            applications to final city inspection.
           </p>
 
           <div className='featuredpanel_features'>
             <div className='featuredpanel_feature'>
               <CheckCircle2 />
-              <span>100 to 200 amp upgrades</span>
+              <span>100A to 200A/400A Upgrades</span>
             </div>
             <div className='featuredpanel_feature'>
               <CheckCircle2 />
-              <span>All permits & inspections handled</span>
+              <span>Full Permits & Utility Coordination</span>
             </div>
             <div className='featuredpanel_feature'>
               <CheckCircle2 />
-              <span>Same-day service available</span>
-            </div>
-            <div className='featuredpanel_feature'>
-              <CheckCircle2 />
-              <span>Code-compliant installation</span>
+              <span>Single-Day Power Cutover</span>
             </div>
           </div>
 

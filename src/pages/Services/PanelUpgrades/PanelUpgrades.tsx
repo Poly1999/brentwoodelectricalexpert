@@ -25,98 +25,103 @@ import RelatedServices from '../../../components/service-detail-page/RelatedServ
 function PanelUpgrades() {
   const hero = {
     icon: <Zap />,
-    title: 'Electrical Panel Upgrades',
+    title: 'Main Electrical Panel & 200-Amp Service Upgrades',
     subtitle:
-      "Is your electrical panel outdated, overloaded, or unable to keep up with modern demands? Brentwood Electrical Experts provides professional electrical panel upgrades across West LA, Santa Monica, Brentwood, and surrounding communities. We upgrade 100-amp panels to 200-amp or higher, ensuring your home or business can safely handle today's electrical loads — from EV chargers to HVAC systems to smart home setups.",
+      'Outgrowing a 100-amp breaker box or dealing with an aging Zinsco or Federal Pacific panel? Brentwood Electrical Experts engineers and installs code-compliant 200-amp and 400-amp main service upgrades across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles—delivering the safe power capacity required for Level 2 EV chargers, heat pump HVAC systems, and modern luxury appliances.',
     backgroundImage: ElectricalPanel,
   };
 
   const benefits = {
+    title: 'Key Advantages of Upgrading Your Main Panel',
+
     features: [
-      'Safely handle increased electrical loads',
-      'Prevent circuit overloads and tripped breakers',
-      'Meet current electrical code requirements',
-      'Support EV charger and HVAC installations',
-      'Increase property value and safety',
-      'Reduce risk of electrical fires',
+      'Expand to 200A or 400A Capacity: Safely run high-demand appliances without overloading your main busbar.',
+      'Eliminate Nuisance Breaker Trips: Stop flickering lights and overloaded circuits when the AC or microwave runs.',
+      'Pass Insurance & NEC Inspections: Replace uninsurable Zinsco, Federal Pacific (FPE), and split-bus panels.',
+      'Power EV Chargers & Heat Pumps: Add dedicated 240V circuits for electric vehicles, induction ranges, and ADUs.',
+      'Turnkey LADWP & SCE Coordination: We manage all utility engineering, meter spots, and city building permits.',
+      'Prevent Overheating & Fire Hazards: Upgrade corroded lugs, aging breakers, and undersized grounding systems.',
     ],
     image: ElectricalPanel,
   };
 
   const fullDescription = {
-    title: 'Electrical Panel Upgrades in West Los Angeles',
+    title: 'Main Service & Panel Upgrades in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical panel
-        upgrades is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Upgrading your property's primary distribution panel is the backbone of
+        a safe, modern electrical system. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every panel upgrades project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts brings precision load engineering and clean
+        craftsmanship to every service upgrade we perform.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine panel
-        upgrades service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you own a hillside residence in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> running on an original
+        100-amp box, operate a commercial storefront in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink> requiring three-phase
+        power distribution, or manage a multi-unit apartment building in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> in need of modern
+        meter stacks, our crew has the field expertise to execute the upgrade
+        seamlessly.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every panel project starts with an on-site National Electrical Code
+        (NEC) load calculation and an itemized, flat-rate written proposal—never
+        hidden fees or surprise change orders. We install commercial-grade
+        Siemens, Square D, and Eaton enclosures, coordinate directly with LADWP
+        and Southern California Edison (SCE), and verify every circuit before
+        calling the job complete.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their panel upgrades needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From initial utility spotting through final municipal inspection
+        sign-off, you get a streamlined upgrade handled entirely in-house. That
+        attention to detail is why Westside homeowners, general contractors, and
+        property managers trust us with their primary power infrastructure. Read
+        our verified <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>
+          schedule your complimentary load evaluation
+        </NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Panel Upgrades Service',
+    title: 'What to Expect From Our Panel Upgrade Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your panel upgrades
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your property with
+        meticulous care. We never take shortcuts on grounding or wire sizing, we
+        never rush critical terminations, and we stand behind every breaker we
+        install.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your upgrade starts the moment you{' '}
+        <NavLink to='/contact'>reach out</NavLink>. We schedule a convenient
+        on-site walk-through where a licensed C-10 electrician inspects your
+        existing service entrance, underground or overhead feeder conduit,
+        grounding electrodes, and connected appliance loads. We explain your
+        options in plain English—whether you need a full 200-amp heavy-up, a
+        solar-ready meter-main combo, or a recall panel swap—and deliver a
+        transparent written quote before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical upgrades shouldn't turn your household or business upside
+        down. Our crew arrives within our scheduled window, protects your
+        stucco, flooring, and landscaping, and pre-stages all hardware before
+        utility disconnect so your daytime power shut-off is kept to an absolute
+        minimum. We restore your electricity the very same afternoon and leave
+        your workspace spotless.
       </>,
     ],
   };
@@ -125,93 +130,97 @@ function PanelUpgrades() {
     title: 'Our Panel Upgrades Process — Step by Step',
     features: [
       {
-        title: 'Inspection',
+        title: 'NEC Load & Site Audit',
         subtitle:
-          'We assess your current panel, wiring, and electrical load requirements.',
+          'We inspect your existing breaker box, grounding system, and utility feed to calculate your exact amperage demand.',
       },
       {
-        title: 'Recommendation',
+        title: 'Itemized Proposal',
         subtitle:
-          'We provide a detailed upgrade plan with transparent, upfront pricing.',
+          'You receive a clear upgrade scope and flat-rate written quote with zero hidden fees.',
       },
       {
-        title: 'Permitting',
-        subtitle: 'We handle all required city permits and inspections.',
+        title: 'City Permits & Utility Spot',
+        subtitle:
+          'We pull all municipal building permits and schedule disconnect/reconnect windows with LADWP or SCE.',
       },
       {
-        title: 'Installation',
+        title: 'Same-Day Cutover',
         subtitle:
-          'Our licensed electricians complete the upgrade safely and efficiently.',
+          'Our C-10 electricians mount your new panel, upgrade copper grounding rods, and restore power the same afternoon.',
       },
       {
-        title: 'Testing & Verification',
+        title: 'Load Testing & City Sign-Off',
         subtitle:
-          'We test every circuit and verify code compliance before completion.',
+          'We verify voltage balance, attach a printed breaker directory, and pass final municipal inspection.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Permitting & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every panel upgrades
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety is non-negotiable. Every panel upgrade we engineer
+        strictly adheres to the latest National Electrical Code (NEC),
+        California Title 24 energy standards, and local municipal amendments
+        across Los Angeles (LADBS), Santa Monica, Beverly Hills, and Culver
+        City. We pull all required building permits, upgrade cold-water and
+        ground-rod bonding, and meet the city inspector on-site—protecting both
+        your property's insurable value and your family's safety.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed enclosures and
+        breakers from industry-leading manufacturers including Siemens, Square D
+        by Schneider Electric, and Eaton. From heavy-duty copper busbars and
+        whole-home surge arrestors to arc-fault (AFCI) and ground-fault (GFCI)
+        circuit breakers, every component is selected for long-term thermal
+        stability and coastal corrosion resistance.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because California electrical codes and utility interconnection rules
+        evolve constantly, our technicians stay at the forefront of solar-ready
+        busbar sizing, battery storage readiness, and smart load-management
+        technology—ensuring your electrical service is built for the next 40
+        years.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Panel Upgrades Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide panel upgrades services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly engineers and installs electrical
+        panel upgrades for homeowners, HOAs, and commercial properties across
+        West Los Angeles. Whether your property is in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your panel upgrades project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we cover
+        </NavLink>
+        , our local crew is ready to dispatch.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your panel
-        upgrades project requires.
+        We know the specific electrical infrastructure challenges of each
+        Westside neighborhood—from converting overhead utility drops on 1950s
+        ranch homes in <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink>, to installing 400-amp
+        underground estate services in <NavLink to='/bel-air'>Bel Air</NavLink>{' '}
+        and upgrading multi-meter apartment banks in{' '}
+        <NavLink to='/westwood'>Westwood</NavLink> and{' '}
+        <NavLink to='/century-city'>Century City</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to modernize your electrical panel?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free on-site
+        assessment, or{' '}
+        <NavLink to='/contact'>request your estimate online</NavLink> today.
       </>,
     ],
   };
@@ -239,26 +248,29 @@ function PanelUpgrades() {
 
   const faqs = [
     {
-      question: 'How do I know if I need a panel upgrade?',
+      question:
+        'How do I know if my home or business needs an electrical panel upgrade?',
       answer:
-        "Common signs include frequently tripped breakers, flickering lights, burning smells near the panel, or if your home still has a 100-amp panel and you're adding major appliances or an EV charger.",
+        'Clear warning signs include a main breaker rated at 100 amps or less, frequent breaker trips when appliances run simultaneously, flickering lights when your AC kicks on, a crowded panel with no open slots, or an obsolete recall-brand box such as Zinsco, Sylvania, or Federal Pacific Electric (FPE Stab-Lok). You also typically need an upgrade when adding a Level 2 EV charger, electric heat pump, kitchen remodel, or backyard ADU.',
     },
     {
-      question: 'How long does a panel upgrade take?',
+      question:
+        'How long does a 200-amp panel upgrade take, and how long is the power off?',
       answer:
-        'Most residential panel upgrades are completed in one day. Commercial upgrades may take longer depending on the scope.',
+        'The physical panel replacement is completed in a single day. Power to your property is typically shut off for only 4 to 6 hours while we swap the enclosure, install new grounding electrodes, and coordinate the utility reconnect—meaning your electricity is fully restored before our technicians leave that afternoon.',
     },
     {
-      question: 'Do I need a permit for a panel upgrade?',
+      question:
+        'Do I need a city permit and utility approval for an electrical panel upgrade?',
       answer:
-        'Yes — panel upgrades require city permits and inspections. We handle all permitting as part of our service.',
+        'Yes. Replacing a main service panel requires both a municipal electrical permit (from LADBS, Santa Monica, Beverly Hills, or your local city building department) and utility coordination with LADWP or Southern California Edison (SCE). Brentwood Electrical Experts handles 100% of the permitting, utility spotting, and final inspection sign-offs for you.',
     },
   ];
 
   const areas = {
-    title: 'Panel Upgrades Across West LA',
+    title: 'Local Panel Upgrade Specialists Across West LA',
     subtitle:
-      'We provide electrical panel upgrades services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and permit 200A and 400A service upgrades across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
   const related = [
@@ -290,6 +302,14 @@ function PanelUpgrades() {
 
   return (
     <div>
+      <title>
+        Electrical Panel Upgrades in West LA & Santa Monica | Brentwood
+        Electrical Experts
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrical contractor (#1102731) providing 100A to 200A & 400A electrical panel upgrades across Brentwood, Santa Monica, Beverly Hills & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
       <TrustBadges />
       <div className='servicedetail_layout'>
@@ -309,11 +329,18 @@ function PanelUpgrades() {
       </div>
 
       <ServiceProcess featuresDescription={featuresDescription} />
-      <Testimonials reviews={reviews} />
+      <Testimonials
+        reviews={reviews}
+        title='Verified Client Reviews: Main Panel & Service Upgrades'
+        subtitle='Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye'
+      />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer
+        ctaTitle='Ready to Upgrade Your Electrical Service?'
+        ctaText='Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your upfront written estimate online.'
+      />
     </div>
   );
 }
