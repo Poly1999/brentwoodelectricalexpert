@@ -2,6 +2,7 @@ import './LocationDetails.css';
 
 interface LocationDetails {
   city: string;
+  heading: string;
   pharagraphs: { text: string }[];
   features: { item: string }[];
 }
@@ -14,7 +15,7 @@ function LocationDetails({ details }: LocationDetailsProps) {
   return (
     <div className='locationdetails'>
       <div className='locationdetails_inner'>
-        <h2>Your Trusted Electrician in {details.city}, California</h2>
+        <h2>{details.heading}</h2>
         {details.pharagraphs.map((pharagraph, index) => (
           <p className='locationdetails_paragraph' key={index}>
             {pharagraph.text}

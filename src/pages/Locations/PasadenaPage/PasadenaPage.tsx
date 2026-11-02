@@ -1,4 +1,11 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import {
+  ClipboardCheck,
+  Clock,
+  Landmark,
+  Shield,
+  Star,
+  Zap,
+} from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,28 +22,47 @@ import Footer from '../../../components/Footer/Footer';
 function PasadenaPage() {
   const hero = {
     area: 'Pasadena, CA · 91101, 91103, 91104, 91105, 91106, 91107',
-    title: 'Pasadena Electrician — Licensed & Insured',
+    title:
+      'Pasadena Electrician — Licensed & Insured Historic & Commercial Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides expert electrical services in Pasadena. From historic home rewiring and panel upgrades to modern EV charger installations and smart home systems, our licensed electricians serve Pasadena with quality and care.',
+      'Brentwood Electrical Experts provides expert electrical services throughout Pasadena. From historic Craftsman bungalow rewiring and Pasadena Water & Power (PWP) service coordination to Old Town commercial tenant improvements, smart home automation, and modern EV charger installations, our licensed C-10 electricians serve Pasadena with uncompromising quality and care.',
+    button: 'Request Pasadena Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Pasadena Water & Power (PWP) Experts',
+      'Historic Craftsman & Victorian Specialists',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Landmark />],
   };
 
   const about = {
     title: 'About Pasadena',
     city: 'Pasadena',
+    heading:
+      'Electrical Services Tailored to Pasadena’s Architectural Heritage',
+    challengeTitle:
+      'Navigating Historic Preservation Standards and Municipal Utilities',
     subtitle:
-      "Pasadena is a culturally rich city of about 138,000 residents, known for the Rose Bowl, Caltech, world-class museums, and some of Southern California's finest Craftsman architecture.",
+      "Pasadena is a culturally rich, historic city of approximately 138,000 residents, globally celebrated for hosting the annual Rose Bowl, world-class research at Caltech, magnificent museums, and some of Southern California's finest early 20th-century Craftsman and Victorian residential architecture. Operating with its own municipal utility department, Pasadena requires specialized local utility coordination.",
     features: [
-      { item: 'Craftsman bungalows' },
-      { item: 'Victorian homes' },
-      { item: 'Spanish Colonial Revival' },
-      { item: 'Mid-century modern' },
+      {
+        item: 'Historic American Craftsman bungalows (Bungalow Heaven Landmark District)',
+      },
+      { item: 'Victorian and Queen Anne historic residences' },
+      { item: 'Spanish Colonial Revival and Mediterranean estates' },
+      {
+        item: 'Mid-century modern homes and Old Town commercial mixed-use spaces',
+      },
     ],
     challenge:
-      'Pasadena has a significant stock of historic homes — many designated landmarks — that require sensitive electrical upgrades respecting original architecture. The city has its own utility (Pasadena Water and Power) and building department with distinct requirements.',
+      'Pasadena features an extraordinary inventory of historic residential structures—many designated local landmarks—that require highly sensitive electrical modernization to protect original woodwork, plaster, and period-correct aesthetics. Furthermore, because Pasadena operates its own municipal utility (Pasadena Water and Power) and independent building department, all panel upgrades, service drops, and solar/EV interconnections demand distinct local procedural knowledge.',
     quote: [
       {
         text: 'We bring specialized expertise in historic home electrical to Pasadena — upgrading century-old Craftsman bungalows and Victorian homes with modern safety while preserving their architectural heritage.',
-        subtext: '— Brentwood Electrical Experts, serving Pasadena',
+        subtext: '— Brentwood Electrical Experts, preserving Pasadena',
       },
     ],
   };
@@ -47,48 +73,49 @@ function PasadenaPage() {
       {
         title: 'Historic Home Electrical',
         subtitle:
-          'Sensitive electrical upgrades for Pasadena Craftsman bungalows, Victorians, and Spanish Colonial homes — modern safety without compromising character.',
+          'Sensitive, non-invasive electrical upgrades for Pasadena Craftsman bungalows, Victorians, and Spanish Colonial homes—delivering modern safety and capacity without sacrificing historic character.',
       },
       {
         title: 'Pasadena Water & Power Coordination',
         subtitle:
-          "Service upgrades, panel replacements, and solar interconnections coordinated directly with Pasadena's municipal utility.",
+          "Main service upgrades, panel replacements, temporary power drops, and solar/EV interconnection applications coordinated directly with PWP's municipal utility standards.",
       },
       {
         title: 'Smart Home in Historic Homes',
         subtitle:
-          "Modern automation, smart lighting, and structured wiring installations designed for Pasadena's older architectural styles.",
+          "Modern automation platforms, smart lighting controls, and hidden structured data wiring engineered specifically to integrate seamlessly into Pasadena's older architectural styles.",
       },
       {
         title: 'Old Town Commercial Electrical',
         subtitle:
-          "Tenant improvement wiring, lighting, and kitchen circuits for restaurants and retail in Pasadena's historic commercial districts.",
+          "Tenant improvement wiring, architectural track lighting, and commercial kitchen circuits for restaurants, retail boutiques, and offices across Pasadena's historic districts.",
       },
     ],
   };
 
   const details = {
     city: 'Pasadena',
+    heading: 'Your Trusted Local Electrician in Pasadena, California',
     pharagraphs: [
       {
-        text: "Pasadena is the cradle of the American Craftsman movement, and its bungalow neighborhoods — from the Bungalow Heaven Landmark District to the Arroyo Seco corridor — contain some of the finest examples of early 20th-century residential architecture in the country. Upgrading the electrical systems in these homes requires sensitivity, skill, and respect for original materials. We carefully route new wiring to avoid visible modifications, use period-appropriate cover plates and fixtures where desired, and bring the electrical system up to modern safety standards while preserving the home's historic character.",
+        text: "Pasadena stands universally recognized as the historical cradle of the American Craftsman architectural movement. Its protected bungalow neighborhoods—stretching from the renowned Bungalow Heaven Landmark District across to the scenic Arroyo Seco corridor—contain some of the finest early 20th-century residential structures in the United States. Modernizing the electrical infrastructure within these cherished historic homes requires specialized technical skill, patience, and absolute respect for original building materials. We meticulously route new branch wiring through cavities without surface disruption, utilize period-appropriate cover plates and switches when requested, and bring obsolete electrical systems up to rigorous contemporary safety codes while safeguarding your home's historic integrity.",
       },
       {
-        text: "Pasadena operates its own municipal utility — Pasadena Water and Power (PWP) — which means electrical service connections, metering, and some code requirements differ from Edison-served areas. We're thoroughly familiar with PWP's specific processes for service upgrades, meter installations, and interconnection for solar and EV charger projects.",
+        text: 'Additionally, Pasadena operates its own municipal utility provider—Pasadena Water and Power (PWP)—meaning that all electrical service connections, meter drops, utility inspections, and local code mandates differ significantly from standard Southern California Edison territories. Our licensed C-10 team possesses deep, day-to-day familiarity with PWP’s distinct administrative protocols for service entrance upgrades, overhead-to-underground conversions, and rapid grid interconnections for solar photovoltaic and EV charger projects.',
       },
       {
-        text: "Pasadena's South Lake Avenue commercial district, Old Town, and Colorado Blvd corridor feature restaurants, boutiques, and offices that need reliable commercial electrical services. We provide tenant improvement wiring, lighting upgrades, kitchen circuits, and signage electrical for Pasadena's thriving commercial areas.",
+        text: "Pasadena's vibrant South Lake Avenue commercial district, Old Pasadena, and the historic Colorado Boulevard corridor host hundreds of destination restaurants, independent retail boutiques, and executive offices that depend on reliable commercial electrical systems. We provide comprehensive commercial electrical services—including custom tenant improvement wiring, specialized retail lighting design, heavy commercial kitchen equipment feeds, and exit sign/emergency egress lighting that complies fully with Pasadena municipal commercial codes.",
       },
       {
-        text: "Caltech and the surrounding South Pasadena-adjacent neighborhoods attract tech-savvy homeowners who want modern electrical infrastructure in older homes. We install smart home systems, structured wiring, dedicated home office circuits, and EV chargers — bridging the gap between Pasadena's historic housing stock and modern technology demands.",
+        text: "Finally, the intellectual presence of Caltech and surrounding neighborhoods attracts tech-savvy homeowners who demand modern, high-performance electrical infrastructure inside older properties. We install advanced smart home automation platforms, structured Cat6 data cabling, dedicated home office circuits, and high-speed EV chargers—successfully bridging the gap between Pasadena's historic housing inventory and 21st-century technological expectations.",
       },
     ],
     features: [
-      { item: 'Rose Bowl' },
+      { item: 'Rose Bowl Stadium' },
       { item: 'Old Town Pasadena' },
-      { item: 'Caltech' },
+      { item: 'California Institute of Technology (Caltech)' },
       { item: 'Norton Simon Museum' },
-      { item: 'The Huntington' },
+      { item: 'The Huntington Library' },
     ],
   };
 
@@ -99,26 +126,30 @@ function PasadenaPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Pasadena',
@@ -159,10 +190,24 @@ function PasadenaPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Pasadena Electrician | Historic Craftsman Rewiring & PWP Utility TIs |
+        C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Pasadena, CA (91101–91107). Pasadena Water & Power (PWP) coordination, historic Craftsman rewiring, Old Town commercial TIs & EV chargers. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -172,7 +217,7 @@ function PasadenaPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

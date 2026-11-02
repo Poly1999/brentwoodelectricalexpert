@@ -1,4 +1,11 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import {
+  ClipboardCheck,
+  Clock,
+  Mountain,
+  Shield,
+  Star,
+  Zap,
+} from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +22,38 @@ import Footer from '../../../components/Footer/Footer';
 function BrentwoodPage() {
   const hero = {
     area: 'Brentwood, CA · 90049',
-    title: 'Brentwood Electrician — Licensed & Insured',
+    title: 'Brentwood Electrician — Licensed & Insured Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts is proud to serve the Brentwood community with professional residential and commercial electrical services. From panel upgrades and EV charger installations to lighting design and electrical troubleshooting, our licensed electricians deliver fast, reliable, and code-compliant work throughout Brentwood and the surrounding West LA area.',
+      'Brentwood Electrical Experts proudly serves the Brentwood community with professional residential and commercial electrical services. From 200-amp panel upgrades and Level 2 EV charger installations to architectural landscape lighting and hill-side troubleshooting, our licensed C-10 electricians deliver fast, reliable, and code-compliant work throughout Brentwood and the surrounding West LA area.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'LADBS Permits & Inspection',
+      'Hillside & Underground Specialists',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Mountain />],
   };
 
   const about = {
     title: 'About Brentwood',
     city: 'Brentwood',
+    heading: 'Electrical Services Tailored to Brentwood Architecture',
+    challengeTitle: "Navigating Brentwood's Unique Electrical Infrastructure",
     subtitle:
       "Brentwood is an affluent residential neighborhood in West Los Angeles known for its tree-lined streets, top-rated schools, and proximity to the Santa Monica Mountains. The community blends quiet suburban living with easy access to the Westside's best dining, shopping, and recreation.",
     features: [
-      { item: 'Mid-century modern estates' },
-      { item: 'Contemporary new builds' },
-      { item: 'Spanish Colonial Revival' },
-      { item: 'Ranch-style homes' },
+      {
+        item: 'Mid-century modern estates (A. Quincy Jones & Richard Neutra designs)',
+      },
+      { item: 'Contemporary new builds and architectural custom homes' },
+      { item: 'Classic Spanish Colonial Revival residences' },
+      { item: 'Charming ranch-style homes and hillside properties' },
     ],
     challenge:
-      "Many Brentwood homes were built in the 1950s–1970s with original 100-amp panels and outdated wiring. These older electrical systems can't safely support today's demands — EV chargers, central HVAC, pool equipment, and smart home technology all require modern 200-amp panels. Additionally, the hillside lots common in upper Brentwood often require specialized underground conduit runs and outdoor-rated panel installations.",
+      'Many Brentwood homes were built in the 1950s–1970s with original 100-amp service panels and outdated wiring. These legacy electrical systems cannot safely support modern power demands—from dual EV chargers and central HVAC heat pumps to pool equipment and whole-home automation. Additionally, the hillside lots common in upper Brentwood (such as Crestwood Hills and Mandeville Canyon) frequently require specialized underground conduit runs, extra-long feeder sizing, and outdoor-rated panel installations to meet fire safety codes.',
     quote: [
       {
         text: "As the hometown team, we know Brentwood's electrical infrastructure better than anyone — from the aging panels in Crestwood Hills to the luxury smart home builds along Tigertail Road.",
@@ -47,40 +68,41 @@ function BrentwoodPage() {
       {
         title: '200-Amp Panel Upgrades',
         subtitle:
-          "Brentwood's mid-century homes often still run on original 100-amp panels. We upgrade to 200 amps to safely power modern appliances, EV chargers, HVAC, and pool equipment — all with full LADBS permits and inspection.",
+          "Brentwood's mid-century homes often still run on original 100-amp panels. We upgrade systems to 200 or 400 amps to safely power modern appliances, EV chargers, HVAC units, and pool equipment—all managed with full LADBS permits and municipal inspection sign-offs.",
       },
       {
         title: 'Tesla & EV Charger Installation',
         subtitle:
-          'Join hundreds of Brentwood homeowners who charge at home. We install Tesla Wall Connectors, ChargePoint, and all major EV charger brands with clean, concealed wiring and dedicated 50-amp circuits.',
+          'Join hundreds of Brentwood homeowners who charge at home. We install Tesla Wall Connectors, ChargePoint Home Flex, and all major EV charger brands with clean, concealed wiring and dedicated high-amperage 240V circuits.',
       },
       {
         title: 'Landscape & Outdoor Lighting',
         subtitle:
-          "Illuminate your Brentwood property's mature trees, garden paths, and outdoor entertaining areas with professionally designed low-voltage and line-voltage landscape lighting systems.",
+          "Illuminate your Brentwood property's mature oak trees, garden pathways, and outdoor entertaining spaces with professionally designed low-voltage brass landscape lighting and architectural uplighting.",
       },
       {
         title: 'Whole-Home Generator Installation',
         subtitle:
-          'Protect your Brentwood home from PSPS shutoffs and grid outages with a Generac or Kohler whole-home standby generator — automatic power restoration in under 10 seconds.',
+          'Protect your Brentwood home from PSPS shutoffs, high wind events, and grid outages with a Generac or Kohler whole-home standby generator featuring automatic power transfer in under 10 seconds.',
       },
     ],
   };
 
   const details = {
     city: 'Brentwood',
+    heading: 'Your Trusted Local Electrician in Brentwood, California',
     pharagraphs: [
       {
-        text: "Brentwood's housing stock tells a story of Los Angeles architectural evolution. Mid-century gems designed by A. Quincy Jones and Richard Neutra sit alongside modern new-construction homes pushing the boundaries of sustainable design. Each era brings distinct electrical requirements — from rewiring knob-and-tube systems in 1940s cottages to engineering whole-home automation in newly built estates. Our electricians have worked on properties across every Brentwood micro-neighborhood, from the flats south of San Vicente to the hillside estates above Mandeville Canyon.",
+        text: "Brentwood's housing stock tells a rich story of Los Angeles architectural evolution. Mid-century architectural gems sit alongside modern new-construction homes pushing the boundaries of sustainable design. Each era brings distinct electrical requirements—from rewiring knob-and-tube systems in older cottages to engineering whole-home automation and motorized shading in newly built estates. Our C-10 licensed electricians have worked on properties across every Brentwood micro-neighborhood, from the flats south of San Vicente to the hillside estates above Mandeville Canyon.",
       },
       {
-        text: "The Brentwood community has embraced the electric vehicle revolution with enthusiasm. With many households owning two or more EVs — Teslas, BMW iX models, Rivians, and Mercedes EQS sedans are common in local driveways — the demand for Level 2 home charging stations has surged. We've installed hundreds of EV chargers throughout Brentwood, often pairing them with panel upgrades to ensure the home's electrical system can handle the added 40-50 amp load without compromising other circuits.",
+        text: "The Brentwood community has embraced the electric vehicle revolution with enthusiasm. With many households owning two or more EVs—such as Teslas, Rivians, and Porsche Taycans common in local driveways—the demand for Level 2 home charging stations has surged. We've installed hundreds of EV chargers throughout Brentwood, often pairing them with main panel upgrades to ensure the home's electrical grid handles the added 40–50 amp load safely.",
       },
       {
-        text: 'Outdoor living is central to the Brentwood lifestyle. We design and install sophisticated landscape lighting systems that highlight mature oaks, illuminate garden pathways, and enhance pool and patio areas for evening entertaining. Our team also installs weather-rated outlets, pool equipment sub-panels, and outdoor kitchen electrical — all built to withstand the marine layer moisture that rolls in from the coast.',
+        text: 'Outdoor living is central to the Brentwood lifestyle. We design and install sophisticated landscape lighting systems that highlight mature trees, illuminate garden pathways, and enhance pool and patio areas for evening entertaining. Our team also installs weather-rated outdoor outlets, pool equipment sub-panels, and kitchen patio wiring built to withstand coastal marine moisture.',
       },
       {
-        text: 'Fire safety is a critical concern for Brentwood residents, particularly those in hillside zones near Mandeville Canyon and the Santa Monica Mountains. We install whole-home surge protection, generator transfer switches for backup power during PSPS shutoffs, and hardwired smoke and CO detection systems that meet the latest California fire code requirements. Protecting your home and family starts with a safe, modern electrical system.',
+        text: 'Fire safety is a critical priority for Brentwood residents, particularly those in hillside zones near Mandeville Canyon and the Santa Monica Mountains. We install whole-home surge protection, automatic generator transfer switches for backup power during red-flag high-wind warnings, and hardwired smoke and CO detection systems that meet the latest California fire codes. Protecting your home and family starts with a safe, modern electrical system.',
       },
     ],
     features: [
@@ -99,26 +121,30 @@ function BrentwoodPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Brentwood',
@@ -169,10 +195,24 @@ function BrentwoodPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Brentwood Electrician | Licensed C-10 Electrical Contractor | (310)
+        666-4752
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Brentwood, CA. 200A panel upgrades, EV chargers, landscape lighting & hillside troubleshooting. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -182,7 +222,7 @@ function BrentwoodPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

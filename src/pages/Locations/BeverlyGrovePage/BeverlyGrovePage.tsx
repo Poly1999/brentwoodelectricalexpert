@@ -1,4 +1,11 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import {
+  Building2,
+  ClipboardCheck,
+  Clock,
+  Shield,
+  Star,
+  Zap,
+} from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +22,40 @@ import Footer from '../../../components/Footer/Footer';
 function BeverlyGrovePage() {
   const hero = {
     area: 'Beverly Grove, CA · 90036, 90048',
-    title: 'Beverly Grove Electrician — Licensed & Insured',
+    title:
+      'Beverly Grove Electrician — Licensed & Insured Residential & Commercial Electrical Services',
     subtitle:
-      'Need an electrician in Beverly Grove? Brentwood Electrical Experts provides comprehensive electrical services including panel upgrades, outlet installations, lighting, and electrical troubleshooting for this vibrant West LA neighborhood.',
+      'Brentwood Electrical Experts provides comprehensive electrical services for Beverly Grove. From kitchen remodel wiring in Spanish bungalows and multi-family duplex meter separations to Beverly Blvd restaurant tenant improvements and electrical troubleshooting, our licensed C-10 electricians deliver expert service with transparent upfront pricing.',
+    button: 'Request Beverly Grove Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Duplex & Multi-Family Specialists',
+      'LADBS Permitted Work',
+    ],
+    icons: [<Star />, <Building2 />, <ClipboardCheck />],
   };
 
   const about = {
     title: 'About Beverly Grove',
     city: 'Beverly Grove',
+    heading: 'Electrical Services Tailored to Beverly Grove Architecture',
+    challengeTitle:
+      'Modernizing Pre-War Duplexes and Renovation Infrastructure',
     subtitle:
-      'Beverly Grove is a centrally located residential neighborhood prized for its walkability, proximity to top dining and shopping, and charming tree-lined streets with a mix of architectural styles.',
+      'Beverly Grove is a centrally located, highly walkable residential neighborhood prized for its vibrant community feel, proximity to top-tier dining and shopping districts, and charming tree-lined streets featuring a rich blend of historic architectural styles.',
     features: [
-      { item: 'Spanish-style houses' },
-      { item: '1930s duplexes' },
-      { item: 'Renovated bungalows' },
-      { item: 'Mixed-use commercial' },
+      {
+        item: 'Historic Spanish-style residential houses and character bungalows',
+      },
+      { item: 'Classic 1930s Art Deco and vintage multi-family duplexes' },
+      { item: 'Modernized single-family home renovations' },
+      { item: 'Mixed-use commercial properties and retail cafes' },
     ],
     challenge:
-      "Beverly Grove is a desirable, walkable neighborhood with a mix of older single-family homes and duplexes. Many properties are undergoing extensive renovations, requiring complete electrical system modernization. The neighborhood's proximity to the Grove and CBS Television City drives both residential and commercial electrical demand.",
+      "Beverly Grove features a dense concentration of older single-family homes and vintage multi-family duplexes undergoing extensive architectural renovations. Many properties retain outdated electrical infrastructure that cannot handle modern kitchen appliances, central HVAC systems, or multi-family sub-metering. Furthermore, the neighborhood's bustling commercial vitality near The Grove and CBS Television City drives continuous demand for specialized retail and restaurant electrical work.",
     quote: [
       {
         text: "We're the neighborhood electrician Beverly Grove homeowners trust for renovation projects — from kitchen remodels in Spanish bungalows to whole-home rewiring in pre-war duplexes.",
@@ -47,32 +70,33 @@ function BeverlyGrovePage() {
       {
         title: 'Renovation Electrical',
         subtitle:
-          'Complete electrical for Beverly Grove home remodels — kitchen circuits, bathroom GFCI, modern lighting layouts, and panel upgrades.',
+          'Complete electrical wiring for Beverly Grove home remodels—featuring dedicated kitchen circuits, bathroom GFCI protection, modern recessed lighting layouts, and heavy-duty panel upgrades.',
       },
       {
         title: 'Duplex Electrical Separation',
         subtitle:
-          'Upgrade shared duplex electrical systems to independent panels and metering — safer, simpler, and more valuable.',
+          'Safely upgrade shared vintage duplex electrical systems into independent panels, dedicated meters, and separate service feeds—increasing safety, code compliance, and property value.',
       },
       {
         title: 'Restaurant & Café Electrical',
         subtitle:
-          "Kitchen equipment, lighting, patio electrical, and code compliance for Beverly Grove's acclaimed dining scene.",
+          "Heavy-duty kitchen equipment circuits, atmospheric dining lighting, patio heating/lighting, and code-compliant electrical for Beverly Grove's acclaimed dining corridor.",
       },
     ],
   };
 
   const details = {
     city: 'Beverly Grove',
+    heading: 'Your Trusted Local Electrician in Beverly Grove, California',
     pharagraphs: [
       {
-        text: "Beverly Grove's central location and charming housing stock make it one of LA's most sought-after neighborhoods for home renovation. Spanish-style bungalows, Art Deco duplexes, and 1930s cottages are being lovingly updated with modern kitchens, spa-like bathrooms, and open floor plans — all of which require significant electrical upgrades. We provide the electrical backbone for these renovations: panel upgrades, new circuit runs, modern lighting layouts, and smart home integration.",
+        text: "Beverly Grove's ultra-central location and diverse housing inventory make it one of the most sought-after neighborhoods in Los Angeles for high-end residential renovation. Historic Spanish-style bungalows, classic 1930s Art Deco duplexes, and charming vintage cottages are constantly being updated with gourmet kitchens, spa-like primary bathrooms, and open-concept floor plans—all of which require advanced electrical engineering. We provide the essential electrical backbone for these neighborhood renovations: comprehensive panel upgrades, new dedicated circuit runs, modern architectural lighting layouts, and smart home integration.",
       },
       {
-        text: "The Beverly Grove neighborhood is home to some of LA's best dining — concentrated along Beverly Blvd, 3rd Street, and surrounding blocks. We provide commercial electrical services for these restaurants and cafes, including kitchen equipment circuits, dining room lighting on dimming systems, outdoor patio heating and lighting, and code-required emergency systems.",
+        text: "Additionally, the Beverly Grove neighborhood hosts some of Los Angeles's most celebrated dining and retail destinations, concentrated densely along Beverly Boulevard, West 3rd Street, and surrounding commercial corridors. We provide specialized commercial electrical services for these local restaurants, bakeries, and cafes, including heavy equipment circuits, architectural dining room lighting on dimming systems, outdoor patio weatherized heating and lighting, and strict code-mandated emergency egress systems.",
       },
       {
-        text: 'Many Beverly Grove homes are duplexes or small multi-unit properties with shared electrical systems that may not meet current code for separate metering and individual unit services. We upgrade these shared systems to provide independent electrical services for each unit — important for both safety and property value.',
+        text: 'Many historic Beverly Grove residential buildings are duplexes or small multi-unit properties originally constructed with shared, single-meter electrical systems that fail to meet modern building codes for separate tenant metering and independent service disconnects. We specialize in upgrading and untangling these complex shared systems to establish fully independent electrical panels and feeds for each individual unit—providing vital protection for landlords and dramatically increasing overall property value.',
       },
     ],
     features: [
@@ -90,26 +114,30 @@ function BeverlyGrovePage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Beverly Grove',
@@ -150,10 +178,24 @@ function BeverlyGrovePage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Beverly Grove Electrician | Duplex Separations & Renovation TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Beverly Grove (90036, 90048). Spanish bungalow kitchen remodels, duplex shared panel separations & Beverly Blvd restaurant TIs. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -163,7 +205,7 @@ function BeverlyGrovePage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

@@ -3,21 +3,22 @@ import { Phone, FileText } from 'lucide-react';
 import FooterMain from './FooterMain/FooterMain';
 import { NavLink } from 'react-router-dom';
 
-interface FooterProps {
-  ctaTitle?: string;
-  ctaText?: string;
+interface Footer {
+  title: string;
+  subtitle: string;
 }
 
-function Footer({
-  ctaTitle = 'Ready to Get Started?',
-  ctaText = 'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
-}: FooterProps) {
+interface FooterProps {
+  footer: Footer;
+}
+
+function Footer({ footer }: FooterProps) {
   return (
     <footer className='footer'>
       <div className='footer_cta'>
         <div className='container footer_cta_inner'>
-          <h2>{ctaTitle}</h2>
-          <p>{ctaText}</p>
+          <h2>{footer.title}</h2>
+          <p>{footer.subtitle}</p>
 
           <div className='footer_cta_buttons'>
             <a href='tel:+13106664752' className='footer_cta_call'>

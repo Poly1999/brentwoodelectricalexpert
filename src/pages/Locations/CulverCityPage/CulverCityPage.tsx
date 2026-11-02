@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Building2, Clock, Film, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,27 +15,39 @@ import Footer from '../../../components/Footer/Footer';
 function CulverCityPage() {
   const hero = {
     area: 'Culver City, CA · 90230, 90232',
-    title: 'Culver City Electrician — Licensed & Insured',
+    title: 'Culver City Electrician — Licensed & Insured Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides top-rated electrical services in Culver City. From residential rewiring and panel upgrades to commercial tenant improvements and lighting retrofits, our licensed team delivers dependable, code-compliant work.',
+      'Brentwood Electrical Experts provides top-rated electrical services in Culver City. From residential rewiring and post-war panel upgrades to commercial restaurant kitchen electrical and Hayden Tract creative office lighting retrofits, our licensed C-10 team delivers dependable, code-compliant work across Culver City and surrounding Westside communities.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Independent Culver City Permitting',
+      'Hayden Tract & Studio Specialists',
+    ],
+    icons: [<Star />, <Building2 />, <Film />],
   };
 
   const about = {
     title: 'About Culver City',
     city: 'Culver City',
+    heading: 'Tailored Electrical Services for Culver City’s Dynamic Growth',
+    challengeTitle: 'Navigating Culver City’s Independent Building Department',
     subtitle:
-      "Culver City is an independent city of about 40,000 residents that has become one of LA's most dynamic communities. Home to Sony Pictures and a growing cluster of tech and media companies, Culver City blends small-town charm with big-city energy.",
+      'Culver City is an independent municipality of about 40,000 residents that has evolved into one of the most dynamic creative and tech hubs in Southern California. Home to Sony Pictures and a massive cluster of media giants, Culver City blends historic small-town neighborhood charm with big-city economic energy.',
     features: [
-      { item: 'Post-war tract homes' },
-      { item: 'Craftsman bungalows' },
-      { item: 'Modern condos' },
-      { item: 'Creative office conversions' },
+      { item: 'Mid-century post-war tract homes and neighborhood residences' },
+      { item: 'Charming Craftsman and traditional bungalows' },
+      { item: 'Modern low-rise and multi-family condominiums' },
+      { item: 'Adaptive reuse creative offices and industrial conversions' },
     ],
     challenge:
-      'Culver City has experienced rapid development, transforming from a quiet residential community into a major creative industry hub. Many 1940s–1960s homes need panel upgrades, while the booming commercial sector — anchored by Apple, Amazon, and Sony Studios — demands sophisticated commercial electrical services. Culver City is an independent city with its own building department.',
+      'Culver City has undergone rapid commercial and residential transformation, shifting from a quiet residential enclave into a major entertainment capital. Many 1940s–1960s homes require critical panel upgrades and safety retrofits, while the booming commercial sector—anchored by Apple, Amazon, and Sony Studios—demands sophisticated commercial electrical engineering. Because Culver City operates as an independent city with its own building and safety department, deep local familiarity with municipal permitting rules is essential for avoiding project delays.',
     quote: [
       {
-        text: "We navigate Culver City's independent permitting process with expertise, delivering residential upgrades for the neighborhoods alongside commercial electrical for the booming creative industry corridor.",
+        text: "We navigate Culver City's independent permitting process with expertise, delivering residential upgrades for established neighborhoods alongside commercial electrical for the booming creative industry corridor.",
         subtext: '— Brentwood Electrical Experts, serving Culver City',
       },
     ],
@@ -47,40 +59,41 @@ function CulverCityPage() {
       {
         title: 'Post-War Home Panel Upgrades',
         subtitle:
-          'Bring your 1940s–1960s Culver City home into the modern era with a 200-amp panel upgrade — safe, permitted, and ready for EV chargers, HVAC, and home offices.',
+          'Bring your 1940s–1960s Culver City home into the modern era with a safe, permitted 200-amp panel upgrade—fully ready to support EV chargers, central HVAC, and dedicated home offices.',
       },
       {
         title: 'Restaurant & Commercial Kitchen Electrical',
         subtitle:
-          "Full-scope kitchen electrical for Culver City's acclaimed restaurant scene — commercial equipment circuits, ventilation, lighting, and code compliance.",
+          "Full-scope kitchen electrical systems for Culver City's acclaimed dining scene—heavy-duty commercial equipment circuits, ventilation hoods, atmospheric dining lighting, and strict code compliance.",
       },
       {
         title: 'Creative Office Electrical Services',
         subtitle:
-          "Power distribution, lighting, and infrastructure upgrades for Culver City's booming creative industry offices and production spaces.",
+          "Power distribution, specialty lighting grids, and infrastructure upgrades tailored for Culver City's booming creative industry offices, production suites, and tech spaces.",
       },
       {
         title: 'Home Office Circuit Installation',
         subtitle:
-          'Dedicated circuits, additional outlets, and Ethernet wiring for productive, reliable work-from-home setups in Culver City residences.',
+          'Dedicated electrical circuits, additional tamper-resistant outlets, and hardwired Ethernet data wiring designed for productive, reliable work-from-home setups in local residences.',
       },
     ],
   };
 
   const details = {
     city: 'Culver City',
+    heading: 'Your Trusted Local Electrician in Culver City, California',
     pharagraphs: [
       {
-        text: "Culver City has undergone a dramatic transformation in recent years. The arrival of Apple TV+, Amazon Studios, and other major creative companies has brought new energy — and new electrical demands — to this independent city. We serve both sides of this evolution: upgrading aging residential electrical systems in established neighborhoods like Culver Crest and Sunkist Park, and providing commercial electrical services for the creative offices and production facilities that now define Culver City's economic identity.",
+        text: "Culver City has undergone a breathtaking economic and cultural transformation over recent years. The arrival of Apple TV+, Amazon Studios, and other high-profile creative enterprises has infused the independent city with renewed energy—and entirely new electrical demands. We proudly serve both sides of this dynamic evolution: upgrading aging residential power systems in established neighborhoods like Culver Crest and Sunkist Park, while providing specialized commercial electrical services for the creative offices, production facilities, and restaurants that define Culver City's modern identity.",
       },
       {
-        text: 'The residential neighborhoods of Culver City feature predominantly post-war homes built in the 1940s through 1960s. These homes typically have 100-amp panels, limited outlet counts by modern standards, and wiring that may include early Romex or even some aluminum branch circuits. We modernize these systems with 200-amp panel upgrades, additional circuits for home offices, EV charger installations, and whole-home GFCI/AFCI protection that brings the entire system up to current safety standards.',
+        text: 'The residential neighborhoods of Culver City feature predominantly post-war homes constructed between the 1940s and 1960s. These properties typically contain outdated 100-amp service panels, limited outlet counts by modern standards, and legacy wiring that may include early Romex or aging branch circuits. We modernize these residential grids with 200-amp panel upgrades, dedicated home office circuits, Level 2 EV charger installations, and whole-home GFCI/AFCI protection that brings the entire property up to current California safety codes.',
       },
       {
-        text: "Culver City's thriving restaurant scene — concentrated in downtown Culver City and along Washington Blvd — includes dozens of acclaimed eateries that depend on reliable commercial electrical systems. We install kitchen equipment circuits (commercial ranges, hood exhaust, walk-in coolers), dining room lighting on dimmers, patio heating circuits, and emergency lighting systems. Our commercial team works around restaurant schedules, often completing work overnight to minimize disruption.",
+        text: "Culver City's thriving culinary scene—heavily concentrated in downtown Culver City and along the Washington Blvd corridor—includes dozens of celebrated eateries that depend on uninterrupted, heavy-duty commercial electrical systems. We install complex kitchen equipment circuits (commercial ranges, exhaust hood controls, walk-in refrigeration units), atmospheric dining room dimming systems, outdoor patio heating circuits, and emergency egress lighting. Our commercial crew accommodates strict restaurant operational schedules, frequently executing work overnight to eliminate business downtime.",
       },
       {
-        text: "The Hayden Tract, once an industrial zone, is now one of LA's most architecturally celebrated creative office districts. The adaptive reuse buildings here require specialized electrical work — upgrading legacy industrial power systems to support modern office loads, installing EV charging stations in parking areas, and providing clean, reliable power for production equipment and server infrastructure.",
+        text: "Meanwhile, the historic Hayden Tract, once a traditional industrial manufacturing zone, stands today as one of Los Angeles's most architecturally acclaimed creative office districts. The adaptive reuse buildings found here require specialized electrical expertise: upgrading legacy industrial power grids to support modern tech office loads, installing commercial EV charging stations in shared parking lots, and providing clean, stable power configurations for production equipment and server rooms.",
       },
     ],
     features: [
@@ -99,26 +112,30 @@ function CulverCityPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Culver City',
@@ -169,10 +186,24 @@ function CulverCityPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Culver City Electrician | Independent City & Hayden Tract TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Culver City. Post-war home panel upgrades, restaurant kitchen wiring & Hayden Tract creative office electrical. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -182,7 +213,7 @@ function CulverCityPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

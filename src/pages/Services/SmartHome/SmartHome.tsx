@@ -1,8 +1,14 @@
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  Clock,
   GitGraph,
+  MapPin,
+  Shield,
   Smartphone,
+  Star,
+  Wrench,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -29,67 +35,78 @@ import HomeAutomation from '../../../assets/smarthome-3.webp';
 function SmartHome() {
   const hero = {
     icon: <Smartphone />,
-    title: 'Smart Home Electrical Systems',
+    title: 'Smart Home Electrical Systems & Automation Wiring',
     subtitle:
-      'Make your home smarter with professionally installed smart electrical systems. Brentwood Electrical Experts installs smart switches, outlets, lighting controls, and whole-home automation wiring across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
+      "Elevate your property's convenience, security, and efficiency with professionally engineered smart home electrical systems. Brentwood Electrical Experts installs Lutron smart switches, architectural lighting controls, automated motorized shades, and whole-home automation wiring across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.",
     backgroundImage: SmartHomeElectrical,
+    button: 'Request Smart Home Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Neutral-Wire Retrofit Expertise',
+      'Apple HomeKit, Alexa & Google Integration',
+    ],
+    icons: [<Star />, <Wrench />, <Smartphone />],
   };
 
   const benefits = {
+    title: 'Key Advantages of Professional Smart Home Integration',
     features: [
-      'Smart switch and dimmer installation',
-      'Voice-controlled lighting (Alexa, Google, Siri)',
-      'Whole-home automation wiring',
-      'Smart outlet installation',
-      'Network and data wiring',
-      'Professional integration and setup',
+      'Seamless installation of smart switches, touch dimmers, and automated scene keypads',
+      'Voice-controlled lighting and automation integration (Amazon Alexa, Google Home, Apple HomeKit, Siri)',
+      'Whole-home automation wiring, structured data cabling, and hardwired Wi-Fi access point drops',
+      'Smart outlet integration for appliance automation, energy monitoring, and remote scheduling',
+      'Professional neutral-wire retrofitting to ensure reliable operation in older properties',
+      'Expert programming of custom scenes, sunrise/sunset schedules, and mobile app control',
     ],
     image: SmartHomeElectrical,
   };
 
   const fullDescription = {
-    title: 'Smart Home Electrical Systems in West Los Angeles',
+    title: 'Professional Smart Home Wiring & Automation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that smart home
-        electrical systems is more than just technical work — it's about
-        ensuring the safety, comfort, and value of your property. As a fully{' '}
+        Integrating modern smart home technology into residential or commercial
+        spaces requires more than just screwing in smart bulbs or downloading an
+        app. Reliable automation relies on proper electrical box depth, stable
+        neutral-wire connections, robust Cat6 data cabling, and clean circuit
+        integration. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every smart home project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts installs professional-grade smart
+        electrical infrastructure.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine smart
-        home service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you need smart dimmers retrofitted into a mid-century property
+        in <NavLink to='/brentwood'>Brentwood</NavLink>, structured data cabling
+        and whole-home automation wired for a custom estate in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>, or smart
+        lighting controls integrated for a commercial space in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, our licensed team
+        ensures flawless setup.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every smart home project begins with an on-site evaluation of your
+        existing switch box wiring and Wi-Fi coverage, followed by an itemized,
+        transparent written proposal. We install premium, UL-listed automation
+        hardware from premier manufacturers including Lutron Caséta, Lutron
+        RadioRA 3, Control4, and TP-Link Kasa.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their smart home needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From neat wall box wiring to custom mobile app commissioning and
+        voice-assistant synchronization, your smart home installation is handled
+        completely in-house. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your smart home consultation</NavLink>{' '}
+        today.
       </>,
     ],
   };
@@ -98,29 +115,29 @@ function SmartHome() {
     title: 'What to Expect From Our Smart Home Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your smart home needs,
-        you're choosing a team that treats every job — big or small — with the
-        same level of professionalism, care, and attention to detail. We don't
-        cut corners, we don't rush through projects, and we never leave a job
-        until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your interior finishes and
+        technology setup with absolute care. We never guess on switch box
+        neutral wires, we never overload low-voltage communication lines, and we
+        ensure every smart device responds instantly without lag or dropped
+        signals.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your service starts with a thorough{' '}
+        <NavLink to='/contact'>on-site evaluation</NavLink>. A licensed C-10
+        electrician inspects your wall switch box depths, checks for required
+        neutral wires, and evaluates your home's wireless and hardwired network
+        infrastructure. We explain your automation options in plain language and
+        provide a transparent written estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical upgrades can feel disruptive, which is why our crew
+        prioritizes keeping your home spotless. We arrive on schedule, protect
+        your floors with heavy-duty drop cloths, fish wiring cleanly through
+        finished walls, and program your apps and voice assistants before
+        completing our workspace cleanup.
       </>,
     ],
   };
@@ -129,187 +146,239 @@ function SmartHome() {
     title: 'Our Smart Home Process — Step by Step',
     features: [
       {
-        title: 'Consultation',
+        title: 'Infrastructure Consultation',
         subtitle:
-          'We discuss your smart home goals and existing infrastructure.',
+          'We assess your smart home goals, Wi-Fi coverage, and existing switch box wiring (neutral wire verification).',
       },
       {
-        title: 'System Design',
-        subtitle: 'We recommend the right devices and wiring for your needs.',
+        title: 'System Design & Proposal',
+        subtitle:
+          'We design a custom automation and lighting control layout, select compatible platforms, and provide flat-rate pricing.',
       },
       {
-        title: 'Installation',
-        subtitle: 'We install and wire all smart devices and controls.',
+        title: 'Professional Wiring & Installation',
+        subtitle:
+          'We install neutral wires, mount smart switches/dimmers, and run structured Cat6 data cabling where needed.',
       },
       {
-        title: 'Programming',
-        subtitle: 'We set up apps, scenes, schedules, and voice control.',
+        title: 'App Programming & Voice Setup',
+        subtitle:
+          'We configure mobile applications, custom lighting scenes, automated schedules, and smart speaker voice control.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Neutral Wiring & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every smart home project
-        we complete meets or exceeds the latest National Electrical Code (NEC)
-        standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and strict code adherence are the foundation of every
+        smart home integration we perform. Every project we complete complies
+        fully with contacts, box fill limits, and safety standards governed by
+        the National Electrical Code (NEC) across Los Angeles (LADBS), Santa
+        Monica, Beverly Hills, and Culver City. We pull all necessary permits
+        when modifying main electrical distribution circuits.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed smart switches,
+        dimmers, and data components from trusted manufacturers including
+        Lutron, Leviton, Control4, and Schneider Electric. From high-performance
+        radio-frequency repeaters to robust surge-protected relays, every part
+        is specified for long-term operational stability.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because smart home protocols and wireless standards evolve continuously,
+        our technicians stay current on the latest mesh networks, Matter
+        standards, and smart lighting protocols—ensuring your automation system
+        remains future-proof.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Smart Home Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide smart home services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly installs smart home electrical
+        systems for homeowners, interior designers, and property managers across
+        West Los Angeles. Whether your property is located in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your smart home project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local team is ready to assist.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your smart
-        home project requires.
+        We understand the specific smart automation needs of Westside
+        properties—from retrofitting smart lighting controls into historic homes
+        in <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink> to engineering
+        whole-home automation and motorized shading wiring for luxury custom
+        estates in <NavLink to='/bel-air'>Bel Air</NavLink> and{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to make your home smarter?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>request your consultation online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Smart Home Installation Projects',
+    title: 'Featured Smart Home & Automation Projects Across West LA',
     subtitle:
-      'See our completed smart home electrical installations across West Los Angeles.',
+      'Browse our recent smart switch, lighting control, and automation deployments.',
     features: [
       {
         image: SmartSwitchInstallation,
-        name: 'Smart Switch Installation',
-        location: 'West LA',
+        name: 'Lutron Caséta Smart Dimmer Switch Retrofit',
+        location: 'West Los Angeles, CA',
       },
       {
         image: SmartLightingControls,
-        name: 'Smart Lighting Controls',
-        location: 'Santa Monica',
+        name: 'Multi-Zone Smart Keypad & Scene Controller',
+        location: 'Santa Monica, CA',
       },
       {
         image: HomeAutomation,
-        name: 'Home Automation',
-        location: 'Brentwood',
+        name: 'Whole-Home Automation & Structured Data Hub',
+        location: 'Brentwood, CA',
       },
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Smart Home Electrical Systems',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Do I need special wiring for smart home devices?',
+      question:
+        'Do I need special wiring or neutral wires in my walls for smart home switches?',
       answer:
-        'Some smart switches require a neutral wire. We can assess your existing wiring and add neutral wires where needed.',
+        'Most professional-grade smart switches and dimmers (such as Lutron or Leviton systems) require a neutral wire inside the wall switch box to power the smart device continuously. Older homes built before the 1980s frequently lack neutral wires in switch boxes. During our initial assessment, we check your boxes and can safely run new neutral wires or recommend no-neutral smart solutions (like Lutron Caséta) where appropriate.',
     },
     {
-      question: 'Which smart home platforms do you support?',
+      question:
+        'Which smart home platforms and voice assistants do your electrical systems support?',
       answer:
-        'We work with all major platforms including Apple HomeKit, Google Home, Amazon Alexa, Lutron, and Control4.',
+        'We install systems that integrate seamlessly with all major smart home platforms, including Amazon Alexa, Google Home, Apple HomeKit / Siri, Lutron App, and professional automation platforms like Control4. We configure your voice commands, mobile apps, and custom automation scenes so everything works effortlessly together.',
     },
   ];
 
   const areas = {
-    title: 'Smart Home Across West LA',
+    title: 'Smart Home Electrical Systems Across West LA',
     subtitle:
-      'We provide smart home electrical systems services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and install smart automation across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Smart Home Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary smart home assessment or request a quote online. Same-day consultations available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Smart Home Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Upgrade Your Home With Smart Technology?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your smart home estimate online.',
+  };
+
   return (
     <div>
+      <title>
+        Smart Home Automation & Lighting Control Wiring West LA | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) installing Lutron smart switches, whole-home automation wiring, voice control & data networks in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -318,7 +387,7 @@ function SmartHome() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -327,7 +396,7 @@ function SmartHome() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

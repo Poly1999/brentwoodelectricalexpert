@@ -67,8 +67,21 @@ function ReviewsPage() {
     },
   ];
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div className='reviewspage'>
+      <title>
+        5-Star Customer Reviews | Brentwood Electrical Experts C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Read verified 5-star reviews for Brentwood Electrical Experts. Trusted licensed electricians serving West LA, Santa Monica, Beverly Hills & Pacific Palisades. Call (310) 666-4752.'
+      />
       <div className='reviewspage_hero'>
         <div className='container'>
           <h2>
@@ -118,7 +131,7 @@ function ReviewsPage() {
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

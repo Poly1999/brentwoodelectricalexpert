@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { ClipboardCheck, Clock, Home, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,23 +15,39 @@ import Footer from '../../../components/Footer/Footer';
 function CheviotHillsPage() {
   const hero = {
     area: 'Cheviot Hills, CA · 90064',
-    title: 'Cheviot Hills Electrician — Licensed & Insured',
+    title:
+      'Cheviot Hills Electrician — Licensed & Insured Residential Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides trusted residential electrical services for Cheviot Hills homeowners. Our licensed electricians handle panel upgrades, lighting design, outlet installations, and complete electrical remodeling with care and precision.',
+      'Brentwood Electrical Experts provides trusted residential electrical services for Cheviot Hills homeowners. From 1930s traditional panel upgrades and kitchen remodel wiring to architectural landscape lighting and complete electrical modernizations, our licensed C-10 electricians handle every project with care, precision, and absolute respect for your home.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Historic & Traditional Home Specialists',
+      'LADBS Permitted Work',
+    ],
+    icons: [<Star />, <Home />, <ClipboardCheck />],
   };
 
   const about = {
     title: 'About Cheviot Hills',
     city: 'Cheviot Hills',
+    heading:
+      'Electrical Services Tailored to Cheviot Hills’ Classic Architecture',
+    challengeTitle:
+      'Modernizing Electrical Infrastructure in a Historic Neighborhood',
     subtitle:
-      'Cheviot Hills is a quiet, prestigious residential neighborhood south of Century City, known for excellent schools, beautiful tree-lined streets, and a strong family-oriented community.',
+      'Cheviot Hills is a quiet, prestigious residential neighborhood situated directly south of Century City, renowned for its excellent local schools, beautiful tree-lined suburban streets, and a strong, tight-knit family-oriented community.',
     features: [
-      { item: '1930s traditional homes' },
-      { item: 'Colonial Revival' },
-      { item: 'Renovated family homes' },
+      { item: '1930s and 1940s traditional character homes' },
+      { item: 'Classic Colonial Revival residences' },
+      { item: 'Beautifully renovated and expanded family homes' },
+      { item: 'Mid-century properties with mature architectural detailing' },
     ],
     challenge:
-      "Cheviot Hills' well-established residential character means most electrical work involves upgrading aging systems in older homes — panel replacements, kitchen remodel electrical, and adding capacity for modern demands.",
+      "Cheviot Hills' well-established residential character means the vast majority of electrical work involves upgrading legacy systems in older homes. Original electrical panels, ungrounded wiring, and limited circuit capacity cannot support today's high-draw kitchen appliances, home offices, and EV chargers. Upgrading these systems safely requires meticulous care to preserve vintage architectural millwork and plaster finishes.",
     quote: [
       {
         text: "Cheviot Hills homeowners value quality and attention to detail — that's exactly what we deliver, with clean installations, transparent pricing, and respect for your home.",
@@ -46,32 +62,33 @@ function CheviotHillsPage() {
       {
         title: 'Classic Home Panel Upgrades',
         subtitle:
-          "200-amp upgrades for Cheviot Hills' 1930s–1950s homes — the foundation for modern electrical living in a classic neighborhood.",
+          "Safe 200-amp service upgrades for Cheviot Hills' 1930s–1950s homes—establishing the essential electrical foundation for modern living while maintaining architectural integrity.",
       },
       {
         title: 'Renovation Electrical',
         subtitle:
-          'Kitchen, bathroom, and whole-home remodel electrical — dedicated circuits, modern lighting, and clean installations.',
+          'Comprehensive kitchen, bathroom, and whole-home remodel electrical—featuring dedicated appliance circuits, modern lighting layouts, and clean rough-in installations.',
       },
       {
         title: 'Estate Landscape Lighting',
         subtitle:
-          "Professional landscape lighting design and installation for Cheviot Hills' spacious, beautifully landscaped properties.",
+          "Professional low-voltage LED landscape lighting design and installation tailored for Cheviot Hills' spacious lots, mature shade trees, and beautifully manicured lawns.",
       },
     ],
   };
 
   const details = {
     city: 'Cheviot Hills',
+    heading: 'Your Trusted Local Electrician in Cheviot Hills, California',
     pharagraphs: [
       {
-        text: "Cheviot Hills is one of the Westside's best-kept secrets — a quiet, tree-lined neighborhood where families have been putting down roots for generations. The homes here, primarily built in the 1930s through 1950s, reflect the craftsmanship of their era but often have electrical systems that need modernization. We help Cheviot Hills homeowners thoughtfully upgrade their homes with 200-amp panels, modern lighting, and additional circuits — preserving character while adding modern capability.",
+        text: "Cheviot Hills remains one of the Westside's best-kept secrets—a tranquil, tree-lined residential haven where families put down roots for generations. The homes here, primarily constructed between the 1930s and 1950s, reflect exceptional craftsmanship of their era but frequently feature legacy electrical systems that require careful modernization. We assist Cheviot Hills homeowners in thoughtfully upgrading their properties with 200-amp panels, contemporary lighting design, and additional dedicated circuits—preserving original home character while introducing robust, modern electrical capability.",
       },
       {
-        text: "Kitchen and bathroom remodels are Cheviot Hills' most popular renovation projects. These updates require significant electrical work: dedicated appliance circuits, GFCI-protected outlets, modern lighting layouts, exhaust fan wiring, and heated floor circuits. We coordinate closely with your general contractor and designer to ensure electrical work aligns perfectly with the overall renovation plan.",
+        text: "Kitchen and bathroom renovations stand as Cheviot Hills' most popular residential home improvement projects. These complex updates demand precise electrical planning and execution: dedicated appliance circuits, GFCI-protected wet-zone outlets, layered recessed and task lighting layouts, exhaust fan wiring, and radiant heated floor circuits. We coordinate closely with your general contractor and interior designer to ensure our electrical rough-in aligns flawlessly with the overall architectural renovation schedule.",
       },
       {
-        text: "Cheviot Hills' spacious lots and mature landscaping create beautiful outdoor spaces that benefit from professional landscape lighting. We design and install low-voltage LED systems that illuminate specimen trees, pathways, and entertaining areas — adding both beauty and security to your property.",
+        text: "Furthermore, Cheviot Hills' spacious residential lots and mature landscaping create gorgeous outdoor living spaces that benefit immensely from professional landscape lighting. We design and install energy-efficient low-voltage LED lighting systems that accentuate specimen trees, illuminate safe walkways, and highlight outdoor entertaining zones—adding both stunning evening aesthetics and robust perimeter security to your property.",
       },
     ],
     features: [
@@ -88,26 +105,30 @@ function CheviotHillsPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Cheviot Hills',
@@ -142,10 +163,24 @@ function CheviotHillsPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Cheviot Hills Electrician | Classic Home Electrical & Remodels | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Cheviot Hills, CA. 1930s–1950s panel upgrades, kitchen remodel wiring & estate landscape lighting. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -155,7 +190,7 @@ function CheviotHillsPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

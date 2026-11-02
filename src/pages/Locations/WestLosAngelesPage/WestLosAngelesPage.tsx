@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Building2, Clock, Shield, Star, TrainFront, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,45 @@ import Footer from '../../../components/Footer/Footer';
 function WestLosAngelesPage() {
   const hero = {
     area: 'West Los Angeles, CA · 90025, 90064',
-    title: 'West Los Angeles Electrician — Licensed & Insured',
+    title:
+      'West Los Angeles Electrician — Licensed & Insured Residential & Commercial Services',
     subtitle:
-      'Brentwood Electrical Experts is the trusted electrician for West Los Angeles. We provide comprehensive residential and commercial electrical services including panel upgrades, EV charger installations, lighting, and emergency electrical repairs across the entire West LA region.',
+      'Brentwood Electrical Experts is the trusted local electrical contractor for West Los Angeles. From mid-century residential panel upgrades and multi-unit apartment building modernizations to commercial tenant improvements along Olympic, Pico, and National Boulevards, our licensed C-10 electricians deliver fast, reliable, and code-compliant electrical work across the entire West LA region.',
+    button: 'Request West LA Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Multi-Unit & Commercial Specialists',
+      'E-Line Corridor Experts',
+    ],
+    icons: [<Star />, <Building2 />, <TrainFront />],
   };
 
   const about = {
     title: 'About West Los Angeles',
     city: 'West Los Angeles',
+    heading:
+      'Electrical Services Tailored to West Los Angeles’ Urban Footprint',
+    challengeTitle:
+      'Balancing Aging Multi-Unit Infrastructure and Commercial Growth',
     subtitle:
-      "West Los Angeles is a broad Westside community encompassing multiple sub-neighborhoods, offering convenient access to the 405 freeway, Expo Line, and all of the Westside's amenities.",
+      'West Los Angeles is a broad, dynamic Westside community encompassing multiple vibrant sub-neighborhoods, offering exceptional accessibility via the 405 freeway, the Metro E (Expo) Line transit corridor, and all major Westside commercial arteries.',
     features: [
-      { item: 'Mid-century homes' },
-      { item: 'Apartment complexes' },
-      { item: 'Commercial properties' },
-      { item: 'VA campus adjacent' },
+      {
+        item: 'Mid-century single-family homes (Westdale, Rancho Park pockets)',
+      },
+      { item: 'Multi-family apartment complexes and investment properties' },
+      {
+        item: 'Commercial office buildings and retail storefronts (Olympic, Pico, National)',
+      },
+      {
+        item: 'Transit-oriented mixed-use developments near the VA campus and E Line',
+      },
     ],
     challenge:
-      'West LA is a large, diverse area with electrical needs ranging from aging apartment building upgrades to commercial property improvements. The proximity of the VA campus and major transportation corridors creates varied demand.',
+      'West Los Angeles is a large, highly diverse service zone with electrical demands spanning the complete spectrum—from aging apartment building modernizations and shared-service overhauls to extensive commercial tenant improvements. Furthermore, rapid urban densification along major transit corridors like the E Line and Sepulveda Boulevard creates ongoing demand for new construction and capacity expansions.',
     quote: [
       {
         text: "As West LA's local electrical contractor, we understand the diversity of this community — from apartment buildings near the VA campus to single-family homes in Westdale, we serve it all.",
@@ -47,39 +68,41 @@ function WestLosAngelesPage() {
       {
         title: 'Residential Modernization',
         subtitle:
-          "Panel upgrades, additional circuits, and smart home wiring for West LA's mid-century single-family homes.",
+          "200-amp main panel upgrades, dedicated branch circuits, and smart home automation wiring engineered for West LA's mid-century single-family homes.",
       },
       {
         title: 'Apartment Building Electrical',
         subtitle:
-          'Main panel replacements, unit upgrades, and EV charging infrastructure for West LA multi-unit properties.',
+          'Main switchboard replacements, unit service upgrades, and shared EV charging infrastructure for multi-unit apartment complexes and rental properties across West LA.',
       },
       {
         title: 'Commercial Tenant Improvements',
         subtitle:
-          "Electrical build-outs for offices, restaurants, and retail spaces along West LA's major commercial corridors.",
+          "Turnkey commercial electrical build-outs for professional offices, destination restaurants, and retail spaces along West LA's primary commercial corridors.",
       },
     ],
   };
 
   const details = {
     city: 'West Los Angeles',
+    heading: 'Your Trusted Local Electrician in West Los Angeles, California',
     pharagraphs: [
       {
-        text: "West Los Angeles covers a large, diverse area with electrical needs that span the full spectrum. Mid-century homes in the Westdale and Rancho Park sub-neighborhoods need panel upgrades and modernization. Apartment buildings near the VA campus and along Sepulveda require infrastructure upgrades. Commercial properties along Olympic, Pico, and National need tenant improvement electrical. We serve all of these needs as the Westside's comprehensive electrical contractor.",
+        text: "West Los Angeles covers an expansive, highly diverse geographic footprint with electrical requirements that span the full commercial and residential spectrum. Mid-century residential properties located throughout the Westdale and Rancho Park sub-neighborhoods routinely require comprehensive main service panel replacements and electrical modernization to support modern household loads. Simultaneously, the dense concentration of multi-family apartment buildings situated near the West LA VA campus and along Sepulveda Boulevard demand rigorous infrastructure overhauls. Furthermore, commercial properties lining Olympic Boulevard, Pico Boulevard, and National Boulevard rely on our specialized commercial tenant improvement expertise. We successfully manage all of these diverse requirements as the Westside's comprehensive, full-service electrical contractor.",
       },
       {
-        text: "The Expo Line has spurred development along West LA's major corridors, bringing new mixed-use buildings, restaurants, and commercial spaces that need professional electrical installation. We've been involved in numerous projects along the Expo Line corridor, providing new construction electrical for transit-oriented developments.",
+        text: "The expansion of the Metro E (Expo) Line transit network has spurred massive revitalization along West LA's major transportation spines, introducing modern mixed-use residential buildings, specialty dining venues, and commercial spaces that require professional electrical installation from the ground up. Our team has participated directly in numerous high-profile projects along the transit corridor, delivering new construction and core electrical distribution for transit-oriented developments.",
       },
       {
-        text: "West LA's residential neighborhoods are popular with young professionals and families who want modern electrical amenities — EV chargers, smart home systems, home office circuits, and updated lighting — in homes that may be 50-70 years old. We bridge this gap with efficient, cost-effective electrical upgrades.",
+        text: "Meanwhile, West LA's established residential pockets remain extremely popular with young families and working professionals who desire contemporary electrical conveniences—such as Level 2 EV chargers, smart lighting controls, dedicated home office circuits, and upgraded recessed lighting—within homes originally constructed 50 to 70 years ago. We bridge this generation gap in architecture by engineering clean, cost-effective electrical upgrades that respect your home's historic structure while delivering maximum modern performance.",
       },
     ],
     features: [
       { item: 'West LA VA Campus' },
       { item: 'Sawtelle Blvd' },
       { item: 'National Blvd' },
-      { item: 'Expo Line stations' },
+      { item: 'Expo/E Line Stations' },
+      { item: 'Westdale Park' },
     ],
   };
 
@@ -90,26 +113,30 @@ function WestLosAngelesPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'West Los Angeles',
@@ -143,10 +170,24 @@ function WestLosAngelesPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        West Los Angeles Electrician | Panel Upgrades & Commercial TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving West Los Angeles (90025, 90064). Mid-century residential panel upgrades, multi-unit apartment modernizations & Olympic/Pico commercial TIs. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -156,7 +197,7 @@ function WestLosAngelesPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

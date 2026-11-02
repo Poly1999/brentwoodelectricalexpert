@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { ClipboardCheck, Clock, Flame, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,27 +15,42 @@ import Footer from '../../../components/Footer/Footer';
 function PacificPalisadesPage() {
   const hero = {
     area: 'Pacific Palisades, CA · 90272',
-    title: 'Pacific Palisades Electrician — Licensed & Insured',
+    title:
+      'Pacific Palisades Electrician — Licensed & Insured Coastal & Rebuild Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts serves Pacific Palisades homeowners with premium electrical services. From luxury home lighting design to panel upgrades and EV charger installation, our licensed electricians provide meticulous, code-compliant work for this prestigious coastal community.',
+      'Brentwood Electrical Experts serves Pacific Palisades homeowners with premium electrical services. From post-fire electrical rebuilds and whole-home standby generators to wildland-urban interface (WUI) fire-hardening and luxury Lutron lighting control, our licensed C-10 electricians provide meticulous, code-compliant work for this prestigious coastal community.',
+    button: 'Request Pacific Palisades Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Fire Rebuild & LADBS Permit Experts',
+      'WUI Fire-Hardening Specialists',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Flame />],
   };
 
   const about = {
     title: 'About Pacific Palisades',
     city: 'Pacific Palisades',
+    heading:
+      'Electrical Services Tailored to Pacific Palisades Architecture & Terrain',
+    challengeTitle:
+      'Navigating Hillside Construction, Wildfire Risk, and Rebuilds',
     subtitle:
-      'Pacific Palisades is a prestigious coastal neighborhood between Santa Monica and Malibu, home to approximately 27,000 residents. Known for its canyon trails, ocean views, and family-oriented community, the Palisades blends natural beauty with refined residential living.',
+      'Pacific Palisades is a prestigious coastal residential enclave nestled between Santa Monica and Malibu, home to approximately 27,000 residents. Renowned for its dramatic canyon trails, sweeping ocean views, and close-knit family community, the Palisades blends natural coastal beauty with refined architectural living.',
     features: [
-      { item: 'Coastal contemporary estates' },
-      { item: 'Mediterranean Revival villas' },
-      { item: 'Mid-century canyon homes' },
-      { item: 'Modern architectural builds' },
+      { item: 'Coastal contemporary and modern architectural custom estates' },
+      { item: 'Mediterranean Revival villas and luxury hillside properties' },
+      { item: 'Mid-century canyon homes and woodland retreats' },
+      { item: 'Post-fire new construction and ground-up residential rebuilds' },
     ],
     challenge:
-      'Pacific Palisades properties face a unique combination of hillside construction challenges, wildfire risk, and coastal exposure. Many homes in Temescal Canyon, the Riviera, and the Highlands have long driveway runs requiring extensive underground conduit. The 2025 Palisades Fire destroyed or damaged hundreds of homes, creating massive demand for complete electrical rebuilds from the ground up.',
+      'Pacific Palisades properties face a complex combination of challenging hillside topography, severe wildfire risks, and corrosive coastal exposure. Many homes in Temescal Canyon, the Riviera, and the Highlands feature long driveway runs requiring extensive underground conduit feeds. Furthermore, following local wildfire events, our team has been deeply committed to helping homeowners navigate fire-zone permitting, WUI codes, and complete ground-up electrical rebuilds.',
     quote: [
       {
-        text: "In the wake of the 2025 Palisades Fire, our team has been on the front lines helping homeowners rebuild. We understand the fire rebuild permitting process, FEMA documentation requirements, and insurance coordination — and we're committed to helping our Palisades neighbors restore their homes.",
+        text: "In the wake of local wildfire events, our team has been on the front lines helping homeowners rebuild. We understand the fire rebuild permitting process, documentation requirements, and insurance coordination — and we're committed to helping our Palisades neighbors restore their homes.",
         subtext: '— Brentwood Electrical Experts, serving Pacific Palisades',
       },
     ],
@@ -47,40 +62,41 @@ function PacificPalisadesPage() {
       {
         title: 'Fire Rebuild Electrical',
         subtitle:
-          'Complete electrical system installation for Pacific Palisades homes being rebuilt after the 2025 fire — from service entrance to final fixture, fully permitted and inspected.',
+          'Complete, ground-up electrical system installation for Pacific Palisades homes undergoing post-fire rebuilding—engineered from service entrance to final fixture, fully permitted and inspected.',
       },
       {
         title: 'Whole-Home Generator Systems',
         subtitle:
-          'Protect your Palisades family from PSPS shutoffs with a Generac or Kohler standby generator that automatically restores power in seconds.',
+          'Protect your Palisades family from PSPS shutoffs and grid instability with a Generac or Kohler standby generator featuring automatic power transfer in under 10 seconds.',
       },
       {
         title: 'Luxury Lighting Control',
         subtitle:
-          "Lutron RadioRA 3, Ketra tunable lighting, and custom whole-home lighting design for Pacific Palisades' finest residences.",
+          "Lutron RadioRA 3, Ketra tunable circadian lighting, and custom whole-home architectural lighting design tailored for Pacific Palisades' finest custom residences.",
       },
       {
         title: 'Canyon Driveway & Landscape Lighting',
         subtitle:
-          'Professional landscape lighting design and installation for Pacific Palisades canyon properties — safety, security, and stunning curb appeal.',
+          'Professional low-voltage landscape lighting design and installation for winding Pacific Palisades canyon properties—delivering safety, security, and striking curb appeal.',
       },
     ],
   };
 
   const details = {
     city: 'Pacific Palisades',
+    heading: 'Your Trusted Local Electrician in Pacific Palisades, California',
     pharagraphs: [
       {
-        text: "The 2025 Palisades Fire forever changed this beloved community. Hundreds of families lost their homes, and many more suffered significant damage. As a West LA-based electrical contractor, we've been deeply involved in the rebuilding effort — performing complete electrical system installations for new construction, repairing fire-damaged panels and wiring, and helping homeowners navigate the complex permitting process for fire-zone rebuilds. If your Pacific Palisades home was affected, we're here to help you rebuild safely and efficiently.",
+        text: "Recent wildfire seasons have left an indelible mark on the Pacific Palisades community, damaging or destroying hundreds of residential properties. As a trusted West LA-based electrical contractor, we have worked on the front lines of the neighborhood's recovery effort—executing complete, ground-up electrical system installations for new construction homes, repairing fire-exposed main service panels, and assisting homeowners through the intricate municipal permitting process required for fire-zone rebuilding. If your Pacific Palisades property was impacted, our licensed team is here to help you rebuild securely and efficiently.",
       },
       {
-        text: "For Pacific Palisades homes that were spared, fire preparedness has taken on renewed urgency. We install hardwired whole-home generators with automatic transfer switches, ensuring your family has power during PSPS shutoffs and grid failures. We also install ember-resistant electrical enclosures, underground service entrance cables, and fire-rated junction boxes that meet the latest wildland-urban interface (WUI) building codes. These aren't optional upgrades — they're essential protections for any home in a fire-prone area.",
+        text: 'For Palisades homes that were spared, comprehensive fire preparedness has become an absolute priority. We install hardwired whole-home standby generators equipped with automatic transfer switches, ensuring your household maintains continuous power during Public Safety Power Shutoff (PSPS) events and utility grid failures. Additionally, we install ember-resistant exterior electrical enclosures, heavy-duty underground service entrance cables, and fire-rated junction boxes designed to satisfy strict California wildland-urban interface (WUI) building codes. These safeguards represent vital protections for any property situated in a high-risk hillside zone.',
       },
       {
-        text: 'The Palisades Riviera and Castellammare neighborhoods feature some of the most architecturally significant homes on the Westside. These properties demand electrical systems that match their caliber — whole-home lighting control systems by Lutron and Ketra, integrated audio-visual wiring, motorized shade controls, and dedicated circuits for wine cellars, home theaters, and professional-grade kitchens. Our team has the expertise to design and install these sophisticated systems with meticulous attention to detail.',
+        text: 'The Palisades Riviera and Castellammare neighborhoods showcase some of the most architecturally significant residences on the entire Westside. These luxury estates demand power systems that match their caliber: whole-home lighting control platforms by Lutron and Ketra, integrated audio-visual wiring, automated motorized window shades, and dedicated high-amperage circuits for wine cellars, home screening rooms, and professional culinary kitchens. Our technicians possess the specialized expertise required to engineer and install these sophisticated systems with flawless precision.',
       },
       {
-        text: "Canyon living in Pacific Palisades — Temescal, Santa Ynez, and Los Liones — presents unique electrical challenges. Long, winding driveways require durable landscape lighting for safety and aesthetics. Remote locations sometimes mean longer utility runs and the need for on-site generators during construction. We've mastered these canyon-specific challenges and deliver reliable electrical solutions for even the most remote Palisades properties.",
+        text: 'Furthermore, canyon living across Temescal, Santa Ynez, and Los Liones presents unique logistical challenges. Long, winding hillside driveways require robust underground landscape lighting infrastructure for nighttime safety and visual appeal. Remote terrain often involves extended utility runs and the deployment of auxiliary generators during active construction phases. We have mastered these canyon-specific obstacles, delivering dependable electrical solutions for even the most isolated Palisades properties.',
       },
     ],
     features: [
@@ -99,26 +115,30 @@ function PacificPalisadesPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Pacific Palisades',
@@ -173,10 +193,24 @@ function PacificPalisadesPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Pacific Palisades Electrician | Fire Rebuilds & Standby Generators |
+        C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Pacific Palisades (90272). Post-fire electrical rebuilds, whole-home standby generators, WUI fire-hardening & Lutron lighting. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -186,7 +220,7 @@ function PacificPalisadesPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

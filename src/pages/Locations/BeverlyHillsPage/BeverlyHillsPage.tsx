@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Building2, Clock, Landmark, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,39 @@ import Footer from '../../../components/Footer/Footer';
 function BeverlyHillsPage() {
   const hero = {
     area: 'Beverly Hills, CA · 90210, 90211, 90212',
-    title: 'Beverly Hills Electrician — Licensed & Insured',
+    title:
+      'Beverly Hills Electrician — Licensed & Insured Luxury Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts delivers premium electrical services throughout Beverly Hills. From electrical panel upgrades and EV charger installations to sophisticated lighting design and smart home automation, we provide the highest level of craftsmanship and service for Beverly Hills homes and businesses.',
+      'Brentwood Electrical Experts delivers premium electrical services throughout Beverly Hills. From independent municipal electrical panel upgrades and historic 1930s estate renovations to sophisticated architectural lighting design and Rodeo Drive commercial tenant improvements, our licensed C-10 electricians provide the highest level of craftsmanship and white-glove service.',
+    button: 'Request Beverly Hills Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Beverly Hills Building & Safety Experts',
+      'Historic & Estate Specialists',
+    ],
+    icons: [<Star />, <Building2 />, <Landmark />],
   };
 
   const about = {
     title: 'About Beverly Hills',
     city: 'Beverly Hills',
+    heading: 'Electrical Services Tailored to Beverly Hills Standards',
+    challengeTitle: 'Navigating Beverly Hills’ Independent Building Department',
     subtitle:
-      'Beverly Hills is an iconic independent city of roughly 33,000 residents, world-famous for luxury shopping on Rodeo Drive, celebrity residents, and immaculate residential neighborhoods. The city maintains its own building department with high standards for construction quality.',
+      'Beverly Hills is an iconic independent municipality of roughly 33,000 residents, globally renowned for luxury retail along Rodeo Drive, world-class celebrity estates, and immaculate residential neighborhoods. Because Beverly Hills operates as an independent city separate from Los Angeles, it maintains its own dedicated building department with exceptionally rigorous construction and inspection standards.',
     features: [
-      { item: 'Historic Golden Age mansions' },
-      { item: 'Modern luxury rebuilds' },
-      { item: 'Multi-unit flats' },
-      { item: 'Commercial mixed-use' },
+      { item: 'Historic Golden Age mansions and 1930s architectural estates' },
+      { item: 'Contemporary luxury custom rebuilds and hillside compounds' },
+      { item: 'Multi-unit residential flats and luxury condominiums' },
+      {
+        item: 'High-end commercial mixed-use properties and Rodeo Drive retail spaces',
+      },
     ],
     challenge:
-      "Beverly Hills operates as an independent city with its own building department and inspection process, separate from Los Angeles. Many homes south of Santa Monica Blvd are 1930s–1950s construction with original wiring. The city's strict renovation requirements and historic preservation standards add complexity to electrical upgrade projects.",
+      "Beverly Hills operates an independent building and safety department with its own distinct municipal codes and rigorous inspection protocols. Many charming properties south of Santa Monica Boulevard feature original 1930s–1950s construction with obsolete wiring and fuse panels. Furthermore, the city's strict historic preservation guidelines and architectural board review requirements add immense complexity to electrical upgrade projects, demanding deep local municipal expertise.",
     quote: [
       {
         text: "We've built strong relationships with the Beverly Hills Building Department through years of consistent, code-compliant work. Our permit applications are thorough, our installations are meticulous, and our inspection pass rates reflect our commitment to quality.",
@@ -47,40 +62,41 @@ function BeverlyHillsPage() {
       {
         title: 'Beverly Hills Panel Upgrades',
         subtitle:
-          "Navigate Beverly Hills' independent permitting process with confidence. We handle everything from application to final inspection for seamless 200-amp, 320-amp, or 400-amp upgrades.",
+          "Expertly navigate Beverly Hills' independent permitting process. We handle everything from municipal plan check submission to final inspection for seamless 200A, 320A, or 400A service upgrades.",
       },
       {
         title: 'Historic Home Electrical Renovation',
         subtitle:
-          "Sensitively modernize the electrical systems in Beverly Hills' 1930s–1950s architectural gems — modern safety and capacity without compromising character.",
+          "Sensitively modernize obsolete wiring systems in Beverly Hills' 1930s–1950s architectural gems—delivering modern electrical safety and capacity without compromising original character.",
       },
       {
         title: 'Luxury Home Lighting Design',
         subtitle:
-          "Crystal chandeliers, architectural cove lighting, art lighting, and whole-home dimming systems designed and installed for Beverly Hills' most discerning homeowners.",
+          "Crystal chandeliers, architectural cove lighting, fine-art display spots, and whole-home dimming systems custom-engineered for Beverly Hills' most discerning homeowners.",
       },
       {
         title: 'Commercial Electrical – Rodeo Drive & Beyond',
         subtitle:
-          "Retail, restaurant, and office electrical build-outs tailored to Beverly Hills' high standards — three-phase power, decorative lighting, and code-compliant installations.",
+          "High-end retail, restaurant, and professional office electrical build-outs tailored to Beverly Hills' strict standards—featuring three-phase power, decorative lighting, and code-compliant executions.",
       },
     ],
   };
 
   const details = {
     city: 'Beverly Hills',
+    heading: 'Your Trusted Local Electrician in Beverly Hills, California',
     pharagraphs: [
       {
-        text: "Beverly Hills is an independent city — not part of Los Angeles — which means it has its own building department, its own electrical codes, and its own inspection process. This distinction matters because contractors unfamiliar with Beverly Hills-specific requirements can face delays, failed inspections, and costly rework. We've completed hundreds of electrical projects in Beverly Hills and have a thorough understanding of the city's permitting process, code interpretations, and inspector expectations.",
+        text: 'Beverly Hills is an entirely independent city—not an extension of Los Angeles—which means it enforces its own municipal building department, its own unique electrical code interpretations, and its own stringent inspection procedures. This distinction is critical because electrical contractors unfamiliar with Beverly Hills-specific requirements frequently encounter severe plan check delays, failed inspections, and costly rework. We have successfully completed hundreds of electrical projects throughout Beverly Hills, boasting a thorough, first-hand mastery of the city’s permitting workflows, code guidelines, and inspector expectations.',
       },
       {
-        text: 'The residential flats of Beverly Hills — the neighborhoods south of Sunset Blvd — contain some of the finest examples of 1930s and 1940s residential architecture in Southern California. These homes often feature original cloth-insulated wiring, fuse panels, and undersized services that are well past their useful life. We specialize in carefully upgrading these systems — replacing fuse boxes with modern circuit breaker panels, rewiring circuits with current-spec copper conductors, and bringing grounding and bonding up to modern code — all while preserving the character of these treasured homes.',
+        text: 'The residential flats of Beverly Hills—the sought-after neighborhoods south of Sunset Boulevard—contain some of the finest examples of 1930s and 1940s residential architecture in Southern California. These historic homes frequently feature original cloth-insulated wiring, obsolete fuse panels, and severely undersized services well past their operational lifespan. We specialize in delicate, non-invasive electrical modernization—replacing hazardous fuse boxes with modern circuit breaker panels, fishing new current-spec copper branch wiring, and bringing grounding and bonding up to rigorous contemporary codes while meticulously preserving vintage architectural finishes.',
       },
       {
-        text: 'North of Sunset, Beverly Hills transitions into the hillside estates and gated communities that define the 90210 experience. These larger properties demand more substantial electrical infrastructure — 320-amp to 600-amp services, multiple sub-panels, dedicated circuits for pool equipment, guest houses, and extensive landscape lighting systems. We design these complex systems with future expansion in mind, ensuring your electrical infrastructure can grow with your property.',
+        text: 'North of Sunset Boulevard, Beverly Hills transitions seamlessly into the sprawling hillside estates and private gated enclaves that define the legendary 90210 experience. These luxury properties demand substantial, highly engineered electrical infrastructure: 320-amp to 600-amp main services, complex multi-panel sub-distribution networks, dedicated circuits for heavy pool and spa equipment, guest houses, and extensive architectural landscape lighting systems. We engineer these complex systems with future electrical expansion in mind, ensuring your power infrastructure scales effortlessly.',
       },
       {
-        text: "Beverly Hills' commercial district — centered on Rodeo Drive, Beverly Drive, and Canon Drive — features high-end retail, restaurants, and professional offices with sophisticated electrical needs. We provide commercial services including three-phase power distribution, decorative storefront lighting, sign circuits, kitchen hood electrical, and emergency lighting systems that comply with Beverly Hills' exacting commercial building standards.",
+        text: "Meanwhile, Beverly Hills' world-famous commercial district—centered on Rodeo Drive, Beverly Drive, and Canon Drive—features ultra-luxury retail flagships, fine dining establishments, and professional executive offices with highly sophisticated electrical requirements. We provide comprehensive commercial electrical services including three-phase power distribution, decorative storefront lighting, custom sign circuits, commercial kitchen equipment connections, and emergency egress lighting systems that fully satisfy Beverly Hills' exacting commercial building standards.",
       },
     ],
     features: [
@@ -88,7 +104,7 @@ function BeverlyHillsPage() {
       { item: 'Beverly Wilshire Hotel' },
       { item: 'Greystone Mansion' },
       { item: 'Beverly Gardens Park' },
-      { item: 'Cedars-Sinai nearby' },
+      { item: 'Cedars-Sinai (Nearby)' },
     ],
   };
 
@@ -99,26 +115,30 @@ function BeverlyHillsPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Beverly Hills',
@@ -171,10 +191,24 @@ function BeverlyHillsPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Beverly Hills Electrician | Independent City Permits & Luxury TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Beverly Hills (90210–90212). Independent city permitting, historic home electrical modernizations & Rodeo Drive commercial TIs. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -184,7 +218,7 @@ function BeverlyHillsPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

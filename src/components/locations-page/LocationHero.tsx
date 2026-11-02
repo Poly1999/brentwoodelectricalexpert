@@ -6,6 +6,7 @@ interface LocationHero {
   area: string;
   title: React.ReactNode;
   subtitle: string;
+  button: string;
 }
 
 interface LocationHeroProps {
@@ -31,7 +32,7 @@ function LocationHero({ hero }: LocationHeroProps) {
             </a>
             <NavLink to='/contact' className='locationhero_button_secondary'>
               <FileText />
-              Get FREE Quote
+              {hero.button}
             </NavLink>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Anchor, Clock, Footprints, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,37 @@ import Footer from '../../../components/Footer/Footer';
 function HermosaBeachPage() {
   const hero = {
     area: 'Hermosa Beach, CA · 90254',
-    title: 'Hermosa Beach Electrician — Licensed & Insured',
+    title:
+      'Hermosa Beach Electrician — Licensed & Insured Coastal Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts serves Hermosa Beach with professional electrical services. Our licensed team handles panel upgrades, EV charger installations, security lighting, and all residential and commercial electrical needs for this South Bay beach community.',
+      'Brentwood Electrical Experts serves Hermosa Beach with professional electrical services tailored to the South Bay. From walk-street hand-carry panel upgrades and marine-grade corrosion-resistant installations to Strand-front EV chargers, security lighting, and rooftop deck electrical, our licensed C-10 electricians deliver reliable, code-compliant work throughout Hermosa Beach.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Walk-Street Logistics Specialists',
+      'Marine-Grade Coastal Hardware',
+    ],
+    icons: [<Star />, <Footprints />, <Anchor />],
   };
 
   const about = {
     title: 'About Hermosa Beach',
     city: 'Hermosa Beach',
+    heading: 'Electrical Services Tailored to Hermosa Beach Coastal Living',
+    challengeTitle: 'Overcoming Walk-Street Logistics and Salt Air Corrosion',
     subtitle:
-      'Hermosa Beach is a small, vibrant South Bay beach city of about 20,000 residents known for its pier, active lifestyle, and tight-knit community atmosphere.',
+      'Hermosa Beach is a vibrant, active South Bay beach city of about 20,000 residents celebrated worldwide for its iconic pier, active outdoor lifestyle, and tight-knit community atmosphere.',
     features: [
-      { item: 'Beach cottages' },
-      { item: 'Coastal condos' },
-      { item: 'Modern beach houses' },
-      { item: 'Walk-street homes' },
+      { item: 'Classic beachfront cottages and vintage bungalows' },
+      { item: 'Contemporary coastal condominiums and multi-family units' },
+      { item: 'Modern custom multi-story beach houses' },
+      { item: 'Pedestrian-only walk-street residential homes' },
     ],
     challenge:
-      "Hermosa Beach's compact beachfront lots, salt air corrosion, and older cottage-style homes create unique challenges. Many homes are on narrow walk streets with no vehicle access, requiring hand-carried equipment.",
+      "Hermosa Beach's compact beachfront lots, aggressive salt air corrosion, and historic cottage-style architecture present unique engineering challenges. Many residential properties are situated directly on narrow, pedestrian-only walk streets with zero vehicle access, requiring specialized crews who can efficiently hand-carry tools and heavy equipment to the job site.",
     quote: [
       {
         text: 'We love working in Hermosa Beach — from walk-street cottages to Strand-front homes, we handle the unique logistics of beachfront electrical work with expertise and care.',
@@ -47,32 +60,33 @@ function HermosaBeachPage() {
       {
         title: 'Walk-Street Electrical Services',
         subtitle:
-          'Expert electrical work for Hermosa Beach walk-street homes — experienced crews who hand-carry equipment and work efficiently in compact spaces.',
+          'Expert electrical upgrades for Hermosa Beach walk-street homes—executed by experienced crews who plan ahead, efficiently hand-carry materials, and complete projects smoothly in compact spaces.',
       },
       {
         title: 'Marine-Grade Panel Upgrades',
         subtitle:
-          'Corrosion-resistant panel installations for Hermosa Beach — stainless hardware, marine-grade enclosures, and coastal-rated components.',
+          "Salt-resistant panel installations built for Hermosa Beach's coastal environment—featuring stainless steel hardware, marine-rated enclosures, and UV-resistant outdoor components.",
       },
       {
         title: 'Beach House Outdoor Electrical',
         subtitle:
-          "Rooftop decks, hot tubs, outdoor showers, and patio electrical — all built to withstand Hermosa Beach's salt air environment.",
+          'Rooftop deck lighting, hot tub and spa circuits, outdoor showers, and patio entertainment wiring—all built to safely withstand harsh marine moisture and salt air.',
       },
     ],
   };
 
   const details = {
     city: 'Hermosa Beach',
+    heading: 'Your Trusted Coastal Electrician in Hermosa Beach, California',
     pharagraphs: [
       {
-        text: "Hermosa Beach's charming walk-street cottages present unique logistical challenges for electrical work. With no vehicle access, all equipment and materials must be hand-carried to the job site. Our crews are experienced with this — we plan ahead, stage materials efficiently, and bring the right tools to complete walk-street jobs without delays or complications.",
+        text: "Hermosa Beach's charming walk-street cottages present unique logistical challenges for electrical service providers. Because these homes lack direct vehicle access, all tools, conduit, panels, and heavy materials must be hand-carried down pedestrian paths to the property. Our crews are thoroughly experienced with these specific coastal logistics: we plan ahead, stage material deliveries efficiently, and bring the right specialized equipment to complete walk-street upgrades without unnecessary delays or disruptions.",
       },
       {
-        text: 'Salt air is relentless in Hermosa Beach, attacking every exposed electrical component. We exclusively use marine-grade panels, stainless steel hardware, and UV-resistant conduit for all outdoor installations. For Strand-front and oceanside properties, we recommend annual electrical inspections to catch corrosion before it becomes a safety issue.',
+        text: 'Furthermore, ocean salt air is relentless in Hermosa Beach, aggressively attacking every exposed electrical component, screw, and busbar. We exclusively utilize marine-grade electrical panels, stainless steel hardware, and UV-resistant conduits for all exterior installations. For Strand-front and direct oceanside properties, we recommend proactive annual electrical inspections to catch atmospheric corrosion before it compromises safety or triggers equipment failure.',
       },
       {
-        text: 'The South Bay beach lifestyle means outdoor electrical is in high demand — rooftop deck outlets, hot tub circuits, outdoor shower wiring, and patio string light hook-ups. We install these amenities with proper weatherproofing and GFCI protection, ensuring they safely withstand the coastal environment.',
+        text: 'The South Bay beach lifestyle also means that robust outdoor electrical amenities are in extremely high demand—from rooftop deck outlets and hot tub 240V circuits to outdoor shower wiring and custom patio string lighting. We install all exterior amenities using strict weatherproofing standards, heavy-duty enclosures, and flawless GFCI protection, ensuring your outdoor living spaces safely withstand the demanding coastal elements year-round.',
       },
     ],
     features: [
@@ -90,26 +104,30 @@ function HermosaBeachPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Hermosa Beach',
@@ -144,10 +162,24 @@ function HermosaBeachPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Hermosa Beach Electrician | Walk-Street & Marine-Grade Panels | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Hermosa Beach & the South Bay. Walk-street hand-carry logistics, marine-grade panels & beach house outdoor electrical. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -157,7 +189,7 @@ function HermosaBeachPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

@@ -7,6 +7,7 @@ interface ServicesHero {
   title: string;
   subtitle: string;
   backgroundImage: string;
+  button: string;
 }
 
 interface ServicesHeroProps {
@@ -39,7 +40,7 @@ function ServiceHero({ hero }: ServicesHeroProps) {
               className='servicedetailhero_button_secondary'
             >
               <FileText />
-              Get FREE Quote
+              {hero.button}
             </NavLink>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { ClipboardCheck, Clock, Shield, Star, Sun, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,23 +15,39 @@ import Footer from '../../../components/Footer/Footer';
 function SimiValleyPage() {
   const hero = {
     area: 'Simi Valley, CA · 93063, 93065',
-    title: 'Simi Valley Electrician — Licensed & Insured',
+    title:
+      'Simi Valley Electrician — Licensed & Insured Residential & Commercial Services',
     subtitle:
-      'Brentwood Electrical Experts now serves Simi Valley with professional residential and commercial electrical services. Our licensed team handles panel upgrades, EV charger installations, lighting, and all electrical needs for this growing community.',
+      'Brentwood Electrical Experts extends our professional electrical services to Simi Valley and the surrounding Ventura County communities. From 200-amp tract home panel upgrades and residential solar battery storage integration to Level 2 EV charger installations and family home electrical modernizations, our licensed C-10 electricians deliver fast, reliable, and code-compliant work you can trust.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Ventura County & City Permitting Experts',
+      'Solar & Battery Storage Specialists',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Sun />],
   };
 
   const about = {
     title: 'About Simi Valley',
     city: 'Simi Valley',
+    heading: 'Electrical Services Tailored to Simi Valley Neighborhoods',
+    challengeTitle: 'Modernizing Legacy Tract Homes for Solar and EV Demands',
     subtitle:
-      'Simi Valley is a suburban city of about 127,000 residents in Ventura County, known for its family-friendly neighborhoods, excellent schools, and the Ronald Reagan Presidential Library.',
+      'Simi Valley is a thriving, family-oriented suburban city of approximately 127,000 residents situated in Ventura County, globally recognized for its safe residential neighborhoods, excellent local schools, and cultural landmarks like the Ronald Reagan Presidential Library.',
     features: [
-      { item: 'Suburban tract homes' },
-      { item: 'Master-planned community houses' },
-      { item: 'Newer construction' },
+      { item: 'Classic suburban tract homes and vintage neighborhoods' },
+      {
+        item: 'Master-planned community houses (Rancho Simi, Big Sky, Sycamore Canyon)',
+      },
+      { item: 'Newer architectural custom and production construction' },
+      { item: 'Commercial retail, office, and light industrial spaces' },
     ],
     challenge:
-      "Simi Valley's primarily residential, suburban character means most work involves panel upgrades for older tract homes, EV charger installations, and support for the growing trend of solar and battery storage systems.",
+      'Simi Valley’s primarily residential, suburban character means the vast majority of local electrical work involves upgrading legacy panels in older tract homes to handle high-demand modern appliances, Level 2 EV chargers, and the rapidly growing trend toward residential solar photovoltaic systems paired with battery energy storage.',
     quote: [
       {
         text: 'We extend our Westside quality and reliability to Simi Valley — professional electrical services for a community that values family, safety, and home investment.',
@@ -46,38 +62,40 @@ function SimiValleyPage() {
       {
         title: 'Tract Home Panel Upgrades',
         subtitle:
-          "200-amp panel upgrades for Simi Valley's older neighborhoods — safely power EV chargers, modern HVAC, and solar battery systems.",
+          "200-amp main service panel upgrades for Simi Valley's established neighborhoods—safely powering Level 2 EV chargers, central HVAC systems, and new solar battery setups.",
       },
       {
         title: 'Solar & Battery Integration',
         subtitle:
-          'Panel sizing, battery storage installation, and load management for Simi Valley homes going solar.',
+          'Electrical panel capacity sizing, whole-home battery backup installation (Tesla Powerwall, Enphase), and intelligent load management for Simi Valley homes going solar.',
       },
       {
         title: 'Family Home Electrical Upgrades',
         subtitle:
-          'Kitchen circuits, outdoor lighting, whole-home surge protection, and practical upgrades for Simi Valley families.',
+          'Dedicated kitchen appliance circuits, architectural outdoor lighting, whole-home surge protection, and practical safety upgrades for Simi Valley families.',
       },
     ],
   };
 
   const details = {
     city: 'Simi Valley',
+    heading: 'Your Trusted Local Electrician in Simi Valley, California',
     pharagraphs: [
       {
-        text: "Simi Valley's master-planned neighborhoods — from the older Rancho Simi tracts to newer communities like Big Sky and Sycamore Canyon — each have distinct electrical characteristics. Homes built in the 1960s-1970s typically need panel upgrades and circuit additions, while newer construction may be well-suited for EV charger installations and smart home upgrades without major infrastructure changes.",
+        text: 'Simi Valley’s diverse master-planned neighborhoods—stretching from the older, established Rancho Simi tracts to contemporary hillside communities like Big Sky and Sycamore Canyon—each exhibit distinct electrical characteristics and infrastructure needs. Homes constructed during the 1960s and 1970s frequently require main service panel replacements and branch circuit additions to safely support modern household demands, whereas newer construction properties are ideally suited for rapid EV charger installations and smart home automation upgrades without major structural rewiring.',
       },
       {
-        text: "Solar energy adoption is strong in Simi Valley, where abundant sunshine and large roof areas make residential solar highly efficient. We work alongside solar installers to ensure electrical panels are properly sized for solar production, battery storage systems (Tesla Powerwall, Enphase) are safely integrated, and the home's electrical infrastructure supports the combined demands of solar, EV charging, and household loads.",
+        text: "Furthermore, residential solar energy adoption is exceptionally strong throughout Simi Valley, where abundant Southern California sunshine and expansive roof square footage make rooftop solar highly efficient. We partner seamlessly alongside regional solar contractors to ensure your electrical service panel is correctly sized for peak solar production, home battery storage systems are safely interconnected, and your property's electrical grid easily accommodates the combined load of solar generation, vehicle charging, and heavy household appliances.",
       },
       {
-        text: 'Simi Valley families value home improvement, and we see strong demand for practical electrical upgrades — panel replacements, kitchen remodel circuits, outdoor lighting, whole-home surge protection, and ceiling fan installations. We deliver these bread-and-butter services with the same professionalism and quality we bring to our most complex projects.',
+        text: 'Simi Valley families place a high premium on home safety and property improvement. Consequently, we experience robust, ongoing demand for essential electrical upgrades—including obsolete panel replacements, kitchen remodeling circuits, decorative and security outdoor lighting, whole-home surge protection devices, and ceiling fan wiring. We execute these foundational services with the exact same level of professional craftsmanship and rigorous quality control that we bring to our most complex commercial projects.',
       },
     ],
     features: [
       { item: 'Ronald Reagan Presidential Library' },
       { item: 'Simi Valley Town Center' },
       { item: 'Santa Susana Pass' },
+      { item: 'Rancho Simi' },
     ],
   };
 
@@ -88,26 +106,30 @@ function SimiValleyPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Simi Valley',
@@ -141,10 +163,24 @@ function SimiValleyPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Simi Valley Electrician | Solar Panel Integration & EV Chargers | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Simi Valley (93063, 93065) & Ventura County. 200A tract home panel upgrades, solar battery storage & EV chargers. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -154,7 +190,7 @@ function SimiValleyPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

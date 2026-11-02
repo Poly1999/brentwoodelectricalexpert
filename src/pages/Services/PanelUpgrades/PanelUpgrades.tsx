@@ -4,7 +4,13 @@ import {
   BatteryCharging,
   BuildingComplex,
   Camera,
+  CheckCircle2,
+  Clock,
+  DollarSign,
   GitGraph,
+  MapPin,
+  Shield,
+  Star,
   Zap,
 } from 'lucide-react';
 import ServiceHero from '../../../components/service-detail-page/ServiceHero/ServiceHero';
@@ -29,6 +35,17 @@ function PanelUpgrades() {
     subtitle:
       'Outgrowing a 100-amp breaker box or dealing with an aging Zinsco or Federal Pacific panel? Brentwood Electrical Experts engineers and installs code-compliant 200-amp and 400-amp main service upgrades across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles—delivering the safe power capacity required for Level 2 EV chargers, heat pump HVAC systems, and modern luxury appliances.',
     backgroundImage: ElectricalPanel,
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      'Licensed & Insured',
+      'Fast & Reliable',
+      'Upfront Pricing',
+      'Serving West LA',
+    ],
+    icons: [<Shield />, <Clock />, <DollarSign />, <MapPin />],
   };
 
   const benefits = {
@@ -225,26 +242,52 @@ function PanelUpgrades() {
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const detailsButtons = {
+    call: 'Call for a Free Estimate',
+    quote: 'Request a Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Need an Electrician?',
+    ctaText:
+      'Call now for a free estimate or schedule service online. Same-day appointments available.',
+    navTitle: 'Quick Navigation',
+    whyTitle: 'Why Choose Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Service Areas',
+  };
+
+  const reviews = {
+    title: 'Verified Client Reviews: Main Panel & Service Upgrades',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
@@ -273,32 +316,41 @@ function PanelUpgrades() {
       'We engineer and permit 200A and 400A service upgrades across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
-  ];
+  const related = {
+    title: 'Related Services',
+    cards: [
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'View EV Chargers details',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'View Construction details',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'View Subpanels details',
+        slug: 'subpanels-service',
+      },
+      {
+        icon: <Camera />,
+        title: 'Security Cameras',
+        subtitle: 'View Security Cameras details',
+        slug: 'security-cameras-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Upgrade Your Electrical Service?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your upfront written estimate online.',
+  };
 
   return (
     <div>
@@ -311,7 +363,7 @@ function PanelUpgrades() {
         content='Licensed C-10 electrical contractor (#1102731) providing 100A to 200A & 400A electrical panel upgrades across Brentwood, Santa Monica, Beverly Hills & West LA. Call (310) 666-4752.'
       />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
@@ -321,26 +373,20 @@ function PanelUpgrades() {
             featuresDescription={featuresDescription}
             safetyDescription={safetyDescription}
             coverageDescription={coverageDescription}
+            detailsButtons={detailsButtons}
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
 
       <ServiceProcess featuresDescription={featuresDescription} />
-      <Testimonials
-        reviews={reviews}
-        title='Verified Client Reviews: Main Panel & Service Upgrades'
-        subtitle='Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye'
-      />
+      <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer
-        ctaTitle='Ready to Upgrade Your Electrical Service?'
-        ctaText='Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your upfront written estimate online.'
-      />
+      <Footer footer={footer} />
     </div>
   );
 }

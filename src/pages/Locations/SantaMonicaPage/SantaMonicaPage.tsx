@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Anchor, Building2, Clock, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,42 @@ import Footer from '../../../components/Footer/Footer';
 function SantaMonicaPage() {
   const hero = {
     area: 'Santa Monica, CA · 90401, 90402, 90403, 90404, 90405',
-    title: 'Santa Monica Electrician — Licensed & Insured',
+    title:
+      'Santa Monica Electrician — Licensed & Insured Coastal Electrical Services',
     subtitle:
-      'Need a licensed electrician in Santa Monica? Brentwood Electrical Experts provides full-service residential and commercial electrical work across Santa Monica. Whether you need an EV charger installed, a panel upgrade, security lighting, or smart home wiring, our team delivers expert service with upfront pricing.',
+      'Brentwood Electrical Experts provides full-service residential, multi-unit, and commercial electrical work across Santa Monica. From coastal marine-grade panel upgrades and HOA multi-unit EV charging solutions to historic Craftsman rewiring and Montana Avenue commercial tenant improvements, our licensed C-10 electricians deliver expert service with transparent upfront pricing.',
+    button: 'Request Santa Monica Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Santa Monica Building Division Experts',
+      'Marine-Grade Coastal Hardware',
+    ],
+    icons: [<Star />, <Building2 />, <Anchor />],
   };
 
   const about = {
     title: 'About Santa Monica',
     city: 'Santa Monica',
+    heading:
+      'Tailored Electrical Engineering for Santa Monica’s Coastal Architecture',
+    challengeTitle: 'Navigating Salt Air Corrosion and Municipal Permitting',
     subtitle:
-      'Santa Monica is a vibrant coastal city of roughly 93,000 residents, known for its progressive environmental policies, walkable downtown, and beautiful beaches. The city has its own building department with codes that sometimes exceed Los Angeles County requirements.',
+      'Santa Monica is a progressive coastal city of roughly 93,000 residents, globally recognized for strict environmental policies, a highly walkable urban core, and iconic beachfront neighborhoods. Because Santa Monica operates as an independent municipality with its own building and safety division, local electrical codes and green building ordinances frequently exceed standard Los Angeles County requirements.',
     features: [
-      { item: 'Craftsman bungalows' },
-      { item: 'Art Deco apartments' },
-      { item: 'Beachside condominiums' },
-      { item: 'Modern infill construction' },
+      {
+        item: 'Historic pre-war Craftsman bungalows (North of Montana & Sunset Park)',
+      },
+      { item: 'Art Deco and mid-century multi-unit apartment complexes' },
+      { item: 'Beachside condominiums and HOA-managed townhomes' },
+      {
+        item: 'Modern sustainable infill construction and commercial storefronts',
+      },
     ],
     challenge:
-      "Santa Monica's coastal climate subjects electrical systems to persistent salt air corrosion, which accelerates panel degradation and outdoor fixture failure. Many properties in the north-of-Montana and Sunset Park neighborhoods were built before 1960 and still operate on original fuse boxes or undersized panels. The city's strict permitting process through the Santa Monica Building Division requires experienced contractors familiar with local codes.",
+      "Santa Monica's aggressive coastal microclimate subjects outdoor electrical grids to persistent salt-air moisture, which rapidly accelerates electrical panel degradation, meter base rust, and exterior fixture failure. Furthermore, many properties north of Montana Avenue and in Sunset Park retain original pre-1960 electrical panels that cannot support full home electrification. Navigating the strict electronic permitting process through the Santa Monica Building Division requires seasoned local contractors who understand municipal green codes.",
     quote: [
       {
         text: "We've navigated Santa Monica's unique permitting process hundreds of times. Our familiarity with the Santa Monica Building Division means faster permit approvals and smoother inspections for your project.",
@@ -47,40 +65,41 @@ function SantaMonicaPage() {
       {
         title: 'Coastal-Grade Panel Upgrades',
         subtitle:
-          "Upgrade your Santa Monica home's electrical panel with marine-grade enclosures and corrosion-resistant hardware designed to withstand decades of salt air exposure.",
+          "Upgrade your Santa Monica home's electrical service with marine-grade enclosures, stainless steel hardware, and NEMA 3R components engineered to withstand decades of heavy salt-air exposure.",
       },
       {
         title: 'Multi-Unit EV Charger Solutions',
         subtitle:
-          'We specialize in EV charger installations for Santa Monica condos, apartments, and HOA-managed properties — including parking structure conduit runs and shared meter configurations.',
+          'Turnkey Level 2 EV charging installations for Santa Monica condos, apartment buildings, and HOA-managed properties—featuring structured parking structure conduit runs and shared meter power configurations.',
       },
       {
         title: 'Historic Home Rewiring',
         subtitle:
-          "Safely modernize the electrical systems in Santa Monica's cherished Craftsman bungalows and pre-war homes without compromising their architectural character.",
+          "Safely modernize obsolete electrical wiring in Santa Monica's cherished Craftsman bungalows and vintage properties without compromising original architectural millwork or plaster finishes.",
       },
       {
         title: 'Commercial Tenant Improvements',
         subtitle:
-          "Restaurant, retail, and office electrical build-outs along Montana Avenue, Main Street, and the Promenade — designed to meet Santa Monica's strict energy codes.",
+          'Restaurant, retail boutique, and professional office electrical build-outs along Montana Avenue, Main Street, and the Third Street Promenade—engineered strictly to satisfy Santa Monica energy codes.',
       },
     ],
   };
 
   const details = {
     city: 'Santa Monica',
+    heading: 'Your Trusted Local Electrician in Santa Monica, California',
     pharagraphs: [
       {
-        text: "Santa Monica's diverse housing stock spans over a century of California architecture. North of Montana Avenue, you'll find stately single-family homes — many original Craftsman bungalows that have been lovingly maintained but still run on electrical systems from the 1920s and 1930s. South of Wilshire, multi-unit apartment buildings from the 1950s and 1960s present their own challenges, with shared electrical infrastructure that often needs modernization to meet current tenant demands. Our electricians understand these distinct property types and tailor solutions accordingly.",
+        text: "Santa Monica's diverse housing stock spans well over a century of iconic California design. North of Montana Avenue, you will discover stately single-family properties—many of which are original Craftsman and Spanish revival bungalows that have been beautifully preserved but still operate on outdated electrical infrastructure from the 1920s and 1930s. South of Wilshire Boulevard, multi-unit apartment buildings constructed during the post-war building boom present entirely different challenges, featuring shared house-meters and sub-distribution systems that require modernization to meet contemporary tenant demands. Our licensed electricians understand these architectural distinctions and engineer customized solutions for every property type.",
       },
       {
-        text: "The city's aggressive sustainability goals have made Santa Monica a hotbed for EV adoption and solar integration. We work closely with solar installers to ensure panel upgrades and main service entrance equipment are properly sized to accommodate both solar production and EV charging loads. Many Santa Monica homeowners are installing 320-amp or 400-amp services to future-proof their homes for full electrification — induction cooking, heat pump HVAC, heat pump water heaters, and multiple EV chargers.",
+        text: 'The city’s aggressive municipal sustainability goals have transformed Santa Monica into a national leader for electric vehicle adoption and residential solar integration. We collaborate directly with solar contractors to ensure main service entrance upgrades and panel capacities are properly calculated to handle simultaneous solar photovoltaic production and Level 2 EV charging loads. A growing number of Santa Monica homeowners are opting for 320-amp or 400-amp service upgrades to fully future-proof their properties for total household electrification—including induction cooktops, heat pump HVAC systems, heat pump water heaters, and multiple EV charging ports.',
       },
       {
-        text: "Coastal moisture is the silent enemy of Santa Monica's electrical systems. The persistent marine layer and salt-laden air accelerate corrosion on outdoor panels, weatherheads, meter bases, and exterior fixtures. We specify marine-grade hardware, stainless steel fasteners, and NEMA 3R-rated enclosures for all outdoor electrical installations in Santa Monica. This attention to material selection ensures your investment lasts decades, not just years.",
+        text: 'Coastal moisture remains the silent enemy of Santa Monica’s electrical infrastructure. The persistent marine layer and salt-laden sea breeze accelerate galvanic corrosion on exterior panels, weatherheads, meter sockets, and outdoor lighting fixtures. We exclusively deploy marine-grade hardware, stainless steel fasteners, and NEMA 3R-rated weatherproof enclosures for all exterior electrical installations across Santa Monica. This rigorous material selection ensures your electrical investment withstands the coastal elements for decades.',
       },
       {
-        text: "Santa Monica's commercial corridors along Main Street, Montana Avenue, and the Third Street Promenade are home to hundreds of boutiques, restaurants, and offices that rely on dependable electrical systems. We provide commercial electrical services including tenant improvement wiring, code-compliance upgrades, sign and display lighting, and emergency lighting systems. Our team works around your business hours to minimize disruption.",
+        text: "Additionally, Santa Monica's bustling commercial districts along Main Street, Montana Avenue, and the Third Street Promenade host hundreds of independent retail boutiques, destination restaurants, and professional offices that depend on uninterrupted power. We provide comprehensive commercial electrical services—including tenant improvement wiring, strict code-compliance retrofits, architectural display lighting, and emergency egress lighting systems. Our commercial crews coordinate around your operating hours to eliminate business interruption.",
       },
     ],
     features: [
@@ -99,26 +118,30 @@ function SantaMonicaPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Santa Monica',
@@ -172,10 +195,24 @@ function SantaMonicaPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Santa Monica Electrician | Coastal Panel Upgrades & EV Chargers | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Santa Monica, CA (90401–90405). Coastal marine-grade panel upgrades, HOA EV chargers & Montana Ave commercial TIs. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -185,7 +222,7 @@ function SantaMonicaPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

@@ -719,6 +719,13 @@ function ProjectsPage() {
       location: 'Century City, CA',
     },
   ];
+
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div className='projectspage'>
       <div className='projectspage_hero'>
@@ -750,7 +757,7 @@ function ProjectsPage() {
           ))}
         </ul>
       </div>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

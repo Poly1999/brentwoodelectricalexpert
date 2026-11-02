@@ -117,6 +117,12 @@ function BlogPage() {
     },
   ];
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div className='blogpage'>
       <div className='blogpage_hero'>
@@ -157,7 +163,7 @@ function BlogPage() {
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

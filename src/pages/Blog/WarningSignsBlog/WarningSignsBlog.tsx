@@ -45,6 +45,11 @@ function WarningSignsBlog() {
       "Don't wait for a small issue to turn into a major problem. Brentwood Electrical Experts offers comprehensive electrical inspections for homes across West Los Angeles and surrounding areas.",
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
   return (
     <div>
       <BlogHero hero={hero} />
@@ -211,7 +216,7 @@ function WarningSignsBlog() {
           </p>
         </div>
       </div>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

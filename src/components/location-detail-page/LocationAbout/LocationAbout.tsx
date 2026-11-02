@@ -4,6 +4,8 @@ import './LocationAbout.css';
 interface LocationAbout {
   title: string;
   city: string;
+  heading: string;
+  challengeTitle: string;
   subtitle: string;
   features: { item: string }[];
   challenge: string;
@@ -22,7 +24,7 @@ function LocationAbout({ about }: LocationAboutProps) {
           <House />
           <p>{about.title}</p>
         </div>
-        <h2>Electrical Services Tailored to {about.city}</h2>
+        <h2>{about.heading}</h2>
         <p>{about.subtitle}</p>
 
         <div className='locationabout_grid'>
@@ -44,7 +46,7 @@ function LocationAbout({ about }: LocationAboutProps) {
           <div className='locationabout_card'>
             <div className='locationabout_card_header'>
               <Zap />
-              <h3>Local Electrical Challenges</h3>
+              <h3>{about.challengeTitle}</h3>
             </div>
             <p>{about.challenge}</p>
           </div>

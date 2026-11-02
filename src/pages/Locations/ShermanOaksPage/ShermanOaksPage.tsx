@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { ClipboardCheck, Clock, Fan, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,27 +15,42 @@ import Footer from '../../../components/Footer/Footer';
 function ShermanOaksPage() {
   const hero = {
     area: 'Sherman Oaks, CA · 91403, 91423',
-    title: 'Sherman Oaks Electrician — Licensed & Insured',
+    title: 'Sherman Oaks Electrician — Licensed & Insured Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides reliable electrical services in Sherman Oaks. From panel upgrades and EV charger installations to electrical troubleshooting and remodeling, our licensed electricians deliver quality work across the San Fernando Valley.',
+      'Brentwood Electrical Experts provides reliable electrical services across Sherman Oaks and the San Fernando Valley. From HVAC-ready panel upgrades and EV charger installations to Ventura Blvd commercial electrical and hillside smart home automation, our licensed C-10 electricians deliver quality work you can trust.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Valley & LADBS Permitted Work',
+      'HVAC & Commercial Specialists',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Fan />],
   };
 
   const about = {
     title: 'About Sherman Oaks',
     city: 'Sherman Oaks',
+    heading:
+      'Electrical Services Tailored to Sherman Oaks Architecture & Climate',
+    challengeTitle: 'Combating Valley Heat and Power Demands',
     subtitle:
-      'Sherman Oaks is a thriving San Fernando Valley neighborhood known for its excellent schools, diverse dining scene along Ventura Blvd, and hillside homes with stunning Valley views.',
+      'Sherman Oaks is a thriving San Fernando Valley neighborhood known for its excellent local schools, diverse dining and shopping scene along Ventura Blvd, and spectacular hillside properties featuring sweeping Valley views.',
     features: [
-      { item: 'Valley ranch homes' },
-      { item: 'Mid-century tract houses' },
-      { item: 'Modern hillside builds' },
-      { item: 'Commercial on Ventura Blvd' },
+      { item: 'San Fernando Valley traditional ranch homes' },
+      { item: 'Mid-century tract houses and residential properties' },
+      { item: 'Modern architectural hillside custom builds' },
+      {
+        item: 'Commercial retail, restaurant, and office spaces along Ventura Blvd',
+      },
     ],
     challenge:
-      "Sherman Oaks experiences extreme summer heat, making reliable HVAC electrical critical. Many 1950s-1960s homes have undersized panels. Ventura Blvd's commercial corridor drives demand for restaurant and retail electrical services.",
+      'Sherman Oaks frequently experiences extreme summer temperatures exceeding 100°F, making reliable, high-capacity central air conditioning and HVAC electrical critical for home comfort. Many 1950s–1960s Valley homes feature undersized 100-amp service panels that struggle under heavy AC loads. Additionally, the bustling Ventura Blvd commercial corridor drives constant demand for specialized restaurant, retail, and tenant improvement electrical services.',
     quote: [
       {
-        text: 'We serve both sides of Sherman Oaks — the residential neighborhoods where families need panel upgrades and EV chargers, and the Ventura Blvd commercial corridor where businesses need reliable electrical systems.',
+        text: '🍜 We serve both sides of Sherman Oaks — the residential neighborhoods where families need panel upgrades and EV chargers, and the Ventura Blvd commercial corridor where businesses need reliable electrical systems.',
         subtext: '— Brentwood Electrical Experts, serving Sherman Oaks',
       },
     ],
@@ -47,40 +62,41 @@ function ShermanOaksPage() {
       {
         title: 'HVAC-Ready Panel Upgrades',
         subtitle:
-          '200-amp upgrades for Sherman Oaks homes — ensure your electrical system can handle heavy AC use during Valley summers plus modern demands.',
+          '200-amp service upgrades for Sherman Oaks homes—ensuring your electrical grid easily handles heavy AC compressor draws during Valley heat waves alongside modern household demands.',
       },
       {
         title: 'Ventura Blvd Commercial Electrical',
         subtitle:
-          "Restaurant, retail, and office electrical for Sherman Oaks' busiest commercial corridor.",
+          "Full-scope restaurant, retail, and office electrical services tailored for Sherman Oaks' busiest commercial business corridor.",
       },
       {
         title: 'ADU Electrical Installation',
         subtitle:
-          'Complete electrical for Sherman Oaks backyard ADUs — sub-panels, wiring, and main panel upgrades.',
+          'Turnkey electrical systems for Sherman Oaks backyard accessory dwelling units—featuring dedicated subpanels, rough-in wiring, and primary service upgrades.',
       },
       {
         title: 'Hillside Smart Home Systems',
         subtitle:
-          "Whole-home automation, lighting control, and AV wiring for Sherman Oaks' architecturally significant hillside residences.",
+          "Whole-home automation, architectural lighting control, and high-end AV wiring for Sherman Oaks' architecturally significant hillside residences.",
       },
     ],
   };
 
   const details = {
     city: 'Sherman Oaks',
+    heading: 'Your Trusted Local Electrician in Sherman Oaks, California',
     pharagraphs: [
       {
-        text: 'Sherman Oaks summer temperatures regularly exceed 100°F, making reliable HVAC operation a necessity. Many older Sherman Oaks homes have 100-amp panels that strain under the combined load of central air conditioning, appliances, and modern electronics. We upgrade these panels to 200 amps, ensuring your HVAC system has the electrical capacity it needs to keep your family cool — even during the hottest Valley heat waves.',
+        text: 'Sherman Oaks summer temperatures regularly surpass 100°F, making dependable HVAC operation an absolute necessity for Valley living. Many older Sherman Oaks homes still operate on legacy 100-amp electrical panels that strain severely under the combined electrical load of central air conditioning compressors, kitchen appliances, and modern electronics. We upgrade these outdated panels to robust 200-amp systems, ensuring your HVAC equipment receives the steady electrical capacity required to keep your family cool during intense Valley heat waves.',
       },
       {
-        text: "Ventura Blvd is Sherman Oaks' commercial spine, lined with hundreds of restaurants, shops, and offices. We provide commercial electrical for these businesses — kitchen equipment circuits, storefront lighting, sign electrical, and tenant improvement wiring. Our after-hours availability means we can work around your business schedule.",
+        text: "Meanwhile, Ventura Blvd serves as Sherman Oaks' bustling commercial spine, lined with hundreds of popular restaurants, retail boutiques, and professional offices. We provide dependable commercial electrical services for these local businesses—including kitchen equipment circuits, storefront window lighting, business sign electrical, and custom tenant improvement wiring. Our flexible scheduling ensures we can execute commercial projects around your operating hours to avoid business downtime.",
       },
       {
-        text: 'The hillside neighborhoods south of Ventura Blvd — along Mulholland Drive and Beverly Glen — feature newer, architecturally significant homes with sophisticated electrical needs. Smart home systems, home theaters, wine cellars, and elaborate landscape lighting are common in these properties. We deliver the high-end residential electrical services these homes demand.',
+        text: 'The hillside neighborhoods situated south of Ventura Blvd—stretching along Mulholland Drive and Beverly Glen—feature newer, architecturally striking homes with sophisticated power requirements. Advanced smart home automation systems, dedicated home theater rooms, temperature-controlled wine cellars, and elaborate architectural landscape lighting are commonplace in these properties. We deliver the high-end residential electrical engineering that these elite hillside homes demand.',
       },
       {
-        text: "Sherman Oaks' family-oriented neighborhoods north of Ventura Blvd are seeing a wave of home improvements — kitchen remodels, ADU construction, and EV charger installations. We provide the electrical backbone for these projects, helping Sherman Oaks families modernize their homes safely and affordably.",
+        text: "In contrast, Sherman Oaks' family-oriented neighborhoods located north of Ventura Blvd are experiencing a widespread wave of residential property improvements—including kitchen remodels, backyard ADU additions, and Level 2 EV charger installations. We provide the essential electrical backbone for these home modernization projects, helping local families upgrade their living spaces safely and affordably.",
       },
     ],
     features: [
@@ -98,26 +114,30 @@ function ShermanOaksPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Sherman Oaks',
@@ -156,10 +176,24 @@ function ShermanOaksPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Sherman Oaks Electrician | HVAC Panel Upgrades & Ventura Blvd TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Sherman Oaks & the Valley. 200A HVAC panel upgrades, Ventura Blvd commercial electrical & ADU wiring. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -169,7 +203,7 @@ function ShermanOaksPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

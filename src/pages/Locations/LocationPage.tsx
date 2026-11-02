@@ -1,5 +1,5 @@
 import './LocationPage.css';
-import { Clock, MapPin, Shield, Star } from 'lucide-react';
+import { Clock, DollarSign, MapPin, Shield, Star } from 'lucide-react';
 
 import LocationHero from '../../components/locations-page/LocationHero';
 import StatsSection from '../../components/Shared/StatsSection/StatsSection';
@@ -23,6 +23,17 @@ function LocationPage() {
     ),
     subtitle:
       'From Brentwood to Huntington Beach, our licensed electricians deliver fast, reliable, code-compliant electrical services across 29+ communities.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      'Licensed & Insured',
+      'Fast & Reliable',
+      'Upfront Pricing',
+      'Serving West LA',
+    ],
+    icons: [<Shield />, <Clock />, <DollarSign />, <MapPin />],
   };
 
   const servicesStats = [
@@ -98,10 +109,16 @@ function LocationPage() {
     },
   ];
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <StatsSection items={servicesStats} variant='light' />
       <div className='findelectrician'>
         <div className='container'>
@@ -159,7 +176,7 @@ function LocationPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

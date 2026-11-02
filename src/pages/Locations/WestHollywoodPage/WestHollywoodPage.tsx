@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Building2, Clock, Music, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,44 @@ import Footer from '../../../components/Footer/Footer';
 function WestHollywoodPage() {
   const hero = {
     area: 'West Hollywood, CA · 90046, 90048, 90069',
-    title: 'West Hollywood Electrician — Licensed & Insured',
+    title:
+      'West Hollywood Electrician — Licensed & Insured Commercial & Residential Services',
     subtitle:
-      'Brentwood Electrical Experts delivers expert electrical services across West Hollywood. From commercial tenant improvements and panel upgrades to residential lighting and smart home installations, we serve both homes and businesses throughout WeHo.',
+      'Brentwood Electrical Experts delivers expert electrical services across West Hollywood. From independent municipal commercial tenant improvements and Sunset Strip venue buildouts to multi-unit switchboard upgrades, parking garage EV charging networks, and designer residential lighting, we serve both homes and businesses throughout WeHo.',
+    button: 'Request West Hollywood Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'City of West Hollywood Building Division',
+      'Multi-Unit & Sunset Strip Experts',
+    ],
+    icons: [<Star />, <Building2 />, <Music />],
   };
 
   const about = {
     title: 'About West Hollywood',
     city: 'West Hollywood',
+    heading: 'Tailored Electrical Engineering for West Hollywood’s Urban Core',
+    challengeTitle:
+      'Navigating Multi-Unit Infrastructure and Independent Permitting',
     subtitle:
-      'West Hollywood is a creative, vibrant independent city of about 35,000 residents, known for its nightlife, LGBTQ+ culture, design industry, and walkable urban environment. The Sunset Strip and Santa Monica Blvd corridors are iconic entertainment and dining destinations.',
+      'West Hollywood is a creative, vibrant independent municipality of roughly 35,000 residents, globally celebrated for its legendary nightlife, thriving LGBTQ+ culture, prestigious design industry, and dense walk-to-everything urban environment. Operating as an independent city with its own building department, WeHo enforces distinct municipal codes and green building standards.',
     features: [
-      { item: '1960s apartment buildings' },
-      { item: 'Boutique condominiums' },
-      { item: 'Mid-century dingbats' },
-      { item: 'Commercial mixed-use on Sunset' },
+      {
+        item: '1950s–1970s multi-unit apartment complexes and mid-century dingbats',
+      },
+      { item: 'Boutique condominiums and high-end urban townhomes' },
+      {
+        item: 'Design-forward residential flats and creative live-work spaces',
+      },
+      {
+        item: 'Iconic Sunset Strip and Santa Monica Blvd commercial mixed-use venues',
+      },
     ],
     challenge:
-      "West Hollywood's dense mix of apartments, condos, and commercial properties creates unique electrical challenges. Many multi-unit buildings have shared electrical infrastructure that needs modernization. The city's vibrant nightlife and restaurant scene demands specialized commercial electrical services. WeHo is also an independent city with its own building department.",
+      "West Hollywood's dense concentration of apartments, condominiums, and commercial venues presents unique electrical engineering challenges. Many multi-unit residential buildings feature aging shared electrical infrastructure and outdated sub-distribution switchboards that require systematic modernization. Furthermore, the city's hyper-active restaurant, bar, and entertainment scene demands specialized commercial electrical capabilities, all coordinated through WeHo's independent building and safety department.",
     quote: [
       {
         text: "From Sunset Strip nightclub renovations to condo rewiring projects throughout the city, we understand WeHo's unique blend of commercial energy and residential charm — and the specific permitting requirements of this independent city.",
@@ -47,40 +67,41 @@ function WestHollywoodPage() {
       {
         title: 'Multi-Unit Building Upgrades',
         subtitle:
-          "Main switchboard replacements, individual unit rewiring, and building-wide electrical modernization for West Hollywood's apartment and condo buildings.",
+          "Main switchboard replacements, individual unit rewiring, and building-wide electrical modernization for West Hollywood's multi-family apartment buildings and HOA properties.",
       },
       {
         title: 'Commercial Venue Electrical',
         subtitle:
-          'Full-scope electrical build-outs for Sunset Strip and Santa Monica Blvd restaurants, bars, retail spaces, and entertainment venues.',
+          'Full-scope electrical build-outs, three-phase power distribution, and code-compliant lighting for Sunset Strip and Santa Monica Blvd restaurants, bars, and entertainment venues.',
       },
       {
         title: 'Parking Garage EV Charging',
         subtitle:
-          'Scalable EV charging infrastructure for WeHo multi-unit buildings — from single-charger installations to building-wide networks with smart load management.',
+          'Scalable EV charging infrastructure for WeHo multi-unit buildings—from single-space units to building-wide networked charging arrays with smart load management.',
       },
       {
         title: 'Designer Lighting Installation',
         subtitle:
-          "Expert installation of high-end decorative fixtures, architectural lighting, and art lighting for West Hollywood's design-forward residences.",
+          "Expert installation of high-end decorative light fixtures, architectural cove illumination, and museum-grade art lighting for West Hollywood's design-forward residences.",
       },
     ],
   };
 
   const details = {
     city: 'West Hollywood',
+    heading: 'Your Trusted Local Electrician in West Hollywood, California',
     pharagraphs: [
       {
-        text: 'West Hollywood is a city of renters and condo owners, with multi-unit buildings making up the majority of its housing stock. These buildings — many constructed in the 1950s through 1970s — often have outdated shared electrical systems, including aging main switchboards, aluminum wiring in individual units, and insufficient capacity for modern living. We work with HOAs, property managers, and building owners to systematically upgrade these systems — replacing main distribution equipment, rewiring individual units, and adding capacity for in-unit laundry, modern HVAC, and EV charging in parking garages.',
+        text: 'West Hollywood is fundamentally a city of renters, condo owners, and multi-family residents, with apartment buildings and shared-living structures accounting for the vast majority of its housing stock. Many of these residential properties—constructed primarily during the 1960s and 1970s—feature aging shared electrical infrastructure, including legacy main distribution switchboards, branch aluminum wiring in individual living spaces, and inadequate ampacity headroom for contemporary appliances or in-unit laundry. We partner directly with HOAs, property management firms, and building owners to systematically overhaul these systems—replacing main switchgear, rewiring individual units to modern copper standards, and engineering necessary capacity for central HVAC and garage EV charging.',
       },
       {
-        text: "The Sunset Strip and Santa Monica Blvd corridors are home to some of LA's most iconic restaurants, bars, clubs, and retail spaces. These commercial venues have intense electrical demands — commercial kitchen equipment, elaborate lighting and sound systems, neon and LED signage, refrigeration, and HVAC. We provide full-scope commercial electrical services including tenant improvement build-outs, three-phase power distribution, emergency and exit lighting, and fire alarm system wiring.",
+        text: 'Meanwhile, the iconic Sunset Strip and Santa Monica Boulevard commercial corridors house some of the most famous restaurants, lounges, music venues, and fashion boutiques in the world. These high-energy commercial spaces present intense, demanding electrical requirements: heavy-duty commercial kitchen equipment circuits, sophisticated architectural sound and lighting control grids, custom neon and LED signage, heavy refrigeration, and robust HVAC loads. We provide full-scope commercial electrical services including tenant improvement build-outs, three-phase power distribution, life-safety emergency lighting, and exit signage.',
       },
       {
-        text: 'West Hollywood has been at the forefront of EV adoption, and the city has implemented aggressive requirements for EV-ready infrastructure in new construction and major renovations. We help building owners and HOAs comply with these requirements by installing EV charging infrastructure — conduit, wiring, panels, and chargers — in both new and existing parking structures. Our solutions scale from single-unit installations to building-wide EV charging networks.',
+        text: 'West Hollywood has consistently maintained its position at the vanguard of municipal EV adoption, enacting aggressive local mandates for EV-ready infrastructure in multi-family new construction and major property renovations. We assist building owners and HOA boards in achieving full compliance by engineering comprehensive parking garage EV charging infrastructure—managing heavy conduit runs, power distribution panels, and smart-metered chargers in subterranean and surface parking structures.',
       },
       {
-        text: "The city's thriving design industry — anchored by the Pacific Design Center — means many WeHo residences feature high-end interior finishes that demand equally refined electrical work. We install decorative lighting specified by interior designers, under-cabinet LED systems, art lighting with museum-quality color rendering, and concealed outlets that preserve clean wall aesthetics. Our finish work matches the design-forward expectations of West Hollywood's creative community.",
+        text: 'Additionally, WeHo’s thriving interior design community—anchored by the world-renowned Pacific Design Center—means local residences frequently feature highly refined interior finishes that demand exceptional electrical precision. We install complex decorative fixtures specified by leading interior designers, custom under-cabinet LED strips, museum-quality art spot lighting, and concealed floor boxes designed to preserve clean architectural sightlines.',
       },
     ],
     features: [
@@ -99,26 +120,30 @@ function WestHollywoodPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'West Hollywood',
@@ -171,10 +196,24 @@ function WestHollywoodPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        West Hollywood Electrician | Multi-Unit & Sunset Strip TIs | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving West Hollywood (90046, 90048, 90069). Independent city permits, multi-unit EV chargers & Sunset Strip commercial buildouts. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -184,7 +223,7 @@ function WestHollywoodPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

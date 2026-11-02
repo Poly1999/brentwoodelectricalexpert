@@ -1,7 +1,13 @@
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  Clock,
   GitGraph,
+  MapPin,
+  Shield,
+  Star,
+  Users,
   Wrench,
   Zap,
 } from 'lucide-react';
@@ -24,67 +30,79 @@ import ElectricalRemodelingImage from '../../../assets/kitchen-rewire.webp';
 function ElectricalRemodeling() {
   const hero = {
     icon: <Wrench />,
-    title: 'Electrical Remodeling',
+    title: 'Electrical Remodeling, Kitchens, Bathrooms & Additions',
     subtitle:
-      'Planning a kitchen remodel, bathroom renovation, or home addition? Brentwood Electrical Experts handles all electrical work for remodeling projects across West LA, Brentwood, Santa Monica, and surrounding areas. We work with your contractor or directly with you to ensure your remodel has the electrical infrastructure to match your vision.',
+      'Planning a kitchen renovation, primary bathroom upgrade, or whole-house home addition? Brentwood Electrical Experts handles complete electrical rough-in and finish wiring for remodeling projects across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles—coordinating seamlessly with your general contractor to match your exact vision.',
     backgroundImage: ElectricalRemodelingImage,
+    button: 'Request Remodel Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'GC & Architect Coordination',
+      'NEC Kitchen & Bath Compliance',
+    ],
+    icons: [<Star />, <Users />, <CheckCircle2 />],
   };
 
   const benefits = {
+    title: 'Key Advantages of Our Remodeling Electrical Services',
     features: [
-      'Complete remodel electrical services',
-      'Kitchen, bathroom, and addition wiring',
-      'Code-compliant upgrades',
-      'Coordination with GCs and designers',
-      'Lighting design for remodeled spaces',
-      'Panel upgrades if needed',
+      'Complete kitchen, bathroom, primary suite, and home addition electrical wiring',
+      'NEC-compliant dedicated appliance circuits for induction ranges, double ovens, and steam showers',
+      'Seamless coordination with general contractors, interior designers, and framing crews',
+      'Custom architectural lighting design for newly remodeled indoor and outdoor spaces',
+      'Main service panel capacity upgrades and subpanels integrated if increased power is required',
+      'Turnkey municipal building permitting and final electrical inspection management',
     ],
     image: ElectricalRemodelingImage,
   };
 
   const fullDescription = {
-    title: 'Electrical Remodeling in West Los Angeles',
+    title: 'Professional Remodeling Electrical Contractor in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical
-        remodeling is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Remodeling a kitchen, adding a primary bathroom suite, or building a
+        home addition transforms your living space, but it also places
+        significant new demands on your property's electrical infrastructure. As
+        a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every remodeling project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts provides expert electrical wiring for
+        residential remodeling projects.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        remodeling service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you are updating a gourmet kitchen island in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>, adding heated bathroom
+        floors and custom vanity lighting in a{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink> renovation, or wiring
+        a whole-house addition in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>, our
+        licensed team ensures code-compliant execution from framing to finish
+        trim.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every remodeling project begins with a careful plan review of your
+        architectural and cabinetry drawings, followed by an itemized,
+        transparent written proposal. We coordinate home-run circuits for heavy
+        appliances, install under-cabinet LED task strips, and specify
+        commercial-grade devices from trusted manufacturers like Siemens, Square
+        D, and Lutron.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their remodeling needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From initial rough-in wiring before drywall closure to final device trim
+        and city inspection sign-offs, your project is handled completely
+        in-house. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your remodeling consultation</NavLink>{' '}
+        today.
       </>,
     ],
   };
@@ -93,29 +111,28 @@ function ElectricalRemodeling() {
     title: 'What to Expect From Our Remodeling Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your remodeling needs,
-        you're choosing a team that treats every job — big or small — with the
-        same level of professionalism, care, and attention to detail. We don't
-        cut corners, we don't rush through projects, and we never leave a job
-        until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who coordinate effortlessly with your
+        construction team and treat your home with meticulous care. We never cut
+        corners on wire sizing or box fill limits, we never delay framing
+        schedules, and we ensure every circuit is tested under load before
+        drywall goes up.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your project starts with a thorough plan review and{' '}
+        <NavLink to='/contact'>on-site walk-through</NavLink>. A licensed C-10
+        electrician evaluates your architectural blueprints, appliance spec
+        sheets, and existing electrical panel capacity to design a comprehensive
+        wiring layout. We explain your upgrade options in plain language and
+        provide a transparent written estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Remodeling can feel disruptive, but our crew prioritizes cleanliness and
+        clear communication. We arrive on schedule, protect your home with
+        heavy-duty drop cloths, work efficiently around other trades, and leave
+        your jobsite spotless at every milestone.
       </>,
     ],
   };
@@ -124,170 +141,223 @@ function ElectricalRemodeling() {
     title: 'Our Remodeling Process — Step by Step',
     features: [
       {
-        title: 'Plan Review',
+        title: 'Plan Review & Layout',
         subtitle:
-          'We review your remodel plans and identify all electrical requirements.',
+          'We review architectural, kitchen, and bath plans to map out circuits, appliance loads, and switch locations.',
       },
       {
-        title: 'Proposal',
-        subtitle: 'We provide a detailed scope and upfront pricing.',
-      },
-      {
-        title: 'Rough-In',
+        title: 'Itemized Proposal',
         subtitle:
-          'We install all new wiring before walls and surfaces are finished.',
+          'We provide a detailed scope of work, timeline alignment with your GC, and transparent flat-rate pricing.',
       },
       {
-        title: 'Finish Work',
+        title: 'Rough-In Wiring',
         subtitle:
-          'We install fixtures, outlets, switches, and all finish electrical.',
+          'We run all home-run circuits, install boxes, and pull copper wiring through studs before drywall is installed.',
       },
       {
-        title: 'Final Testing',
-        subtitle: 'We test everything and coordinate required inspections.',
+        title: 'Finish Trim & Fixtures',
+        subtitle:
+          'Once painting and finishes are complete, we install decorator outlets, switches, dimmers, and light fixtures.',
+      },
+      {
+        title: 'Load Testing & Inspection',
+        subtitle:
+          'We test every circuit under load and pass mandatory municipal rough and final electrical inspections.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Permits & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every remodeling project
-        we complete meets or exceeds the latest National Electrical Code (NEC)
-        standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and strict code adherence are the foundation of every
+        remodeling project we undertake. Every installation we complete complies
+        fully with the National Electrical Code (NEC) regarding kitchen
+        countertop GFCI protection, bathroom wet-zone safety, dedicated
+        appliance circuits, and smoke/carbon monoxide detector interconnects
+        across Los Angeles (LADBS), Santa Monica, Beverly Hills, and Culver
+        City. We pull all necessary building permits and manage city
+        inspections.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed wiring components,
+        panels, and devices from trusted manufacturers including Siemens, Square
+        D, Leviton, and Eaton. From heavy-duty copper conductors and
+        tamper-resistant receptacles to AFCI/GFCI breakers, every part is
+        specified for maximum longevity and safety.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because building codes update continuously, our technicians stay fully
+        trained on the latest NEC amendments for kitchen islands, appliance
+        circuits, and energy efficiency—ensuring your remodel passes inspection
+        on the first visit.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Remodeling Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide remodeling services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly provides electrical remodeling
+        services to homeowners and general contractors across West Los Angeles.
+        Whether your project is located in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your remodeling project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local crew is ready to mobilize.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        remodeling project requires.
+        We understand the unique architectural characteristics of Westside
+        properties—from modernizing electrical grids in mid-century kitchen
+        renovations across <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink> to wiring high-end
+        custom primary suites and additions in{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to start your remodel?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>submit your project plans online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Electrical Remodeling',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Should I upgrade my panel during a remodel?',
+      question:
+        'Should I upgrade my main electrical panel during a kitchen or home remodel?',
       answer:
-        "If your panel is older or at capacity, a remodel is the ideal time to upgrade. We'll assess and advise.",
+        'Often, yes. Modern kitchen remodels introduce heavy-draw appliances (such as induction ranges, double ovens, built-in espresso machines, and wine fridges) alongside central heat pumps and EV chargers. During our initial plan review, we calculate your total expected load. If your existing 100-amp panel lacks capacity, upgrading to 200 amps during your remodel prevents tripped breakers and ensures your new spaces are fully powered.',
     },
     {
-      question: 'Do you coordinate with general contractors?',
+      question:
+        'Do you coordinate directly with general contractors and interior designers?',
       answer:
-        'Yes — we work seamlessly with GCs to ensure electrical work aligns with the overall project timeline.',
+        'Absolutely. We regularly partner with general contractors, project managers, and interior designers throughout West Los Angeles. We review MEP blueprints, align our rough-in schedule seamlessly with framing and plumbing trades, and ensure every switch, outlet, and fixture placement matches your design vision precisely.',
     },
   ];
 
   const areas = {
-    title: 'Remodeling Across West LA',
+    title: 'Electrical Remodeling Across West LA',
     subtitle:
-      'We provide electrical remodeling services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and permit remodel wiring across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Remodel Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary remodel consultation or request a quote online. Same-day appointments available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 5-Step Remodeling Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Planning a Kitchen Remodel or Home Addition?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or submit your plans for an upfront written estimate.',
+  };
+
   return (
     <div>
+      <title>
+        Kitchen & Bathroom Remodel Electrician West LA | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) providing rough-in & finish electrical wiring for kitchen remodels, bath renovations & home additions in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -296,7 +366,7 @@ function ElectricalRemodeling() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -304,7 +374,7 @@ function ElectricalRemodeling() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

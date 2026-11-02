@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Building2, Clock, Shield, Star, Store, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,38 @@ import Footer from '../../../components/Footer/Footer';
 function WestwoodPage() {
   const hero = {
     area: 'Westwood, CA · 90024, 90025',
-    title: 'Westwood Electrician — Licensed & Insured',
+    title: 'Westwood Electrician — Licensed & Insured Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides reliable electrical services for Westwood homes and businesses. Our licensed electricians handle panel upgrades, lighting installations, outlet work, and electrical troubleshooting with professionalism and precision.',
+      'Brentwood Electrical Experts provides reliable electrical services for Westwood homes and businesses. From multi-unit apartment upgrades and Holmby Hills estate systems to Westwood Village commercial tenant improvements and residential troubleshooting, our licensed C-10 electricians deliver professionalism and precision throughout Westwood and the surrounding Westside.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Multi-Unit & Estate Specialists',
+      'Westwood Village Commercial TI',
+    ],
+    icons: [<Star />, <Building2 />, <Store />],
   };
 
   const about = {
     title: 'About Westwood',
     city: 'Westwood',
+    heading: 'Electrical Services Tailored to Westwood’s Diverse Architecture',
+    challengeTitle: 'Bridging UCLA Apartments and Holmby Hills Estates',
     subtitle:
-      'Westwood is a diverse neighborhood anchored by UCLA, ranging from the bustling Westwood Village and student-oriented apartments to the ultra-exclusive Holmby Hills enclave and established family neighborhoods.',
+      'Westwood is a vibrant, diverse neighborhood anchored by UCLA, stretching from the bustling commercial hub of Westwood Village and student-oriented apartment districts to the ultra-exclusive Holmby Hills enclave and established family residential streets.',
     features: [
-      { item: 'UCLA-adjacent apartments' },
-      { item: 'Holmby Hills estates' },
-      { item: '1950s family homes' },
-      { item: 'High-rise condos' },
+      {
+        item: 'UCLA-adjacent mid-rise apartment buildings and multi-unit complexes',
+      },
+      { item: 'Ultra-exclusive Holmby Hills multi-acre luxury estates' },
+      { item: 'Established 1940s–1960s single-family family homes' },
+      { item: 'Mid-rise and high-rise condominiums' },
     ],
     challenge:
-      'Westwood spans from UCLA student apartments to Holmby Hills mega-estates. The older apartment stock near the university often has outdated shared electrical systems. Residential properties in the Westwood hills and Holmby Hills require estate-level electrical services. Heavy traffic on Wilshire Blvd means commercial projects need careful logistics planning.',
+      'Westwood spans a uniquely broad spectrum—from densely populated university-adjacent apartment housing with aging shared electrical infrastructure to sprawling luxury compounds in Holmby Hills requiring commercial-grade power systems. Furthermore, navigating heavy traffic and parking logistics along major corridors like Wilshire Blvd requires precise project management for commercial upgrades.',
     quote: [
       {
         text: "From UCLA-area apartment upgrades to Holmby Hills estate systems, we serve the full spectrum of Westwood's electrical needs with the same high standard of professionalism and quality.",
@@ -47,40 +61,41 @@ function WestwoodPage() {
       {
         title: 'Apartment Building Electrical Upgrades',
         subtitle:
-          "Main panel replacements, unit rewiring, and EV charging infrastructure for Westwood's apartment buildings and multi-unit properties.",
+          "Main panel replacements, unit rewiring, in-unit laundry circuits, and EV charging infrastructure for Westwood's multi-unit apartment buildings and investment properties.",
       },
       {
         title: 'Holmby Hills Estate Electrical',
         subtitle:
-          'Large-scale residential electrical systems for Holmby Hills properties — 400-amp+ services, automation, security, and landscape lighting.',
+          'Large-scale residential electrical systems for Holmby Hills properties—featuring 400-amp+ services, whole-home automation, estate security, and elaborate landscape lighting.',
       },
       {
         title: 'Home Renovation Electrical',
         subtitle:
-          "Kitchen, bathroom, and whole-home remodel electrical for Westwood's established family neighborhoods — panel upgrades, new circuits, and modern lighting.",
+          "Kitchen, bathroom, ADU, and whole-home remodel electrical for Westwood's established family neighborhoods—panel upgrades, new circuits, and modern lighting layouts.",
       },
       {
-        title: 'Westwood Village Commercial',
+        title: 'Westwood Village Commercial TI',
         subtitle:
-          'Tenant improvement and commercial electrical services for restaurants, retail, and offices in Westwood Village.',
+          'Tenant improvement and commercial electrical services tailored for restaurants, retail storefronts, theaters, and professional offices in Westwood Village.',
       },
     ],
   };
 
   const details = {
     city: 'Westwood',
+    heading: 'Your Trusted Local Electrician in Westwood, California',
     pharagraphs: [
       {
-        text: "Westwood's identity is shaped by UCLA, and the surrounding apartment buildings house thousands of students, faculty, and staff. Many of these buildings — constructed in the 1960s and 1970s — have aging electrical systems that struggle to support modern demands. We work with property owners and management companies to upgrade main panels, rewire individual units, add in-unit laundry circuits, and install EV charging infrastructure in parking areas.",
+        text: "Westwood's unique identity is deeply shaped by UCLA, and the surrounding apartment districts house thousands of students, faculty members, and local professionals. Many of these residential buildings—constructed primarily during the 1960s and 1970s—feature aging electrical systems that struggle to support modern power demands. We partner directly with property owners, HOAs, and management companies to upgrade main service panels, safely rewire individual apartment units, add dedicated in-unit laundry circuits, and install shared EV charging infrastructure in subterranean parking areas.",
       },
       {
-        text: 'Holmby Hills, technically part of the Westwood neighborhood, is one of the most exclusive residential enclaves in the world. These sprawling estates require electrical systems on par with commercial buildings — 400-amp and 600-amp services, multiple sub-panels, whole-home automation, security systems, and elaborate landscape lighting for grounds that can span several acres.',
+        text: 'Holmby Hills, which is technically part of the broader Westwood neighborhood, stands as one of the most exclusive residential enclaves on earth. These sprawling estates require complex electrical systems on par with commercial facilities: heavy-duty 400-amp and 600-amp services, multiple sub-distribution panels, advanced whole-home automation, integrated security networks, and sophisticated landscape lighting designed for multi-acre grounds.',
       },
       {
-        text: 'The established family neighborhoods of Westwood — between Wilshire Blvd and Sunset Blvd — feature well-maintained single-family homes from the 1940s through 1960s. These homes are popular candidates for kitchen and bathroom remodels, ADU additions, and comprehensive electrical upgrades. We provide turnkey electrical services for these renovation projects, coordinating with general contractors and designers.',
+        text: 'The established residential pockets of Westwood situated between Wilshire Blvd and Sunset Blvd feature well-maintained single-family homes built from the 1940s through the 1960s. These properties are prime candidates for kitchen and bathroom renovations, garage ADU additions, and comprehensive electrical modernizations. We provide turnkey electrical services for these residential remodel projects, coordinating smoothly with general contractors and interior designers.',
       },
       {
-        text: "Westwood Village's commercial district, centered on Broxton Avenue and Westwood Boulevard, features theaters, restaurants, and professional offices that need reliable commercial electrical services. We provide tenant improvement wiring, lighting upgrades, sign electrical, and equipment connections for this walkable urban center.",
+        text: 'Meanwhile, Westwood Village’s historic commercial district—centered around Broxton Avenue and Westwood Boulevard—features a walkable urban center of theaters, restaurants, and professional offices that rely on dependable commercial electrical service. We provide specialized tenant improvement wiring, lighting retrofits, business sign electrical, and heavy equipment connections for this active commercial core.',
       },
     ],
     features: [
@@ -99,26 +114,30 @@ function WestwoodPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Westwood',
@@ -170,10 +189,23 @@ function WestwoodPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Westwood Electrician | Holmby Hills & UCLA Area | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Westwood, CA & Holmby Hills estates. Apartment upgrades, Westwood Village commercial TI & residential wiring. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -183,7 +215,7 @@ function WestwoodPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

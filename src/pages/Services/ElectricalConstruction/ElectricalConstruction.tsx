@@ -4,7 +4,13 @@ import {
   BatteryCharging,
   BuildingComplex,
   Camera,
+  CheckCircle2,
+  Clock,
+  FileText,
   GitGraph,
+  MapPin,
+  Shield,
+  Star,
   Zap,
 } from 'lucide-react';
 
@@ -56,6 +62,17 @@ function ElectricalConstruction() {
     subtitle:
       'From ground-up custom residences and luxury ADUs to commercial tenant improvements (TI) and full-scale electrical buildouts, Brentwood Electrical Experts engineers and installs turn-key power systems across West Los Angeles. We partner directly with general contractors, architects, developers, and property owners to execute code-compliant rough-in and finish phases on schedule and on budget.',
     backgroundImage: ConsrtactionPanels,
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      'C-10 Licensed & Insured (#1102731)',
+      'On-Schedule Rough & Trim',
+      'Itemized Plan-Based Bids',
+      'Title 24 & NEC Compliant',
+    ],
+    icons: [<Shield />, <Clock />, <FileText />, <CheckCircle2 />],
   };
 
   const benefits = {
@@ -250,6 +267,28 @@ function ElectricalConstruction() {
     ],
   };
 
+  const detailsButtons = {
+    call: 'Call for a Free Estimate',
+    quote: 'Request a Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Need an Electrician?',
+    ctaText:
+      'Call now for a free estimate or schedule service online. Same-day appointments available.',
+    navTitle: 'Quick Navigation',
+    whyTitle: 'Why Choose Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Service Areas',
+  };
+
   const recents = {
     title: 'Featured Construction, TI & Remodel Projects Across West LA',
     subtitle:
@@ -363,26 +402,30 @@ function ElectricalConstruction() {
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Construction & Remodel Electrical',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
@@ -411,32 +454,42 @@ function ElectricalConstruction() {
       'We partner with homeowners and contractors across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
-    },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
-  ];
+  const related = {
+    title: 'Related Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'View Panel Upgrades details',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'View EV Chargers details',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'View Subpanels details',
+        slug: 'subpanels-service',
+      },
+      {
+        icon: <Camera />,
+        title: 'Security Cameras',
+        subtitle: 'View Security Cameras details',
+        slug: 'security-cameras-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <title>
@@ -448,14 +501,7 @@ function ElectricalConstruction() {
         content='Licensed C-10 electrical contractor (#1102731) specializing in ground-up custom home wiring, ADUs, commercial tenant improvements & Title 24 buildouts in West LA, Brentwood & Santa Monica. Call (310) 666-4752.'
       />
       <ServiceHero hero={hero} />
-      <TrustBadges
-        items={[
-          'C-10 Licensed & Insured (#1102731)',
-          'On-Schedule Rough & Trim',
-          'Itemized Plan-Based Bids',
-          'Title 24 & NEC Compliant',
-        ]}
-      />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
@@ -465,23 +511,20 @@ function ElectricalConstruction() {
             featuresDescription={featuresDescription}
             safetyDescription={safetyDescription}
             coverageDescription={coverageDescription}
+            detailsButtons={detailsButtons}
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
       <RecentProjects recents={recents} />
-      <Testimonials
-        reviews={reviews}
-        title='Verified Client Reviews: Construction & Remodel Electrical'
-        subtitle='Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye'
-      />
+      <Testimonials reviews={reviews} />
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Cable, Clock, Network, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,23 +15,45 @@ import Footer from '../../../components/Footer/Footer';
 function PlayaVistaPage() {
   const hero = {
     area: 'Playa Vista, CA · 90094',
-    title: 'Playa Vista Electrician — Licensed & Insured',
+    title:
+      'Playa Vista Electrician — Licensed & Insured Smart Home & Tech Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts serves the modern Playa Vista community with professional electrical services. From smart home installations and EV chargers to panel upgrades and security systems, we deliver cutting-edge electrical solutions.',
+      "Brentwood Electrical Experts serves the modern master-planned Playa Vista community with professional electrical services. From whole-home smart automation wiring and structured Wi-Fi data cabling to Level 2 EV chargers, home office electrical infrastructure, and outdoor patio lighting, our licensed C-10 electricians deliver cutting-edge solutions for Silicon Beach's tech-forward residents.",
+    button: 'Request Playa Vista Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Smart Home & Structured Wiring Experts',
+      'EV Charger & Tech Specialists',
+    ],
+    icons: [<Star />, <Network />, <Cable />],
   };
 
   const about = {
     title: 'About Playa Vista',
     city: 'Playa Vista',
+    heading:
+      'Electrical Services Tailored to Playa Vista’s Modern Infrastructure',
+    challengeTitle:
+      'Delivering Advanced Technology Integration and Smart Automation',
     subtitle:
-      'Playa Vista is a modern, master-planned community known for its tech industry presence (Google, YouTube, Facebook), young professional residents, and contemporary amenities.',
+      'Playa Vista is a contemporary, master-planned urban community globally recognized as the heart of Los Angeles’s Silicon Beach tech industry—anchored by major campuses like Google, YouTube, and Meta—and prized by young tech professionals for its resort-style amenities and contemporary design.',
     features: [
-      { item: 'Modern planned community homes' },
-      { item: 'Tech campus offices' },
-      { item: 'Contemporary townhouses' },
+      {
+        item: 'Contemporary planned community single-family homes and luxury flats',
+      },
+      { item: 'Modern multi-level townhouses with attached garages' },
+      {
+        item: 'Silicon Beach tech campus offices and creative workspace build-outs',
+      },
+      {
+        item: 'Resort-style residential complexes and shared community spaces',
+      },
     ],
     challenge:
-      "Playa Vista is LA's newest planned community, so most homes have modern electrical systems. The demand here is for technology upgrades — smart home systems, EV chargers, home office infrastructure, and outdoor entertainment electrical for the community's active, tech-forward lifestyle.",
+      "Because Playa Vista stands as Los Angeles's newest master-planned community—with the vast majority of residential properties constructed after 2005—standard legacy panel upgrades are rarely required. Instead, local demand centers heavily on advanced technology enhancements: whole-home mesh Wi-Fi structured cabling, custom smart lighting automation, dedicated remote-work office circuits, and high-speed EV charging infrastructure designed for contemporary multi-level living.",
     quote: [
       {
         text: "Playa Vista's tech-savvy homeowners want cutting-edge electrical solutions — smart home automation, structured wiring, EV charging, and home office infrastructure. That's exactly what we deliver.",
@@ -46,44 +68,45 @@ function PlayaVistaPage() {
       {
         title: 'Smart Home Electrical',
         subtitle:
-          "Whole-home automation wiring, smart lighting, and connected device infrastructure for Playa Vista's tech-forward residences.",
+          "Whole-home automation wiring, smart lighting keypads, automated motorized shading integration, and connected device infrastructure for Playa Vista's tech-forward residences.",
       },
       {
         title: 'Home Office Infrastructure',
         subtitle:
-          'Dedicated circuits, Ethernet wiring, and USB outlets for productive work-from-home setups in Playa Vista homes.',
+          'Dedicated 20-amp circuits, hardwired Cat6 Ethernet data cabling, and USB-C fast-charging outlets engineered for productive work-from-home environments.',
       },
       {
         title: 'EV Charger Installation',
         subtitle:
-          'Level 2 charger installations in Playa Vista garages and townhouse parking areas — clean, dedicated circuits with proper permitting.',
+          'High-speed Level 2 charger installations in Playa Vista garage spaces and townhouse parking areas—utilizing clean, concealed dedicated circuits and proper city permitting.',
       },
       {
         title: 'Outdoor Entertainment Electrical',
         subtitle:
-          "Patio heating, string lights, outdoor audio, and landscape lighting for Playa Vista's active outdoor lifestyle.",
+          'Weatherized patio heating circuits, architectural string lighting, outdoor audio system wiring, and landscape illumination designed for a vibrant outdoor lifestyle.',
       },
     ],
   };
 
   const details = {
     city: 'Playa Vista',
+    heading: 'Your Trusted Local Electrician in Playa Vista, California',
     pharagraphs: [
       {
-        text: "Playa Vista homes are relatively new — most built after 2005 — so panel upgrades are rarely needed. Instead, Playa Vista homeowners are focused on technology additions: whole-home Wi-Fi mesh wiring, smart lighting systems, home office dedicated circuits, and Level 2 EV charger installations. We specialize in these modern electrical services that complement Playa Vista's tech-forward lifestyle.",
+        text: "Playa Vista residential properties are exceptionally modern—with most built over the last two decades—meaning traditional service panel replacements or obsolete knob-and-tube rewiring are virtually non-existent here. Instead, Playa Vista homeowners prioritize sophisticated technology additions: whole-home structured mesh Wi-Fi data cabling, integrated smart lighting controls, dedicated home office circuits, and Level 2 EV charging ports. We specialize precisely in these contemporary electrical services that seamlessly complement Playa Vista's fast-paced, tech-forward lifestyle.",
       },
       {
-        text: "The community's proximity to YouTube, Google, and other tech campuses means many residents work from home at least part time. We install home office electrical infrastructure — dedicated 20-amp circuits, abundant outlets, USB charging receptacles, and structured wiring for Ethernet — ensuring productive, reliable work-from-home environments.",
+        text: "Given the community's close geographic proximity to corporate campuses like YouTube, Google, and other major technology enterprises, a significant portion of local residents maintain hybrid or full-time work-from-home schedules. We install professional home office electrical infrastructure—including dedicated 20-amp circuits, heavy-outlet configurations, USB charging receptacles, and clean Cat6 structural Ethernet lines—guaranteeing stable, high-speed, interference-free remote work environments.",
       },
       {
-        text: "Playa Vista's outdoor-oriented community design includes generous patios, rooftop decks, and common areas that benefit from professional electrical work. We install patio heating circuits, string light hook-ups, outdoor audio system wiring, and landscape lighting that extends the usability of outdoor spaces into the evening hours.",
+        text: "Furthermore, Playa Vista's outdoor-oriented urban planning incorporates generous private balconies, rooftop decks, and shared common courtyards that thrive on professional electrical enhancements. We install radiant patio heating circuits, custom architectural string light hook-ups, outdoor acoustic audio wiring, and low-voltage landscape lighting that extends the usability of your outdoor living spaces well into the evening hours.",
       },
     ],
     features: [
       { item: 'Playa Vista Central Park' },
-      { item: 'The Resort (community center)' },
-      { item: 'YouTube/Google campus' },
-      { item: 'Loyola Marymount University nearby' },
+      { item: 'The Resort Community Center' },
+      { item: 'Google / YouTube Campus' },
+      { item: 'Loyola Marymount University (Nearby)' },
     ],
   };
 
@@ -94,26 +117,30 @@ function PlayaVistaPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Playa Vista',
@@ -148,10 +175,24 @@ function PlayaVistaPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Playa Vista Electrician | Smart Home Automation & EV Chargers | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Playa Vista (90094). Smart home automation, structured Wi-Fi data cabling, home office circuits & townhouse EV chargers. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -161,7 +202,7 @@ function PlayaVistaPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

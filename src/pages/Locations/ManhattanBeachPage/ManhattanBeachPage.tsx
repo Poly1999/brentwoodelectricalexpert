@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Anchor, Clock, Gem, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,43 @@ import Footer from '../../../components/Footer/Footer';
 function ManhattanBeachPage() {
   const hero = {
     area: 'Manhattan Beach, CA · 90266',
-    title: 'Manhattan Beach Electrician — Licensed & Insured',
+    title:
+      'Manhattan Beach Electrician — Licensed & Insured Luxury Electrical Services',
     subtitle:
-      "Brentwood Electrical Experts delivers premium electrical services for Manhattan Beach homes and businesses. From luxury home lighting design and panel upgrades to EV charger installations and smart home automation, we serve the South Bay's most discerning clients.",
+      "Brentwood Electrical Experts delivers premium electrical services for Manhattan Beach homes and commercial properties. From luxury Sand Section 400-amp service upgrades and whole-home Lutron lighting automation to marine-grade coastal hardware installations and high-end outdoor living electrical, our licensed C-10 electricians serve the South Bay's most discerning clients with unmatched precision.",
+    button: 'Request Manhattan Beach Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Luxury Sand & Tree Section Specialists',
+      'Marine-Grade Coastal Hardware',
+    ],
+    icons: [<Star />, <Gem />, <Anchor />],
   };
 
   const about = {
     title: 'About Manhattan Beach',
     city: 'Manhattan Beach',
+    heading: 'Electrical Services Tailored to Manhattan Beach Architecture',
+    challengeTitle: 'Powering Luxury Living and Mitigating Coastal Corrosion',
     subtitle:
-      "Manhattan Beach is an affluent South Bay beach city of about 35,000 residents, consistently ranked among California's most desirable places to live. Known for its top schools, luxury homes, and strong community identity.",
+      'Manhattan Beach is an affluent South Bay coastal city of approximately 35,000 residents, consistently ranked among the most desirable places to live in California. Renowned for its top-rated schools, stunning luxury coastal real estate, and strong community identity, the city demands electrical engineering of the highest caliber.',
     features: [
-      { item: 'Luxury beach homes' },
-      { item: 'Modern coastal builds' },
-      { item: 'Sand Section cottages' },
-      { item: 'Tree Section family homes' },
+      { item: 'Ultra-luxury multi-story Sand Section custom beach homes' },
+      {
+        item: 'Modern coastal architectural new builds and structural remodels',
+      },
+      {
+        item: 'Historic beach cottages and pedestrian-friendly walk-street properties',
+      },
+      {
+        item: 'Tree Section single-family family homes and expansive residential expansions',
+      },
     ],
     challenge:
-      "Manhattan Beach features some of the South Bay's most valuable residential real estate. Luxury home electrical demands are significant — 200-amp to 400-amp services, smart home automation, security systems, and high-end lighting. Sand Section proximity to the ocean means aggressive salt air corrosion.",
+      'Manhattan Beach features some of the most valuable residential real estate in the entire South Bay. Luxury home electrical demands are substantial—frequently requiring 320-amp to 400-amp main services, advanced home automation, security camera networks, and sophisticated architectural lighting. Furthermore, the aggressive salt-air environment in the Sand Section and ocean-adjacent blocks demands rigorous marine-grade material selection to prevent rapid electrical component degradation.',
     quote: [
       {
         text: "Manhattan Beach homeowners expect premium quality — in their homes, their lifestyle, and their service providers. We deliver the caliber of electrical work that Manhattan Beach's finest homes deserve.",
@@ -47,40 +66,41 @@ function ManhattanBeachPage() {
       {
         title: 'Luxury Home Electrical',
         subtitle:
-          "320-amp to 400-amp services, whole-home automation, and premium electrical systems for Manhattan Beach's finest Sand Section residences.",
+          "320-amp to 400-amp heavy services, whole-home automation integration, and robust power distribution engineered for Manhattan Beach's finest Sand Section multi-story residences.",
       },
       {
         title: 'Coastal-Grade Installations',
         subtitle:
-          "Marine-grade panels, corrosion-resistant hardware, and coastal-rated components for long-lasting performance in Manhattan Beach's salt air environment.",
+          "Marine-grade electrical panels, corrosion-resistant stainless hardware, and coastal-rated components engineered for long-lasting performance in Manhattan Beach's heavy salt-air climate.",
       },
       {
         title: 'Smart Home & Lighting Control',
         subtitle:
-          "Lutron, Sonos, Savant — whole-home automation and lighting design for Manhattan Beach's tech-savvy, design-conscious homeowners.",
+          "Lutron HomeWorks, Sonos, and Savant whole-home automation and intelligent lighting design tailored for Manhattan Beach's tech-savvy, design-conscious homeowners.",
       },
       {
         title: 'Outdoor Living Electrical',
         subtitle:
-          "Pool, spa, outdoor kitchen, sport court, and landscape lighting — premium outdoor electrical for Manhattan Beach's active lifestyle.",
+          'Swimming pool and spa equipment, outdoor kitchen culinary circuits, sport court lighting, and sophisticated landscape illumination designed for an active coastal lifestyle.',
       },
     ],
   };
 
   const details = {
     city: 'Manhattan Beach',
+    heading: 'Your Trusted Local Electrician in Manhattan Beach, California',
     pharagraphs: [
       {
-        text: "Manhattan Beach's Sand Section — the blocks between Strand and Manhattan Beach Boulevard — features some of the most valuable residential real estate in the South Bay. These luxury homes, many recently built or extensively remodeled, demand sophisticated electrical systems: 320-amp or 400-amp services, whole-home Lutron lighting control, Sonos or Savant audio distribution, security camera networks, and dedicated circuits for wine rooms, saunas, and professional-grade kitchens.",
+        text: 'Manhattan Beach’s iconic Sand Section—encompassing the premier blocks stretching from The Strand up to Manhattan Beach Boulevard—features some of the most architecturally ambitious and valuable residential real estate in the South Bay. These luxury custom homes, many of which are newly constructed or extensively remodeled, demand highly sophisticated electrical infrastructure: 320-amp or 400-amp main electrical services, whole-home Lutron lighting control systems, multi-zone audio distribution, comprehensive security camera networks, and dedicated high-amperage circuits for temperature-controlled wine rooms, saunas, and professional-grade culinary kitchens.',
       },
       {
-        text: "The Tree Section, Manhattan Beach's family-oriented neighborhood, features a mix of original homes and modern new builds. Families here are investing in practical upgrades — panel replacements, EV charger installations, kitchen remodel electrical, and landscape lighting. We serve Tree Section homeowners with the same quality and attention to detail we bring to the Sand Section's luxury builds.",
+        text: "Meanwhile, the historic Tree Section—Manhattan Beach’s beloved family-oriented neighborhood—showcases a dynamic mix of vintage California beach cottages and modern new construction builds. Local families here regularly invest in essential property modernizations: main electrical panel replacements, Level 2 EV charger installations, kitchen remodeling circuits, and automated landscape lighting grids. We serve Tree Section homeowners with the exact same meticulous attention to detail and professional craftsmanship that we bring to the Sand Section's multi-million-dollar luxury builds.",
       },
       {
-        text: "Manhattan Beach's proximity to the ocean means salt air corrosion is a constant concern — even homes several blocks inland are affected. We spec marine-grade materials for all exterior electrical work and educate homeowners about the maintenance implications of coastal living. Our goal is to install systems that perform reliably for decades, not just years.",
+        text: 'Because Manhattan Beach sits directly on the Pacific coastline, aggressive salt-air corrosion is a constant environmental threat—even for properties situated several blocks inland. We exclusively specify marine-grade electrical materials, stainless steel fasteners, and NEMA 3R weatherproof enclosures for all exterior and garage installations, educating homeowners on the critical maintenance realities of coastal living. Our engineering goal is to install robust systems that perform reliably for decades.',
       },
       {
-        text: "Manhattan Beach's active outdoor lifestyle drives demand for sophisticated outdoor electrical — pool and spa equipment, outdoor kitchens with commercial-grade appliances, fire pits, sport court lighting, and elaborate landscape illumination. We design these systems for durability, safety, and seamless integration with the home's overall electrical infrastructure.",
+        text: "Finally, Manhattan Beach's active outdoor lifestyle drives heavy demand for specialized outdoor electrical engineering—including pool and spa subpanels, outdoor kitchens equipped with heavy commercial appliances, custom gas fire pit igniters, sport court lighting poles, and elaborate architectural garden illumination. We design these exterior systems for absolute durability, safety, and seamless synchronization with your home's central electrical grid.",
       },
     ],
     features: [
@@ -88,6 +108,7 @@ function ManhattanBeachPage() {
       { item: 'Manhattan Beach Boulevard' },
       { item: 'Metlox Plaza' },
       { item: 'Polliwog Park' },
+      { item: 'The Strand' },
     ],
   };
 
@@ -98,26 +119,30 @@ function ManhattanBeachPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Manhattan Beach',
@@ -160,10 +185,24 @@ function ManhattanBeachPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Manhattan Beach Electrician | Luxury Homes & Marine Panels | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Manhattan Beach (90266). Sand Section 400A luxury electrical, Tree Section panel upgrades, Lutron automation & marine-grade outdoor systems. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -173,7 +212,7 @@ function ManhattanBeachPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

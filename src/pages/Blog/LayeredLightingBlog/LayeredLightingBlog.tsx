@@ -38,6 +38,12 @@ function LayeredLightingBlog() {
       'Ready to transform your home with a thoughtful, layered lighting design? Brentwood Electrical Experts provides professional lighting design and installation throughout West Los Angeles.',
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <BlogHero hero={hero} />
@@ -233,7 +239,7 @@ function LayeredLightingBlog() {
         </div>
       </div>
       <BlogCTA cta={cta} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

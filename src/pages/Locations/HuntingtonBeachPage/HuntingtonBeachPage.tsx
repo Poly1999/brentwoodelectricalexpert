@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Anchor, Clock, MapPin, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,24 +15,37 @@ import Footer from '../../../components/Footer/Footer';
 function HuntingtonBeachPage() {
   const hero = {
     area: 'Huntington Beach, CA · 92646, 92647, 92648, 92649',
-    title: 'Huntington Beach Electrician — Licensed & Insured',
+    title:
+      'Huntington Beach Electrician — Licensed & Insured Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts extends our professional electrical services to Huntington Beach. From panel upgrades and EV charger installations to security systems and lighting design, our licensed electricians serve Surf City with the same quality and reliability our West LA clients trust.',
+      'Brentwood Electrical Experts extends our professional electrical services to Huntington Beach ("Surf City USA"). From marine-grade coastal panel upgrades and Level 2 EV charger installations to Main Street commercial TI and 1970s tract home modernizations, our licensed C-10 electricians deliver the same dependable quality and reliability our clients trust.',
+    button: 'Get FREE Quote',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Orange County Coastal & Inland Experts',
+      'Marine-Grade Coastal Hardware',
+    ],
+    icons: [<Star />, <MapPin />, <Anchor />],
   };
 
   const about = {
     title: 'About Huntington Beach',
     city: 'Huntington Beach',
+    heading: 'Electrical Services Tailored to Huntington Beach Communities',
+    challengeTitle: 'Balancing Coastal Salt Air and Inland Modernization',
     subtitle:
-      "Huntington Beach — 'Surf City USA' — is a large Orange County coastal city of about 200,000 residents, known for its iconic pier, surf culture, and diverse residential neighborhoods.",
+      'Huntington Beach is a vibrant Orange County coastal city of approximately 200,000 residents, globally celebrated for its iconic pier, rich surf culture, and diverse residential neighborhoods spanning from the oceanfront to inland suburban tracts.',
     features: [
-      { item: 'Beach bungalows' },
-      { item: 'Suburban tract homes' },
-      { item: 'Coastal condominiums' },
-      { item: 'Downtown HB mixed-use' },
+      { item: 'Charming downtown beach bungalows and Strand-adjacent homes' },
+      { item: 'Spacious 1960s and 1970s suburban tract houses' },
+      { item: 'Modern coastal condominiums and townhomes' },
+      { item: 'Downtown and Pacific City mixed-use commercial properties' },
     ],
     challenge:
-      'Huntington Beach is our furthest service area, with a diverse housing stock ranging from downtown beach bungalows to large inland tract homes. Coastal properties face salt air corrosion, while inland homes often need modernization of 1960s-1970s electrical systems.',
+      'Huntington Beach represents a diverse service footprint combining distinct environmental demands. Beachfront and downtown properties face aggressive salt air corrosion that destroys standard electrical components, while inland neighborhoods feature thousands of 1960s–1970s tract homes that require comprehensive panel upgrades to support modern electrical, HVAC, and EV charging loads.',
     quote: [
       {
         text: 'We extend our West LA quality and expertise to Surf City — Huntington Beach homeowners get the same licensed, professional electrical services our Westside clients have trusted for years.',
@@ -47,40 +60,41 @@ function HuntingtonBeachPage() {
       {
         title: 'Coastal Home Electrical',
         subtitle:
-          'Marine-grade electrical installations for downtown Huntington Beach and beachfront properties — corrosion-resistant components built for the ocean environment.',
+          'Marine-grade electrical installations for downtown Huntington Beach and beachfront properties—featuring corrosion-resistant components built specifically to withstand harsh ocean air.',
       },
       {
         title: 'Tract Home Panel Upgrades',
         subtitle:
-          "200-amp panel upgrades for Huntington Beach's 1960s-1970s neighborhoods — safely power EV chargers, modern appliances, and home offices.",
+          "200-amp service upgrades for Huntington Beach's 1960s–1970s neighborhoods—safely powering Level 2 EV chargers, modern kitchen appliances, and home offices.",
       },
       {
         title: 'EV Charger Installation',
         subtitle:
-          'Level 2 home charging for all EV makes — Tesla, BMW, Rivian, and more — with dedicated circuits and HB city permits included.',
+          'High-speed Level 2 home charging for all EV makes—Tesla, BMW, Rivian, Ford, and more—with dedicated circuits and city building permits included.',
       },
       {
         title: 'Main Street Commercial Electrical',
         subtitle:
-          "Restaurant, retail, and office electrical for Huntington Beach's thriving downtown and Pacific City commercial areas.",
+          "Restaurant, retail, and office electrical services tailored for Huntington Beach's thriving downtown Main Street and Pacific City commercial districts.",
       },
     ],
   };
 
   const details = {
     city: 'Huntington Beach',
+    heading: 'Your Trusted Local Electrician in Huntington Beach, California',
     pharagraphs: [
       {
-        text: "Huntington Beach's downtown and beachfront neighborhoods feature charming bungalows and coastal homes that face the same salt air challenges as their South Bay and West LA counterparts. We bring our coastal electrical expertise to these properties — marine-grade panels, corrosion-resistant hardware, and weatherproof outdoor installations designed for decades of reliable performance in the ocean air environment.",
+        text: 'Huntington Beach’s vibrant downtown and oceanfront neighborhoods feature charming beach bungalows and coastal residences that encounter the exact same salt air corrosion challenges as properties in our Westside and South Bay service areas. We bring our specialized coastal electrical expertise directly to these homes—utilizing marine-grade panels, stainless steel hardware, and weatherproof outdoor installations engineered for decades of reliable performance in aggressive ocean environments.',
       },
       {
-        text: 'The inland neighborhoods of Huntington Beach — from Huntington Harbour to the areas east of Beach Blvd — feature thousands of 1960s-1970s tract homes that are prime candidates for electrical modernization. Panel upgrades, EV charger installations, kitchen remodel circuits, and whole-home surge protection are our most popular services in these neighborhoods.',
+        text: 'Meanwhile, the expansive inland neighborhoods of Huntington Beach—stretching from Huntington Harbour across to the residential sectors east of Beach Blvd—feature thousands of 1960s and 1970s tract homes that represent prime candidates for electrical modernization. Upgrading legacy 100-amp panels to robust 200-amp services, installing dedicated EV charger circuits, rewiring remodeled kitchens, and deploying whole-home surge protection rank as our most frequently requested services in these communities.',
       },
       {
-        text: "Huntington Beach's booming restaurant scene on Main Street and Pacific City, plus its extensive commercial corridors, create strong demand for commercial electrical services. We provide tenant improvement wiring, kitchen equipment circuits, outdoor patio electrical, and lighting upgrades for HB businesses.",
+        text: "Furthermore, Huntington Beach's booming culinary scene centered along Main Street and Pacific City, combined with extensive commercial corridors throughout the city, drives strong demand for professional commercial electrical contractors. We provide turnkey tenant improvement wiring, commercial kitchen equipment circuits, outdoor patio electrical, and lighting upgrades for local Orange County businesses.",
       },
       {
-        text: "With Southern California's growing EV adoption, Huntington Beach homeowners are increasingly requesting home charging installations. We install Level 2 chargers for all vehicle makes — Tesla, BMW, Ford, Rivian, Hyundai, and more — with dedicated circuits, panel upgrades when needed, and clean conduit routing.",
+        text: "With Southern California's rapid adoption of electric vehicles, Huntington Beach homeowners are increasingly requesting dedicated home charging setups. We install high-capacity Level 2 chargers for all vehicle brands—including Tesla, BMW, Ford, Rivian, and Hyundai—complete with dedicated wiring runs, panel upgrades when ampacity headroom is required, and clean conduit routing.",
       },
     ],
     features: [
@@ -98,26 +112,30 @@ function HuntingtonBeachPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Huntington Beach',
@@ -158,10 +176,24 @@ function HuntingtonBeachPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Huntington Beach Electrician | Coastal Panels & EV Chargers | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Huntington Beach & Orange County coast. Marine-grade coastal panels, 1970s tract home upgrades & EV chargers. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -171,7 +203,7 @@ function HuntingtonBeachPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

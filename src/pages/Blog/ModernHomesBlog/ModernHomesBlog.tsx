@@ -43,6 +43,12 @@ function ModernHomesBlog() {
       'Protect your home and family with a comprehensive electrical safety inspection from Brentwood Electrical Experts. Our licensed electricians serve West Los Angeles and surrounding areas with thorough inspections and honest recommendations.',
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <BlogHero hero={hero} />
@@ -215,7 +221,7 @@ function ModernHomesBlog() {
         </div>
       </div>
       <BlogCTA cta={cta} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

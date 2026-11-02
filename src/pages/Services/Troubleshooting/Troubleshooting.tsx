@@ -3,8 +3,14 @@ import { NavLink } from 'react-router-dom';
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  ClipboardCheck,
+  Clock,
   GitGraph,
+  MapPin,
   Search,
+  Shield,
+  Star,
   Zap,
 } from 'lucide-react';
 
@@ -33,65 +39,48 @@ import ElectricalTesting from '../../../assets/troubleshoot-6923.webp';
 function Troubleshooting() {
   const hero = {
     icon: <Search />,
-    title: 'Electrical Troubleshooting',
+    title: 'Precision Electrical Troubleshooting & Fault Diagnostics',
     subtitle:
-      'Experiencing flickering lights, tripping breakers, dead outlets, or mysterious electrical issues? Brentwood Electrical Experts provides expert electrical troubleshooting and diagnostics across West LA, Santa Monica, and surrounding areas. We find and fix the root cause — not just the symptoms.',
+      'Dealing with tripping AFCI/GFCI breakers, flickering LED lights, dead circuits, or burning odors from a panel? Brentwood Electrical Experts delivers rapid, scientific electrical fault diagnostics across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles. We use digital circuit tracers and thermal load testing to isolate and repair the exact root cause permanently.',
     backgroundImage: ElectricalTroubleshooting,
+    button: 'Book Diagnostic Visit',
+  };
+
+  const badges = {
+    items: [
+      'C-10 Licensed (#1102731)',
+      'Same-Day Dispatch',
+      'Non-Destructive Tracing & Upfront Quotes',
+    ],
+    icons: [<Shield />, <Zap />, <ClipboardCheck />],
   };
 
   const benefits = {
+    title: 'Advantages of Professional Fault Diagnostics',
     features: [
-      'Expert diagnosis of electrical problems',
-      'Fix the root cause, not just symptoms',
-      'Fast response and same-day service',
-      'Prevent fire hazards and safety risks',
-      'Upfront pricing before any work begins',
-      'Licensed and experienced electricians',
+      'Advanced Circuit Tracing: Pinpoint hidden shorts, open neutrals, and broken wires without tearing open drywall.',
+      'Root-Cause Resolution: Permanent repairs for nuisance AFCI/GFCI breaker trips and voltage drops.',
+      'Same-Day Emergency Dispatch: Priority troubleshooting across West LA for partial power outages and sparking devices.',
+      'Fire & Arc-Fault Prevention: Identify overheated busbars, loose backstabbed connections, and degraded insulation.',
+      'Transparent Flat-Rate Pricing: Clear diagnostic evaluation and itemized repair quotes before work begins.',
+      'State-Certified C-10 Troubleshooters: Hands-on testing by licensed California electricians (#1102731).',
     ],
     image: ElectricalTroubleshooting,
   };
 
   const fullDescription = {
-    title: 'Electrical Troubleshooting in West Los Angeles',
+    title: 'Scientific Electrical Fault Diagnostics in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that electrical
-        troubleshooting is more than just technical work — it's about ensuring
-        the safety, comfort, and value of your property. As a fully{' '}
+        Intermittent electrical problems—such as breakers that trip under load,
+        dimming lights when appliances cycle on, or dead receptacles across
+        multiple rooms—are warning signs of underlying wiring faults. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every troubleshooting project we take on.
-      </>,
-
-      <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        troubleshooting service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
-      </>,
-
-      <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
-      </>,
-
-      <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their troubleshooting needs — and
-        why they keep coming back. See our{' '}
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts uses precision diagnostic instruments to
+        locate hidden electrical failures quickly and safely. See our{' '}
         <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
         <NavLink to='/contact'>request a free estimate.</NavLink>
       </>,
@@ -99,32 +88,32 @@ function Troubleshooting() {
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Troubleshooting Service',
+    title: 'What to Expect From Our Electrical Troubleshooting Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your troubleshooting
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        seasoned electrical diagnosticians who treat your property with
+        meticulous care. We never swap parts blindly hoping a problem goes away,
+        we never bypass safety ground-fault devices, and we never leave a
+        circuit until its load stability is verified.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your appointment begins with a targeted{' '}
+        <NavLink to='/contact'>diagnostic consultation</NavLink>. A licensed
+        C-10 electrician listens to when and how the issue occurs, tests your
+        panel busbar and branch circuits using digital multimeters, circuit
+        tracers, and thermal imaging, and isolates the exact point of failure.
+        Once we identify the fault, we explain our findings in plain English and
+        present an upfront, flat-rate repair quote before performing the fix.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        We know an unexpected electrical outage or tripping circuit disrupts
+        your household or business. Our technicians arrive within our scheduled
+        window, wear protective shoe covers, use non-destructive tracing tools
+        to keep your walls intact, and leave our workspace spotless once your
+        power is safely restored.
       </>,
     ],
   };
@@ -133,155 +122,157 @@ function Troubleshooting() {
     title: 'Our Troubleshooting Process — Step by Step',
     features: [
       {
-        title: 'Describe the Issue',
-        subtitle: "Tell us what's happening — we'll ask the right questions.",
-      },
-      {
-        title: 'Diagnosis',
+        title: 'Symptom & Load History',
         subtitle:
-          'We use professional testing equipment to identify the root cause.',
+          'Tell us which circuits, appliances, or lights are acting up so we can map the affected branch pathways.',
       },
       {
-        title: 'Solution & Pricing',
+        title: 'Precision Fault Tracing',
         subtitle:
-          'We explain the issue and provide upfront pricing for the repair.',
+          'We use digital circuit tracers, megohmmeters, and load testers to isolate shorts, ground faults, or loose neutrals without damaging walls.',
       },
       {
-        title: 'Repair',
-        subtitle: 'We fix the problem and verify proper operation.',
+        title: 'Clear Findings & Flat-Rate Quote',
+        subtitle:
+          'We show you the exact cause of the failure and provide a transparent, itemized price for the permanent repair.',
+      },
+      {
+        title: 'Code Repair & Load Verification',
+        subtitle:
+          'We complete the repair using UL-listed hardware and stress-test the circuit under full load to confirm stability.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title:
+      'NEC Code Compliance, Thermal Diagnostics & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every troubleshooting
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety is the foundation of every diagnostic repair we
+        perform. Every troubleshooting solution we execute meets or exceeds the
+        latest National Electrical Code (NEC) standards and local municipal
+        building codes across Los Angeles (LADBS), Santa Monica, Beverly Hills,
+        and Culver City. Whether remediating overheated aluminum connections,
+        replacing arc-damaged breakers, or correcting ungrounded junctions, we
+        ensure your system is 100% code-compliant.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We repair circuits exclusively with commercial-grade, UL-listed
+        breakers, receptacles, and high-leverage connectors from trusted
+        manufacturers including Siemens, Square D, Eaton, Leviton, and Wago.
+        Every terminal is torqued to manufacturer specification to prevent
+        future arcing, resistance heating, or voltage drop.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because modern homes combine sensitive inverter-driven HVAC systems, EV
+        chargers, and AFCI/GFCI dual-function breakers, our electricians train
+        continuously on advanced harmonic diagnostics and load-balancing
+        techniques—giving you accurate answers on the very first visit.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Troubleshooting Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide troubleshooting services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts provides rapid electrical troubleshooting
+        and fault repair for homeowners, HOAs, and businesses across West Los
+        Angeles. Whether your property is in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your troubleshooting project.
+        <NavLink to='/all-locations'>28+ Greater LA communities</NavLink> we
+        cover, our local technicians are ready to respond.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        troubleshooting project requires.
-      </>,
-      <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        We know the common wiring quirks of every Westside era—from aging
+        cloth-insulated cables and ungrounded junctions in 1950s{' '}
+        <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink> homes, to complex
+        centralized lighting and subpanel networks in{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink> estates and{' '}
+        <NavLink to='/century-city'>Century City</NavLink> commercial suites.{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for same-day
+        diagnostics or{' '}
+        <NavLink to='/contact'>request your appointment online</NavLink> today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Electrical Troubleshooting Projects',
+    title: 'Featured Electrical Diagnostic & Repair Projects Across West LA',
     subtitle:
-      'Diagnosing and resolving electrical issues across West Los Angeles homes and businesses.',
+      'Browse recent circuit tracing, breaker fault repairs, and wiring restorations completed by our team.',
     features: [
       {
         image: CircuitDiagnosis,
-        name: 'Circuit Diagnosis',
-        location: 'Brentwood',
+        name: 'AFCI Nuisance Trip & Shared Neutral Isolation',
+        location: 'Brentwood, CA',
       },
       {
         image: WiringInspection,
-        name: 'Wiring Inspection',
-        location: 'Santa Monica',
+        name: 'Short-Circuit Tracing & Junction Box Remediation',
+        location: 'Santa Monica, CA',
       },
       {
         image: ElectricalRepair,
-        name: 'Electrical Repair',
-        location: 'Pacific Palisades',
+        name: 'Underground Feeder Fault Detection & Conduit Repair',
+        location: 'Pacific Palisades, CA',
       },
       {
         image: PanelTroubleshooting,
-        name: 'Panel Troubleshooting',
-        location: 'West LA',
+        name: 'Overheated Busbar & Main Breaker Load Balancing',
+        location: 'West Los Angeles, CA',
       },
       {
         image: FaultDetection,
-        name: 'Fault Detection',
-        location: 'Beverly Hills',
+        name: 'Multi-Zone Lighting Flicker & Dimmer Load Correction',
+        location: 'Beverly Hills, CA',
       },
       {
         image: ElectricalTesting,
-        name: 'Electrical Testing',
-        location: 'Bel Air',
+        name: 'Whole-Estate Thermal Load Audit & Ground Fault Repair',
+        location: 'Bel Air, CA',
       },
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Electrical Troubleshooting & Repairs',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Why do my breakers keep tripping?',
+      question: 'Why do my circuit breakers keep tripping repeatedly?',
       answer:
-        "Common causes include overloaded circuits, short circuits, ground faults, or a failing breaker. We'll diagnose the exact cause and fix it.",
+        'Repeated breaker trips are typically caused by one of three issues: a circuit overload (too many high-draw appliances like space heaters, microwaves, or hair dryers running on a single 15A or 20A branch circuit), a dead short-circuit (where hot and neutral/ground wires touch directly, causing an instant, hard trip), or a ground fault/arc fault indicating degraded insulation or loose terminal connections.',
     },
     {
       question: 'Is a flickering light dangerous?',
@@ -296,40 +287,84 @@ function Troubleshooting() {
       'We provide electrical troubleshooting services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for Diagnostics',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Need urgent fault diagnostics? Call or book online for same-day troubleshooting across West LA.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0-Star Rated (100+ Reviews)',
+      'C-10 Licensed & Insured (#1102731)',
+      'Same-Day Emergency Dispatch',
+      'Upfront Flat-Rate Quotes',
+      'Serving 28+ Westside Areas',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Troubleshooting Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Electrical Troubleshooting & Fault Diagnostics West LA | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) providing scientific electrical troubleshooting, circuit tracing, breaker trip repair & fault diagnostics in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -338,7 +373,7 @@ function Troubleshooting() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -347,7 +382,7 @@ function Troubleshooting() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

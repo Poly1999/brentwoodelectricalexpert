@@ -1,7 +1,12 @@
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  Clock,
   GitGraph,
+  MapPin,
+  Shield,
+  Star,
   Store,
   Zap,
 } from 'lucide-react';
@@ -38,98 +43,108 @@ import OfficeBuildOut from '../../../assets/commercial-10.jpg';
 function CommercialElectrical() {
   const hero = {
     icon: <Store />,
-    title: 'Commercial Electrical Services',
+    title: 'Commercial Electrical Services & Tenant Improvements',
     subtitle:
-      'Brentwood Electrical Experts delivers professional commercial electrical services for offices, retail spaces, restaurants, and commercial properties across West Los Angeles. We handle tenant improvements, electrical buildouts, lighting retrofits, and ongoing maintenance for businesses of all sizes.',
+      'Power your business operations with reliable, code-compliant commercial electrical engineering. Brentwood Electrical Experts delivers professional electrical buildouts, retail tenant improvements (TI), three-phase power distribution, and lighting retrofits for offices, restaurants, and commercial properties across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
     backgroundImage: CommercialElectricalServices,
+    button: 'Request Commercial Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Flexible After-Hours Scheduling',
+      '3-Phase Power Distribution',
+    ],
+    icons: [<Star />, <Clock />, <Zap />],
   };
 
   const benefits = {
+    title: 'Key Advantages of Our Commercial Electrical Services',
     features: [
-      'Tenant improvement electrical work',
-      'Commercial lighting installation and retrofit',
-      'Electrical system maintenance and repair',
-      'Code compliance and safety inspections',
-      'Minimal disruption to business operations',
-      'Licensed and insured commercial electricians',
+      'Turnkey commercial tenant improvements (TI) and retail storefront buildouts',
+      'Energy-efficient commercial lighting design, LED retrofits, and Title 24 compliance',
+      'Comprehensive electrical system maintenance, troubleshooting, and switchgear repair',
+      'Strict adherence to municipal building codes and mandatory safety inspections',
+      'Flexible scheduling and after-hours execution to ensure zero business downtime',
+      'State-certified C-10 commercial contractors carrying comprehensive liability insurance',
     ],
     image: CommercialElectricalServices,
   };
 
   const fullDescription = {
-    title: 'Commercial Electrical Services in West Los Angeles',
+    title: 'Professional Commercial Electrical Contractor in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that commercial
-        electrical services is more than just technical work — it's about
-        ensuring the safety, comfort, and value of your property. As a fully{' '}
+        Commercial facilities, retail spaces, restaurants, and professional
+        offices require robust electrical infrastructure designed to handle
+        heavy daily loads, strict safety codes, and continuous operational
+        demands. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every commercial project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts provides dependable, code-compliant
+        commercial electrical solutions.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        commercial service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you need a full electrical buildout for a new office suite in{' '}
+        <NavLink to='/century-city'>Century City</NavLink>, a restaurant kitchen
+        equipment upgrade in{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>, a retail
+        tenant improvement in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or a parking lot
+        lighting retrofit in <NavLink to='/santa-monica'>Santa Monica</NavLink>,
+        our licensed commercial team executes every project with precision.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every commercial project begins with a comprehensive site assessment and
+        a clear, flat-rate written proposal. We work with commercial-grade,
+        UL-listed three-phase switchgear, heavy-duty conduit runs, and
+        energy-efficient control systems from trusted manufacturers including
+        Siemens, Square D, and Eaton.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their commercial needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From initial architectural plan coordination to after-hours installation
+        windows and final city inspection sign-offs, your commercial project is
+        handled completely in-house. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your commercial consultation</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Commercial Service',
+    title: 'What to Expect From Our Commercial Electrical Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your commercial needs,
-        you're choosing a team that treats every job — big or small — with the
-        same level of professionalism, care, and attention to detail. We don't
-        cut corners, we don't rush through projects, and we never leave a job
-        until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your business operations and
+        commercial timeline with absolute care. We never cut corners on
+        heavy-duty wire sizing or switchgear balancing, we never rush critical
+        terminations, and we ensure your facility passes municipal inspection on
+        the first visit.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your service starts with an{' '}
+        <NavLink to='/contact'>on-site evaluation</NavLink>. A licensed C-10
+        commercial electrician reviews your building schematics, load
+        requirements, and operational hours to design a seamless work plan. We
+        explain our installation and scheduling approach in plain language and
+        provide a transparent written estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical work can disrupt daily business, which is why our crew
+        prioritizes flexibility and speed. We coordinate after-hours or weekend
+        execution windows when necessary, maintain an immaculate jobsite, and
+        keep you informed at every milestone so your business never misses a
+        beat.
       </>,
     ],
   };
@@ -138,234 +153,282 @@ function CommercialElectrical() {
     title: 'Our Commercial Process — Step by Step',
     features: [
       {
-        title: 'Consultation',
+        title: 'Scope Review & Assessment',
         subtitle:
-          'We review your commercial electrical needs and project scope.',
+          'We evaluate your commercial facility requirements, equipment loads, and architectural plans.',
       },
       {
-        title: 'Proposal',
-        subtitle: 'We provide a detailed proposal with transparent pricing.',
+        title: 'Itemized Commercial Proposal',
+        subtitle:
+          'We provide a detailed project scope, flexible scheduling options, and flat-rate transparent pricing.',
       },
       {
-        title: 'Execution',
+        title: 'After-Hours Execution',
         subtitle:
-          'We complete the work on schedule with minimal business disruption.',
+          'Our C-10 electricians complete the work efficiently during scheduled off-hours to prevent business downtime.',
       },
       {
-        title: 'Inspection',
+        title: 'Code Compliance & Inspection',
         subtitle:
-          'We ensure full code compliance and coordinate required inspections.',
+          'We verify complete NEC/Title 24 compliance and coordinate final municipal building inspections.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Title 24 Standards & Commercial Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every commercial project
-        we complete meets or exceeds the latest National Electrical Code (NEC)
-        standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Commercial electrical safety and strict regulatory compliance are
+        non-negotiable. Every commercial buildout and maintenance project we
+        complete complies fully with the National Electrical Code (NEC),
+        California Title 24 Energy Efficiency Standards, and local municipal
+        building codes across Los Angeles (LADBS), Santa Monica, Beverly Hills,
+        and Culver City. We pull all necessary permits and coordinate city
+        inspections.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed switchgear, wiring
+        components, and fixtures from trusted manufacturers including Siemens,
+        Square D, Eaton, and Lutron. From three-phase distribution panels and
+        heavy-duty EMT conduit to automated emergency lighting and surge
+        protection, every part is specified for maximum durability.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because commercial codes and energy mandates evolve constantly, our
+        technicians receive ongoing training on emerging technologies and safety
+        regulations—ensuring your business remains fully compliant and secure.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Commercial Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide commercial services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly provides commercial electrical
+        services to businesses, property managers, and general contractors
+        across West Los Angeles. Whether your facility is located in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/all-locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your commercial project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local team is ready to mobilize.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        commercial project requires.
+        We understand the unique commercial infrastructure requirements across
+        the Westside—from outfitting corporate offices and medical suites in{' '}
+        <NavLink to='/century-city'>Century City</NavLink> and{' '}
+        <NavLink to='/westwood'>Westwood</NavLink> to servicing retail boutiques
+        and restaurants along San Vicente and Ventura Boulevard.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to upgrade your commercial facility's electrical system?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>submit your project details online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Commercial Electrical Projects',
+    title: 'Featured Commercial & Tenant Improvement Projects Across West LA',
     subtitle:
-      'See our completed commercial electrical work across West Los Angeles — from tenant improvements and lighting retrofits to full electrical buildouts.',
+      'Browse our recent retail, office, and restaurant electrical buildouts.',
     features: [
       {
         image: CommercialWiring,
-        name: 'Commercial Wiring',
-        location: 'West LA',
+        name: '3-Phase Commercial Distribution Switchgear Upgrade',
+        location: 'West Los Angeles, CA',
       },
       {
         image: TenantImprovement,
-        name: 'Tenant Improvement',
-        location: 'Santa Monica',
+        name: 'Retail Boutique Tenant Improvement Build-Out',
+        location: 'Santa Monica, CA',
       },
       {
         image: OfficeElectrical,
-        name: 'Office Electrical',
-        location: 'Century City',
+        name: 'Corporate Office Suite Power & Data Rough-In',
+        location: 'Century City, CA',
       },
       {
         image: RetailBuildOut,
-        name: 'Retail Build-Out',
-        location: 'Beverly Hills',
+        name: 'High-End Luxury Showroom Lighting & Power',
+        location: 'Beverly Hills, CA',
       },
       {
         image: CommercialPanelWork,
-        name: 'Commercial Panel Work',
-        location: 'Brentwood',
+        name: 'Commercial Multi-Meter Bank & Main Disconnect',
+        location: 'Brentwood, CA',
       },
       {
         image: ElectricalService,
-        name: 'Electrical Service',
-        location: 'Mar Vista',
+        name: 'Commercial Building Service Maintenance & Repairs',
+        location: 'Mar Vista, CA',
       },
       {
         image: RestaurantWiring,
-        name: 'Restaurant Wiring',
-        location: 'Pacific Palisades',
+        name: 'Commercial Kitchen Equipment & Hood Circuit Wiring',
+        location: 'Pacific Palisades, CA',
       },
       {
         image: LightingRetrofit,
-        name: 'Lighting Retrofit',
-        location: 'West Hollywood',
+        name: 'Energy-Efficient LED Commercial Lighting Retrofit',
+        location: 'West Hollywood, CA',
       },
       {
         image: CommercialFraming,
-        name: 'Commercial Framing',
-        location: 'Westwood',
+        name: 'Medical Office Suite Electrical Framing Rough-In',
+        location: 'Westwood, CA',
       },
       {
         image: CommercialLighting,
-        name: 'Commercial Lighting',
-        location: 'Culver City',
+        name: 'Warehouse & Industrial High-Bay Lighting Install',
+        location: 'Culver City, CA',
       },
       {
         image: RetailElectrical,
-        name: 'Retail Electrical',
-        location: 'Bel Air',
+        name: 'Commercial Perimeter Security Lighting & Conduit',
+        location: 'Bel Air, CA',
       },
       {
         image: OfficeBuildOut,
-        name: 'Office Build-Out',
-        location: 'Venice',
+        name: 'Creative Agency Open-Office Power Grid',
+        location: 'Venice, CA',
       },
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Commercial Electrical Services',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Do you work after business hours?',
+      question:
+        'Do you offer after-hours or weekend commercial electrical services to avoid business disruption?',
       answer:
-        'Yes — we offer after-hours and weekend scheduling to minimize disruption to your business.',
+        'Yes. We understand that electrical work can interrupt daily business operations. We offer flexible scheduling, including night and weekend work windows, to complete tenant improvements, panel upgrades, and lighting retrofits with zero downtime for your customers or employees.',
     },
     {
-      question: 'Can you handle tenant improvement projects?',
+      question:
+        'Can you handle full-scale commercial tenant improvement (TI) projects?',
       answer:
-        'Absolutely. Tenant improvements are a core part of our commercial electrical services.',
+        'Absolutely. As a licensed C-10 electrical contractor (#1102731), we partner with general contractors, property managers, and business owners to execute turnkey commercial tenant improvements for retail stores, restaurants, professional offices, and industrial spaces across West Los Angeles.',
     },
   ];
 
   const areas = {
-    title: 'Commercial Across West LA',
+    title: 'Commercial Electrical Contractor Across West LA',
     subtitle:
-      'We provide commercial electrical services services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and permit commercial electrical systems across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Commercial Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a commercial project evaluation or request a quote online. Flexible scheduling available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Commercial Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Upgrade Your Commercial Facility?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your commercial project estimate online.',
+  };
+
   return (
     <div>
+      <title>
+        Commercial Electrician West LA & Tenant Improvements | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 commercial electrician (#1102731) providing tenant improvements, 3-phase power, retail buildouts & lighting retrofits in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -374,7 +437,7 @@ function CommercialElectrical() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -383,7 +446,7 @@ function CommercialElectrical() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

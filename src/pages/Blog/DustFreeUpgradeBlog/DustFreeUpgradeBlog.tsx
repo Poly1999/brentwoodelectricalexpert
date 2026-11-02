@@ -41,6 +41,12 @@ function DustFreeUpgradeBlog() {
       "Don't wait for a breaker to fail before taking action. Upgrade your home's electrical infrastructure with the cleanest, most reliable contractors in Los Angeles.",
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <BlogHero hero={hero} />
@@ -210,7 +216,7 @@ function DustFreeUpgradeBlog() {
         </div>
       </div>
       <BlogCTA cta={cta} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

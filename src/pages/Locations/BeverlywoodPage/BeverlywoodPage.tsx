@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Clock, DollarSign, Home, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,23 +15,37 @@ import Footer from '../../../components/Footer/Footer';
 function BeverlywoodPage() {
   const hero = {
     area: 'Beverlywood, CA · 90034, 90035',
-    title: 'Beverlywood Electrician — Licensed & Insured',
+    title:
+      'Beverlywood Electrician — Licensed & Insured Residential Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts provides trusted electrical services to Beverlywood homeowners. Our licensed electricians handle everything from panel upgrades and GFCI installations to lighting design and electrical remodeling.',
+      'Brentwood Electrical Experts provides trusted residential electrical services to Beverlywood homeowners. From 1940s–1950s 200-amp panel upgrades and kitchen remodel wiring to dedicated home office circuits and Level 2 EV charger installations, our licensed C-10 electricians handle every project with honesty, fair pricing, and absolute respect for your family home.',
+    button: 'Request Beverlywood Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      '1940s–1950s Traditional Home Specialists',
+      'Honest Upfront Pricing',
+    ],
+    icons: [<Star />, <Home />, <DollarSign />],
   };
 
   const about = {
     title: 'About Beverlywood',
     city: 'Beverlywood',
+    heading: 'Electrical Services Tailored to Beverlywood Family Homes',
+    challengeTitle:
+      'Modernizing Mid-Century Electrical Systems for Growing Families',
     subtitle:
-      'Beverlywood is a quiet, family-friendly neighborhood south of Beverly Hills known for its excellent schools, well-maintained homes, and strong community spirit.',
+      'Beverlywood is a quiet, highly prestigious residential neighborhood located just south of Beverly Hills, widely celebrated for its excellent local schools, beautiful tree-lined streets, and a strong, tight-knit family-oriented community spirit.',
     features: [
-      { item: '1940s traditional homes' },
-      { item: 'Post-war ranch homes' },
-      { item: 'Renovated family residences' },
+      { item: '1940s and 1950s traditional character homes' },
+      { item: 'Classic post-war ranch-style residences' },
+      { item: 'Thoughtfully expanded and renovated family properties' },
     ],
     challenge:
-      "Beverlywood's family-oriented neighborhood features predominantly 1940s–1950s homes where growing families are investing in electrical modernization — panel upgrades, kitchen remodels, EV chargers, and home office circuits.",
+      "Beverlywood's established family-oriented character means that most homes date back to the 1940s and 1950s. As modern families move in, original 100-amp service panels, limited kitchen outlet counts, and a lack of dedicated circuits for home offices or EV chargers quickly necessitate comprehensive electrical modernization to keep pace with contemporary living.",
     quote: [
       {
         text: 'Beverlywood families trust us for straightforward, quality electrical work — no upselling, no surprises, just honest service at fair prices.',
@@ -46,38 +60,39 @@ function BeverlywoodPage() {
       {
         title: 'Family Home Panel Upgrades',
         subtitle:
-          "200-amp panel upgrades for Beverlywood's 1940s–1950s homes — the essential first step in modernizing your family home's electrical system.",
+          "200-amp service panel upgrades for Beverlywood's mid-century homes—establishing the safe, robust electrical foundation required for modern family life.",
       },
       {
         title: 'Kitchen Remodel Electrical',
         subtitle:
-          'Complete kitchen electrical for Beverlywood renovations — dedicated circuits, GFCI outlets, under-cabinet lighting, and fixture installation.',
+          'Turnkey kitchen electrical for Beverlywood renovations—featuring dedicated appliance circuits, GFCI countertop protection, under-cabinet lighting, and modern fixture installation.',
       },
       {
         title: 'Home Office & EV Charger Additions',
         subtitle:
-          'Dedicated circuits for work-from-home setups and Level 2 EV charger installations — popular upgrades for modern Beverlywood families.',
+          'Dedicated circuits for work-from-home office setups and professional Level 2 EV charger installations—essential upgrades for modern Beverlywood households.',
       },
     ],
   };
 
   const details = {
     city: 'Beverlywood',
+    heading: 'Your Trusted Local Electrician in Beverlywood, California',
     pharagraphs: [
       {
-        text: "Beverlywood is where young families put down roots — and where they quickly discover that their 1940s home's electrical system needs modernization. Original 100-amp panels, limited outlets in kitchens, and no dedicated circuits for home offices are the norm. We help Beverlywood homeowners prioritize upgrades, often starting with a panel replacement and then adding circuits as renovation projects unfold over time.",
+        text: "Beverlywood is a neighborhood where young families put down lasting roots—and where they frequently discover that their mid-century home's legacy electrical system requires urgent modernization. Original 100-amp electrical panels, sparse kitchen outlet counts, and the total absence of dedicated circuits for home workstations or high-draw appliances are standard in homes built during the 1940s and 1950s. We assist Beverlywood homeowners in prioritizing their upgrades sensibly, often starting with a main panel replacement and strategically adding dedicated circuits as long-term renovation plans unfold over time.",
       },
       {
-        text: 'Kitchen remodels are booming in Beverlywood, as families upgrade dated galleys into open, modern cooking spaces. Every kitchen remodel requires significant electrical work — dedicated 40-50 amp range circuits, dishwasher circuits, disposal circuits, GFCI countertop outlets, under-cabinet lighting, and pendant fixtures. We coordinate with your general contractor to ensure electrical rough-in is completed on schedule.',
+        text: 'Kitchen remodeling projects are especially popular throughout Beverlywood, as families convert dated galley layouts into open, highly functional modern culinary spaces. Every kitchen update demands substantial, code-compliant electrical work: dedicated 40–50 amp electric range circuits, dishwasher and garbage disposal lines, GFCI-protected countertop receptacles, under-cabinet LED task lighting, and designer pendant fixtures. We coordinate closely with your general contractor to ensure all rough-in wiring is executed precisely on schedule.',
       },
       {
-        text: "Beverlywood's tree-lined streets and backyard-centric lifestyle mean outdoor electrical improvements are in high demand. We install landscape lighting, patio outlets, outdoor kitchen circuits, and security lighting that enhances both the functionality and curb appeal of Beverlywood homes.",
+        text: 'Furthermore, Beverlywood’s picturesque tree-lined streets and backyard-centric lifestyle mean that outdoor electrical improvements are in high demand. We install automated landscape lighting, weatherized patio convenience outlets, outdoor kitchen circuits, and motion-activated security lighting that simultaneously enhances both the daily functionality and neighborhood curb appeal of your property.',
       },
     ],
     features: [
       { item: 'Castle Heights' },
-      { item: 'Beverlywood homes' },
-      { item: 'Robertson Blvd nearby' },
+      { item: 'Beverlywood Community' },
+      { item: 'Robertson Blvd Corridor (Nearby)' },
     ],
   };
 
@@ -88,26 +103,30 @@ function BeverlywoodPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Beverlywood',
@@ -141,10 +160,24 @@ function BeverlywoodPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Beverlywood Electrician | Panel Upgrades & Kitchen Remodels | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Beverlywood (90034, 90035). 1940s–1950s panel upgrades, kitchen remodel electrical & home office EV chargers. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -154,7 +187,7 @@ function BeverlywoodPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

@@ -44,6 +44,12 @@ function EnergyPlanningBlog() {
       'Our licensed electricians help homeowners across Brentwood and West Los Angeles make smart, efficient electrical improvements. Get a free estimate today.',
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <BlogHero hero={hero} />
@@ -349,7 +355,7 @@ function EnergyPlanningBlog() {
         </div>
       </div>
       <BlogCTA cta={cta} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

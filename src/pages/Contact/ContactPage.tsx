@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, DollarSign, Shield } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import RequestServiceForm from '../../components/Shared/RequestService/RequestServiceForm/RequestServiceForm';
 import TrustBadges from '../../components/Shared/TrustBadges/TrustBadges';
@@ -6,6 +6,16 @@ import './ContactPage.css';
 import FooterMain from '../../components/Footer/FooterMain/FooterMain';
 
 function ContactPage() {
+  const badges = {
+    items: [
+      'Licensed & Insured',
+      'Fast & Reliable',
+      'Upfront Pricing',
+      'Serving West LA',
+    ],
+    icons: [<Shield />, <Clock />, <DollarSign />, <MapPin />],
+  };
+
   return (
     <div className='contactpage'>
       <div className='contactpage_hero'>
@@ -20,7 +30,7 @@ function ContactPage() {
         </div>
       </div>
 
-      <TrustBadges />
+      <TrustBadges badges={badges} />
 
       <div className='container contactpage_grid'>
         <div className='contactpage_form'>

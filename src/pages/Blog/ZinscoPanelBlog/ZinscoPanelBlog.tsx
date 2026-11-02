@@ -43,6 +43,12 @@ function ZinscoPanelBlog() {
       'Not sure what kind of panel you have? Our licensed electricians will inspect it and give you honest, upfront recommendations.',
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
       <BlogHero hero={hero} />
@@ -200,7 +206,7 @@ function ZinscoPanelBlog() {
         </div>
       </div>
       <BlogCTA cta={cta} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

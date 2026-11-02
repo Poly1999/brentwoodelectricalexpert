@@ -2,24 +2,29 @@ import { ArrowRight } from 'lucide-react';
 import './RelatedServices.css';
 import { NavLink } from 'react-router-dom';
 
-interface RelatedServices {
+interface RelatedCard {
   icon: React.ReactNode;
   title: string;
   subtitle: string;
   slug: string;
 }
 
+interface RelatedServices {
+  title: string;
+  cards: RelatedCard[];
+}
+
 interface RelatedServicesProps {
-  related: RelatedServices[];
+  related: RelatedServices;
 }
 
 function RelatedServices({ related }: RelatedServicesProps) {
   return (
     <div className='relatedservices'>
       <div className='container'>
-        <h2>Related Services</h2>
+        <h2>{related.title}</h2>
         <div className='relatedservices_grid'>
-          {related.map((card, index) => (
+          {related.cards.map((card, index) => (
             <NavLink
               to={`/${card.slug}`}
               className='relatedservices_card'

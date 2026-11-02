@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Clock, Flame, Home, Shield, Star, Zap } from 'lucide-react';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
 import LocationDetails from '../../../components/location-detail-page/LocationDetails/LocationDetails';
@@ -15,23 +15,42 @@ import Footer from '../../../components/Footer/Footer';
 function CalabasasPage() {
   const hero = {
     area: 'Calabasas, CA · 91302',
-    title: 'Calabasas Electrician — Licensed & Insured',
+    title:
+      'Calabasas Electrician — Licensed & Insured Luxury Estate Electrical Services',
     subtitle:
-      'Brentwood Electrical Experts extends premium electrical services to Calabasas homeowners and businesses. Our licensed team handles panel upgrades, smart home installations, security systems, lighting design, and all residential and commercial electrical needs.',
+      'Brentwood Electrical Experts extends premium electrical services to Calabasas homeowners and businesses. From large-scale gated estate 400-amp panel upgrades and wildland-urban interface (WUI) fire-hardened systems to smart home automation, luxury lighting design, and expansive outdoor pool and kitchen power grids, our licensed C-10 electricians deliver meticulous craftsmanship.',
+    button: 'Request Calabasas Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Gated Community & Estate Specialists',
+      'WUI Fire-Hardening & Generators',
+    ],
+    icons: [<Star />, <Home />, <Flame />],
   };
 
   const about = {
     title: 'About Calabasas',
     city: 'Calabasas',
+    heading: 'Electrical Services Tailored to Calabasas Luxury Estates',
+    challengeTitle: 'Powering Large Estates and Ensuring Wildfire Resilience',
     subtitle:
-      'Calabasas is an affluent city in the western San Fernando Valley, known for its gated communities, celebrity residents, and beautiful hillside setting at the base of the Santa Monica Mountains.',
+      'Calabasas is an affluent, prestigious city located in the western San Fernando Valley, globally celebrated for its secure gated enclaves, high-profile celebrity residents, and stunning hillside setting nestled directly against the foothills of the Santa Monica Mountains.',
     features: [
-      { item: 'Gated community estates' },
-      { item: 'Mediterranean villas' },
-      { item: 'Modern luxury homes' },
+      {
+        item: 'Exclusive gated community luxury estates (The Oaks, Mountain View Estates, Calabasas Hills)',
+      },
+      {
+        item: 'Grand Mediterranean Revival villas and custom architectural compounds',
+      },
+      {
+        item: 'Modern luxury hillside builds and expansive suburban properties',
+      },
     ],
     challenge:
-      "Calabasas' large estate homes require substantial electrical systems. The community's fire-prone location in the Santa Monica Mountains foothills means fire-hardened electrical infrastructure is essential.",
+      "Calabasas's extensive estate homes require robust, highly engineered electrical distribution systems capable of handling massive power loads. Furthermore, the community's vulnerable location at the wildland-urban interface of the Santa Monica Mountains foothills makes fire-hardened electrical infrastructure an absolute necessity to protect against regional wildfire risks.",
     quote: [
       {
         text: 'We bring Westside quality and expertise to Calabasas — large-scale residential electrical, fire-hardened systems, and the attention to detail that Calabasas homeowners expect.',
@@ -46,39 +65,40 @@ function CalabasasPage() {
       {
         title: 'Estate Electrical Systems',
         subtitle:
-          'Large-scale residential electrical for Calabasas gated communities — 200-400 amp services, multiple panels, and whole-home infrastructure.',
+          'Large-scale residential electrical design for Calabasas gated communities—including 200A to 400A main services, multi-panel sub-distribution, and complex whole-home infrastructure.',
       },
       {
         title: 'Fire-Hardened Electrical',
         subtitle:
-          'Underground services, ember-resistant enclosures, and backup generators for fire-zone Calabasas homes.',
+          'Underground utility service conversions, ember-resistant NEMA enclosures, and automatic standby generators designed for high-risk WUI Calabasas homes.',
       },
       {
         title: 'Outdoor Living Electrical',
         subtitle:
-          "Pool equipment, outdoor kitchens, fire pits, sport courts, and landscape lighting for Calabasas' indoor-outdoor lifestyle.",
+          "Heavy-duty pool and spa equipment feeds, outdoor culinary kitchens, custom fire pits, sport court lighting, and landscape illumination for Calabasas's indoor-outdoor lifestyle.",
       },
     ],
   };
 
   const details = {
     city: 'Calabasas',
+    heading: 'Your Trusted Local Electrician in Calabasas, California',
     pharagraphs: [
       {
-        text: "Calabasas' gated communities — The Oaks, Calabasas Hills, Mountain View Estates — feature large homes with substantial electrical demands. 200-amp to 400-amp services, multiple sub-panels, pool and spa equipment, whole-home automation, and elaborate landscape lighting are standard for properties in this market. We design and install electrical systems that match the scale and quality of Calabasas' finest homes.",
+        text: 'Calabasas’s exclusive gated enclaves—including The Oaks, Calabasas Hills, and Mountain View Estates—showcase magnificent luxury residences with exceptionally substantial electrical demands. High-capacity 200-amp to 400-amp main electrical services, complex multi-panel sub-distribution networks, heavy pool and spa equipment, whole-home automation platforms, and elaborate architectural landscape lighting are standard expectations in this elite real estate market. We expertly design and install electrical systems that match the grand scale and meticulous quality of Calabasas’s finest properties.',
       },
       {
-        text: 'Fire preparedness is critical in Calabasas, situated at the wildland-urban interface of the Santa Monica Mountains. The 2018 Woolsey Fire reminded the community of this risk. We install fire-hardened electrical systems — underground services, ember-resistant enclosures, whole-home generators, and hardwired smoke detection — that provide meaningful protection and meet current WUI building codes.',
+        text: 'Wildfire preparedness is a critical, ongoing priority in Calabasas, which sits directly along the high-risk wildland-urban interface of the Santa Monica Mountains. Past regional fire events underscore the vital importance of proactive property hardening. We specialize in installing comprehensive fire-hardened electrical systems—including underground utility service feeds, ember-resistant exterior enclosures, whole-home standby generators, and hardwired smoke and heat detection arrays—that provide meaningful structural protection and fully satisfy contemporary WUI building codes.',
       },
       {
-        text: 'Calabasas homeowners enjoy expansive outdoor living — pools, outdoor kitchens, fire pits, sport courts, and extensive landscape lighting. We install robust outdoor electrical systems with weather-rated panels, GFCI protection, and commercial-grade fixtures designed for the hot, dry Calabasas climate.',
+        text: 'Additionally, Calabasas homeowners embrace an expansive indoor-outdoor California lifestyle featuring resort-style swimming pools, professional outdoor kitchens, custom fire pits, illuminated sport courts, and extensive landscape lighting. We install heavy-duty outdoor electrical systems featuring weather-rated panels, rigorous GFCI and AFCI protection, and commercial-grade outdoor fixtures engineered to endure the hot, dry Calabasas climate year-round.',
       },
     ],
     features: [
       { item: 'The Commons at Calabasas' },
       { item: 'Malibu Canyon' },
       { item: 'Calabasas Lake' },
-      { item: 'Hidden Hills nearby' },
+      { item: 'The Oaks Gated Community' },
     ],
   };
 
@@ -89,26 +109,30 @@ function CalabasasPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Calabasas',
@@ -143,10 +167,24 @@ function CalabasasPage() {
     ],
   };
 
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Calabasas Electrician | Estate Panels & Fire-Hardened Systems | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Calabasas (91302) gated communities. Gated estate 400A electrical, WUI fire-hardening & outdoor pool power grids. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -156,7 +194,7 @@ function CalabasasPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

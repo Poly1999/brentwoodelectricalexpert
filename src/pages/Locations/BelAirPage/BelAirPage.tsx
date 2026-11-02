@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Clock, Shield, Star, Users, Zap } from 'lucide-react';
 import Footer from '../../../components/Footer/Footer';
 import LocationAbout from '../../../components/location-detail-page/LocationAbout/LocationAbout';
 import LocationAllServices from '../../../components/location-detail-page/LocationAllServices/LocationAllServices';
@@ -15,24 +15,36 @@ import TrustBadges from '../../../components/Shared/TrustBadges/TrustBadges';
 function BelAirPage() {
   const hero = {
     area: 'Bel Air, CA · 90077',
-    title: 'Bel Air Electrician — Licensed & Insured',
+    title: 'Bel Air Electrician — Elite Electrical Services for Luxury Estates',
     subtitle:
-      "Brentwood Electrical Experts provides elite electrical services for Bel Air's luxury homes and estates. Our licensed electricians specialize in panel upgrades, smart home systems, landscape lighting, security camera installation, and complete electrical remodeling for high-end properties.",
+      "Brentwood Electrical Experts provides elite electrical services for Bel Air's ultra-luxury homes and gated compounds. From 400-amp to 600-amp estate service upgrades, enterprise-grade smart home automation wiring, and 4K surveillance systems to landscape lighting and complete electrical remodeling, our licensed C-10 electricians deliver discreet, high-precision craftsmanship across Bel Air.",
+    button: 'Request Estate Consultation',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Estate Manager & Security Coordination',
+      '400A–600A Multi-Panel Systems',
+    ],
+    icons: [<Star />, <Users />, <Zap />],
   };
 
   const about = {
     title: 'About Bel Air',
     city: 'Bel Air',
+    heading: 'Tailored Electrical Engineering for Bel Air Estates',
+    challengeTitle: 'Powering Extraordinary Scale and Sophistication',
     subtitle:
-      'Bel Air is one of the most exclusive residential enclaves in the world. Nestled in the foothills of the Santa Monica Mountains, this gated community of roughly 8,000 residents is known for sprawling estates, celebrity residents, and some of the highest property values in the United States.',
+      'Bel Air is one of the most exclusive residential enclaves in the world. Nestled in the foothills of the Santa Monica Mountains, this gated community of roughly 8,000 residents is known for sprawling compounds, celebrity estates, and some of the highest property values in the United States.',
     features: [
-      { item: 'Ultra-luxury estates' },
-      { item: 'Contemporary mega-homes' },
-      { item: 'Classic Mediterranean villas' },
-      { item: 'Gated compound properties' },
+      { item: 'Ultra-luxury multi-acre compounds and hillside estates' },
+      { item: 'Contemporary architectural mega-homes' },
+      { item: 'Classic Mediterranean and Spanish Revival villas' },
+      { item: 'Gated properties with dedicated staff and guest quarters' },
     ],
     challenge:
-      'Bel Air estates demand electrical systems of extraordinary scale and sophistication. Properties routinely require 400-amp or even 600-amp main services to power guest houses, pool systems, elevator equipment, professional kitchens, extensive HVAC, and elaborate security infrastructure. The gated nature of many properties requires coordination with estate managers and security teams.',
+      'Bel Air estates demand electrical systems of extraordinary scale, redundancy, and technical complexity. Properties routinely require 400-amp or 600-amp main services with multiple distribution subpanels to safely support extensive guest houses, professional catering kitchens, multi-zone HVAC equipment, elevator machinery, wine cellars, and elaborate security infrastructure. The gated nature of many properties requires seamless white-glove coordination with estate managers, private security teams, and interior design firms.',
     quote: [
       {
         text: "We understand the discretion, security protocols, and exacting standards required when working on Bel Air's ultra-luxury estates. Our team coordinates with estate managers, security personnel, and design teams to deliver flawless electrical work without disrupting the household.",
@@ -47,40 +59,41 @@ function BelAirPage() {
       {
         title: 'Estate-Scale Electrical Services',
         subtitle:
-          "400-amp to 600-amp main services, multi-panel distribution, and complex load management for Bel Air's largest and most sophisticated residential properties.",
+          "400-amp to 600-amp main services, complex multi-panel distribution, and intelligent load management engineered specifically for Bel Air's largest and most sophisticated residential compounds.",
       },
       {
         title: 'Smart Home & Automation Wiring',
         subtitle:
-          'Crestron, Control4, Lutron HomeWorks — enterprise-grade home automation infrastructure designed and installed for seamless whole-estate control.',
+          'Enterprise-grade home automation infrastructure designed and installed for seamless whole-estate control, featuring Crestron, Control4, and Lutron HomeWorks QSX systems.',
       },
       {
         title: 'Security & Surveillance Systems',
         subtitle:
-          '4K IP camera networks, gate automation, perimeter lighting, and integrated alarm systems — hardwired for maximum reliability and coordinated with your security team.',
+          '4K IP camera networks, automated estate gates, architectural perimeter lighting, and hardwired alarm systems integrated directly with your private security team.',
       },
       {
         title: 'Home Theater & AV Electrical',
         subtitle:
-          'Dedicated power circuits, isolated grounds, low-voltage prewire, and equipment room infrastructure for world-class private cinema experiences.',
+          'Dedicated clean-power circuits, isolated grounds, low-voltage prewire, and equipment room rack infrastructure for world-class private cinema and multi-room audio experiences.',
       },
     ],
   };
 
   const details = {
     city: 'Bel Air',
+    heading: 'Your Trusted Estate Electrician in Bel Air, California',
     pharagraphs: [
       {
-        text: "Bel Air estates operate on a different electrical scale than typical residential properties. A single property might include a main residence, guest house, pool house, gym, home theater, wine cellar, and staff quarters — each requiring dedicated electrical sub-panels and circuits. We routinely design and install 400-amp and 600-amp electrical services with multiple distribution panels to safely power these complex estates. Our load calculations account for every system, from the 20-ton HVAC units to the hydraulic elevator and the infinity pool's variable-speed pumps.",
+        text: 'Bel Air estates operate on an entirely different electrical scale than standard residential properties. A single compound frequently includes a primary manor, guest house, pool pavilion, fitness center, screening room, climate-controlled wine cellar, and staff quarters—each demanding dedicated subpanels and specialized circuits. We routinely engineer and install 400-amp and 600-amp electrical services with extensive sub-distribution networks to safely power these complex properties. Our comprehensive load calculations account for every heavy-draw asset, from 20-ton multi-zone HVAC chillers and hydraulic elevators to infinity pool variable-speed pumps.',
       },
       {
-        text: 'Smart home technology in Bel Air goes far beyond a few connected switches. We install enterprise-grade home automation infrastructure — dedicated network closets with rack-mounted equipment, Crestron and Control4 integration, Lutron HomeWorks QSX lighting control, motorized window treatments, distributed audio-video systems, and integrated security with IP cameras, access control, and intercoms. Every wire, conduit run, and junction box is meticulously planned and installed to deliver flawless performance and easy future expandability.',
+        text: 'Smart home integration in Bel Air goes far beyond standard connected switches. We install robust, enterprise-grade automation infrastructure—dedicated low-voltage network closets with rack-mounted equipment, Crestron and Control4 core processors, Lutron HomeWorks lighting control, motorized window treatments, distributed audio-video systems, and integrated security. Every conduit run, junction box, and low-voltage bundle is meticulously mapped and installed to deliver bulletproof performance and clean future expandability.',
       },
       {
-        text: "The Bel Air community's hillside location means many properties rely on private roads, long service runs from the utility transformer, and underground primary feeds. We coordinate with DWP for new and upgraded utility connections, manage trenching and conduit installation for underground services, and specify equipment rated for the temperature extremes and moisture conditions found at higher elevations. Our familiarity with Bel Air's infrastructure ensures efficient project execution.",
+        text: "Bel Air's hillside topography means many estates rely on long underground primary utility feeds from local transformers. We coordinate directly with utility engineering departments for new and upgraded service drops, manage underground trenching and schedule-80 conduit installation, and specify heavy-duty equipment rated for hillside temperature fluctuations.",
       },
       {
-        text: "Privacy and security are paramount for Bel Air homeowners. We install comprehensive security camera systems — 4K IP cameras with night vision, license plate recognition at gates, and integration with monitoring services — along with gate automation, perimeter lighting, and hardwired alarm systems. All security electrical work is coordinated with the homeowner's security consultant to ensure seamless integration with existing systems.",
+        text: "Absolute privacy and uncompromising security are paramount for Bel Air homeowners. We install comprehensive surveillance networks—4K IP cameras with starlight night vision, automated license plate recognition (ALPR) at security gates, and integration with 24/7 monitoring services—alongside hardwired intrusion alarms. All security electrical work is coordinated closely with the client's security consultants for seamless integration.",
       },
     ],
     features: [
@@ -88,7 +101,7 @@ function BelAirPage() {
       { item: 'Hotel Bel-Air' },
       { item: 'Stone Canyon Reservoir' },
       { item: 'Bel Air East Gate' },
-      { item: 'UCLA nearby' },
+      { item: 'UCLA (Nearby)' },
     ],
   };
 
@@ -99,26 +112,30 @@ function BelAirPage() {
     { icon: <Shield />, raiting: '100%', title: 'Licensed & Insured' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = {
     city: 'Bel Air',
@@ -172,10 +189,24 @@ function BelAirPage() {
       { item: 'Pacific Palisades', slug: 'pacific-palisades' },
     ],
   };
+
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
+
   return (
     <div>
+      <title>
+        Bel Air Electrician | Luxury Estate Electrical Services | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electricians (#1102731) serving Bel Air luxury estates. 400A–600A services, Crestron/Control4 smart home automation, 4K security & AV wiring. Call (310) 666-4752.'
+      />
       <LocationHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <LocationAbout about={about} />
       <LocationPopularServices popular={popular} />
       <LocationDetails details={details} />
@@ -185,7 +216,7 @@ function BelAirPage() {
       <Testimonials reviews={reviews} />
       <LocationFAQ faqs={faqs} />
       <NearbyAreas areas={areas} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

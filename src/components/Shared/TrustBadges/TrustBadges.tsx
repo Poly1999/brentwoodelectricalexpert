@@ -1,26 +1,21 @@
 import './TrustBadges.css';
-import { Shield, Clock, DollarSign, MapPin } from 'lucide-react';
 
-interface TrustBadgesProps {
-  items?: string[];
+interface Badges {
+  items: string[];
+  icons: React.ReactNode[];
 }
 
-const defaultItems = [
-  'Licensed & Insured',
-  'Fast & Reliable',
-  'Upfront Pricing',
-  'Serving West LA',
-];
+interface TrustBadgesProps {
+  badges: Badges;
+}
 
-function TrustBadges({ items = defaultItems }: TrustBadgesProps) {
-  const icons = [<Shield />, <Clock />, <DollarSign />, <MapPin />];
-
+function TrustBadges({ badges }: TrustBadgesProps) {
   return (
     <div className='trustbadges'>
       <div className='container trustbadges_inner'>
-        {items.map((item, index) => (
+        {badges.items.map((item, index) => (
           <div className='trustbadges_item' key={index}>
-            <div className='trustbadges_icon'>{icons[index]}</div>
+            <div className='trustbadges_icon'>{badges.icons[index]}</div>
             <p>{item}</p>
           </div>
         ))}
