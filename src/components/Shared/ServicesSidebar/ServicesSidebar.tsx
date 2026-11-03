@@ -1,3 +1,4 @@
+import '../../service-detail-page/ServiceDetailLayout.css';
 import './ServicesSidebar.css';
 import { NavLink } from 'react-router-dom';
 import {

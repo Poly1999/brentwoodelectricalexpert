@@ -13,7 +13,7 @@ const sendContactForm = (req, res) => {
 
   resend.emails
     .send({
-      from: 'Brentwood Electrical Experts Website <onboarding@resend.dev>',
+      from: 'Brentwood Electrical Experts <noreply@brentwoodelectricalexperts.com>',
       to: process.env.RECEIVER_EMAIL,
       subject: `New Inquiry from ${name} - Brentwood Electrical Experts`,
       html: `
