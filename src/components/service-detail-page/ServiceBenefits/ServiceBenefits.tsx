@@ -2,6 +2,7 @@ import { CircleCheck } from 'lucide-react';
 import './ServiceBenefits.css';
 
 interface ServiceBenefits {
+  title: string;
   features: string[];
   image: string;
 }
@@ -15,7 +16,9 @@ function ServiceBenefits({ benefits }: ServiceBenefitsProps) {
     <div className='servicebenefits'>
       <div className='container servicebenefits_layout'>
         <div className='servicebenefits_content'>
-          <h2>Benefits</h2>
+          <h2>
+            <h2>{benefits.title}</h2>
+          </h2>
           <ul className='servicebenefits_list'>
             {benefits.features.map((benefit, index) => (
               <li key={index}>

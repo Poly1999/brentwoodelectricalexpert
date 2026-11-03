@@ -1,11 +1,13 @@
 import { FileText, Phone } from 'lucide-react';
 import './ServiceHero.css';
+import { NavLink } from 'react-router-dom';
 
 interface ServicesHero {
   icon: React.ReactNode;
   title: string;
   subtitle: string;
   backgroundImage: string;
+  button: string;
 }
 
 interface ServicesHeroProps {
@@ -33,10 +35,13 @@ function ServiceHero({ hero }: ServicesHeroProps) {
               <Phone />
               Call (310) 666-4752
             </a>
-            <a href='/contact' className='servicedetailhero_button_secondary'>
+            <NavLink
+              to='/contact'
+              className='servicedetailhero_button_secondary'
+            >
               <FileText />
-              Get FREE Quote
-            </a>
+              {hero.button}
+            </NavLink>
           </div>
         </div>
       </div>

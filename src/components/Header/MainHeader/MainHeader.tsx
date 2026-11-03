@@ -17,7 +17,13 @@ function MainHeader() {
     <div className='mainheader_wrapper'>
       <div className='container'>
         <div className='mainheader_inner'>
-          <img src={Logo} alt='Company Logo' className='logo' />
+          <NavLink
+            to='/'
+            className='mainheader_logo_link'
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img src={Logo} alt='Company Logo' className='logo' />
+          </NavLink>
           <nav className='mainheader_nav'>
             <NavLink
               to='/'

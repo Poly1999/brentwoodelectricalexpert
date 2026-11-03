@@ -1,5 +1,6 @@
 import './PortfolioPreview.css';
 import { ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 interface HomeProjects {
   image: string;
@@ -42,10 +43,10 @@ function PortfolioPreview({
 
         {isButtonVisible === true ? (
           <div className='portfolio_viewall'>
-            <a href='/projects' className='portfolio_viewall_button'>
+            <NavLink to='/projects' className='portfolio_viewall_button'>
               View All Projects
               <ArrowRight />
-            </a>
+            </NavLink>
           </div>
         ) : null}
       </div>

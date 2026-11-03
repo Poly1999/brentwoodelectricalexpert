@@ -15,7 +15,7 @@ import WhyChooseUs from '../../components/Shared/WhyChooseUs/WhyChooseUs';
 import RequestService from '../../components/Shared/RequestService/RequestService';
 import Footer from '../../components/Footer/Footer';
 
-import { Clock, Shield, Star, Zap } from 'lucide-react';
+import { Clock, DollarSign, MapPin, Shield, Star, Zap } from 'lucide-react';
 
 import panelInstall from '../../assets/panel-framing.webp';
 import generacSwitch from '../../assets/generac-panel.webp';
@@ -31,6 +31,16 @@ import trackLighting from '../../assets/track-lighting.webp';
 import retailLighting from '../../assets/retail-lighting.webp';
 
 function HomePage() {
+  const badges = {
+    items: [
+      'Licensed & Insured',
+      'Fast & Reliable',
+      'Upfront Pricing',
+      'Serving West LA',
+    ],
+    icons: [<Shield />, <Clock />, <DollarSign />, <MapPin />],
+  };
+
   const homeStats = [
     { icon: <Star />, raiting: '5.0', title: 'Google Rating' },
     { icon: <Zap />, raiting: '1000+', title: 'Projects Completed' },
@@ -53,54 +63,79 @@ function HomePage() {
     { image: commercialBuildout, title: 'Commercial Build-Out' },
   ];
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We hired them for a full lighting redesign in our renovated kitchen and living room. The result is stunning — recessed lights, under-cabinet LEDs, and dimmers throughout. True professionals.',
-      name: 'Jennifer M.',
-      location: 'Beverly Hills, CA',
-      source: 'Birdeye',
-    },
-    {
-      text: 'Had a persistent problem with tripping breakers. They diagnosed it quickly, found a faulty connection, and fixed it same day. Fair pricing and honest service — rare to find.',
-      name: 'Robert T.',
-      location: 'West Hollywood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'Brentwood Electrical installed a Tesla Wall Connector at our home. They handled the panel assessment, got the permit, and had us charging within a week. Seamless experience.',
-      name: 'Amanda C.',
-      location: 'Mar Vista, CA',
-      source: 'Yelp',
-    },
-  ];
+  const reviews = {
+    title: 'What Our Clients Say',
+    subtitle: '5-star rated across Google, Yelp, and Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We hired them for a full lighting redesign in our renovated kitchen and living room. The result is stunning — recessed lights, under-cabinet LEDs, and dimmers throughout. True professionals.',
+        name: 'Jennifer M.',
+        location: 'Beverly Hills, CA',
+        source: 'Birdeye',
+      },
+      {
+        text: 'Had a persistent problem with tripping breakers. They diagnosed it quickly, found a faulty connection, and fixed it same day. Fair pricing and honest service — rare to find.',
+        name: 'Robert T.',
+        location: 'West Hollywood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'Brentwood Electrical installed a Tesla Wall Connector at our home. They handled the panel assessment, got the permit, and had us charging within a week. Seamless experience.',
+        name: 'Amanda C.',
+        location: 'Mar Vista, CA',
+        source: 'Yelp',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Get Started?',
+    subtitle:
+      'Call now for a free estimate or schedule your service online. Licensed, insured, and ready to help.',
+  };
 
   return (
     <div>
+      <title>
+        Brentwood Electrical Experts | C-10 Electrician West LA & Santa Monica |
+        (310) 666-4752
+      </title>
+      <meta
+        name='description'
+        content='California Licensed C-10 Electrical Contractor (#1102731) serving Brentwood, Santa Monica, Beverly Hills & 28+ West LA neighborhoods. 200A panel upgrades, EV chargers & lighting.'
+      />
       <HeroComponent />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <StatsSection items={homeStats} />
       <ServicesSection />
       <FeaturedPanelUpgrades />
       <FeaturedEVCharger />
-      <WhyChooseUs subtitle='We have built our reputation on quality work,honest pricing, and exceptional service across West Los Angeles.' />
+      <WhyChooseUs
+        title={
+          <>
+            Why Homeowners Choose <span>Brentwood Electrical</span>
+          </>
+        }
+        subtitle='We have built our reputation on quality work,honest pricing, and exceptional service across West Los Angeles.'
+      />
 
       <PortfolioPreview
         title='Our Work'
@@ -114,7 +149,7 @@ function HomePage() {
       <FAQSection />
       <BlogPreview />
       <RequestService />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

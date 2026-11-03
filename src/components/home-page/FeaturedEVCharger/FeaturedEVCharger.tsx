@@ -1,6 +1,7 @@
 import './FeaturedEVCharger.css';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import EVChargerImage from '../../../assets/ev-charger-1.webp';
+import { NavLink } from 'react-router-dom';
 
 function FeaturedEVCharger() {
   return (
@@ -34,13 +35,10 @@ function FeaturedEVCharger() {
             </div>
           </div>
 
-          <a
-            href='/services/ev-charger-installation'
-            className='featuredev_button'
-          >
+          <NavLink to='/ev-chargers-service' className='featuredev_button'>
             Learn More About EV Charger Installation
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
         <div className='featuredev_image'>
           <img src={EVChargerImage} alt='EV Charger Installation' />

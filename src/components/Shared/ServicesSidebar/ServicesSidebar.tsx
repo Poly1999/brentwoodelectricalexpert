@@ -1,3 +1,4 @@
+import '../../service-detail-page/ServiceDetailLayout.css';
 import './ServicesSidebar.css';
 import { NavLink } from 'react-router-dom';
 import {
@@ -19,9 +20,6 @@ import {
   Wrench,
   TreePine,
   Star,
-  Shield,
-  Clock,
-  CheckCircle2,
   MapPin,
 } from 'lucide-react';
 
@@ -76,29 +74,46 @@ const serviceAreas = [
   'Mar Vista',
 ];
 
-function ServicesSidebar() {
+interface SidebarProcess {
+  title: string;
+  steps: { title: string; subtitle: string }[];
+}
+
+interface Sidebar {
+  ctaTitle: string;
+  ctaText: string;
+  navTitle: string;
+  whyTitle: string;
+  whyItems: string[];
+  whyIcons: React.ReactNode[];
+  areasTitle: string;
+  process?: SidebarProcess;
+}
+
+interface ServicesSidebarProps {
+  sidebar: Sidebar;
+}
+
+function ServicesSidebar({ sidebar }: ServicesSidebarProps) {
   return (
     <div className='servicessidebar'>
       <div className='servicessidebar_cta'>
-        <h3>Need an Electrician?</h3>
-        <p>
-          Call now for a free estimate or schedule service online. Same-day
-          appointments available.
-        </p>
+        <h3>{sidebar.ctaTitle}</h3>
+        <p>{sidebar.ctaText}</p>
         <a href='tel:+13106664752' className='servicessidebar_call'>
           <Phone />
           (310) 666-4752
         </a>
-        <a href='/contact' className='servicessidebar_quote'>
+        <NavLink to='/contact' className='servicessidebar_quote'>
           <FileText />
           Get FREE Quote
-        </a>
+        </NavLink>
       </div>
 
       <div className='servicessidebar_nav'>
         <h4>
           <Zap className='servicessidebar_nav_headicon' />
-          Quick Navigation
+          {sidebar.navTitle}
         </h4>
         <ul>
           {quickNavItems.map((item, index) => (
@@ -113,30 +128,13 @@ function ServicesSidebar() {
       </div>
 
       <div className='servicessidebar_why'>
-        <h4>
-          <Shield className='servicessidebar_why_headicon' />
-          Why Choose Us
-        </h4>
-        <div className='servicessidebar_why_item'>
-          <Star />
-          <span>5.0 Google Rating — 100+ reviews</span>
-        </div>
-        <div className='servicessidebar_why_item'>
-          <Shield />
-          <span>Fully licensed & insured</span>
-        </div>
-        <div className='servicessidebar_why_item'>
-          <Clock />
-          <span>Same-day & 24/7 emergency service</span>
-        </div>
-        <div className='servicessidebar_why_item'>
-          <CheckCircle2 />
-          <span>Upfront pricing, no hidden fees</span>
-        </div>
-        <div className='servicessidebar_why_item'>
-          <MapPin />
-          <span>Serving all of West Los Angeles</span>
-        </div>
+        <h4>{sidebar.whyTitle}</h4>
+        {sidebar.whyItems.map((item, index) => (
+          <div className='servicessidebar_why_item' key={index}>
+            {sidebar.whyIcons[index]}
+            <span>{item}</span>
+          </div>
+        ))}
       </div>
 
       <div className='servicessidebar_review'>
@@ -161,7 +159,7 @@ function ServicesSidebar() {
       <div className='servicessidebar_areas'>
         <h4>
           <MapPin className='servicessidebar_areas_headicon' />
-          Service Areas
+          {sidebar.areasTitle}
         </h4>
         <div className='servicessidebar_areas_list'>
           {serviceAreas.map((area, index) => (
@@ -175,6 +173,22 @@ function ServicesSidebar() {
           ))}
         </div>
       </div>
+
+      {sidebar.process ? (
+        <div className='servicessidebar_process'>
+          <h4>{sidebar.process.title}</h4>
+          <ol>
+            {sidebar.process.steps.map((step, index) => (
+              <li key={index}>
+                <span className='servicessidebar_process_number'>
+                  {index + 1}
+                </span>
+                <span>{step.title}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ) : null}
     </div>
   );
 }

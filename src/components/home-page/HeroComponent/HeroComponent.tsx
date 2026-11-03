@@ -1,13 +1,7 @@
 import './HeroComponent.css';
 import MainImage from '../../../assets/hero-vehicles.webp';
-import {
-  CheckCircle,
-  Clock,
-  FileText,
-  Phone,
-  Shield,
-  Star,
-} from 'lucide-react';
+import { CheckCircle, Clock, FileText, Phone, Shield } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 function HeroComponent() {
   return (
@@ -19,10 +13,11 @@ function HeroComponent() {
         <div className='hero_box'>
           <div className='hero_toptext'>
             <Shield />
-            <p>Licensed & Insured Electrical Contractor</p>
+            <p>Licensed & Insured C-10 Electrical Contractor (#1102731)</p>
           </div>
           <h1 className='hero_title'>
-            West LA's Trusted <span>Electrical Experts</span>
+            Premier Electrical Engineering &{' '}
+            <span>Contracting Across West Los Angeles</span>
           </h1>
           <p className='hero_maintext'>
             Panel upgrades, EV charger installation, lighting design, and
@@ -35,23 +30,23 @@ function HeroComponent() {
               Call (310) 666-4752
             </a>
 
-            <a href='/contact' className='hero_button_secondary'>
+            <NavLink to='/contact' className='hero_button_secondary'>
               <FileText className='herobox_button_icon' />
               Get FREE Quote
-            </a>
+            </NavLink>
           </div>
           <div className='herobox_bottom'>
             <div className='herobox_ourtop'>
-              <Star size={18} fill='#C7973D' color='#C7973D' />
-              <p>5.0 Google Rating</p>
+              <Shield size={18} color='#C7973D' />
+              <p>State-Certified & Fully Insured (CSLB #1102731)</p>
             </div>
             <div className='herobox_ourtop'>
               <CheckCircle size={18} color='#C7973D' />
-              <p>Upfront Pricing</p>
+              <p>Itemized, Flat-Rate Project Proposals</p>
             </div>
             <div className='herobox_ourtop'>
               <Clock size={18} color='#C7973D' />
-              <p>Same-Day Service</p>
+              <p>Rapid Same-Day Dispatch & Troubleshooting</p>
             </div>
           </div>
         </div>

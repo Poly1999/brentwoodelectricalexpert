@@ -1,6 +1,7 @@
 import './FooterMain.css';
 import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 import Logo from '../../../assets/logo.svg';
+import { NavLink } from 'react-router-dom';
 
 function FooterMain() {
   const services = [
@@ -49,8 +50,9 @@ function FooterMain() {
             className='footer_logo'
           />
           <p>
-            Licensed & insured electrical contractor serving West Los Angeles,
-            Santa Monica, Brentwood, and surrounding communities since day one.
+            California Licensed & Insured C-10 Electrical Contractor (#1102731)
+            proudly serving Brentwood, Santa Monica, Beverly Hills, and Greater
+            West Los Angeles.
           </p>
           <div className='footer_contact'>
             <a href='tel:+13106664752'>
@@ -73,14 +75,14 @@ function FooterMain() {
           <ul>
             {services.map((service, index) => (
               <li key={index}>
-                <a href={`/${service.slug}`}>{service.name}</a>
+                <NavLink to={`/${service.slug}`}>{service.name}</NavLink>
               </li>
             ))}
           </ul>
-          <a href='/all-services' className='footer_viewall'>
+          <NavLink to='/all-services' className='footer_viewall'>
             View All Services
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='footer_col'>
@@ -88,14 +90,14 @@ function FooterMain() {
           <ul>
             {areas.map((area, index) => (
               <li key={index}>
-                <a href={`/${area.slug}`}>{area.name}</a>
+                <NavLink to={`/${area.slug}`}>{area.name}</NavLink>
               </li>
             ))}
           </ul>
-          <a href='/all-locations' className='footer_viewall'>
+          <NavLink to='/all-locations' className='footer_viewall'>
             + 16 more areas
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='footer_col'>
@@ -103,7 +105,7 @@ function FooterMain() {
           <ul>
             {quickLinks.map((link, index) => (
               <li key={index}>
-                <a href={`/${link.slug}`}>{link.name}</a>
+                <NavLink to={`/${link.slug}`}>{link.name}</NavLink>
               </li>
             ))}
           </ul>

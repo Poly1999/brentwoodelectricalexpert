@@ -2,8 +2,15 @@ import '../../../components/service-detail-page/ServiceDetailLayout.css';
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  Clock,
+  Cpu,
   GitGraph,
+  MapPin,
+  Shield,
   SunMedium,
+  Star,
+  Target,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -25,98 +32,108 @@ import LightingDesignInstallation from '../../../assets/lightdesign-4023.webp';
 function LightingDesign() {
   const hero = {
     icon: <SunMedium />,
-    title: 'Lighting Design & Installation',
+    title: 'Custom Architectural Lighting Design & Installation',
     subtitle:
-      'Elevate your home or business with custom lighting design and professional installation. Brentwood Electrical Experts creates beautiful, functional lighting plans that enhance ambiance, improve energy efficiency, and add value to your property across West LA and surrounding communities.',
+      'Transform how your residential estate or commercial space looks and feels with precision lighting engineering. Brentwood Electrical Experts designs and installs layered architectural lighting plans, ultra-thin recessed LED systems, directional art-wall spots, and Lutron smart dimming controls across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
     backgroundImage: LightingDesignInstallation,
+    button: 'Request Lighting Consultation',
+  };
+
+  const badges = {
+    items: [
+      'C-10 Licensed & Insured (#1102731)',
+      'Title 24 High-Efficacy LEDs',
+      'Lutron Smart Scene Integration',
+      'Laser-Aligned Installation',
+    ],
+    icons: [<Shield />, <Zap />, <Cpu />, <Target />],
   };
 
   const benefits = {
+    title: 'Advantages of Custom Architectural Lighting Design',
     features: [
-      'Custom lighting design for any space',
-      'Layered lighting for ambiance and function',
-      'Energy-efficient LED solutions',
-      'Dimmer and smart control integration',
-      'Indoor and outdoor lighting design',
-      'Increase property value and curb appeal',
+      'Photometric Room Layouts: Custom spacing and beam-angle planning to eliminate dark corners and harsh ceiling glare.',
+      'Three-Layer Illumination: Balanced ambient recessed lighting, kitchen/office task strips, and directional artwork accents.',
+      'High-CRI & Warm-Dim LEDs: True-color (90+ CRI) LED fixtures that smoothly transition from bright 3000K daylight to warm 1800K evening tones.',
+      'Smart Dimmer & Keypad Integration: Seamless multi-zone control via Lutron Caséta, RadioRA 3, Control4, or TP-Link Kasa.',
+      'Interior & Exterior Cohesion: Unified lighting plans connecting indoor living spaces with outdoor patios and landscapes.',
+      'Architectural Property Value: Showcase high ceilings, custom millwork, stone surfaces, and fine art with museum-grade accuracy.',
     ],
     image: LightingDesignInstallation,
   };
 
   const fullDescription = {
-    title: 'Lighting Design & Installation in West Los Angeles',
+    title:
+      'Architectural Lighting Engineering & Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that lighting design &
-        installation is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Great lighting transforms architecture, while poorly spaced fixtures
+        leave rooms feeling flat, shadowy, or overly harsh. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every lighting design project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts combines creative photometric planning with
+        precision electrical wiring to deliver custom lighting environments.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        lighting design service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you are modernizing a mid-century residence in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink> with trimless recessed LED
+        downlights, designing high-impact retail or office illumination in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, or installing
+        centralized Lutron keypad scenes and fine-art spotlights in a{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> estate, our
+        licensed crew handles every detail from design layout to final aiming.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every lighting project begins with an on-site evaluation of your ceiling
+        heights, natural daylight exposure, cabinetry, and electrical switching
+        paths, followed by an itemized, flat-rate written proposal. We specify
+        high-efficacy, flicker-free LED engines, concealed low-voltage LED tape
+        channels, and compatible ELV/MLV dimmers that satisfy strict California
+        Title 24 energy standards.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their lighting design needs — and
-        why they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From laser-level recessed housing alignment with minimal drywall
+        patching to multi-way smart dimmer programming, you get museum-quality
+        execution. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your on-site lighting consultation</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Lighting Design Service',
+    title: 'What to Expect From Our Lighting Design & Installation Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your lighting design
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your interior finishes and
+        architectural details with meticulous care. We never guess on fixture
+        spacing, we never mix incompatible LED drivers and dimmers that cause
+        buzzing or flickering, and we align every ceiling cut to laser accuracy.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your project begins with a{' '}
+        <NavLink to='/contact'>collaborative on-site walk-through</NavLink>. A
+        licensed C-10 electrician evaluates your room dimensions, ceiling joist
+        framing, color temperature preferences (2700K, 3000K, or warm-dim), and
+        wall switch locations. We walk you through fixture styles, trim
+        profiles, and smart dimming options, providing a transparent written
+        estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Installing new ceiling and wall lighting shouldn't turn your home into a
+        dusty construction zone. Our technicians protect your furniture and
+        hardwood floors with heavy-duty drop cloths, use dust-containment hole
+        saws, fish wires cleanly through finished ceilings, and leave your space
+        spotless.
       </>,
     ],
   };
@@ -125,166 +142,222 @@ function LightingDesign() {
     title: 'Our Lighting Design Process — Step by Step',
     features: [
       {
-        title: 'Design Consultation',
-        subtitle: 'We discuss your vision, preferences, and functional needs.',
+        title: 'Architectural Walkthrough',
+        subtitle:
+          'We evaluate your room dimensions, ceiling heights, natural light, and aesthetic goals on-site.',
       },
       {
-        title: 'Lighting Plan',
+        title: 'Photometric Layout & Spec',
         subtitle:
-          'We create a detailed lighting layout with fixture recommendations.',
+          'We map exact fixture spacing, beam angles, color temperatures, and smart switching zones with flat-rate pricing.',
       },
       {
-        title: 'Installation',
+        title: 'Laser-Aligned Wiring & Mounting',
         subtitle:
-          'We professionally install all fixtures, wiring, and controls.',
+          'Our C-10 electricians fish concealed wiring, mount recessed cans/fixtures, and install compatible dimmers.',
       },
       {
-        title: 'Final Walkthrough',
+        title: 'Gimbal Aiming & Scene Programming',
         subtitle:
-          'We demonstrate all controls and ensure your complete satisfaction.',
+          'We focus directional spotlights, calibrate dimmer trim levels, and program your custom lighting scenes.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title:
+      'NEC Code Compliance, Title 24 Standards & Architectural-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every lighting design
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and energy code compliance are built into every
+        lighting plan we execute. Every installation we complete strictly
+        adheres to the latest National Electrical Code (NEC), California Title
+        24 JA8 high-efficacy lighting standards, and local municipal building
+        codes across Los Angeles (LADBS), Santa Monica, Beverly Hills, and
+        Culver City. We use IC-rated (insulation contact) airtight housings and
+        fire-rated enclosures where required by code.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed lighting fixtures,
+        low-voltage drivers, and dimming controls from premier manufacturers
+        including Lutron, DMF, Halo, WAC Lighting, and Leviton. From anodized
+        aluminum LED extrusion channels and Class 2 dimmable transformers to
+        precision RF smart dimmers, every component is chosen for silent
+        operation, zero flicker, and decades of thermal longevity.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because solid-state LED optics and wireless lighting automation evolve
+        rapidly, our technicians stay fully certified in the latest
+        color-rendering technologies and smart home protocols—ensuring your
+        property enjoys effortless, reliable illumination.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Lighting Design Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide lighting design services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly provides custom lighting design and
+        installation for homeowners, interior designers, and commercial
+        businesses across West Los Angeles. Whether your property is in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your lighting design project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA neighborhoods we serve
+        </NavLink>
+        , our local crew is ready to bring your vision to light.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your lighting
-        design project requires.
+        We understand the architectural character of each Westside
+        community—from gallery-style art lighting and vaulted ceiling
+        chandeliers in <NavLink to='/bel-air'>Bel Air</NavLink> and{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, to warm coastal
+        indoor-outdoor lighting in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink> and sleek commercial
+        showroom illumination in{' '}
+        <NavLink to='/century-city'>Century City</NavLink> and{' '}
+        <NavLink to='/west-hollywood'>West Hollywood</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to transform your space with custom lighting?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or{' '}
+        <NavLink to='/contact'>request your design consultation online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Custom Lighting Design & Installation',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Do you design landscape lighting too?',
+      question:
+        'Do you design and install exterior architectural and landscape lighting too?',
       answer:
-        'Yes — we design and install both interior and exterior lighting, including landscape, pathway, and architectural lighting.',
+        'Yes. We design cohesive indoor-outdoor lighting plans that extend your interior ambiance out to your patios, trees, walkways, and architectural facades. We install solid brass low-voltage LED landscape systems, multi-tap stainless steel transformers, soffit downlights, and automated dusk-to-dawn timers.',
     },
     {
-      question: 'Can you integrate lighting with smart home systems?',
+      question:
+        'Can you integrate my new lighting layout with smart home systems like Lutron or Apple HomeKit?',
       answer:
-        'Absolutely. We can integrate your lighting with smart home platforms for voice and app control.',
+        'Absolutely. We specialize in smart lighting control systems including Lutron Caséta, Lutron RadioRA 3, Control4, and TP-Link Kasa. You can control individual zones, set automated sunset schedules, and trigger custom one-touch "Entertaining" or "Goodnight" lighting scenes from engraved wall keypads, voice assistants (Alexa, Siri, Google Home), or your smartphone.',
     },
   ];
 
   const areas = {
-    title: 'Lighting Design Across West LA',
+    title: 'Custom Lighting Design & Installation Across West LA',
     subtitle:
-      'We provide lighting design & installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and install architectural LED lighting across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Lighting Consultation',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary lighting consultation or request a quote online. Same-day appointments available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Lighting Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: "Ready to Elevate Your Property's Lighting?",
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or schedule your lighting consultation online.',
+  };
+
   return (
     <div>
+      <title>
+        Architectural Lighting Design & LED Installation West LA | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrical contractor (#1102731) specializing in custom architectural lighting design, recessed LED layouts, Lutron dimming & Title 24 solutions in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -293,7 +366,7 @@ function LightingDesign() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -301,7 +374,7 @@ function LightingDesign() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

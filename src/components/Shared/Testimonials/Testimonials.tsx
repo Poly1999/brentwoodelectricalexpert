@@ -1,5 +1,6 @@
 import './Testimonials.css';
 import { Star, ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 interface ReviewHomePage {
   text: string;
@@ -8,9 +9,15 @@ interface ReviewHomePage {
   source: string;
 }
 
+interface ReviewsData {
+  title: string;
+  subtitle: string;
+  items: ReviewHomePage[];
+}
+
 interface ReviewHomeProps {
   variant?: 'light' | 'dark';
-  reviews: ReviewHomePage[];
+  reviews: ReviewsData;
 }
 
 function Testimonials({ reviews, variant }: ReviewHomeProps) {
@@ -27,12 +34,12 @@ function Testimonials({ reviews, variant }: ReviewHomeProps) {
             <Star fill='#C7973D' color='#C7973D' />
             <Star fill='#C7973D' color='#C7973D' />
           </div>
-          <h2>What Our Clients Say</h2>
-          <p>5-star rated across Google, Yelp, and Birdeye</p>
+          <h2>{reviews.title}</h2>
+          <p>{reviews.subtitle}</p>
         </div>
 
         <div className='testimonials_grid'>
-          {reviews.map((review, index) => (
+          {reviews.items.map((review, index) => (
             <div className='testimonial_card' key={index}>
               <div className='testimonial_stars'>
                 <Star fill='#C7973D' color='#C7973D' />
@@ -56,10 +63,10 @@ function Testimonials({ reviews, variant }: ReviewHomeProps) {
         </div>
 
         <div className='testimonials_viewall'>
-          <a href='/reviews' className='testimonials_viewall_button'>
+          <NavLink to='/reviews' className='testimonials_viewall_button'>
             Read All Reviews
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

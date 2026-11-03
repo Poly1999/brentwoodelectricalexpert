@@ -1,5 +1,6 @@
 import './BlogPreview.css';
 import { ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 const posts = [
   {
@@ -8,18 +9,21 @@ const posts = [
       'How to Make Your Home More Energy Efficient With Better Electrical Planning',
     text: 'Energy efficiency starts with smart electrical planning. Learn how LED lighting, smart controls, panel upgrades and EV prep can lower energy use.',
     date: 'August 13, 2026',
+    slug: 'energy-planning-blog',
   },
   {
     tag: 'Panel Upgrades',
     title: 'When Should You Upgrade Your Electrical Panel?',
     text: 'Learn the warning signs that your panel is outdated and why upgrading to 200 amps is essential for modern homes.',
     date: 'March 15, 2026',
+    slug: 'blog',
   },
   {
     tag: 'EV Chargers',
     title: 'The Complete Guide to Home EV Charger Installation',
     text: 'Everything you need to know about installing a Level 2 EV charger at home — from selection to panel requirements.',
     date: 'March 8, 2026',
+    slug: 'blog',
   },
 ];
 
@@ -38,10 +42,10 @@ function BlogPreview() {
               electricians.
             </p>
           </div>
-          <a href='/blog' className='blogpreview_viewall'>
+          <NavLink to='/blog' className='blogpreview_viewall'>
             View All Posts
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='blogpreview_grid'>
@@ -52,10 +56,10 @@ function BlogPreview() {
               <p className='blogcard_text'>{post.text}</p>
               <div className='blogcard_footer'>
                 <span className='blogcard_date'>{post.date}</span>
-                <a href='/blog/post' className='blogcard_read'>
+                <NavLink to={`/${post.slug}`} className='blogcard_read'>
                   Read
                   <ArrowRight />
-                </a>
+                </NavLink>
               </div>
             </div>
           ))}

@@ -1,0 +1,49 @@
+.locationdetails {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.locationdetails_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.locationdetails_inner h2 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 30px;
+}
+
+.locationdetails_paragraph {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.locationdetails_inner h3 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 40px 0 20px;
+}
+
+.locationdetails_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.locationdetails_tag {
+  padding: 10px 20px;
+  background-color: var(--muted);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary-dark);
+}

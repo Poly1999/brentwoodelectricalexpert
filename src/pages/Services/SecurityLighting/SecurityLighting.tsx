@@ -1,8 +1,15 @@
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  ClipboardCheck,
+  Clock,
+  CloudRain,
   GitGraph,
   Lightbulb,
+  MapPin,
+  Shield,
+  Star,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -24,67 +31,79 @@ import SecurityLightingInstallation from '../../../assets/security-lighting-floo
 function SecurityLighting() {
   const hero = {
     icon: <Lightbulb />,
-    title: 'Security Lighting Installation',
+    title: 'Exterior Security Lighting & Perimeter Floodlight Installation',
     subtitle:
-      'Illuminate and protect your property with professionally installed security lighting. Brentwood Electrical Experts designs and installs motion-sensor lights, floodlights, and landscape security lighting across Brentwood, Santa Monica, Pacific Palisades, and all of West Los Angeles.',
+      'Eliminate dark blind spots and protect your property with professionally engineered exterior lighting. Brentwood Electrical Experts designs and installs motion-activated LED floodlights, dusk-to-dawn photocell sensors, and architectural perimeter illumination across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
     backgroundImage: SecurityLightingInstallation,
+    button: 'Request Security Lighting Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Turnkey Permits & Inspection',
+      'Weather-Resistant Coastal Fixtures',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <CloudRain />],
   };
 
   const benefits = {
+    title: 'Key Advantages of Professional Security Lighting',
     features: [
-      'Deter intruders with motion-activated lighting',
-      'Illuminate driveways, pathways, and entry points',
-      'Energy-efficient LED options',
-      'Smart lighting with timer and sensor controls',
-      'Enhanced curb appeal and safety',
-      'Professional wiring and placement',
+      'Deter intruders and trespassers instantly with high-output motion-activated lighting',
+      'Illuminates dark walkways, side yards, driveways, and blind entry points',
+      'High-efficiency LED options to maximize brightness while lowering energy consumption',
+      'Smart automation controls including astronomical timers, photocells, and app integration',
+      'Marine-grade, corrosion-resistant coastal fixtures built to withstand Westside elements',
+      'Concealed professional wiring and watertight conduit penetrations',
     ],
     image: SecurityLightingInstallation,
   };
 
   const fullDescription = {
-    title: 'Security Lighting Installation in West Los Angeles',
+    title:
+      'Professional Security Lighting Engineering & Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that security lighting
-        installation is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Dark perimeters, unlit side yards, and shadowed entryways leave
+        residential estates and commercial buildings vulnerable to trespassers.
+        As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every security lighting project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts designs and installs high-performance
+        exterior security lighting systems tailored to your property lines.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        security lighting service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you need motion-sensor floodlights installed along a hillside
+        property in <NavLink to='/brentwood'>Brentwood</NavLink>, dusk-to-dawn
+        pathway and parking illumination for a commercial space in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, or architectural
+        security lighting for a gated estate in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>, our
+        licensed team ensures precise placement and clean wiring.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every security lighting project begins with an on-site property
+        evaluation to identify vulnerable dark zones, followed by an itemized,
+        transparent written proposal. We run exterior-grade UF cable or THHN
+        wire through watertight PVC/EMT conduit, seal all structural
+        penetrations, and install heavy-duty fixtures that withstand coastal
+        marine moisture.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their security lighting needs — and
-        why they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From fixture mounting to sensor calibration and smart timer setup, your
+        security lighting project is handled completely in-house. Read our
+        verified <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>
+          book your exterior lighting consultation
+        </NavLink>{' '}
+        today.
       </>,
     ],
   };
@@ -93,29 +112,29 @@ function SecurityLighting() {
     title: 'What to Expect From Our Security Lighting Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your security lighting
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your property with absolute
+        care. We never cut corners on outdoor junction box sealing, we never use
+        low-quality fixtures that fail in coastal salt air, and we ensure every
+        motion sensor is precisely aimed to prevent false triggers.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your service starts with a thorough{' '}
+        <NavLink to='/contact'>on-site property walk-through</NavLink>. A
+        licensed C-10 electrician inspects your existing exterior electrical
+        feeds, identifies dark blind spots around your perimeters, and
+        recommends the ideal floodlight lumens, beam spreads, and control
+        switches. We explain your lighting options in plain language and provide
+        a transparent written estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical work can feel disruptive, which is why our crew prioritizes
+        keeping your landscaping and interior spaces spotless. We arrive on
+        schedule, protect your turf and stucco, route outdoor conduit discreetly
+        along eaves or underground, and test every motion sensor and photocell
+        before completing our cleanup.
       </>,
     ],
   };
@@ -124,165 +143,219 @@ function SecurityLighting() {
     title: 'Our Security Lighting Process — Step by Step',
     features: [
       {
-        title: 'Consultation',
+        title: 'Security & Dark-Zone Assessment',
         subtitle:
-          "We assess your property's security lighting needs and dark zones.",
+          "We evaluate your property's perimeter layout to pinpoint vulnerable blind spots and lighting requirements.",
       },
       {
-        title: 'Design',
-        subtitle: 'We create a lighting plan covering all vulnerable areas.',
-      },
-      {
-        title: 'Installation',
-        subtitle: 'We install fixtures, wiring, sensors, and controls.',
-      },
-      {
-        title: 'Testing',
+        title: 'Lighting Plan & Proposal',
         subtitle:
-          'We test all lights, sensors, and timers for proper operation.',
+          'We design a custom security lighting layout specifying fixture types, sensor ranges, and flat-rate pricing.',
+      },
+      {
+        title: 'Watertight Wiring & Installation',
+        subtitle:
+          'We run dedicated exterior circuits, mount corrosion-resistant fixtures, and seal all wall penetrations.',
+      },
+      {
+        title: 'Sensor Calibration & Testing',
+        subtitle:
+          'We test all floodlights, program dusk-to-dawn photocells, and adjust motion sensor sensitivity.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title:
+      'NEC Code Compliance, Wet-Location Seals & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every security lighting
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and strict weatherproofing standards are
+        non-negotiable for exterior installations. Every security lighting
+        project we complete complies fully with the National Electrical Code
+        (NEC) regarding wet-location receptacle boxes, in-use covers, outdoor
+        conduit sealing, and branch circuit protection across Los Angeles
+        (LADBS), Santa Monica, Beverly Hills, and Culver City. We pull all
+        necessary building permits to protect your property investment.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed outdoor fixtures
+        and components from trusted manufacturers including Hubbell, WAC
+        Lighting, RAB Lighting, and Leviton. From marine-grade die-cast aluminum
+        housings and tempered glass lenses to precision passive infrared (PIR)
+        motion detectors, every part is chosen for long-term coastal durability.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because outdoor lighting technology and smart home automation evolve
+        continuously, our technicians stay current on the latest
+        energy-efficient LED drivers and astronomical timer controls—ensuring
+        your security system operates reliably year-round.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Security Lighting Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide security lighting services to homeowners and
-        businesses throughout West Los Angeles and the surrounding communities.
-        Whether you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly installs exterior security lighting
+        for homeowners and businesses across West Los Angeles. Whether your
+        property is located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your security lighting project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local crew is ready to assist.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your security
-        lighting project requires.
+        We understand the specific perimeter security challenges of Westside
+        properties—from lighting long, winding driveways and hillside canyons in{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink> to securing
+        commercial alleyways and multi-family parking lots in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
+        <NavLink to='/century-city'>Century City</NavLink>, and{' '}
+        <NavLink to='/westwood'>Westwood</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to illuminate and protect your property?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>request your consultation online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Exterior Security Lighting',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'What type of security lights do you recommend?',
+      question:
+        'What type of security lights do you recommend for Westside homes and businesses?',
       answer:
-        'We typically recommend LED motion-sensor floodlights for perimeter security, and dusk-to-dawn fixtures for pathways and entries.',
+        'We recommend commercial-grade, energy-efficient LED motion-sensor floodlights combined with photocell sensors (dusk-to-dawn automation). LEDs provide maximum lumen output with minimal energy draw, while motion sensors actively deter intruders by instantly flooding dark zones with bright light when movement is detected.',
     },
     {
-      question: 'Can security lighting be added to existing circuits?',
+      question:
+        'Can security lighting be added to my existing electrical circuits?',
       answer:
-        "In many cases, yes. We'll assess your current wiring and add circuits if needed.",
+        'In many cases, yes. During our initial visit, we evaluate your existing outdoor switch legs or garage circuits to see if they can support new fixtures. If your security lighting plan requires high-output commercial floodloads, we can easily run a dedicated new home-run circuit from your main panel to ensure zero breaker overloading.',
     },
   ];
 
   const areas = {
-    title: 'Security Lighting Across West LA',
+    title: 'Security Lighting Installation Across West LA',
     subtitle:
-      'We provide security lighting installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and install exterior floodlights across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Security Lighting Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary security lighting assessment or request a quote online. Same-day consultations available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Security Lighting Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-charger-installation',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Illuminate Your Property?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your security lighting estimate online.',
+  };
+
   return (
     <div>
+      <title>
+        Exterior Security Lighting & Floodlight Installation West LA | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) installing motion-sensor floodlights, photocell dusk-to-dawn controls & perimeter security lighting in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -291,7 +364,7 @@ function SecurityLighting() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -299,7 +372,7 @@ function SecurityLighting() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

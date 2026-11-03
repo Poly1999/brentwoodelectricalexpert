@@ -2,7 +2,13 @@ import {
   BatteryCharging,
   BuildingComplex,
   Camera,
+  CheckCircle2,
+  ClipboardCheck,
+  Clock,
   GitGraph,
+  MapPin,
+  Shield,
+  Star,
   Zap,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -30,98 +36,108 @@ import HomeAddition from '../../../assets/subpanel-9286.webp';
 function Subpanel() {
   const hero = {
     icon: <GitGraph />,
-    title: 'Subpanel Installation',
+    title: 'Electrical Subpanel Installation & Power Expansion',
     subtitle:
-      'Need additional circuits for a garage, ADU, workshop, or home addition? Brentwood Electrical Experts installs electrical subpanels to extend your electrical system safely and efficiently. We serve homeowners and businesses across Brentwood, Santa Monica, Pacific Palisades, and all of West LA.',
+      "Adding a backyard ADU, detached garage workshop, pool equipment pad, or primary suite addition? Brentwood Electrical Experts installs and bonds high-capacity feeder subpanels across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles—extending your property's power distribution safely without overcrowding your main breaker enclosure.",
     backgroundImage: SubpanelInstallation,
+    button: 'Request Subpanel Estimate',
+  };
+
+  const badges = {
+    items: [
+      '5.0-Star Local Rating',
+      'Turnkey City Permits & Inspection',
+      'Proper Ground & Neutral Bonding',
+    ],
+    icons: [<Star />, <ClipboardCheck />, <Zap />],
   };
 
   const benefits = {
+    title: 'Key Advantages of a Dedicated Subpanel',
     features: [
-      'Extend electrical capacity to garages, ADUs, and additions',
-      'Avoid overloading your main panel',
-      'Code-compliant installation with proper grounding',
-      'Support for EV chargers, workshops, and more',
-      'Clean, professional installation',
-      'Permit and inspection management included',
+      'Extend circuit capacity to backyard ADUs, detached garages, and home additions',
+      'Relieve busbar and breaker congestion in your primary service panel',
+      'NEC-compliant four-wire feeder installation with isolated neutral and ground buses',
+      'Support heavy-draw equipment including EV chargers, woodshop tools, and saunas',
+      'Weatherproof NEMA 3R outdoor enclosures built for exterior marine and hillside elements',
+      'Turnkey municipal building permitting and city electrical inspection management',
     ],
     image: SubpanelInstallation,
   };
 
   const fullDescription = {
-    title: 'Subpanel Installation in West Los Angeles',
+    title:
+      'Professional Subpanel Engineering & Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that subpanel
-        installation is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        When you remodel a primary suite, build a backyard Accessory Dwelling
+        Unit (ADU), or convert a garage into a workshop, your existing main
+        service panel often runs out of physical breaker spaces and ampacity
+        headroom. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every subpanels project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts engineers and installs properly sized,
+        code-compliant feeder subpanels.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        subpanels service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you need a 60-amp or 100-amp subpanel for an ADU build in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, a dedicated workshop
+        power distribution box in <NavLink to='/brentwood'>Brentwood</NavLink>,
+        or a pool and spa equipment subpanel in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>, our
+        licensed team handles the entire installation to strict safety
+        standards.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every subpanel project begins with an on-site load assessment of your
+        main service entrance, followed by an itemized, transparent written
+        proposal. We run heavy-gauge copper or aluminum feeder conductors
+        through schedule-80 PVC conduit (or overhead cable paths), drive
+        dedicated grounding electrodes where required for detached structures,
+        and ensure proper neutral-ground separation.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their subpanels needs — and why they
-        keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From trenching coordination to final municipal permit sign-off, your
+        power expansion is handled completely in-house. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your subpanel assessment</NavLink> today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Subpanels Service',
+    title: 'What to Expect From Our Subpanel Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your subpanels needs,
-        you're choosing a team that treats every job — big or small — with the
-        same level of professionalism, care, and attention to detail. We don't
-        cut corners, we don't rush through projects, and we never leave a job
-        until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed electrical professionals who treat your property with absolute
+        care. We never cut corners on feeder wire gauge or lug torquing, we
+        never compromise on grounding paths, and we ensure every new branch
+        circuit is cleanly labeled.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your installation starts with a thorough{' '}
+        <NavLink to='/contact'>on-site evaluation</NavLink>. A licensed C-10
+        electrician inspects your main service panel capacity, calculates the
+        total connected load of your new zone, and determines the most efficient
+        wire routing path. We explain your subpanel sizing options in plain
+        language and provide a transparent written estimate before any work
+        begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical work can feel disruptive, which is why our crew prioritizes
+        keeping your home or jobsite spotless. We arrive on schedule, protect
+        your landscaping and interior floors, route conduit cleanly along fences
+        or through crawlspaces, and test every circuit for voltage drop and
+        breaker trip response before cleaning our workspace.
       </>,
     ],
   };
@@ -130,192 +146,247 @@ function Subpanel() {
     title: 'Our Subpanels Process — Step by Step',
     features: [
       {
-        title: 'Assessment',
+        title: 'Load & Capacity Assessment',
         subtitle:
-          'We evaluate your main panel capacity and subpanel requirements.',
+          'We evaluate your main service panel capacity and calculate total amperage demand for your new zone.',
       },
       {
-        title: 'Planning',
-        subtitle: 'We design the subpanel layout and circuit allocation.',
+        title: 'Feeder Design & Proposal',
+        subtitle:
+          'We design the subpanel layout, select wire gauge/breaker size, and provide transparent flat-rate pricing.',
       },
       {
-        title: 'Installation',
-        subtitle: 'We install the subpanel, run feeders, and connect circuits.',
+        title: 'Conduit & Subpanel Installation',
+        subtitle:
+          'We mount the NEMA enclosure, pull feeder cables, run branch circuits, and install proper grounding rods if detached.',
       },
       {
-        title: 'Inspection',
-        subtitle: 'We schedule and pass all required city inspections.',
+        title: 'Load Testing & City Inspection',
+        subtitle:
+          'We test phase voltage under load, label all circuit directories, and pass final municipal building inspection.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Grounding & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every subpanels project we
-        complete meets or exceeds the latest National Electrical Code (NEC)
-        standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety and strict code adherence are the foundation of every
+        subpanel we install. Every project we complete complies fully with the
+        National Electrical Code (NEC) regarding four-wire feeder feeds,
+        isolated neutral bars, equipment grounding conductors, and physical
+        barrier clearances across Los Angeles (LADBS), Santa Monica, Beverly
+        Hills, and Culver City. We pull all necessary building permits and
+        manage final municipal inspections.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed breaker boxes,
+        enclosures, and copper conductors from top manufacturers including
+        Siemens, Square D, and Eaton. From heavy-duty copper busbars and
+        corrosion-resistant stainless screws to weather-sealed outdoor NEMA 3R
+        covers, every component is specified for decades of safe, reliable
+        operation.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because electrical codes and load requirements evolve continuously, our
+        technicians stay current on the latest NEC amendments for residential
+        additions and ADU subfeeders—ensuring your power expansion is fully
+        compliant.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Subpanels Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide subpanels services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly installs electrical subpanels for
+        homeowners, general contractors, and property managers across West Los
+        Angeles. Whether your property is in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your subpanels project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local crew is ready to assist.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your
-        subpanels project requires.
+        We understand the specific power distribution needs of Westside
+        properties—from wiring garage ADU conversions in{' '}
+        <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink> to installing
+        subpanels for pool equipment and guest houses in{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink> and{' '}
+        <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to expand your property's electrical capacity?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>request your consultation online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Subpanel Installation Projects',
+    title: 'Featured Subpanel Installations & Power Expansions Across West LA',
     subtitle:
-      'See our completed subpanel installations across West Los Angeles.',
+      'Browse our recent garage, ADU, and workshop subpanel deployments.',
     features: [
       {
         image: GarageSubpanel,
-        name: 'Garage Subpanel',
-        location: 'West LA',
+        name: '100A Detached Garage Subpanel & Circuit Distribution',
+        location: 'West Los Angeles, CA',
       },
       {
         image: ADUSubpanel,
-        name: 'ADU Subpanel',
-        location: 'Santa Monica',
+        name: '60A Backyard ADU Feeder Subpanel & Meter Feed',
+        location: 'Santa Monica, CA',
       },
       {
         image: WorkshopSubpanel,
-        name: 'Workshop Subpanel',
-        location: 'Brentwood',
+        name: 'Woodshop Heavy-Duty 120V/240V Subpanel Installation',
+        location: 'Brentwood, CA',
       },
       {
         image: HomeAddition,
-        name: 'Home Addition',
-        location: 'Pacific Palisades',
+        name: 'Primary Suite Addition Subpanel & Home-Run Wiring',
+        location: 'Pacific Palisades, CA',
       },
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Subpanel Installations',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: "What's the difference between a panel upgrade and a subpanel?",
+      question:
+        'What is the difference between a main panel upgrade and an electrical subpanel?',
       answer:
-        'A panel upgrade replaces your main panel with a higher-capacity one. A subpanel is an additional panel fed from your main panel, used to add circuits in a specific area.',
+        "Your main electrical panel is your property's primary service disconnect connected directly to the utility lines (LADWP or SCE), controlling total amperage (e.g., 200 amps). A subpanel branches off your main panel to distribute power to a specific zone or detached structure (like an ADU, garage, or addition). A subpanel expands your available physical breaker slots and circuit runs without replacing your entire utility service drop.",
     },
     {
-      question: 'Do I need a subpanel for my ADU?',
+      question:
+        'Do I need a dedicated subpanel for a backyard ADU or garage conversion?',
       answer:
-        'In most cases, yes. ADUs typically require a dedicated subpanel to meet code requirements and safely power the unit.',
+        'Yes. Under the National Electrical Code (NEC) and local California building regulations, detached structures and independent living units like ADUs require their own dedicated subpanel to properly manage lighting, HVAC mini-splits, kitchen appliances, and safety disconnects independently from the primary house.',
     },
   ];
 
   const areas = {
-    title: 'Subpanels Across West LA',
+    title: 'Subpanel Installation Across West LA',
     subtitle:
-      'We provide subpanel installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We engineer and permit power expansion subpanels across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Subpanel Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary subpanel assessment or request a quote online. Same-day consultations available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 4-Step Subpanel Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-charger-installation',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <Camera />,
-      title: 'Security Cameras',
-      subtitle: 'View Security Cameras details',
-      slug: 'security-cameras-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <Camera />,
+        title: 'Security Cameras',
+        subtitle: 'Explore Security Cameras',
+        slug: 'security-cameras-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: "Ready to Expand Your Property's Power?",
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your subpanel estimate online.',
+  };
+
   return (
     <div>
+      <title>
+        Electrical Subpanel Installation West LA | ADU & Garage Power | C-10
+        #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) installing dedicated feeder subpanels for ADUs, garages, workshops & home additions in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -324,7 +395,7 @@ function Subpanel() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -333,7 +404,7 @@ function Subpanel() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

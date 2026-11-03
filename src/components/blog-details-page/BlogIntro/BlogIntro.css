@@ -1,0 +1,30 @@
+.blogintro {
+  width: 100%;
+  padding: 60px 0 0;
+  background-color: #ffffff;
+}
+
+.blogintro_inner {
+  max-width: 900px;
+}
+
+.blogintro_inner p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.blogintro_inner p strong {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .blogintro {
+    padding: 40px 0 0;
+  }
+
+  .blogintro_inner p {
+    font-size: 15px;
+  }
+}

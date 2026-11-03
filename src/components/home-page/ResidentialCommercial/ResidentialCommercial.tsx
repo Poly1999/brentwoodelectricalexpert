@@ -2,6 +2,7 @@ import './ResidentialCommercial.css';
 import { ArrowRight } from 'lucide-react';
 import ResidentialImage from '../../../assets/lightfixture-2611.webp';
 import CommercialImage from '../../../assets/kitchen-rewire.webp';
+import { NavLink } from 'react-router-dom';
 
 function ResidentialCommercial() {
   return (
@@ -20,20 +21,34 @@ function ResidentialCommercial() {
             <img src={ResidentialImage} alt='Residential Electrical' />
             <div className='rescom_overlay'></div>
             <div className='rescom_content'>
-              <h3>Residential</h3>
+              <h3>Residential Electrical Services</h3>
               <p>
-                <a href='/services/panel-upgrades'>Panel upgrades</a>,
-                <a href='/services/light-fixtures'>lighting</a>,
-                <a href='/services/outlets-gfci'>outlets</a>,
-                <a href='/services/ev-charger-installation'>EV chargers</a>,
-                <a href='/services/smart-home'>smart home</a>,
-                <a href='/services/troubleshooting'>troubleshooting</a>, and
-                more for homeowners across West LA.
+                Complete home electrical modernization, including{' '}
+                <NavLink to='/panel-upgrades-service'>
+                  200A panel upgrades
+                </NavLink>
+                ,{' '}
+                <NavLink to='/ev-chargers-service'>
+                  EV charging stations
+                </NavLink>
+                ,{' '}
+                <NavLink to='/smart-home-service'>
+                  Lutron smart lighting
+                </NavLink>
+                ,{' '}
+                <NavLink to='/light-fixtures-service'>
+                  recessed LED layouts
+                </NavLink>
+                , and rapid{' '}
+                <NavLink to='/troubleshooting-service'>
+                  fault diagnostics
+                </NavLink>{' '}
+                for West LA homeowners.
               </p>
-              <a href='/services/residential' className='rescom_button'>
+              <NavLink to='/residential-service' className='rescom_button'>
                 Residential Services
                 <ArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
 
@@ -41,17 +56,23 @@ function ResidentialCommercial() {
             <img src={CommercialImage} alt='Commercial Electrical' />
             <div className='rescom_overlay'></div>
             <div className='rescom_content'>
-              <h3>Commercial</h3>
+              <h3>Commercial & Multi-Unit Electrical</h3>
               <p>
-                Tenant improvements,
-                <a href='/services/lighting-retrofits'>lighting retrofits</a>,
-                <a href='/services/construction'>electrical buildouts</a>, and
-                ongoing maintenance for offices, retail, and restaurants.
+                Three-phase power distribution, multi-family meter stack
+                replacements,{' '}
+                <NavLink to='/construction-service'>
+                  Title 24 tenant improvements
+                </NavLink>
+                , dedicated equipment circuits, and{' '}
+                <NavLink to='/troubleshooting-service'>
+                  emergency ballast/breaker servicing
+                </NavLink>{' '}
+                for Westside businesses and HOAs.
               </p>
-              <a href='/services/commercial' className='rescom_button'>
+              <NavLink to='/Commercial-service' className='rescom_button'>
                 Commercial Services
                 <ArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

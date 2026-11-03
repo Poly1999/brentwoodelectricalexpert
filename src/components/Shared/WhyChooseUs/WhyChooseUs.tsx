@@ -2,18 +2,17 @@ import './WhyChooseUs.css';
 import { Shield, Award, Clock, ThumbsUp, Users, Zap } from 'lucide-react';
 
 interface ChooseUsProps {
-  subtitle: string;
+  title: React.ReactNode;
+  subtitle?: string;
 }
 
-function WhyChooseUs({ subtitle }: ChooseUsProps) {
+function WhyChooseUs({ title, subtitle }: ChooseUsProps) {
   return (
     <div className='whychooseus'>
       <div className='container'>
         <div className='whychooseus_header'>
-          <h2>
-            Why Homeowners Choose <span>Brentwood Electrical</span>
-          </h2>
-          <p>{subtitle}</p>
+          <h2>{title}</h2>
+          {subtitle ? <p>{subtitle}</p> : null}
         </div>
 
         <div className='whychooseus_grid'>

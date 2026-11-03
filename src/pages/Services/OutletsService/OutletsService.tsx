@@ -1,8 +1,16 @@
 import {
   BatteryCharging,
   BuildingComplex,
+  CheckCircle2,
+  Clock,
+  DollarSign,
+  Droplets,
   GitGraph,
+  MapPin,
   Plug,
+  Shield,
+  Star,
+  Wrench,
   Zap,
 } from 'lucide-react';
 import '../../../components/service-detail-page/ServiceDetailLayout.css';
@@ -28,98 +36,106 @@ import USBOutletUpgrade from '../../../assets/outlet-0349-rotated.webp';
 function OutletsService() {
   const hero = {
     icon: <Plug />,
-    title: 'Outlets & GFCI Installation',
+    title: 'Electrical Outlet Installation & NEC GFCI Upgrades',
     subtitle:
-      'Need additional outlets, USB outlets, or GFCI protection in kitchens, bathrooms, and outdoor areas? Brentwood Electrical Experts installs and upgrades electrical outlets throughout West LA. We ensure every installation meets current NEC code requirements for safety and convenience.',
+      'Modernize your home or business with safe, convenient power distribution. Brentwood Electrical Experts installs and upgrades NEC-compliant electrical receptacles, high-speed USB-C charging ports, and wet-location GFCI shock protection across Brentwood, Santa Monica, Beverly Hills, and West Los Angeles.',
     backgroundImage: OutletsInstallation,
+    button: 'Request Outlet Estimate',
+  };
+
+  const badges = {
+    items: [
+      'C-10 Licensed & Insured (#1102731)',
+      'NEC Code-Compliant Wet Protection',
+      'Commercial-Grade Heavy-Duty Lugs',
+      'Flat-Rate Upfront Quotes',
+    ],
+    icons: [<Shield />, <Droplets />, <Wrench />, <DollarSign />],
   };
 
   const benefits = {
+    title: 'Advantages of Professional Outlet & GFCI Upgrades',
     features: [
-      'Add outlets where you need them most',
-      'GFCI protection for kitchens, bathrooms, and outdoors',
-      'USB outlet upgrades for modern convenience',
-      'Tamper-resistant outlets for child safety',
-      'Code-compliant installations',
-      'Clean, professional finish',
+      'Strategic Convenience: Add dedicated power receptacles where you need them most to eliminate messy extension cords.',
+      'NEC-Mandated GFCI Protection: Instant shock-prevention outlets for kitchens, bathrooms, wet bars, and exterior patios.',
+      'High-Speed USB-C Charging Ports: Direct wall-integrated USB-C and USB-A charging without bulky power bricks.',
+      'Child-Safe Tamper-Resistant Outlets: Built-in shutter mechanisms to prevent children from inserting foreign objects.',
+      'Dedicated Appliance Circuits: Heavy-duty 20-amp circuits for microwaves, refrigerators, bidets, and home offices.',
+      'Weatherproof Outdoor Covers: NEMA 3R in-use waterproof covers built to withstand coastal marine air and rain.',
     ],
     image: OutletsInstallation,
   };
 
   const fullDescription = {
-    title: 'Outlets & GFCI Installation in West Los Angeles',
+    title: 'Professional Receptacle & GFCI Installation in West Los Angeles',
     paragraphs: [
       <>
-        At Brentwood Electrical Experts, we understand that outlets & gfci
-        installation is more than just technical work — it's about ensuring the
-        safety, comfort, and value of your property. As a fully{' '}
+        Outdated two-prong outlets, ungrounded boxes, and missing Ground Fault
+        Circuit Interrupter (GFCI) protection in wet zones represent serious
+        household hazards and building code violations. As a{' '}
         <NavLink to='/about'>
-          licensed and insured electrical contractor
+          state-certified California C-10 electrical contractor (#1102731)
         </NavLink>{' '}
-        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>, we
-        bring years of hands-on experience and a commitment to excellence to
-        every outlets & gfci project we take on.
+        serving <NavLink to='/west-los-angeles'>West Los Angeles</NavLink>,
+        Brentwood Electrical Experts upgrades residential and commercial
+        electrical receptacles to meet rigorous modern safety standards.
       </>,
 
       <>
-        Whether you're a homeowner in{' '}
-        <NavLink to='/brentwood'>Brentwood</NavLink> looking for a routine
-        outlets & gfci service, a business owner in{' '}
-        <NavLink to='/santa-monica'>Santa Monica</NavLink> needing a more
-        complex solution, or a property manager in{' '}
-        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> maintaining
-        multiple units, our team has the expertise and equipment to handle the
-        job right the first time.
+        Whether you need to add kitchen island outlets for a remodel in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>, install weather-resistant
+        GFCI receptacles along a coastal patio in{' '}
+        <NavLink to='/santa-monica'>Santa Monica</NavLink>, or upgrade an entire
+        office building to tamper-resistant USB-C outlets in{' '}
+        <NavLink to='/beverly-hills'>Beverly Hills</NavLink> and West LA, our
+        licensed electricians execute every installation with precision.
       </>,
 
       <>
-        Every project starts with a thorough assessment and a clear, upfront
-        estimate — no hidden fees, no surprise charges. We use only premium
-        materials, follow all applicable NEC and local codes, and ensure your
-        complete satisfaction before we consider the job done. Our electricians
-        are not only licensed and experienced but also respectful of your
-        property and your time.
+        Every project begins with a careful circuit capacity assessment and a
+        clear, flat-rate written estimate. We install commercial-grade,
+        UL-listed decorator receptacles, verify proper grounding continuity, and
+        test trip response times to guarantee absolute safety for your family or
+        employees.
       </>,
 
       <>
-        From initial consultation through final testing and cleanup, you'll
-        experience the difference that comes from working with a team that
-        genuinely cares about quality. That's why hundreds of West LA homeowners
-        and businesses have trusted us with their outlets & gfci needs — and why
-        they keep coming back. See our{' '}
-        <NavLink to='/reviews'>customer reviews</NavLink> or{' '}
-        <NavLink to='/contact'>request a free estimate.</NavLink>
+        From fish-wall receptacle additions with zero drywall damage to
+        heavy-duty appliance wiring, you get dependable, code-compliant
+        workmanship. Read our verified{' '}
+        <NavLink to='/reviews'>client reviews</NavLink> or{' '}
+        <NavLink to='/contact'>book your outlet upgrade</NavLink> today.
       </>,
     ],
   };
 
   const expectationsDescription = {
-    title: 'What to Expect From Our Outlets & GFCI Service',
+    title: 'What to Expect From Our Outlet & GFCI Service',
     paragraphs: [
       <>
-        When you choose Brentwood Electrical Experts for your outlets & gfci
-        needs, you're choosing a team that treats every job — big or small —
-        with the same level of professionalism, care, and attention to detail.
-        We don't cut corners, we don't rush through projects, and we never leave
-        a job until it's done right.
+        When you hire Brentwood Electrical Experts, you work directly with
+        licensed professionals who treat your property with meticulous care. We
+        never overload existing circuits, we never cut corners on wire torquing
+        or box fill limits, and we verify every ground path before closing a
+        wall plate.
       </>,
 
       <>
-        Our process begins the moment you call or{' '}
-        <NavLink to='/contact'>submit a request online.</NavLink> A
-        knowledgeable team member will walk you through your options, answer
-        your questions, and schedule a convenient time for an on-site
-        assessment. During the assessment, our licensed electrician will
-        evaluate your specific situation, discuss the best approach, and provide
-        a clear, written estimate — all before any work begins.
+        Your service starts with an{' '}
+        <NavLink to='/contact'>on-site evaluation</NavLink>. A licensed C-10
+        electrician inspects your existing circuit load capacity, box depth, and
+        grounding integrity to determine the safest wiring method. We explain
+        your upgrade options—such as adding dedicated 20-amp lines or upgrading
+        to decorator-style USB receptacles—and provide a transparent written
+        estimate before any work begins.
       </>,
 
       <>
-        We know that electrical work can feel disruptive, which is why we
-        prioritize minimizing the impact on your daily routine. Our electricians
-        arrive on time, work efficiently, and leave your space clean when the
-        job is complete. We also keep you informed every step of the way, so you
-        always know what's happening and why.
+        Electrical work can feel disruptive, which is why our crew prioritizes
+        keeping your home or business spotless. We use protective drop cloths,
+        fish wiring cleanly through walls without unnecessary demolition, and
+        test every newly installed device for correct polarity, voltage, and
+        GFCI trip functionality.
       </>,
     ],
   };
@@ -128,179 +144,230 @@ function OutletsService() {
     title: 'Our Outlets & GFCI Process — Step by Step',
     features: [
       {
-        title: 'Assessment',
+        title: 'Load & Circuit Assessment',
         subtitle:
-          'We identify where new outlets are needed and check circuit capacity.',
+          'We evaluate your existing panel capacity, wire gauge, and box depth to determine safe outlet placement.',
       },
       {
-        title: 'Installation',
-        subtitle: 'We install outlets with proper wiring and grounding.',
+        title: 'Precision Wiring & Mounting',
+        subtitle:
+          'We run dedicated home-runs or tap existing circuits, torque terminals securely, and mount decorator faceplates.',
       },
       {
-        title: 'Testing',
+        title: 'Polarity & GFCI Trip Testing',
         subtitle:
-          'We test every outlet for proper voltage, grounding, and GFCI function.',
+          'We test every receptacle for correct voltage, ground impedance, and instantaneous GFCI safety trip response.',
       },
     ],
   };
 
   const safetyDescription = {
-    title: 'Safety, Code Compliance & Quality Materials',
+    title: 'NEC Code Compliance, Shock Protection & Commercial-Grade Hardware',
     paragraphs: [
       <>
-        Safety is the foundation of everything we do. Every outlets & gfci
-        project we complete meets or exceeds the latest National Electrical Code
-        (NEC) standards as well as all local building codes for the{' '}
-        <NavLink to='/all-locations'>cities and communities we serve.</NavLink>{' '}
-        We pull all necessary permits, coordinate inspections, and ensure your
-        system is fully compliant — giving you peace of mind and protecting your
-        investment.
+        Electrical safety is the foundation of every receptacle we install.
+        Every outlet and GFCI upgrade we perform strictly adheres to the latest
+        National Electrical Code (NEC) mandates regarding tamper-resistant
+        shutters, weather-resistant outdoor covers, and GFCI/AFCI protection
+        zones across Los Angeles (LADBS), Santa Monica, Beverly Hills, and
+        Culver City. We pull all necessary permits and ensure your system passes
+        inspection.
       </>,
 
       <>
-        We use only commercial-grade, UL-listed materials and components from
-        trusted manufacturers. From the wire and connectors inside your walls to
-        the fixtures and devices you interact with daily, every component is
-        chosen for durability, performance, and safety. We never use low-quality
-        parts to cut costs — because the safety of your family or employees is
-        never worth compromising.
+        We build exclusively with commercial-grade, UL-listed receptacles and
+        heavy-duty wiring components from trusted manufacturers including
+        Leviton, Hubbell, and Lutron. From high-impact thermoplastic bodies and
+        self-grounding brass clips to robust surge-suppression circuits, every
+        device is selected for long-term durability and heavy plug insertion
+        cycles.
       </>,
 
       <>
-        Our electricians are continuously trained on the latest codes,
-        technologies, and best practices. Whether it's new energy-efficient
-        technologies, updated code requirements, or emerging smart home systems,
-        our team stays current so you always receive the most informed,
-        up-to-date service available.
+        Because building codes and safety requirements evolve continuously, our
+        technicians stay current on the latest NEC amendments for kitchen
+        islands, bathrooms, garages, and outdoor living spaces—ensuring your
+        property remains fully protected.
       </>,
     ],
   };
 
   const coverageDescription = {
-    title: 'Outlets & GFCI Across West Los Angeles',
+    title: 'Serving Brentwood, Santa Monica & 28+ Westside Neighborhoods',
     paragraphs: [
       <>
-        We proudly provide outlets & gfci services to homeowners and businesses
-        throughout West Los Angeles and the surrounding communities. Whether
-        you're located in <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
+        Brentwood Electrical Experts proudly provides outlet installations and
+        GFCI upgrades for residential and commercial clients across West Los
+        Angeles. Whether your property is located in{' '}
+        <NavLink to='/brentwood'>Brentwood</NavLink>,{' '}
         <NavLink to='/santa-monica'>Santa Monica</NavLink>,{' '}
         <NavLink to='/pacific-palisades'>Pacific Palisades</NavLink>,{' '}
         <NavLink to='/bel-air'>Bel Air</NavLink>,{' '}
         <NavLink to='/beverly-hills'>Beverly Hills</NavLink>, or any of the{' '}
-        <NavLink to='/locations'>28+ communities we serve</NavLink>, our team is
-        ready to help with your outlets & gfci project.
+        <NavLink to='/all-locations'>
+          28+ Greater LA communities we serve
+        </NavLink>
+        , our local team is ready to assist.
       </>,
       <>
-        We understand the unique characteristics of homes and businesses in each
-        neighborhood — from mid-century modern homes in{' '}
-        <NavLink to='/mar-vista'>Mar Vista</NavLink> to luxury estates in{' '}
-        <NavLink to='/bel-air'>Bel Air</NavLink> and commercial properties in{' '}
-        <NavLink to='/century-city'>Century City.</NavLink> Our experience
-        across diverse property types means we can handle whatever your outlets
-        & gfci project requires.
+        We understand the unique electrical layouts of Westside properties—from
+        ungrounded two-prong wiring in mid-century homes across{' '}
+        <NavLink to='/mar-vista'>Mar Vista</NavLink> and{' '}
+        <NavLink to='/west-los-angeles'>West LA</NavLink> to luxury estates in{' '}
+        <NavLink to='/bel-air'>Bel Air</NavLink> requiring discreet floor boxes
+        and smart USB charging stations.
       </>,
       <>
-        Ready to get started? <a href='tel:+13106664752'>Call (310) 666-4752</a>{' '}
-        for a free estimate, or{' '}
-        <NavLink to='/contact'>request a quote online.</NavLink> We look forward
-        to earning your trust and delivering the quality electrical work your
-        property deserves.
+        Ready to upgrade your home's receptacles?{' '}
+        <a href='tel:+13106664752'>Call (310) 666-4752</a> for a free estimate,
+        or <NavLink to='/contact'>request your appointment online</NavLink>{' '}
+        today.
       </>,
     ],
   };
 
   const recents = {
-    title: 'Recent Outlet & GFCI Projects',
+    title: 'Featured Outlet Installations & GFCI Upgrades Across West LA',
     subtitle:
-      'Professional outlet installations and GFCI upgrades across West Los Angeles.',
+      'Browse our recent wet-location safety upgrades and USB receptacle additions.',
     features: [
       {
         image: GFCIOutletInstallation,
-        name: 'GFCI Outlet Installation',
-        location: 'Brentwood',
+        name: 'Weather-Resistant GFCI & Outdoor Patio Receptacle',
+        location: 'Brentwood, CA',
       },
       {
         image: USBOutletUpgrade,
-        name: 'USB Outlet Upgrade',
-        location: 'Santa Monica',
+        name: 'Kitchen Countertop Tamper-Resistant & USB-C Upgrades',
+        location: 'Santa Monica, CA',
       },
     ],
   };
 
-  const reviews = [
-    {
-      text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
-      name: 'Michael R.',
-      location: 'Brentwood, CA',
-      source: 'Google',
-    },
-    {
-      text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
-      name: 'Sarah L.',
-      location: 'Santa Monica, CA',
-      source: 'Yelp',
-    },
-    {
-      text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
-      name: 'David K.',
-      location: 'Pacific Palisades, CA',
-      source: 'Google',
-    },
-  ];
+  const reviews = {
+    title: 'Verified Client Reviews: Outlet & GFCI Upgrades',
+    subtitle: 'Consistently Rated 5.0 Stars Across Google, Yelp & Birdeye',
+    items: [
+      {
+        text: 'Brentwood Electrical Experts upgraded our panel from 100 to 200 amps and installed an EV charger — all in one day. Professional, clean, and on time. Highly recommend!',
+        name: 'Michael R.',
+        location: 'Brentwood, CA',
+        source: 'Google',
+      },
+      {
+        text: 'We needed security cameras and lighting installed at our home. The team was incredibly thorough, ran all the wiring cleanly, and even set up remote access on our phones. Excellent work.',
+        name: 'Sarah L.',
+        location: 'Santa Monica, CA',
+        source: 'Yelp',
+      },
+      {
+        text: 'After the fire season, we wanted to upgrade all our electrical and add a whole-home surge protector. Brentwood Electrical was responsive, knowledgeable, and completed everything perfectly. Worth every penny.',
+        name: 'David K.',
+        location: 'Pacific Palisades, CA',
+        source: 'Google',
+      },
+    ],
+  };
 
   const faqs = [
     {
-      question: 'Where are GFCI outlets required?',
+      question:
+        'Where does the National Electrical Code (NEC) require GFCI outlets to be installed?',
       answer:
-        'GFCI outlets are required in kitchens, bathrooms, garages, outdoor areas, laundry rooms, and within 6 feet of any water source per NEC code.',
+        'The NEC mandates Ground Fault Circuit Interrupter (GFCI) protection in all areas where water and electricity may come into contact. This includes kitchens (all countertop receptacles), bathrooms, laundry rooms, unfinished basements, crawlspaces, garages, wet bars, and all outdoor receptacles (including balconies and patios).',
     },
     {
-      question: 'Can you add outlets to rooms without tearing up walls?',
+      question:
+        'Can you add new outlets or USB ports to rooms without tearing up drywall?',
       answer:
-        'In many cases, yes. We use professional techniques to minimize wall damage when running new wiring.',
+        'Yes. In most residential and commercial spaces, our licensed electricians can fish new electrical cables through walls, attics, or crawlspaces without causing major drywall damage. We use specialized wall-fishing tools to route wiring cleanly and patch any minimal access points seamlessly.',
     },
   ];
 
   const areas = {
-    title: 'Outlets & GFCI Across West LA',
+    title: 'Outlet & GFCI Upgrades Across West LA',
     subtitle:
-      'We provide outlets & gfci installation services throughout West Los Angeles and surrounding communities. Click your area to learn more.',
+      'We install code-compliant receptacles across 28+ Westside and Greater Los Angeles neighborhoods. Select your community below:',
   };
 
-  const related = [
-    {
-      icon: <Zap />,
-      title: 'Panel Upgrades',
-      subtitle: 'View Panel Upgrades details',
-      slug: 'panel-upgrades-service',
+  const detailsButtons = {
+    call: 'Call for a Free Outlet Estimate',
+    quote: 'Request Quote Online',
+  };
+
+  const sidebar = {
+    ctaTitle: 'Speak With a C-10 Electrician',
+    ctaText:
+      'Book a complimentary outlet assessment or submit your request online. Same-day consultations available.',
+    navTitle: 'Our Electrical Services',
+    whyTitle: 'Why West LA Chooses Us',
+    whyItems: [
+      '5.0 Google Rating — 100+ reviews',
+      'Fully licensed & insured',
+      'Same-day & 24/7 emergency service',
+      'Upfront pricing, no hidden fees',
+      'Serving all of West Los Angeles',
+    ],
+    whyIcons: [<Star />, <Shield />, <Clock />, <CheckCircle2 />, <MapPin />],
+    areasTitle: 'Core Service Territory',
+    process: {
+      title: 'Our 3-Step Outlet Process',
+      steps: featuresDescription.features,
     },
-    {
-      icon: <BatteryCharging />,
-      title: 'EV Chargers',
-      subtitle: 'View EV Chargers details',
-      slug: 'ev-chargers-service',
-    },
-    {
-      icon: <BuildingComplex />,
-      title: 'Construction',
-      subtitle: 'View Construction details',
-      slug: 'construction-service',
-    },
-    {
-      icon: <GitGraph />,
-      title: 'Subpanels',
-      subtitle: 'View Subpanels details',
-      slug: 'subpanels-service',
-    },
-  ];
+  };
+
+  const related = {
+    title: 'Explore Related Electrical Services',
+    cards: [
+      {
+        icon: <Zap />,
+        title: 'Panel Upgrades',
+        subtitle: 'Explore Panel Upgrades',
+        slug: 'panel-upgrades-service',
+      },
+      {
+        icon: <BatteryCharging />,
+        title: 'EV Chargers',
+        subtitle: 'Explore EV Chargers',
+        slug: 'ev-chargers-service',
+      },
+      {
+        icon: <BuildingComplex />,
+        title: 'Construction',
+        subtitle: 'Explore Construction',
+        slug: 'construction-service',
+      },
+      {
+        icon: <GitGraph />,
+        title: 'Subpanels',
+        subtitle: 'Explore Subpanels',
+        slug: 'subpanels-service',
+      },
+    ],
+  };
+
+  const footer = {
+    title: 'Ready to Upgrade Your Outlets?',
+    subtitle:
+      'Call (310) 666-4752 to speak with a licensed C-10 electrician (#1102731) or book your outlet estimate online.',
+  };
+
   return (
     <div>
+      <title>
+        GFCI Outlet Installation & USB-C Upgrades West LA | C-10 #1102731
+      </title>
+      <meta
+        name='description'
+        content='Licensed C-10 electrician (#1102731) installing NEC-compliant GFCI shock protection, USB-C outlets, tamper-resistant receptacles & dedicated circuits in Brentwood, Santa Monica & West LA. Call (310) 666-4752.'
+      />
       <ServiceHero hero={hero} />
-      <TrustBadges />
+      <TrustBadges badges={badges} />
       <div className='servicedetail_layout'>
         <div className='servicedetail_left'>
           <ServiceBenefits benefits={benefits} />
           <ServiceDetails
+            detailsButtons={detailsButtons}
             fullDescription={fullDescription}
             expectationsDescription={expectationsDescription}
             featuresDescription={featuresDescription}
@@ -309,7 +376,7 @@ function OutletsService() {
           />
         </div>
         <div className='servicedetail_sidebar'>
-          <ServicesSidebar />
+          <ServicesSidebar sidebar={sidebar} />
         </div>
       </div>
       <ServiceProcess featuresDescription={featuresDescription} />
@@ -318,7 +385,7 @@ function OutletsService() {
       <ServiceFAQ faqs={faqs} />
       <ServiceAreasGrid areas={areas} />
       <RelatedServices related={related} />
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

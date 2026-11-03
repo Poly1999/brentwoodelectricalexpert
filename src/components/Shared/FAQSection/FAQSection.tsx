@@ -2,34 +2,37 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import './FAQSection.css';
 import FAQImage from '../../../assets/ev-charger-3.webp';
+import { NavLink } from 'react-router-dom';
 
 function FAQSection() {
   const [isOpen, setIsOpen] = useState<number | null>(null);
+
   const faqs = [
     {
-      question: 'Are you licensed and insured?',
+      question:
+        'Are you a licensed and insured California electrical contractor?',
       answer:
-        'Yes — Brentwood Electrical Experts is a fully licensed and insured electrical contractor. We carry general liability and workers compensation insurance for your protection.',
+        "Yes. Brentwood Electrical Experts holds an active California C-10 Electrical Contractor license (#1102731) through the Contractors State License Board (CSLB) and carries full general liability and workers' compensation insurance.",
     },
     {
-      question: 'Do you offer free estimates?',
+      question: 'Do you provide free estimates before starting work?',
       answer:
-        'Yes — we provide free estimates for most electrical projects. Call us at (310) 666-4752 or submit a request through our online form.',
+        'Yes. We provide complimentary assessments and deliver clear, upfront written estimates so you know the exact scope and cost before authorizing any work.',
     },
     {
-      question: 'What areas do you serve?',
+      question: 'Which areas around West Los Angeles do you cover?',
       answer:
-        'We serve Brentwood, Santa Monica, Pacific Palisades, Bel Air, Beverly Hills, West Hollywood, Venice, Culver City, Mar Vista, Westwood, and many more communities across West LA.',
+        'We serve over 28 neighborhoods across the Westside, South Bay, and Valley, including Brentwood, Santa Monica, Pacific Palisades, Beverly Hills, Bel Air, Venice, Mar Vista, Culver City, Westwood, West Hollywood, and Sherman Oaks.',
     },
     {
-      question: 'How quickly can you respond?',
+      question: 'How fast can you dispatch an electrician?',
       answer:
-        'We offer same-day service for most requests and 24/7 emergency service for urgent electrical issues. Call us anytime.',
+        'We offer same-day appointments for urgent electrical troubleshooting, tripped main breakers, and partial power outages across our core West LA service territory.',
     },
     {
-      question: 'Do you handle permits and inspections?',
+      question: 'Do you pull city permits and coordinate utility shut-offs?',
       answer:
-        'Yes — we manage all required city permits and coordinate inspections for panel upgrades, EV chargers, construction, and more.',
+        'Yes. Our team handles all municipal building permits (LADBS, City of Santa Monica, Beverly Hills) and coordinates meter spot requests and disconnects directly with LADWP and Southern California Edison (SCE).',
     },
   ];
 
@@ -66,10 +69,10 @@ function FAQSection() {
             ))}
           </div>
 
-          <a href='/faq' className='faqsection_viewall'>
+          <NavLink to='/faq' className='faqsection_viewall'>
             View All FAQs
             <ArrowRight />
-          </a>
+          </NavLink>
         </div>
 
         <div className='faqsection_image'>
