@@ -44,6 +44,7 @@
   color: var(--primary-dark);
   font-size: 15px;
   font-weight: 600;
+  cursor: default;
   transition:
     background-color 0.2s,
     border-color 0.2s;
@@ -85,6 +86,16 @@
   height: 16px;
 }
 
+@media (max-width: 768px) {
+  .nearbyareas {
+    padding: 60px 0;
+  }
+
+  .nearbyareas_inner h2 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 600px) {
   .nearbyareas_links {
     display: flex;
@@ -96,5 +107,16 @@
   .nearbyareas_links a:nth-child(3) {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nearbyareas_inner h2 {
+    font-size: 26px;
+  }
+
+  .nearbyareas_tag {
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }

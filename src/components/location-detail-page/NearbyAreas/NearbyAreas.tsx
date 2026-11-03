@@ -22,14 +22,10 @@ function NearbyAreas({ areas }: NearbyAreasProps) {
         </p>
         <div className='nearbyareas_tags'>
           {areas.features.map((feature, index) => (
-            <NavLink
-              to={`/${feature.slug}`}
-              className='nearbyareas_tag'
-              key={index}
-            >
+            <div className='nearbyareas_tag' key={index}>
               <MapPin />
               <span>{feature.item}</span>
-            </NavLink>
+            </div>
           ))}
         </div>
         <div className='nearbyareas_links'>
